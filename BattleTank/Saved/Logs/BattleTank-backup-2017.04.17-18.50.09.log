@@ -1,0 +1,1383 @@
+﻿Log file open, 04/17/17 18:19:46
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(2114343112) SRandInit(2114343112).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.092148
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.17-17.19.47:322][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.17-17.19.47:322][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.17-17.19.47:337][  0]LogInit: Computer: DESKTOP-0PEK566
+[2017.04.17-17.19.47:337][  0]LogInit: User: Sarah
+[2017.04.17-17.19.47:337][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.17-17.19.47:337][  0]LogInit: High frequency timer resolution =2.143575 MHz
+[2017.04.17-17.19.47:337][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.04.17-17.19.47:337][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.17-17.19.47:337][  0]LogMemory: Process Physical Memory: 261.76 MB used, 261.76 MB peak
+[2017.04.17-17.19.47:337][  0]LogMemory: Process Virtual Memory: 262.48 MB used, 262.48 MB peak
+[2017.04.17-17.19.47:337][  0]LogMemory: Physical Memory: 2748.76 MB used,  5335.51 MB free, 8084.27 MB total
+[2017.04.17-17.19.47:337][  0]LogMemory: Virtual Memory: 644.18 MB used,  5335.51 MB free, 134217728.00 MB total
+[2017.04.17-17.19.47:444][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.17-17.19.48:201][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.17-17.19.48:262][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7600M Series' (Feature Level 11_0)
+[2017.04.17-17.19.48:262][  0]LogD3D11RHI:       1004/0/3840 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.17-17.19.48:265][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2017.04.17-17.19.48:265][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.04.17-17.19.48:267][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.17-17.19.48:267][  0]LogD3D11RHI:       0/0/4042 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.17-17.19.48:267][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.17-17.19.48:270][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.17-17.19.48:270][  0]LogD3D11RHI:     GPU DeviceId: 0x6840 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.17-17.19.48:270][  0]LogWindows: EnumDisplayDevices:
+[2017.04.17-17.19.48:270][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2017.04.17-17.19.48:271][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.17-17.19.48:271][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.17-17.19.48:271][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.04.17-17.19.48:271][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7600M Series
+[2017.04.17-17.19.48:271][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.04.17-17.19.48:271][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.04.17-17.19.48:271][  0]LogRHI: Texture pool is 702 MB (70% of 1004 MB)
+[2017.04.17-17.19.48:279][  0]LogD3D11RHI: AMD Pre GCN architecture detected, some driver workarounds will be in place
+[2017.04.17-17.19.48:288][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.17-17.19.48:299][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.04.17-17.19.48:300][  0]LogShaderCompilers: Guid format shader working directory is -34 characters bigger than the processId version (../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/9092/).
+[2017.04.17-17.19.48:300][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sarah/AppData/Local/Temp/UnrealShaderWorkingDir/8915DA4F43D523CFEF8CDF95221FC443/'.
+[2017.04.17-17.19.48:300][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.17-17.19.49:610][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.17-17.19.49:688][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.17-17.19.49:766][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.17-17.19.49:846][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.17-17.19.49:925][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.17-17.19.50:003][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.17-17.19.50:082][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.17-17.19.50:160][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.17-17.19.50:224][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.17-17.19.50:301][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.17-17.19.50:377][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.17-17.19.50:454][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.17-17.19.50:530][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.17-17.19.50:607][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.17-17.19.50:684][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.17-17.19.50:837][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.17-17.19.50:837][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.17-17.19.50:892][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.17-17.19.51:021][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.17-17.19.51:071][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.17-17.19.51:147][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.17-17.19.51:223][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.17-17.19.51:299][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.17-17.19.51:375][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.17-17.19.51:375][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.17-17.19.52:008][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.17-17.19.52:062][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.17-17.19.52:062][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.17-17.19.52:062][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.17-17.19.52:062][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.17-17.19.52:063][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.17-17.19.52:063][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.17-17.19.52:085][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.17-17.19.52:097][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sarah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.17-17.19.52:107][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.17-17.19.52:108][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.17-17.19.52:108][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.17-17.19.52:447][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.17-17.19.52:452][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.17-17.19.52:724][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.17-17.19.52:786][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.17-17.19.52:853][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.17-17.19.52:853][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.17-17.19.52:853][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.17-17.19.53:546][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.17-17.19.53:602][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
+[2017.04.17-17.19.53:673][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.035503 seconds
+[2017.04.17-17.19.53:680][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.04.17-17.19.53:680][  0]LogUObjectAllocator: 7073368 out of 0 bytes used by permanent object pool.
+[2017.04.17-17.19.53:680][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.17-17.19.53:771][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.17-17.19.55:871][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.17-17.19.55:925][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.17-17.19.56:600][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.17-17.19.57:124][  0]SourceControl: Info Source control is disabled
+[2017.04.17-17.19.57:159][  0]SourceControl: Info Source control is disabled
+[2017.04.17-17.19.57:226][  0]SourceControl: Info Source control is disabled
+[2017.04.17-17.19.57:293][  0]SourceControl: Info Source control is disabled
+[2017.04.17-17.19.59:051][  0]LogEngine: Initializing Engine...
+[2017.04.17-17.19.59:052][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.17-17.19.59:354][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.17-17.19.59:360][  0]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.17-17.19.59:373][  0]LogInit: FAudioDevice initialized.
+[2017.04.17-17.19.59:401][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.17-17.19.59:410][  0]LogInit: Texture streaming: Enabled
+[2017.04.17-17.19.59:544][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.17-17.19.59:544][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={6C7452C5-4137-AB64-E723-EA89A9C1E8F8}
+[2017.04.17-17.19.59:664][  0]LogInit: Transaction tracking system initialized
+[2017.04.17-17.20.00:150][  0]BlueprintLog: New page: Editor Load
+[2017.04.17-17.20.01:388][  0]LocalizationService: Info Localization service is disabled
+[2017.04.17-17.20.02:542][  0]LogConsoleResponse:Display: 
+[2017.04.17-17.20.02:697][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.17-17.20.02:697][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.17-17.20.03:746][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.01s
+[2017.04.17-17.20.04:154][  0]SourceControl: Info Source control is disabled
+[2017.04.17-17.20.04:154][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.17-17.20.04:154][  0]LightingResults: New page: Lighting Build
+[2017.04.17-17.20.04:211][  0]MapCheck: New page: Map Check
+[2017.04.17-17.20.04:211][  0]LightingResults: New page: Lighting Build
+[2017.04.17-17.20.04:524][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.17-17.20.04:547][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.17-17.20.04:547][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.17-17.20.04:601][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 53.902ms to complete.
+[2017.04.17-17.20.04:601][  0]LogFileHelpers: Loading map 'BattleGround' took 0.447
+[2017.04.17-17.20.04:662][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.17-17.20.04:828][  0]LogCollectionManager: Loaded 0 collections in 0.002233 seconds
+[2017.04.17-17.20.04:924][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.17-17.20.04:925][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' took 0.01s
+[2017.04.17-17.20.04:925][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.17-17.20.04:925][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.17-17.20.04:938][  0]LogContentBrowser: Native class hierarchy populated in 0.0130 seconds. Added 2245 classes and 452 folders.
+[2017.04.17-17.20.04:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.17-17.20.04:942][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.17-17.20.05:033][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0020 seconds. Added 0 classes and 0 folders.
+[2017.04.17-17.20.05:087][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0022 seconds. Added 0 classes and 0 folders.
+[2017.04.17-17.20.05:149][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2017.04.17-17.20.05:212][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.17-17.20.05:219][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.17-17.20.05:303][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0030 seconds. Added 1 classes and 2 folders.
+[2017.04.17-17.20.05:304][  0]LogLoad: (Engine Initialization) Total time: 20.54 seconds
+[2017.04.17-17.20.05:304][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.12 seconds
+[2017.04.17-17.20.05:304][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.17-17.20.05:321][  0]LogOcInput: OculusInput pre-init called
+[2017.04.17-17.20.05:343][  0]LogContentStreaming: Texture pool size now 400 MB
+[2017.04.17-17.20.05:345][  0]LogSlate: Took 0.000274 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.17-17.20.05:349][  0]LogSlate: Took 0.000313 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.17-17.20.05:356][  0]LogSlate: Took 0.000254 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.17-17.20.05:696][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.245 s
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: === Handled ensure: ===
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: 
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: Ensure condition failed: ListenerTransformCopy.IsValid() [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Engine\Private\AudioDevice.cpp] [Line: 2143]
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: Invalid listener transform provided to AudioDevice
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: Stack: 
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D2A195D6
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D27C9B72
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D27DB656
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000C7571A7B
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000C5B4727A
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000C5B441B3
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000C57D197D
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000C8289C6E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000C80D8175
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000C80C9A8A
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF9866
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF5712
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6D7CECC
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27C08
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF91BD
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF91BD
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF91BD
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF91BD
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27C08
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6D7CECC
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27C08
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:696][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6DF91BD
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27C08
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A29060
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27C08
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27ABE
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A2778E
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A27CAA
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-SlateCore.dll!0x00000000D1A28C55
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6BC30FD
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6BFCF94
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6BC41C0
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6C22674
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000C6C215C0
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor.exe!0x00000000DF11EA1D
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor.exe!0x00000000DF10EB40
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor.exe!0x00000000DF10EBBA
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor.exe!0x00000000DF120A29
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: UE4Editor.exe!0x00000000DF1222B6
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: KERNEL32.DLL!0x000000000AA68364
+[2017.04.17-17.20.05:697][  0]LogOutputDevice:Error: 
+[2017.04.17-17.20.05:698][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.04.17-17.20.05:935][  0]LogStats:                    SendNewReport -  0.237 s
+[2017.04.17-17.20.05:935][  0]LogStats:             FDebug::EnsureFailed -  0.484 s
+[2017.04.17-17.20.06:040][  0]LogRenderer: Reallocating scene render targets to support 780x464 NumSamples 1 (Frame:2).
+[2017.04.17-17.20.06:043][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.000 s
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: === Handled ensure: ===
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: 
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: Ensure condition failed: Y != 0 [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Core\Private\GenericPlatform\GenericPlatformMath.cpp] [Line: 81]
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: FMath::FMod(X=786.691956, Y=-nan) : Y is zero, this is invalid and would result in NaN!
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: Stack: 
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D2A195D6
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D27C9B72
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D27DB656
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D2689A15
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C10572B3
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0FAAF73
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0F78C58
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0F7966B
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0BCBE8E
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0F96712
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Renderer.dll!0x00000000C0F608BE
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D269D83D
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D269DC5D
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-RenderCore.dll!0x00000000E3F00397
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-RenderCore.dll!0x00000000E3F01486
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D2A2A3C8
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000D2A24C69
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: KERNEL32.DLL!0x000000000AA68364
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: ntdll.dll!0x000000000AB770D1
+[2017.04.17-17.20.06:043][  0]LogOutputDevice:Error: 
+[2017.04.17-17.20.06:043][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.04.17-17.20.06:271][  0]LogStats:                    SendNewReport -  0.228 s
+[2017.04.17-17.20.06:271][  0]LogStats:             FDebug::EnsureFailed -  0.229 s
+[2017.04.17-17.20.06:472][  1]LogAssetRegistry: Asset discovery search completed in 12.8920 seconds
+[2017.04.17-17.20.06:472][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000007 seconds (found 0 objects)
+[2017.04.17-17.20.06:472][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000040 seconds (updated 0 objects)
+[2017.04.17-17.20.06:504][  1]LogSlate: Took 0.000444 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-17.20.06:538][  2]LogSlate: Took 0.000430 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-17.20.14:319][467]LogSlate: Took 0.000210 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.17-17.20.17:283][467]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0027 seconds. Added 112 classes and 0 folders.
+[2017.04.17-17.20.21:772][599]LogSlate: Took 0.000248 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.17-17.20.22:650][645]LogSlate: Took 0.000273 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.17-17.20.34:088][308]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.20.34:114][308]LogSavePackage: Save=16.34ms
+[2017.04.17-17.20.34:114][308]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp546B027F48E28AE0E25672B9DD1B197B.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.20.34:117][308]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.21.08:674][234]LogRenderer: Reallocating scene render targets to support 1016x612 NumSamples 1 (Frame:3007).
+[2017.04.17-17.21.31:497][994]BlueprintLog: New page: Compile Tank_BP
+[2017.04.17-17.21.32:511][ 35]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.21.32:540][ 35]LogSavePackage: Save=24.54ms
+[2017.04.17-17.21.32:540][ 35]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp6F3ADE884AF422D8AB12BE97FA625AEB.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.21.32:544][ 35]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.24.35:985][995]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Body" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset" SILENT=true
+[2017.04.17-17.24.36:012][995]LogSavePackage: Save=17.06ms
+[2017.04.17-17.24.36:012][995]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_Body1BB7861A460FBAFA70933A9CE479407A.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset'
+[2017.04.17-17.24.36:016][995]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset
+[2017.04.17-17.26.32:040][150]BlueprintLog: New page: Compile Tank_BP
+[2017.04.17-17.26.32:833][164]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.26.32:868][164]LogSavePackage: Save=25.65ms
+[2017.04.17-17.26.32:868][164]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bpCCDE84C941F79B51FA196DA915B58637.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.26.32:871][164]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.28.59:549][590]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Turret" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset" SILENT=true
+[2017.04.17-17.28.59:574][590]LogSavePackage: Save=15.30ms
+[2017.04.17-17.28.59:574][590]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_TurretA4B9905D40281C9B206665BB37E47AD7.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset'
+[2017.04.17-17.28.59:577][590]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset
+[2017.04.17-17.29.09:910][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Turret" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset" SILENT=true
+[2017.04.17-17.29.09:920][920]LogSavePackage: Save=6.84ms
+[2017.04.17-17.29.09:920][920]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_TurretEC8744464DF0577329FDF18F90C37BDB.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset'
+[2017.04.17-17.29.09:925][920]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Turret.uasset
+[2017.04.17-17.33.30:267][128]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Body" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset" SILENT=true
+[2017.04.17-17.33.30:297][128]LogSavePackage: Save=16.18ms
+[2017.04.17-17.33.30:297][128]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_BodyE5D2ED7F477530EB796AD894A8E27DE7.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset'
+[2017.04.17-17.33.30:301][128]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset
+[2017.04.17-17.33.40:313][435]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Body" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset" SILENT=true
+[2017.04.17-17.33.40:325][435]LogSavePackage: Save=8.15ms
+[2017.04.17-17.33.40:325][435]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_Body0C7B585B4F30FC3C418F00B928A96F53.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset'
+[2017.04.17-17.33.40:329][435]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Body.uasset
+[2017.04.17-17.34.15:976][650]Cmd: STAT FPS
+[2017.04.17-17.34.22:283][ 22]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.17-17.34.22:301][ 22]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.04.17-17.34.22:301][ 22]LogPlayLevel: [PlayLevel] Compiling Tank_BP before play...
+[2017.04.17-17.34.22:485][ 22]LogPlayLevel: PlayLevel: Blueprint regeneration took 184 ms (1 blueprints)
+[2017.04.17-17.34.22:485][ 22]PIE: New page: PIE session: BattleGround (Apr 17, 2017, 7:34:22 PM)
+[2017.04.17-17.34.22:485][ 22]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.04.17-17.34.22:495][ 22]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009280s)
+[2017.04.17-17.34.22:495][ 22]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.17-17.34.22:496][ 22]LogPlayLevel: PIE: World Init took: (0.000799s)
+[2017.04.17-17.34.22:496][ 22]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.010318s)
+[2017.04.17-17.34.22:513][ 22]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.17-17.34.22:522][ 22]LogInit: FAudioDevice initialized.
+[2017.04.17-17.34.22:570][ 22]LogLoad: Game class is 'GameModeBase'
+[2017.04.17-17.34.22:575][ 22]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.04.17-18.34.22
+[2017.04.17-17.34.22:575][ 22]LogWorld: Bringing up level for play took: 0.003172
+[2017.04.17-17.34.22:636][ 22]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0024 seconds. Added 11 classes and 0 folders.
+[2017.04.17-17.34.22:638][ 22]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.737
+[2017.04.17-17.34.36:161][824]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.04.17-17.35.58:304][133]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.35.58:342][133]LogSavePackage: Save=27.89ms
+[2017.04.17-17.35.58:342][133]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp93F2D19249020AA8A648218CE79345E9.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.35.58:345][133]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.36.38:419][593]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.36.38:451][593]LogSavePackage: Save=27.49ms
+[2017.04.17-17.36.38:451][593]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp02D3166D4D65CB69592E4786999F6538.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.36.38:455][593]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.37.09:410][652]BlueprintLog: New page: Compile Tank_BP
+[2017.04.17-17.37.10:653][680]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.37.10:685][680]LogSavePackage: Save=28.10ms
+[2017.04.17-17.37.10:685][680]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp2DC1090B47EAD332FE8458AEFF853D3F.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.37.10:687][680]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.38.12:279][781]BlueprintLog: New page: Compile Tank_BP
+[2017.04.17-17.38.12:959][798]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.38.12:992][798]LogSavePackage: Save=28.25ms
+[2017.04.17-17.38.12:992][798]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bpDE1C96A845C41392186DB984B26838D6.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.38.12:995][798]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.38.14:472][845]BlueprintLog: New page: Compile Tank_BP
+[2017.04.17-17.38.30:293][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Barrel" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Barrel.uasset" SILENT=true
+[2017.04.17-17.38.30:316][422]LogSavePackage: Save=14.79ms
+[2017.04.17-17.38.30:316][422]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_Barrel4B1EEE154F0EACACBA61CD9741C8C1AF.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Barrel.uasset'
+[2017.04.17-17.38.30:320][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Barrel.uasset
+[2017.04.17-17.38.30:348][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tank_fbx_Track" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Track.uasset" SILENT=true
+[2017.04.17-17.38.30:372][422]LogSavePackage: Save=15.16ms
+[2017.04.17-17.38.30:372][422]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tank_fbx_Track5D45FEA5416CF96D6A526CAA7959FE55.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Track.uasset'
+[2017.04.17-17.38.30:376][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tank_fbx_Track.uasset
+[2017.04.17-17.38.30:403][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank_FBX/tANK_bp" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset" SILENT=true
+[2017.04.17-17.38.30:434][422]LogSavePackage: Save=27.24ms
+[2017.04.17-17.38.30:434][422]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/tANK_bp619BC148476114ADABC37399EDC8FD45.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset'
+[2017.04.17-17.38.30:438][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank_FBX/tANK_bp.uasset
+[2017.04.17-17.38.41:873][944]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.04.17-17.38.48:054][298]LogEditorActor: Deleted Actor: Tank_BP_C
+[2017.04.17-17.38.48:072][298]LogEditorActor: Deleted 1 Actors (0.018 secs)
+[2017.04.17-17.39.30:281][176]LogSavePackage: Save=154.44ms
+[2017.04.17-17.39.30:281][176]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto1E52ABEDE40E68905AAD12D921FA5DF9B.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap'
+[2017.04.17-17.39.30:283][176]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/BattleGround_Auto1.umap
+[2017.04.17-17.39.30:285][176]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/BattleGround' took 0.187
+[2017.04.17-17.39.30:285][176]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.187
+[2017.04.17-17.40.08:394][987]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.17-17.40.08:412][987]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-17.40.08:412][987]PIE: New page: PIE session: BattleGround (Apr 17, 2017, 7:40:08 PM)
+[2017.04.17-17.40.08:412][987]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.04.17-17.40.08:422][987]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009556s)
+[2017.04.17-17.40.08:422][987]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.17-17.40.08:423][987]LogPlayLevel: PIE: World Init took: (0.000843s)
+[2017.04.17-17.40.08:423][987]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.010623s)
+[2017.04.17-17.40.08:442][987]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.17-17.40.08:450][987]LogInit: FAudioDevice initialized.
+[2017.04.17-17.40.08:480][987]LogLoad: Game class is 'GameModeBase'
+[2017.04.17-17.40.08:484][987]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.04.17-18.40.08
+[2017.04.17-17.40.08:485][987]LogWorld: Bringing up level for play took: 0.004506
+[2017.04.17-17.40.08:487][987]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround 0.586
+[2017.04.17-17.40.42:356][860]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.04.17-17.40.55:577][499]LogTexture:Display: Building textures: Texture2D_2 (G8)
+[2017.04.17-17.41.30:559][580]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.17-17.41.30:560][580]LogTemp:Display: Added material ShaderMap 0x0000017A00846B00 with Material 0x0000017A591A0400 to ShaderMapsBeingCompiled
+[2017.04.17-17.41.30:586][580]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x0000017A00846B00
+[2017.04.17-17.41.30:699][580]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.17-17.41.30:700][580]LogTemp:Display: Added material ShaderMap 0x0000017A5871AB00 with Material 0x0000017A591A0400 to ShaderMapsBeingCompiled
+[2017.04.17-17.41.30:713][580]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x0000017A5871AB00
+[2017.04.17-17.41.30:713][580]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.41.30:739][580]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.17-17.41.30:740][580]LogTemp:Display: Added material ShaderMap 0x0000017A06E15D00 with Material 0x0000017A5D8DE200 to ShaderMapsBeingCompiled
+[2017.04.17-17.41.30:743][580]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x0000017A06E15D00
+[2017.04.17-17.41.30:744][580]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.04.17-17.41.30:745][580]LogTemp:Display: Added material ShaderMap 0x0000017A06E14800 with Material 0x0000017A5D8DE500 to ShaderMapsBeingCompiled
+[2017.04.17-17.41.30:748][580]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_1, GameThreadShaderMap 0x0000017A06E14800
+[2017.04.17-17.41.32:262][633]LogTemp:Display: Finished compile of shader map 0x0000017A5871AB00
+[2017.04.17-17.41.32:262][633]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x0000017A5871AB00, marking material Landscape_material_BP as finished
+[2017.04.17-17.41.32:262][633]LogTemp:Display: Marking material as finished 0x0000017A591A0400
+[2017.04.17-17.41.32:281][634]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.17-17.41.32:281][634]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.17-17.41.32:281][634]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.17-17.41.32:281][634]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.17-17.41.32:352][637]LogTemp:Display: Finished compile of shader map 0x0000017A06E15D00
+[2017.04.17-17.41.32:352][637]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x0000017A06E15D00, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.17-17.41.32:352][637]LogTemp:Display: Marking material as finished 0x0000017A5D8DE200
+[2017.04.17-17.41.32:496][643]LogTemp:Display: Finished compile of shader map 0x0000017A06E14800
+[2017.04.17-17.41.32:496][643]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_1 complete, GameThreadShaderMap 0x0000017A06E14800, marking material FMatExpressionPreview MaterialExpressionVectorParameter_1 as finished
+[2017.04.17-17.41.32:496][643]LogTemp:Display: Marking material as finished 0x0000017A5D8DE500
+[2017.04.17-17.41.34:921][763]LogMaterialEditor: Saving and Compiling material Landscape_material_BP
+[2017.04.17-17.41.34:951][763]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Landscape_material_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset" SILENT=true
+[2017.04.17-17.41.34:976][763]LogSavePackage: Save=16.03ms
+[2017.04.17-17.41.34:976][763]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Landscape_material_BPE35739BF4A2AFF6CA3FAFCAE1B6CC9DA.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset'
+[2017.04.17-17.41.34:977][763]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset
+[2017.04.17-17.41.42:098][150]LogTemp:Display: Removed shader map 0x0000017A00846B00 from material 0x0000017A591A0400
+[2017.04.17-17.41.42:358][150]LogSavePackage: Save=154.28ms
+[2017.04.17-17.41.42:358][150]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround76A92564422331DB3C2FB1A31992F04B.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap'
+[2017.04.17-17.41.42:362][150]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap
+[2017.04.17-17.41.42:398][150]LogFileHelpers: Saving map 'BattleGround' took 0.283
+[2017.04.17-17.41.48:180][495]MapCheck: New page: Map Check
+[2017.04.17-17.41.48:190][495]LightingResults: New page: Lighting Build - Apr 17, 2017, 7:41:48 PM
+[2017.04.17-17.41.48:235][495]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.17-17.41.48:284][495]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.17-17.41.48:294][495]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.17-17.41.48:805][495]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.17-17.41.48:805][495]LogSwarmInterface: [TryOpenConnection] Local Process ID is 9092
+[2017.04.17-17.41.51:027][495]LightingResults:Warning: Performance Warning No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2017.04.17-17.41.51:027][495]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.17-17.41.51:027][495]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.17-17.41.51:027][495]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.17-17.41.51:027][495]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.17-17.41.51:027][495]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.17-17.41.51:202][495]LogEditorBuildUtils: Build time 0:03
+[2017.04.17-17.41.55:675][698]Job is a success!
+[2017.04.17-17.41.55:952][700]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2017.04.17-17.41.55:952][700]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2017.04.17-17.41.55:952][700]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8)
+[2017.04.17-17.41.55:979][700]Lightmass on DESKTOP-0PEK566: 4.06 sec total, 201 ms importing, 53 ms setup, 1.48 sec photons, 2.30 sec processing, 0 ms extra exporting [50/50 mappings]. Threads: 16.0 sec total, 10.8 sec processing.
+[2017.04.17-17.41.56:013][700]LogStaticLightingSystem: Illumination: 7.80 sec (142 ms encoding lightmaps, 26 ms encoding shadowmaps)
+[2017.04.17-17.41.56:014][700]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.17-17.41.56:014][700]LogStaticLightingSystem: Shadowmap texture memory: 0.3 MB (0.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.04.17-17.41.56:031][700]DumpUnbuiltLightIteractions
+[2017.04.17-17.41.56:031][700]Lights with unbuilt interactions: 0
+[2017.04.17-17.41.56:031][700]
+[2017.04.17-17.41.56:031][700]Primitives with unbuilt interactions: 0
+[2017.04.17-17.41.56:052][701]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.17-17.41.56:052][701]MapCheck: New page: BattleGround - Apr 17, 2017, 7:41:56 PM
+[2017.04.17-17.41.56:133][701]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 80.789ms to complete.
+[2017.04.17-17.42.44:816][729]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.42.44:845][729]LogMaterial: 0.01 seconds spent updating 1 materials, 49 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.42.44:869][729]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.17-17.42.44:890][729]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.17-17.43.00:482][595]LogTexture:Display: Building textures: Texture2D_0 (BGRA8)
+[2017.04.17-17.43.00:504][595]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.17-17.43.00:512][595]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.00:513][595]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.00:516][595]LogTexture:Display: Building textures: Texture2D_2 (BGRA8)
+[2017.04.17-17.43.00:525][595]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:255][639]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:256][639]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:305][642]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:306][642]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:322][643]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:322][643]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:339][644]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:339][644]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:355][645]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:355][645]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:372][646]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:372][646]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:389][647]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:389][647]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:405][648]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:406][648]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:422][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:422][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:422][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:423][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:423][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:423][649]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:438][650]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:438][650]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:439][650]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:439][650]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:439][650]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:455][651]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:455][651]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:456][651]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:456][651]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:472][652]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:472][652]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:472][652]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:473][652]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:538][656]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:539][656]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:539][656]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:555][657]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:691][665]LogTexture:Display: Building textures: Texture2D_3 (BGRA8)
+[2017.04.17-17.43.01:697][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:697][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:699][665]LogTexture:Display: Building textures: Texture2D_4 (BGRA8)
+[2017.04.17-17.43.01:708][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:708][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:725][666]LogTexture:Display: Building textures: Texture2D_5 (BGRA8)
+[2017.04.17-17.43.01:733][666]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:733][666]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:860][674]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:860][674]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:861][674]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:861][674]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:876][675]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:876][675]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:877][675]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:877][675]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:893][676]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:893][676]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:893][676]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:909][677]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:910][677]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:926][678]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:926][678]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:942][679]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:943][679]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:959][680]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:959][680]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:976][681]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.01:976][681]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.04:241][808]LogTexture:Display: Building textures: Texture2D_5 (BGRA8)
+[2017.04.17-17.43.04:241][808]LogTexture:Display: Building textures: Texture2D_2 (BGRA8)
+[2017.04.17-17.43.04:391][808]LogSavePackage: Save=156.31ms
+[2017.04.17-17.43.04:391][808]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGroundE53BBBC8434C9A991DB5039B905637BD.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap'
+[2017.04.17-17.43.04:395][808]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap
+[2017.04.17-17.43.04:427][808]LogFileHelpers: Saving map 'BattleGround' took 0.282
+[2017.04.17-17.43.04:430][808]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BattleGround_BuiltData" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset" SILENT=true
+[2017.04.17-17.43.04:477][808]LogSavePackage: Save=45.04ms
+[2017.04.17-17.43.04:477][808]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltDataABAEB3404585AC13CF87709ECBD6E46F.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset'
+[2017.04.17-17.43.04:480][808]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround_BuiltData.uasset
+[2017.04.17-17.43.07:963][  9]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.07:991][ 10]LogTexture:Display: Building textures: Texture2D_6 (BGRA8)
+[2017.04.17-17.43.07:999][ 10]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:000][ 10]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:002][ 10]LogTexture:Display: Building textures: Texture2D_7 (BGRA8)
+[2017.04.17-17.43.08:011][ 10]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:011][ 10]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:054][ 11]LogTexture:Display: Building textures: Texture2D_8 (BGRA8)
+[2017.04.17-17.43.08:062][ 11]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:062][ 11]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:065][ 11]LogTexture:Display: Building textures: Texture2D_9 (BGRA8)
+[2017.04.17-17.43.08:075][ 11]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:075][ 11]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:143][ 13]LogTexture:Display: Building textures: Texture2D_10 (BGRA8)
+[2017.04.17-17.43.08:146][ 13]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:146][ 13]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:187][ 14]LogTexture:Display: Building textures: Texture2D_11 (BGRA8)
+[2017.04.17-17.43.08:189][ 14]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:190][ 14]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:277][ 17]LogTexture:Display: Building textures: Texture2D_12 (BGRA8)
+[2017.04.17-17.43.08:280][ 17]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:281][ 17]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:319][ 18]LogTexture:Display: Building textures: Texture2D_13 (BGRA8)
+[2017.04.17-17.43.08:321][ 18]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:406][ 21]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:406][ 21]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:514][ 27]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:514][ 27]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:515][ 27]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:531][ 28]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:531][ 28]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:548][ 29]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.08:864][ 48]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:300][134]LogTexture:Display: Building textures: Texture2D_14 (BGRA8)
+[2017.04.17-17.43.10:307][134]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:308][134]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:310][134]LogTexture:Display: Building textures: Texture2D_15 (BGRA8)
+[2017.04.17-17.43.10:318][134]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:319][134]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:339][135]LogTexture:Display: Building textures: Texture2D_16 (BGRA8)
+[2017.04.17-17.43.10:347][135]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:366][136]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.10:461][142]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.11:292][192]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.11:292][192]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.11:325][194]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.11:325][194]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.11:376][197]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:095][480]LogTexture:Display: Building textures: Texture2D_17 (BGRA8)
+[2017.04.17-17.43.16:102][480]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:103][480]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:123][481]LogTexture:Display: Building textures: Texture2D_18 (BGRA8)
+[2017.04.17-17.43.16:131][481]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:132][481]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:134][481]LogTexture:Display: Building textures: Texture2D_19 (BGRA8)
+[2017.04.17-17.43.16:143][481]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:161][482]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:161][482]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:178][483]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:179][483]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:193][484]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:194][484]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:209][485]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:209][485]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.16:224][486]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:414][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.17-17.43.19:422][665]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:423][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:426][665]LogTexture:Display: Building textures: Texture2D_20 (BGRA8)
+[2017.04.17-17.43.19:448][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.17-17.43.19:457][665]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:457][665]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:542][670]LogTexture:Display: Building textures: Texture2D_21 (BGRA8)
+[2017.04.17-17.43.19:545][670]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:545][670]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:545][670]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:558][671]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:559][671]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:725][681]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:725][681]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:742][682]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:958][695]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:959][695]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:975][696]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.19:975][696]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:242][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:242][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:258][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:258][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:274][714]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:275][714]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:325][717]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.20:325][717]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:042][760]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:043][760]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:058][761]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:059][761]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:075][762]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:075][762]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:075][762]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:076][762]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:091][763]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:092][763]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:108][764]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:341][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:342][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:342][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:342][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:343][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:360][779]LogTexture:Display: Building textures: Texture2D_22 (BGRA8)
+[2017.04.17-17.43.21:368][779]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:368][779]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:369][779]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:385][780]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:386][780]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:405][781]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:581][792]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:582][792]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:582][792]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:598][793]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:700][799]LogTexture:Display: Building textures: Texture2D_23 (BGRA8)
+[2017.04.17-17.43.21:703][799]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:704][799]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:718][800]LogTexture:Display: Building textures: Texture2D_24 (BGRA8)
+[2017.04.17-17.43.21:725][800]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:761][802]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:761][802]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:761][802]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:762][802]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:784][803]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:784][803]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:785][803]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:785][803]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:795][804]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:861][808]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:862][808]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:862][808]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:862][808]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:878][809]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:878][809]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:878][809]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:879][809]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:894][810]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.21:895][810]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:064][820]LogTexture:Display: Building textures: Texture2D_25 (BGRA8)
+[2017.04.17-17.43.22:067][820]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:067][820]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:070][820]LogTexture:Display: Building textures: Texture2D_26 (BGRA8)
+[2017.04.17-17.43.22:073][820]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:074][820]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:088][821]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:089][821]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:250][831]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:251][831]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:251][831]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:252][831]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:267][832]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:267][832]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:267][832]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:268][832]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:284][833]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:284][833]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:285][833]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:300][834]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:301][834]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:317][835]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:318][835]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:334][836]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:469][844]LogTexture:Display: Building textures: Texture2D_27 (BGRA8)
+[2017.04.17-17.43.22:472][844]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:473][844]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:475][844]LogTexture:Display: Building textures: Texture2D_28 (BGRA8)
+[2017.04.17-17.43.22:479][844]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:479][844]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:492][845]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:492][845]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:875][868]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:876][868]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:876][868]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:876][868]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:891][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:892][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:892][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:892][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:908][870]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:909][870]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:909][870]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:909][870]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:925][871]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:925][871]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:925][871]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:926][871]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:941][872]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:942][872]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:942][872]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:958][873]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.22:959][873]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.23:142][884]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.23:145][884]LogTexture:Display: Building textures: Texture2D_29 (BGRA8)
+[2017.04.17-17.43.23:149][884]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.23:513][906]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.24:054][938]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.24:437][961]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.26:323][ 74]LogTexture:Display: Building textures: Texture2D_30 (BGRA8)
+[2017.04.17-17.43.26:332][ 74]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.26:333][ 74]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.26:351][ 75]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.26:351][ 75]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.26:368][ 76]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.28:495][204]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.28:495][204]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:541][436]LogTexture:Display: Building textures: Texture2D_31 (BGRA8)
+[2017.04.17-17.43.32:549][436]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:549][436]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:591][437]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:592][437]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:617][438]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:617][438]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.32:643][439]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:041][458]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:042][458]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:058][459]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:058][459]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:075][460]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:075][460]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:091][461]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:091][461]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:108][462]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:108][462]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:125][463]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:125][463]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:158][465]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:158][465]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:175][466]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:175][466]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:344][476]LogTexture:Display: Building textures: Texture2D_32 (BGRA8)
+[2017.04.17-17.43.33:351][476]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:352][476]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:364][477]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:365][477]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:382][478]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:383][478]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:397][479]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:398][479]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.33:412][480]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:362][537]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:363][537]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:379][538]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:379][538]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:395][539]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:395][539]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.34:411][540]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:945][812]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:945][812]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:946][812]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:946][812]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:961][813]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:962][813]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:962][813]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:962][813]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:978][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:978][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:979][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.38:979][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:028][817]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:029][817]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:029][817]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:029][817]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:212][828]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:212][828]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:345][836]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:345][836]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:361][837]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:362][837]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:379][838]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:379][838]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:395][839]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:396][839]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:428][841]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:445][842]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:446][842]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.39:462][843]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.41:790][974]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.41:791][974]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.42:013][983]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.54:675][706]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:387][799]LogTexture:Display: Building textures: Texture2D_33 (BGRA8)
+[2017.04.17-17.43.56:396][799]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:396][799]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:415][800]LogTexture:Display: Building textures: Texture2D_34 (BGRA8)
+[2017.04.17-17.43.56:424][800]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:686][816]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:686][816]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:720][818]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.56:720][818]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.59:843][995]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.59:844][995]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.43.59:868][996]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.01:051][ 54]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.15:726][853]LogTexture:Display: Building textures: Texture2D_35 (BGRA8)
+[2017.04.17-17.44.15:735][853]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.16:146][878]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.16:565][903]LogTexture:Display: Building textures: Texture2D_36 (BGRA8)
+[2017.04.17-17.44.16:573][903]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.18:703][ 31]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.18:703][ 31]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.18:719][ 32]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.18:720][ 32]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.18:735][ 33]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.25:755][454]LogTexture:Display: Building textures: Texture2D_37 (BGRA8)
+[2017.04.17-17.44.25:764][454]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.25:895][462]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.27:479][557]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.30:371][723]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.34:645][967]LogTexture:Display: Building textures: Texture2D_38 (BGRA8)
+[2017.04.17-17.44.34:654][967]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.38:384][178]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.40:101][281]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.45:438][588]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.46:974][680]LogTexture:Display: Building textures: Texture2D_39 (BGRA8)
+[2017.04.17-17.44.46:984][680]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:513][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:513][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:529][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:529][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:646][720]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.47:647][720]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.49:415][826]LogTexture:Display: Building textures: Texture2D_40 (BGRA8)
+[2017.04.17-17.44.49:424][826]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.49:424][826]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.49:800][849]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:123][ 37]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:123][ 37]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:139][ 38]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:140][ 38]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:156][ 39]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:156][ 39]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.53:172][ 40]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.55:946][198]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.44.58:205][325]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.01:348][501]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:492][857]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:492][857]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:508][858]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:509][858]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:524][859]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:525][859]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:558][861]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:558][861]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:641][866]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:642][866]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:658][867]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.07:658][867]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.29:345][145]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.29:345][145]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.29:346][145]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.30:361][206]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.34:457][451]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:116][711]LogTexture:Display: Building textures: Texture2D_41 (BGRA8)
+[2017.04.17-17.45.39:125][711]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:125][711]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:139][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:139][712]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:156][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:157][713]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:172][714]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:172][714]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:187][715]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:187][715]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:203][716]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:203][716]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:269][720]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:270][720]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:286][721]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:287][721]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:303][722]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:303][722]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:319][723]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:320][723]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:336][724]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:336][724]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:469][732]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:470][732]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:486][733]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:486][733]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.39:503][734]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:237][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:237][778]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:254][779]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:254][779]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:270][780]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:270][780]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:286][781]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:286][781]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:303][782]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:303][782]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:319][783]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:320][783]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:336][784]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:337][784]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:353][785]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:353][785]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:369][786]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:370][786]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:386][787]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.40:387][787]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.45:884][116]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.49:827][352]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.50:310][381]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.50:311][381]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.50:326][382]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:128][609]LogTexture:Display: Building textures: Texture2D_42 (BGRA8)
+[2017.04.17-17.45.54:136][609]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:137][609]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:151][610]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:151][610]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:169][611]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:169][611]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:184][612]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:185][612]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:200][613]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:200][613]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:215][614]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:216][614]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:231][615]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:231][615]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:247][616]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:397][625]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:398][625]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.45.54:414][626]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.46.19:055][990]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.46.28:579][560]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.46.39:111][179]LogTexture:Display: Building textures: Texture2D_36 (BGRA8)
+[2017.04.17-17.46.39:111][179]LogTexture:Display: Building textures: Texture2D_35 (BGRA8)
+[2017.04.17-17.46.39:112][179]LogTexture:Display: Building textures: Texture2D_37 (BGRA8)
+[2017.04.17-17.46.39:112][179]LogTexture:Display: Building textures: Texture2D_32 (BGRA8)
+[2017.04.17-17.46.39:113][179]LogTexture:Display: Building textures: Texture2D_34 (BGRA8)
+[2017.04.17-17.46.39:113][179]LogTexture:Display: Building textures: Texture2D_2 (BGRA8)
+[2017.04.17-17.46.39:113][179]LogTexture:Display: Building textures: Texture2D_16 (BGRA8)
+[2017.04.17-17.46.39:114][179]LogTexture:Display: Building textures: Texture2D_5 (BGRA8)
+[2017.04.17-17.46.39:114][179]LogTexture:Display: Building textures: Texture2D_38 (BGRA8)
+[2017.04.17-17.46.39:114][179]LogTexture:Display: Building textures: Texture2D_28 (BGRA8)
+[2017.04.17-17.46.39:115][179]LogTexture:Display: Building textures: Texture2D_26 (BGRA8)
+[2017.04.17-17.46.39:115][179]LogTexture:Display: Building textures: Texture2D_24 (BGRA8)
+[2017.04.17-17.46.39:116][179]LogTexture:Display: Building textures: Texture2D_42 (BGRA8)
+[2017.04.17-17.46.39:116][179]LogTexture:Display: Building textures: Texture2D_29 (BGRA8)
+[2017.04.17-17.46.39:116][179]LogTexture:Display: Building textures: Texture2D_30 (BGRA8)
+[2017.04.17-17.46.39:117][179]LogTexture:Display: Building textures: Texture2D_40 (BGRA8)
+[2017.04.17-17.46.39:117][179]LogTexture:Display: Building textures: Texture2D_31 (BGRA8)
+[2017.04.17-17.46.39:117][179]LogTexture:Display: Building textures: Texture2D_22 (BGRA8)
+[2017.04.17-17.46.39:118][179]LogTexture:Display: Building textures: Texture2D_41 (BGRA8)
+[2017.04.17-17.46.39:118][179]LogTexture:Display: Building textures: Texture2D_19 (BGRA8)
+[2017.04.17-17.46.39:119][179]LogTexture:Display: Building textures: Texture2D_13 (BGRA8)
+[2017.04.17-17.46.39:119][179]LogTexture:Display: Building textures: Texture2D_21 (BGRA8)
+[2017.04.17-17.46.39:120][179]LogTexture:Display: Building textures: Texture2D_20 (BGRA8)
+[2017.04.17-17.46.39:120][179]LogTexture:Display: Building textures: Texture2D_39 (BGRA8)
+[2017.04.17-17.46.39:323][179]LogSavePackage: Save=219.57ms
+[2017.04.17-17.46.39:323][179]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround5F00E90B45A362E3E6834181CBB1EFBC.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap'
+[2017.04.17-17.46.39:327][179]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/BattleGround.umap
+[2017.04.17-17.46.39:368][179]LogFileHelpers: Saving map 'BattleGround' took 0.359
+[2017.04.17-17.46.42:359][340]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.17-17.46.42:360][340]LogTemp:Display: Added material ShaderMap 0x0000017A75C90B80 with Material 0x0000017A46B62480 to ShaderMapsBeingCompiled
+[2017.04.17-17.46.42:373][340]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x0000017A75C90B80
+[2017.04.17-17.46.42:485][340]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.17-17.46.42:486][340]LogTemp:Display: Added material ShaderMap 0x0000017A65070800 with Material 0x0000017A46B62480 to ShaderMapsBeingCompiled
+[2017.04.17-17.46.42:499][340]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x0000017A65070800
+[2017.04.17-17.46.42:499][340]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.17-17.46.42:528][340]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.17-17.46.42:529][340]LogTemp:Display: Added material ShaderMap 0x0000017A77194100 with Material 0x0000017A74FD0400 to ShaderMapsBeingCompiled
+[2017.04.17-17.46.42:532][340]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x0000017A77194100
+[2017.04.17-17.46.42:533][340]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.04.17-17.46.42:534][340]LogTemp:Display: Added material ShaderMap 0x0000017A69F3D980 with Material 0x0000017A74FD0A00 to ShaderMapsBeingCompiled
+[2017.04.17-17.46.42:536][340]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_1, GameThreadShaderMap 0x0000017A69F3D980
+[2017.04.17-17.46.44:029][395]LogTemp:Display: Finished compile of shader map 0x0000017A65070800
+[2017.04.17-17.46.44:029][395]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x0000017A65070800, marking material Landscape_material_BP as finished
+[2017.04.17-17.46.44:029][395]LogTemp:Display: Marking material as finished 0x0000017A46B62480
+[2017.04.17-17.46.44:126][400]LogTemp:Display: Finished compile of shader map 0x0000017A77194100
+[2017.04.17-17.46.44:126][400]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x0000017A77194100, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.17-17.46.44:126][400]LogTemp:Display: Marking material as finished 0x0000017A74FD0400
+[2017.04.17-17.46.44:253][407]LogTemp:Display: Finished compile of shader map 0x0000017A69F3D980
+[2017.04.17-17.46.44:253][407]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_1 complete, GameThreadShaderMap 0x0000017A69F3D980, marking material FMatExpressionPreview MaterialExpressionVectorParameter_1 as finished
+[2017.04.17-17.46.44:253][407]LogTemp:Display: Marking material as finished 0x0000017A74FD0A00
+[2017.04.17-17.46.44:737][436]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.17-17.46.44:737][436]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.17-17.46.44:737][436]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.17-17.46.44:737][436]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.17-17.46.51:134][754]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.17-17.46.51:153][754]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.17-17.46.51:153][754]PIE: New page: PIE session: BattleGround (Apr 17, 2017, 7:46:51 PM)
+[2017.04.17-17.46.51:153][754]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_BattleGround
+[2017.04.17-17.46.51:164][754]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010374s)
+[2017.04.17-17.46.51:164][754]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.17-17.46.51:165][754]LogPlayLevel: PIE: World Init took: (0.000970s)
+[2017.04.17-17.46.51:165][754]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/BattleGround.BattleGround to /Game/UEDPIE_0_BattleGround.BattleGround (0.011615s)
+[2017.04.17-17.46.51:180][754]LogTemp:Display: Removed shader map 0x0000017A75C90B80 from material 0x0000017A46B62480
+[2017.04.17-17.46.51:185][754]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.17-17.46.51:193][754]LogInit: FAudioDevice initialized.
+[2017.04.17-17.46.51:229][754]LogLoad: Game class is 'GameModeBase'
+[2017.04.17-17.46.51:235][754]LogWorld: Bringing World /Game/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.04.17-18.46.51
+[2017.04.17-17.46.51:235][754]LogWorld: Bringing up level for play took: 0.005653
+[2017.04.17-17.46.51:238][754]PIE: Info Play in editor start time for /Game/UEDPIE_0_BattleGround -0.663
+[2017.04.17-17.47.24:238][663]Cmd: QUIT_EDITOR
+[2017.04.17-17.47.24:488][663]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.17-17.47.24:520][663]LogExit: Preparing to exit.
+[2017.04.17-17.47.25:545][663]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.17-17.47.25:580][663]LogExit: Editor shut down
+[2017.04.17-17.47.25:580][663]LogExit: Transaction tracking system shut down
+[2017.04.17-17.47.25:692][663]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.17-17.47.25:692][663]LogExit: Object subsystem successfully closed.
+[2017.04.17-17.47.25:716][663]LogD3D11RHI: Shutdown
+[2017.04.17-17.47.25:716][663]LogD3D11RHI: CleanupD3DDevice
+[2017.04.17-17.47.25:800][663]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.17-17.47.25:825][663]LogModuleManager: Shutting down and abandoning module MaterialEditor (510)
+[2017.04.17-17.47.25:826][663]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (508)
+[2017.04.17-17.47.25:826][663]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (506)
+[2017.04.17-17.47.25:826][663]LogModuleManager: Shutting down and abandoning module BlueprintGraph (504)
+[2017.04.17-17.47.25:826][663]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (502)
+[2017.04.17-17.47.25:827][663]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (500)
+[2017.04.17-17.47.25:827][663]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.04.17-17.47.25:827][663]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.04.17-17.47.25:827][663]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.04.17-17.47.25:827][663]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.17-17.47.25:827][663]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.17-17.47.25:828][663]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' was aborted.
+[2017.04.17-17.47.25:828][663]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' was aborted.
+[2017.04.17-17.47.25:828][663]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' was aborted.
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.04.17-17.47.25:828][663]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.04.17-17.47.25:829][663]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.04.17-17.47.26:478][663]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.04.17-17.47.26:479][663]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.04.17-17.47.26:522][663]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.04.17-17.47.26:529][663]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.04.17-17.47.26:538][663]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.04.17-17.47.26:539][663]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.04.17-17.47.26:540][663]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.04.17-17.47.26:540][663]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.04.17-17.47.26:540][663]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.04.17-17.47.26:540][663]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Binaries/Win64' was aborted.
+[2017.04.17-17.47.26:540][663]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.04.17-17.47.26:541][663]LogModuleManager: Shutting down and abandoning module BattleTank (222)
+[2017.04.17-17.47.26:541][663]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.04.17-17.47.26:541][663]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.04.17-17.47.26:541][663]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.04.17-17.47.26:541][663]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.04.17-17.47.26:642][663]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.04.17-17.47.26:743][663]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.04.17-17.47.26:747][663]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.04.17-17.47.26:901][663]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.17-17.47.26:901][663]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.17-17.47.26:901][663]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.17-17.47.26:901][663]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.04.17-17.47.26:901][663]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.04.17-17.47.26:901][663]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.04.17-17.47.26:901][663]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.04.17-17.47.26:902][663]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.04.17-17.47.26:902][663]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.04.17-17.47.26:902][663]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.04.17-17.47.26:902][663]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.04.17-17.47.26:902][663]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.04.17-17.47.26:938][663]LogDerivedDataCache: Shutdown
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.04.17-17.47.26:938][663]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.17-17.47.26:939][663]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.17-17.47.26:939][663]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.17-17.47.26:939][663]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.17-17.47.26:939][663]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B94AD0ABE-4FE0-8675-5019-9BAF2E8AA0E0%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=7c76bde54574978307451eb1166a1f79%7C58448bdb2ce4468ba1b793c4adc2bec4%7C1fb00c8d-b537-477f-9d94-6fe8d09492ec&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.17-17.47.26:960][663]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.17-17.47.26:961][663]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.17-17.47.26:961][663]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.17-17.47.26:961][663]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.17-17.47.26:961][663]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.17-17.47.26:961][663]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.17-17.47.26:964][663]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.17-17.47.26:966][663]LogExit: Exiting.
+[2017.04.17-17.47.26:983][663]Log file closed, 04/17/17 18:47:26
