@@ -1,0 +1,1079 @@
+﻿Log file open, 04/19/17 12:49:10
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1228807983) SRandInit(-1228807983).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.068807
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.19-11.49.11:572][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.19-11.49.11:572][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.19-11.49.11:580][  0]LogInit: Computer: DESKTOP-7RIOMGQ
+[2017.04.19-11.49.11:580][  0]LogInit: User: Ed
+[2017.04.19-11.49.11:580][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.19-11.49.11:580][  0]LogInit: High frequency timer resolution =3.421869 MHz
+[2017.04.19-11.49.11:580][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.04.19-11.49.11:580][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.19-11.49.11:580][  0]LogMemory: Process Physical Memory: 263.21 MB used, 263.21 MB peak
+[2017.04.19-11.49.11:580][  0]LogMemory: Process Virtual Memory: 262.38 MB used, 262.38 MB peak
+[2017.04.19-11.49.11:580][  0]LogMemory: Physical Memory: 5679.12 MB used,  10661.86 MB free, 16340.98 MB total
+[2017.04.19-11.49.11:580][  0]LogMemory: Virtual Memory: 643.96 MB used,  10661.86 MB free, 134217728.00 MB total
+[2017.04.19-11.49.11:635][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.04.19-11.49.12:061][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.19-11.49.12:076][  0]LogD3D11RHI:    0. 'Radeon (TM) RX 480 Graphics' (Feature Level 11_0)
+[2017.04.19-11.49.12:076][  0]LogD3D11RHI:       8140/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.19-11.49.12:077][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.19-11.49.12:077][  0]LogD3D11RHI:       0/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.19-11.49.12:077][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.19-11.49.12:080][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.19-11.49.12:080][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2017.04.19-11.49.12:080][  0]LogWindows: EnumDisplayDevices:
+[2017.04.19-11.49.12:080][  0]LogWindows:    0. 'Radeon (TM) RX 480 Graphics' (P:1 D:1)
+[2017.04.19-11.49.12:080][  0]LogWindows:    1. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-11.49.12:080][  0]LogWindows:    2. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-11.49.12:080][  0]LogWindows:    3. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-11.49.12:080][  0]LogWindows:    4. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-11.49.12:081][  0]LogWindows:    5. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-11.49.12:081][  0]LogWindows: DebugString: FoundDriverCount:6 
+[2017.04.19-11.49.12:081][  0]LogD3D11RHI:     Adapter Name: Radeon (TM) RX 480 Graphics
+[2017.04.19-11.49.12:081][  0]LogD3D11RHI:   Driver Version: Crimson 16.7.2 (internal:16.200.1035.1001, unified:16.200.1035.1001)
+[2017.04.19-11.49.12:081][  0]LogD3D11RHI:      Driver Date: 7-8-2016
+[2017.04.19-11.49.12:081][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.19-11.49.12:127][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.19-11.49.12:137][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2017.04.19-11.49.12:137][  0]LogShaderCompilers: Guid format shader working directory is -34 characters bigger than the processId version (../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/8480/).
+[2017.04.19-11.49.12:137][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ed/AppData/Local/Temp/UnrealShaderWorkingDir/7DA76CB946867CF4911A9C9211646DB6/'.
+[2017.04.19-11.49.12:137][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.19-11.49.12:877][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.19-11.49.12:915][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.19-11.49.12:953][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.19-11.49.12:991][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.19-11.49.13:029][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.19-11.49.13:068][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.19-11.49.13:105][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.19-11.49.13:143][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.19-11.49.13:174][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.19-11.49.13:210][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.19-11.49.13:248][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.19-11.49.13:285][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.19-11.49.13:322][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.19-11.49.13:359][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.19-11.49.13:396][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.19-11.49.13:471][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.19-11.49.13:471][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.19-11.49.13:495][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.19-11.49.13:570][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.19-11.49.13:595][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.19-11.49.13:639][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.19-11.49.13:677][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.19-11.49.13:713][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.19-11.49.13:750][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.19-11.49.13:750][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.19-11.49.14:036][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.19-11.49.14:072][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.19-11.49.14:085][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.19-11.49.14:097][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.19-11.49.14:103][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.19-11.49.14:104][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.19-11.49.14:104][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.19-11.49.14:278][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.19-11.49.14:280][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.19-11.49.14:421][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.19-11.49.14:449][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.19-11.49.14:479][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.19-11.49.14:479][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.19-11.49.14:479][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.19-11.49.14:840][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.19-11.49.14:876][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2017.04.19-11.49.14:909][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.018872 seconds
+[2017.04.19-11.49.14:913][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.19-11.49.14:913][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.04.19-11.49.14:913][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.19-11.49.14:954][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.19-11.49.15:999][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.19-11.49.16:028][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.19-11.49.16:368][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.19-11.49.16:614][  0]SourceControl: Info Source control is disabled
+[2017.04.19-11.49.16:633][  0]SourceControl: Info Source control is disabled
+[2017.04.19-11.49.16:662][  0]SourceControl: Info Source control is disabled
+[2017.04.19-11.49.16:691][  0]SourceControl: Info Source control is disabled
+[2017.04.19-11.49.17:491][  0]LogEngine: Initializing Engine...
+[2017.04.19-11.49.17:491][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.19-11.49.17:648][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.19-11.49.17:656][  0]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-11.49.17:662][  0]LogInit: FAudioDevice initialized.
+[2017.04.19-11.49.17:679][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.19-11.49.17:686][  0]LogInit: Texture streaming: Enabled
+[2017.04.19-11.49.17:749][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.19-11.49.17:749][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={6A73A0D9-4DD0-FCBA-DC48-E6AFC8CDBD32}
+[2017.04.19-11.49.17:805][  0]LogInit: Transaction tracking system initialized
+[2017.04.19-11.49.18:026][  0]BlueprintLog: New page: Editor Load
+[2017.04.19-11.49.18:590][  0]LocalizationService: Info Localization service is disabled
+[2017.04.19-11.49.19:018][  0]LogConsoleResponse:Display: 
+[2017.04.19-11.49.19:103][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.19-11.49.19:103][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.19-11.49.19:755][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.01s
+[2017.04.19-11.49.19:755][  0]SourceControl: Info Source control is disabled
+[2017.04.19-11.49.19:755][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.19-11.49.19:756][  0]LightingResults: New page: Lighting Build
+[2017.04.19-11.49.19:782][  0]MapCheck: New page: Map Check
+[2017.04.19-11.49.19:782][  0]LightingResults: New page: Lighting Build
+[2017.04.19-11.49.19:997][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-11.49.20:027][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.19-11.49.20:027][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.19-11.49.20:058][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 30.777ms to complete.
+[2017.04.19-11.49.20:058][  0]LogFileHelpers: Loading map 'BattleGround' took 0.302
+[2017.04.19-11.49.20:208][  0]LogCollectionManager: Loaded 1 collections in 0.001043 seconds
+[2017.04.19-11.49.20:279][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.19-11.49.20:279][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Ed/Collections/' took 0.01s
+[2017.04.19-11.49.20:279][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.19-11.49.20:279][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000005 seconds
+[2017.04.19-11.49.20:279][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.04.19-11.49.20:287][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2248 classes and 456 folders.
+[2017.04.19-11.49.20:289][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.19-11.49.20:289][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.19-11.49.20:332][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.04.19-11.49.20:356][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.04.19-11.49.20:387][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0012 seconds. Added 1 classes and 2 folders.
+[2017.04.19-11.49.20:406][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.19-11.49.20:410][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.19-11.49.20:460][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.04.19-11.49.20:460][  0]LogLoad: (Engine Initialization) Total time: 10.20 seconds
+[2017.04.19-11.49.20:460][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.07 seconds
+[2017.04.19-11.49.20:460][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.19-11.49.20:800][  0]LogOcInput: OculusInput pre-init called
+[2017.04.19-11.49.20:812][  0]LogAssetRegistry: Asset discovery search completed in 5.9564 seconds
+[2017.04.19-11.49.20:812][  0]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000003 seconds (found 0 objects)
+[2017.04.19-11.49.20:812][  0]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000015 seconds (updated 0 objects)
+[2017.04.19-11.49.20:815][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.19-11.49.20:822][  0]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.19-11.49.20:824][  0]LogSlate: Took 0.000127 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.19-11.49.20:828][  0]LogSlate: Took 0.000110 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.19-11.49.21:150][  2]LogRenderer: Reallocating scene render targets to support 856x828 NumSamples 1 (Frame:2).
+[2017.04.19-11.49.30:496][969]MapCheck: New page: Map Check
+[2017.04.19-11.49.30:512][969]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.19-11.49.30:512][969]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.19-11.49.30:575][969]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.19-11.49.30:577][969]LogTemp:Display: Added material ShaderMap 0x000001DACA395980 with Material 0x000001DAC9BBDF00 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.30:580][969]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001DACA395980
+[2017.04.19-11.49.30:582][969]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, compiling. 
+[2017.04.19-11.49.30:583][969]LogTemp:Display: Added material ShaderMap 0x000001DACA395280 with Material 0x000001DAABAF1F00 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.30:584][969]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, GameThreadShaderMap 0x000001DACA395280
+[2017.04.19-11.49.30:586][969]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy LandscapeGizmo_Mat, compiling. 
+[2017.04.19-11.49.30:587][969]LogTemp:Display: Added material ShaderMap 0x000001DACA394480 with Material 0x000001DABECFDC00 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.30:588][969]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy LandscapeGizmo_Mat, GameThreadShaderMap 0x000001DACA394480
+[2017.04.19-11.49.30:590][969]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MatineeCam_mat, compiling. 
+[2017.04.19-11.49.30:590][969]LogTemp:Display: Added material ShaderMap 0x000001DAAC249600 with Material 0x000001DAABB69000 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.30:592][969]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MatineeCam_mat, GameThreadShaderMap 0x000001DAAC249600
+[2017.04.19-11.49.30:729][969]LogTemp:Display: Finished compile of shader map 0x000001DACA395980
+[2017.04.19-11.49.30:729][969]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001DACA395980, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.19-11.49.30:729][969]LogTemp:Display: Marking material as finished 0x000001DAC9BBDF00
+[2017.04.19-11.49.30:815][969]LogTemp:Display: Finished compile of shader map 0x000001DAAC249600
+[2017.04.19-11.49.30:815][969]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MatineeCam_mat complete, GameThreadShaderMap 0x000001DAAC249600, marking material FDebugViewModeMaterialProxy MatineeCam_mat as finished
+[2017.04.19-11.49.30:815][969]LogTemp:Display: Marking material as finished 0x000001DAABB69000
+[2017.04.19-11.49.30:828][969]LogTemp:Display: Finished compile of shader map 0x000001DACA394480
+[2017.04.19-11.49.30:828][969]LogTemp:Display: Shader map FDebugViewModeMaterialProxy LandscapeGizmo_Mat complete, GameThreadShaderMap 0x000001DACA394480, marking material FDebugViewModeMaterialProxy LandscapeGizmo_Mat as finished
+[2017.04.19-11.49.30:828][969]LogTemp:Display: Marking material as finished 0x000001DABECFDC00
+[2017.04.19-11.49.30:883][969]LogTemp:Display: Finished compile of shader map 0x000001DACA395280
+[2017.04.19-11.49.30:883][969]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 complete, GameThreadShaderMap 0x000001DACA395280, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 as finished
+[2017.04.19-11.49.30:883][969]LogTemp:Display: Marking material as finished 0x000001DAABAF1F00
+[2017.04.19-11.49.30:884][969]TextureStreamingBuild:Display: Compiling optional shaders took 0.315 seconds.
+[2017.04.19-11.49.30:906][969]LogLevel:Display: Export Material TexCoord Scales took 0.022 seconds.
+[2017.04.19-11.49.30:909][969]TextureStreamingBuild:Display: Build Texture Streaming took 0.002 seconds.
+[2017.04.19-11.49.30:917][969]LightingResults: New page: Lighting Build - 19 Apr 2017 13:49:30
+[2017.04.19-11.49.30:978][969]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.19-11.49.31:059][969]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.19-11.49.31:067][969]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.19-11.49.31:578][969]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.19-11.49.31:578][969]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8480
+[2017.04.19-11.49.34:881][969]LightingResults:Warning: Performance Warning No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2017.04.19-11.49.34:881][969]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.19-11.49.34:881][969]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.19-11.49.34:881][969]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.19-11.49.34:881][969]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.19-11.49.34:881][969]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.19-11.49.34:963][969]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.19-11.49.34:963][969]MapCheck: New page: BattleGround - 19 Apr 2017 13:49:34
+[2017.04.19-11.49.34:991][969]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 27.769ms to complete.
+[2017.04.19-11.49.35:012][969]LogEditorBuildUtils: Build time 0:04
+[2017.04.19-11.49.35:030][969]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0, compiling. 
+[2017.04.19-11.49.35:031][969]LogTemp:Display: Added material ShaderMap 0x000001DAABDDB580 with Material 0x000001DAABBAAB00 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:034][969]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0, GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:036][969]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0, compiling. 
+[2017.04.19-11.49.35:036][969]LogTemp:Display: Added material ShaderMap 0x000001DAABDD9980 with Material 0x000001DAABBA9900 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:038][969]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0, GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:055][970]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC9587D00
+[2017.04.19-11.49.35:055][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:057][970]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC9648D00
+[2017.04.19-11.49.35:057][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:058][970]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC9649900
+[2017.04.19-11.49.35:058][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:060][970]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC964A200
+[2017.04.19-11.49.35:060][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:061][970]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC964B400
+[2017.04.19-11.49.35:061][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:063][970]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC964BD00
+[2017.04.19-11.49.35:063][970]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:075][971]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC95F6E00
+[2017.04.19-11.49.35:075][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:077][971]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC95F6500
+[2017.04.19-11.49.35:077][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:078][971]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC95F5C00
+[2017.04.19-11.49.35:078][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:079][971]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC95F5300
+[2017.04.19-11.49.35:080][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:081][971]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC95F4A00
+[2017.04.19-11.49.35:081][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:082][971]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC95F4100
+[2017.04.19-11.49.35:082][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:084][971]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC95DBD00
+[2017.04.19-11.49.35:084][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:085][971]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC95DB400
+[2017.04.19-11.49.35:085][971]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:098][972]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC95D9000
+[2017.04.19-11.49.35:098][972]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:099][972]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC95D8700
+[2017.04.19-11.49.35:099][972]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:101][972]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, compiling. 
+[2017.04.19-11.49.35:102][972]LogTemp:Display: Added material ShaderMap 0x000001DABB5E8100 with Material 0x000001DAC9585900 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:103][972]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, GameThreadShaderMap 0x000001DABB5E8100
+[2017.04.19-11.49.35:105][972]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, compiling. 
+[2017.04.19-11.49.35:106][972]LogTemp:Display: Added material ShaderMap 0x000001DACA397200 with Material 0x000001DAC9586500 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:107][972]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18, GameThreadShaderMap 0x000001DACA397200
+[2017.04.19-11.49.35:119][973]LogTemp:Display: Added shader map 0x000001DABB5E8100 from material 0x000001DA93AF7A00
+[2017.04.19-11.49.35:119][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20, linking to other GameThreadShaderMap 0x000001DABB5E8100
+[2017.04.19-11.49.35:120][973]LogTemp:Display: Added shader map 0x000001DACA397200 from material 0x000001DA93AF7100
+[2017.04.19-11.49.35:120][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20, linking to other GameThreadShaderMap 0x000001DACA397200
+[2017.04.19-11.49.35:121][973]LogTemp:Display: Added shader map 0x000001DABB5E8100 from material 0x000001DA93AF6800
+[2017.04.19-11.49.35:121][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22, linking to other GameThreadShaderMap 0x000001DABB5E8100
+[2017.04.19-11.49.35:122][973]LogTemp:Display: Added shader map 0x000001DACA397200 from material 0x000001DA93AF5F00
+[2017.04.19-11.49.35:122][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22, linking to other GameThreadShaderMap 0x000001DACA397200
+[2017.04.19-11.49.35:124][973]LogTemp:Display: Added shader map 0x000001DABB5E8100 from material 0x000001DA93AF5600
+[2017.04.19-11.49.35:124][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24, linking to other GameThreadShaderMap 0x000001DABB5E8100
+[2017.04.19-11.49.35:125][973]LogTemp:Display: Added shader map 0x000001DACA397200 from material 0x000001DA93AF4D00
+[2017.04.19-11.49.35:125][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24, linking to other GameThreadShaderMap 0x000001DACA397200
+[2017.04.19-11.49.35:126][973]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DA93AF4400
+[2017.04.19-11.49.35:126][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:128][973]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC9729000
+[2017.04.19-11.49.35:128][973]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:140][974]LogTemp:Display: Added shader map 0x000001DABB5E8100 from material 0x000001DAC9639F00
+[2017.04.19-11.49.35:140][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28, linking to other GameThreadShaderMap 0x000001DABB5E8100
+[2017.04.19-11.49.35:141][974]LogTemp:Display: Added shader map 0x000001DACA397200 from material 0x000001DAC9639600
+[2017.04.19-11.49.35:141][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28, linking to other GameThreadShaderMap 0x000001DACA397200
+[2017.04.19-11.49.35:143][974]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC9638D00
+[2017.04.19-11.49.35:143][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:144][974]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC9638400
+[2017.04.19-11.49.35:144][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:145][974]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC963A800
+[2017.04.19-11.49.35:145][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:147][974]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC963B100
+[2017.04.19-11.49.35:147][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:148][974]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC968FD00
+[2017.04.19-11.49.35:148][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:149][974]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC968F400
+[2017.04.19-11.49.35:149][974]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:160][975]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC968D000
+[2017.04.19-11.49.35:160][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:161][975]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC968C700
+[2017.04.19-11.49.35:161][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:163][975]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC968D600
+[2017.04.19-11.49.35:163][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:164][975]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC968DF00
+[2017.04.19-11.49.35:164][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:165][975]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC963A200
+[2017.04.19-11.49.35:165][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:167][975]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC968B700
+[2017.04.19-11.49.35:167][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:168][975]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC968AE00
+[2017.04.19-11.49.35:168][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:169][975]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC968A500
+[2017.04.19-11.49.35:169][975]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:181][976]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DAC9688100
+[2017.04.19-11.49.35:181][976]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:182][976]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DAC9688D00
+[2017.04.19-11.49.35:182][976]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:184][976]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, compiling. 
+[2017.04.19-11.49.35:185][976]LogTemp:Display: Added material ShaderMap 0x000001DAC9624480 with Material 0x000001DAC9689600 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:186][976]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:188][976]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, compiling. 
+[2017.04.19-11.49.35:189][976]LogTemp:Display: Added material ShaderMap 0x000001DAC9626B00 with Material 0x000001DABB5AA800 to ShaderMapsBeingCompiled
+[2017.04.19-11.49.35:190][976]LogTemp:Display: Kicking off shader compilation for FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46, GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:201][977]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB56BA00
+[2017.04.19-11.49.35:201][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:202][977]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB56B100
+[2017.04.19-11.49.35:202][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:203][977]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB56A800
+[2017.04.19-11.49.35:203][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:205][977]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB569F00
+[2017.04.19-11.49.35:205][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:206][977]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB569600
+[2017.04.19-11.49.35:206][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:207][977]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB568D00
+[2017.04.19-11.49.35:207][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:209][977]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB568400
+[2017.04.19-11.49.35:209][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:210][977]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB5A8100
+[2017.04.19-11.49.35:210][977]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:222][978]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB55DC00
+[2017.04.19-11.49.35:222][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:224][978]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB55D300
+[2017.04.19-11.49.35:224][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:225][978]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB55CA00
+[2017.04.19-11.49.35:225][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:226][978]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB55C100
+[2017.04.19-11.49.35:226][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:228][978]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB5A8400
+[2017.04.19-11.49.35:228][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:229][978]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB5A8D00
+[2017.04.19-11.49.35:229][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:231][978]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB55E800
+[2017.04.19-11.49.35:231][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:232][978]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB55F100
+[2017.04.19-11.49.35:232][978]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:241][979]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB561C00
+[2017.04.19-11.49.35:241][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:243][979]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB561300
+[2017.04.19-11.49.35:243][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:244][979]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB560A00
+[2017.04.19-11.49.35:244][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_66, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:245][979]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB560100
+[2017.04.19-11.49.35:245][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_66, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:247][979]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB562800
+[2017.04.19-11.49.35:247][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_68, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:248][979]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB563100
+[2017.04.19-11.49.35:248][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_68, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:249][979]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB55B700
+[2017.04.19-11.49.35:249][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_70, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:251][979]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB55AE00
+[2017.04.19-11.49.35:251][979]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_70, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:262][980]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB558A00
+[2017.04.19-11.49.35:262][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_72, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:263][980]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB558100
+[2017.04.19-11.49.35:263][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_72, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:265][980]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB559600
+[2017.04.19-11.49.35:265][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_74, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:266][980]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB559F00
+[2017.04.19-11.49.35:266][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_74, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:268][980]LogTemp:Display: Added shader map 0x000001DAC9624480 from material 0x000001DABB54F700
+[2017.04.19-11.49.35:268][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_76, linking to other GameThreadShaderMap 0x000001DAC9624480
+[2017.04.19-11.49.35:269][980]LogTemp:Display: Added shader map 0x000001DAC9626B00 from material 0x000001DABB54EE00
+[2017.04.19-11.49.35:269][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_76, linking to other GameThreadShaderMap 0x000001DAC9626B00
+[2017.04.19-11.49.35:270][980]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB54E500
+[2017.04.19-11.49.35:271][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_78, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:272][980]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB54DC00
+[2017.04.19-11.49.35:272][980]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_78, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:281][981]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB553A00
+[2017.04.19-11.49.35:281][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_80, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:282][981]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB553100
+[2017.04.19-11.49.35:282][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_80, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:283][981]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB552800
+[2017.04.19-11.49.35:283][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_82, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:285][981]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB551F00
+[2017.04.19-11.49.35:285][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_82, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:286][981]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB551600
+[2017.04.19-11.49.35:286][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_84, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:287][981]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB550D00
+[2017.04.19-11.49.35:287][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_84, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:289][981]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB550400
+[2017.04.19-11.49.35:289][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_86, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:290][981]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB54C100
+[2017.04.19-11.49.35:290][981]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_86, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:299][982]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB545C00
+[2017.04.19-11.49.35:299][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_88, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:300][982]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB545300
+[2017.04.19-11.49.35:300][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_88, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:302][982]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB544A00
+[2017.04.19-11.49.35:302][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_90, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:303][982]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB544100
+[2017.04.19-11.49.35:303][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_90, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:305][982]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB54C400
+[2017.04.19-11.49.35:305][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_92, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:306][982]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB54CD00
+[2017.04.19-11.49.35:306][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_92, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:307][982]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB546800
+[2017.04.19-11.49.35:307][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_94, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:308][982]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB547100
+[2017.04.19-11.49.35:308][982]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_94, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:318][983]LogTemp:Display: Added shader map 0x000001DAABDDB580 from material 0x000001DABB541C00
+[2017.04.19-11.49.35:318][983]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_96, linking to other GameThreadShaderMap 0x000001DAABDDB580
+[2017.04.19-11.49.35:319][983]LogTemp:Display: Added shader map 0x000001DAABDD9980 from material 0x000001DABB541300
+[2017.04.19-11.49.35:319][983]LogTemp:Display: Found existing compiling shader for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_96, linking to other GameThreadShaderMap 0x000001DAABDD9980
+[2017.04.19-11.49.35:892][983]LogTemp:Display: Finished compile of shader map 0x000001DAABDD9980
+[2017.04.19-11.49.35:892][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 as finished
+[2017.04.19-11.49.35:892][983]LogTemp:Display: Marking material as finished 0x000001DAABBA9900
+[2017.04.19-11.49.35:893][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2 as finished
+[2017.04.19-11.49.35:893][983]LogTemp:Display: Marking material as finished 0x000001DAC9648D00
+[2017.04.19-11.49.35:893][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4 as finished
+[2017.04.19-11.49.35:893][983]LogTemp:Display: Marking material as finished 0x000001DAC964A200
+[2017.04.19-11.49.35:894][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6 as finished
+[2017.04.19-11.49.35:894][983]LogTemp:Display: Marking material as finished 0x000001DAC964BD00
+[2017.04.19-11.49.35:894][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8 as finished
+[2017.04.19-11.49.35:894][983]LogTemp:Display: Marking material as finished 0x000001DAC95F6500
+[2017.04.19-11.49.35:895][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10 as finished
+[2017.04.19-11.49.35:895][983]LogTemp:Display: Marking material as finished 0x000001DAC95F5300
+[2017.04.19-11.49.35:895][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12 as finished
+[2017.04.19-11.49.35:895][983]LogTemp:Display: Marking material as finished 0x000001DAC95F4100
+[2017.04.19-11.49.35:896][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14 as finished
+[2017.04.19-11.49.35:896][983]LogTemp:Display: Marking material as finished 0x000001DAC95DB400
+[2017.04.19-11.49.35:897][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16 as finished
+[2017.04.19-11.49.35:897][983]LogTemp:Display: Marking material as finished 0x000001DAC95D8700
+[2017.04.19-11.49.35:897][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26 as finished
+[2017.04.19-11.49.35:897][983]LogTemp:Display: Marking material as finished 0x000001DAC9729000
+[2017.04.19-11.49.35:898][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30 as finished
+[2017.04.19-11.49.35:898][983]LogTemp:Display: Marking material as finished 0x000001DAC9638400
+[2017.04.19-11.49.35:898][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32 as finished
+[2017.04.19-11.49.35:898][983]LogTemp:Display: Marking material as finished 0x000001DAC963B100
+[2017.04.19-11.49.35:899][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34 as finished
+[2017.04.19-11.49.35:899][983]LogTemp:Display: Marking material as finished 0x000001DAC968F400
+[2017.04.19-11.49.35:899][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36 as finished
+[2017.04.19-11.49.35:899][983]LogTemp:Display: Marking material as finished 0x000001DAC968C700
+[2017.04.19-11.49.35:900][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38 as finished
+[2017.04.19-11.49.35:900][983]LogTemp:Display: Marking material as finished 0x000001DAC968DF00
+[2017.04.19-11.49.35:901][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40 as finished
+[2017.04.19-11.49.35:901][983]LogTemp:Display: Marking material as finished 0x000001DAC968B700
+[2017.04.19-11.49.35:901][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42 as finished
+[2017.04.19-11.49.35:901][983]LogTemp:Display: Marking material as finished 0x000001DAC968A500
+[2017.04.19-11.49.35:902][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44 as finished
+[2017.04.19-11.49.35:902][983]LogTemp:Display: Marking material as finished 0x000001DAC9688D00
+[2017.04.19-11.49.35:902][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52 as finished
+[2017.04.19-11.49.35:902][983]LogTemp:Display: Marking material as finished 0x000001DABB568D00
+[2017.04.19-11.49.35:903][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54 as finished
+[2017.04.19-11.49.35:903][983]LogTemp:Display: Marking material as finished 0x000001DABB5A8100
+[2017.04.19-11.49.35:904][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56 as finished
+[2017.04.19-11.49.35:904][983]LogTemp:Display: Marking material as finished 0x000001DABB55D300
+[2017.04.19-11.49.35:904][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58 as finished
+[2017.04.19-11.49.35:904][983]LogTemp:Display: Marking material as finished 0x000001DABB55C100
+[2017.04.19-11.49.35:905][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_66 as finished
+[2017.04.19-11.49.35:905][983]LogTemp:Display: Marking material as finished 0x000001DABB560100
+[2017.04.19-11.49.35:905][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_68 as finished
+[2017.04.19-11.49.35:905][983]LogTemp:Display: Marking material as finished 0x000001DABB563100
+[2017.04.19-11.49.35:906][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_70 as finished
+[2017.04.19-11.49.35:906][983]LogTemp:Display: Marking material as finished 0x000001DABB55AE00
+[2017.04.19-11.49.35:906][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_72 as finished
+[2017.04.19-11.49.35:906][983]LogTemp:Display: Marking material as finished 0x000001DABB558100
+[2017.04.19-11.49.35:907][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_74 as finished
+[2017.04.19-11.49.35:907][983]LogTemp:Display: Marking material as finished 0x000001DABB559F00
+[2017.04.19-11.49.35:908][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_78 as finished
+[2017.04.19-11.49.35:908][983]LogTemp:Display: Marking material as finished 0x000001DABB54DC00
+[2017.04.19-11.49.35:908][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_80 as finished
+[2017.04.19-11.49.35:908][983]LogTemp:Display: Marking material as finished 0x000001DABB553100
+[2017.04.19-11.49.35:909][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_82 as finished
+[2017.04.19-11.49.35:909][983]LogTemp:Display: Marking material as finished 0x000001DABB551F00
+[2017.04.19-11.49.35:909][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_84 as finished
+[2017.04.19-11.49.35:909][983]LogTemp:Display: Marking material as finished 0x000001DABB550D00
+[2017.04.19-11.49.35:910][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_86 as finished
+[2017.04.19-11.49.35:910][983]LogTemp:Display: Marking material as finished 0x000001DABB54C100
+[2017.04.19-11.49.35:910][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_88 as finished
+[2017.04.19-11.49.35:910][983]LogTemp:Display: Marking material as finished 0x000001DABB545300
+[2017.04.19-11.49.35:911][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_90 as finished
+[2017.04.19-11.49.35:911][983]LogTemp:Display: Marking material as finished 0x000001DABB544100
+[2017.04.19-11.49.35:911][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_92 as finished
+[2017.04.19-11.49.35:911][983]LogTemp:Display: Marking material as finished 0x000001DABB54CD00
+[2017.04.19-11.49.35:912][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_94 as finished
+[2017.04.19-11.49.35:912][983]LogTemp:Display: Marking material as finished 0x000001DABB547100
+[2017.04.19-11.49.35:913][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDD9980, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_96 as finished
+[2017.04.19-11.49.35:913][983]LogTemp:Display: Marking material as finished 0x000001DABB541300
+[2017.04.19-11.49.35:914][983]LogTemp:Display: Finished compile of shader map 0x000001DAABDDB580
+[2017.04.19-11.49.35:914][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 as finished
+[2017.04.19-11.49.35:914][983]LogTemp:Display: Marking material as finished 0x000001DAABBAAB00
+[2017.04.19-11.49.35:915][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2 as finished
+[2017.04.19-11.49.35:915][983]LogTemp:Display: Marking material as finished 0x000001DAC9587D00
+[2017.04.19-11.49.35:915][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_4 as finished
+[2017.04.19-11.49.35:915][983]LogTemp:Display: Marking material as finished 0x000001DAC9649900
+[2017.04.19-11.49.35:916][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_6 as finished
+[2017.04.19-11.49.35:916][983]LogTemp:Display: Marking material as finished 0x000001DAC964B400
+[2017.04.19-11.49.35:917][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_8 as finished
+[2017.04.19-11.49.35:917][983]LogTemp:Display: Marking material as finished 0x000001DAC95F6E00
+[2017.04.19-11.49.35:917][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_10 as finished
+[2017.04.19-11.49.35:917][983]LogTemp:Display: Marking material as finished 0x000001DAC95F5C00
+[2017.04.19-11.49.35:918][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_12 as finished
+[2017.04.19-11.49.35:918][983]LogTemp:Display: Marking material as finished 0x000001DAC95F4A00
+[2017.04.19-11.49.35:918][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_14 as finished
+[2017.04.19-11.49.35:918][983]LogTemp:Display: Marking material as finished 0x000001DAC95DBD00
+[2017.04.19-11.49.35:919][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_16 as finished
+[2017.04.19-11.49.35:919][983]LogTemp:Display: Marking material as finished 0x000001DAC95D9000
+[2017.04.19-11.49.35:919][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_26 as finished
+[2017.04.19-11.49.35:919][983]LogTemp:Display: Marking material as finished 0x000001DA93AF4400
+[2017.04.19-11.49.35:920][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_30 as finished
+[2017.04.19-11.49.35:920][983]LogTemp:Display: Marking material as finished 0x000001DAC9638D00
+[2017.04.19-11.49.35:921][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_32 as finished
+[2017.04.19-11.49.35:921][983]LogTemp:Display: Marking material as finished 0x000001DAC963A800
+[2017.04.19-11.49.35:921][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_34 as finished
+[2017.04.19-11.49.35:921][983]LogTemp:Display: Marking material as finished 0x000001DAC968FD00
+[2017.04.19-11.49.35:922][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_36 as finished
+[2017.04.19-11.49.35:922][983]LogTemp:Display: Marking material as finished 0x000001DAC968D000
+[2017.04.19-11.49.35:922][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_38 as finished
+[2017.04.19-11.49.35:922][983]LogTemp:Display: Marking material as finished 0x000001DAC968D600
+[2017.04.19-11.49.35:923][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_40 as finished
+[2017.04.19-11.49.35:923][983]LogTemp:Display: Marking material as finished 0x000001DAC963A200
+[2017.04.19-11.49.35:923][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_42 as finished
+[2017.04.19-11.49.35:923][983]LogTemp:Display: Marking material as finished 0x000001DAC968AE00
+[2017.04.19-11.49.35:924][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_44 as finished
+[2017.04.19-11.49.35:924][983]LogTemp:Display: Marking material as finished 0x000001DAC9688100
+[2017.04.19-11.49.35:925][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_52 as finished
+[2017.04.19-11.49.35:925][983]LogTemp:Display: Marking material as finished 0x000001DABB569600
+[2017.04.19-11.49.35:925][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_54 as finished
+[2017.04.19-11.49.35:925][983]LogTemp:Display: Marking material as finished 0x000001DABB568400
+[2017.04.19-11.49.35:926][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_56 as finished
+[2017.04.19-11.49.35:926][983]LogTemp:Display: Marking material as finished 0x000001DABB55DC00
+[2017.04.19-11.49.35:926][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_58 as finished
+[2017.04.19-11.49.35:926][983]LogTemp:Display: Marking material as finished 0x000001DABB55CA00
+[2017.04.19-11.49.35:927][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_66 as finished
+[2017.04.19-11.49.35:927][983]LogTemp:Display: Marking material as finished 0x000001DABB560A00
+[2017.04.19-11.49.35:928][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_68 as finished
+[2017.04.19-11.49.35:928][983]LogTemp:Display: Marking material as finished 0x000001DABB562800
+[2017.04.19-11.49.35:928][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_70 as finished
+[2017.04.19-11.49.35:928][983]LogTemp:Display: Marking material as finished 0x000001DABB55B700
+[2017.04.19-11.49.35:929][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_72 as finished
+[2017.04.19-11.49.35:929][983]LogTemp:Display: Marking material as finished 0x000001DABB558A00
+[2017.04.19-11.49.35:929][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_74 as finished
+[2017.04.19-11.49.35:929][983]LogTemp:Display: Marking material as finished 0x000001DABB559600
+[2017.04.19-11.49.35:930][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_78 as finished
+[2017.04.19-11.49.35:930][983]LogTemp:Display: Marking material as finished 0x000001DABB54E500
+[2017.04.19-11.49.35:930][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_80 as finished
+[2017.04.19-11.49.35:930][983]LogTemp:Display: Marking material as finished 0x000001DABB553A00
+[2017.04.19-11.49.35:931][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_82 as finished
+[2017.04.19-11.49.35:931][983]LogTemp:Display: Marking material as finished 0x000001DABB552800
+[2017.04.19-11.49.35:932][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_84 as finished
+[2017.04.19-11.49.35:932][983]LogTemp:Display: Marking material as finished 0x000001DABB551600
+[2017.04.19-11.49.35:932][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_86 as finished
+[2017.04.19-11.49.35:932][983]LogTemp:Display: Marking material as finished 0x000001DABB550400
+[2017.04.19-11.49.35:933][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_88 as finished
+[2017.04.19-11.49.35:933][983]LogTemp:Display: Marking material as finished 0x000001DABB545C00
+[2017.04.19-11.49.35:933][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_90 as finished
+[2017.04.19-11.49.35:933][983]LogTemp:Display: Marking material as finished 0x000001DABB544A00
+[2017.04.19-11.49.35:934][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_92 as finished
+[2017.04.19-11.49.35:934][983]LogTemp:Display: Marking material as finished 0x000001DABB54C400
+[2017.04.19-11.49.35:935][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_94 as finished
+[2017.04.19-11.49.35:935][983]LogTemp:Display: Marking material as finished 0x000001DABB546800
+[2017.04.19-11.49.35:935][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_0 complete, GameThreadShaderMap 0x000001DAABDDB580, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_96 as finished
+[2017.04.19-11.49.35:935][983]LogTemp:Display: Marking material as finished 0x000001DABB541C00
+[2017.04.19-11.49.35:937][983]LogTemp:Display: Finished compile of shader map 0x000001DABB5E8100
+[2017.04.19-11.49.35:937][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DABB5E8100, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 as finished
+[2017.04.19-11.49.35:937][983]LogTemp:Display: Marking material as finished 0x000001DAC9585900
+[2017.04.19-11.49.35:937][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DABB5E8100, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20 as finished
+[2017.04.19-11.49.35:937][983]LogTemp:Display: Marking material as finished 0x000001DA93AF7A00
+[2017.04.19-11.49.35:938][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DABB5E8100, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22 as finished
+[2017.04.19-11.49.35:938][983]LogTemp:Display: Marking material as finished 0x000001DA93AF6800
+[2017.04.19-11.49.35:938][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DABB5E8100, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24 as finished
+[2017.04.19-11.49.35:938][983]LogTemp:Display: Marking material as finished 0x000001DA93AF5600
+[2017.04.19-11.49.35:939][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DABB5E8100, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28 as finished
+[2017.04.19-11.49.35:939][983]LogTemp:Display: Marking material as finished 0x000001DAC9639F00
+[2017.04.19-11.49.35:940][983]LogTemp:Display: Finished compile of shader map 0x000001DACA397200
+[2017.04.19-11.49.35:940][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DACA397200, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 as finished
+[2017.04.19-11.49.35:940][983]LogTemp:Display: Marking material as finished 0x000001DAC9586500
+[2017.04.19-11.49.35:941][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DACA397200, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_20 as finished
+[2017.04.19-11.49.35:941][983]LogTemp:Display: Marking material as finished 0x000001DA93AF7100
+[2017.04.19-11.49.35:941][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DACA397200, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_22 as finished
+[2017.04.19-11.49.35:941][983]LogTemp:Display: Marking material as finished 0x000001DA93AF5F00
+[2017.04.19-11.49.35:942][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DACA397200, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_24 as finished
+[2017.04.19-11.49.35:942][983]LogTemp:Display: Marking material as finished 0x000001DA93AF4D00
+[2017.04.19-11.49.35:942][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_18 complete, GameThreadShaderMap 0x000001DACA397200, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_28 as finished
+[2017.04.19-11.49.35:942][983]LogTemp:Display: Marking material as finished 0x000001DAC9639600
+[2017.04.19-11.49.35:944][983]LogTemp:Display: Finished compile of shader map 0x000001DAC9624480
+[2017.04.19-11.49.35:944][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 as finished
+[2017.04.19-11.49.35:944][983]LogTemp:Display: Marking material as finished 0x000001DAC9689600
+[2017.04.19-11.49.35:944][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48 as finished
+[2017.04.19-11.49.35:944][983]LogTemp:Display: Marking material as finished 0x000001DABB56BA00
+[2017.04.19-11.49.35:945][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50 as finished
+[2017.04.19-11.49.35:945][983]LogTemp:Display: Marking material as finished 0x000001DABB56A800
+[2017.04.19-11.49.35:945][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60 as finished
+[2017.04.19-11.49.35:945][983]LogTemp:Display: Marking material as finished 0x000001DABB5A8400
+[2017.04.19-11.49.35:946][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62 as finished
+[2017.04.19-11.49.35:946][983]LogTemp:Display: Marking material as finished 0x000001DABB55E800
+[2017.04.19-11.49.35:947][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64 as finished
+[2017.04.19-11.49.35:947][983]LogTemp:Display: Marking material as finished 0x000001DABB561C00
+[2017.04.19-11.49.35:947][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9624480, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_76 as finished
+[2017.04.19-11.49.35:947][983]LogTemp:Display: Marking material as finished 0x000001DABB54F700
+[2017.04.19-11.49.35:948][983]LogTemp:Display: Finished compile of shader map 0x000001DAC9626B00
+[2017.04.19-11.49.35:948][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 as finished
+[2017.04.19-11.49.35:948][983]LogTemp:Display: Marking material as finished 0x000001DABB5AA800
+[2017.04.19-11.49.35:949][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_48 as finished
+[2017.04.19-11.49.35:949][983]LogTemp:Display: Marking material as finished 0x000001DABB56B100
+[2017.04.19-11.49.35:950][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_50 as finished
+[2017.04.19-11.49.35:950][983]LogTemp:Display: Marking material as finished 0x000001DABB569F00
+[2017.04.19-11.49.35:950][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_60 as finished
+[2017.04.19-11.49.35:950][983]LogTemp:Display: Marking material as finished 0x000001DABB5A8D00
+[2017.04.19-11.49.35:951][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_62 as finished
+[2017.04.19-11.49.35:951][983]LogTemp:Display: Marking material as finished 0x000001DABB55F100
+[2017.04.19-11.49.35:951][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_64 as finished
+[2017.04.19-11.49.35:951][983]LogTemp:Display: Marking material as finished 0x000001DABB561300
+[2017.04.19-11.49.35:952][983]LogTemp:Display: Shader map FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_46 complete, GameThreadShaderMap 0x000001DAC9626B00, marking material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_76 as finished
+[2017.04.19-11.49.35:952][983]LogTemp:Display: Marking material as finished 0x000001DABB54EE00
+[2017.04.19-11.49.39:834][315]Job is a success!
+[2017.04.19-11.49.39:853][316]LogSlate: Took 0.000134 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.19-11.49.40:051][316]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512) - 81 MB total VRAM
+[2017.04.19-11.49.40:052][316]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512) - 81 MB total VRAM
+[2017.04.19-11.49.40:052][316]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 1024X64) - 81 MB total VRAM
+[2017.04.19-11.49.40:072][316]Lightmass on DESKTOP-7RIOMGQ: 3.20 sec total, 123 ms importing, 33 ms setup, 968 ms photons, 2.00 sec processing, 0 ms extra exporting [50/50 mappings]. Threads: 7.98 sec total, 5.03 sec processing.
+[2017.04.19-11.49.40:093][316]LogStaticLightingSystem: Illumination: 9.16 sec (148 ms encoding lightmaps, 13 ms encoding shadowmaps)
+[2017.04.19-11.49.40:093][316]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.19-11.49.40:093][316]LogStaticLightingSystem: Shadowmap texture memory: 0.3 MB (0.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.04.19-11.49.40:883][316]DumpUnbuiltLightIteractions
+[2017.04.19-11.49.40:883][316]Lights with unbuilt interactions: 0
+[2017.04.19-11.49.40:883][316]
+[2017.04.19-11.49.40:883][316]Primitives with unbuilt interactions: 0
+[2017.04.19-11.49.40:896][317]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.19-11.49.40:896][317]MapCheck: New page: BattleGround - 19 Apr 2017 13:49:40
+[2017.04.19-11.49.40:924][317]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 27.955ms to complete.
+[2017.04.19-11.49.43:479][617]Recompiling BattleTank...
+[2017.04.19-11.49.43:479][617]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6793 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-11.49.43:480][617]Warning: Starting HotReload took  0.0s.
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: New page: Compilation - 19 Apr 2017 13:49:47
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-6793.dll
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-6793.lib
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6793.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6793.exp
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6793.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6793.suppressed.exp
+[2017.04.19-11.49.47:114][ 51]CompilerResultsLog: Info Total build time: 3.43 seconds (Local executor: 1.98 seconds)
+[2017.04.19-11.49.47:114][ 51]LogMainFrame: MainFrame: Module compiling took 3.640 seconds
+[2017.04.19-11.49.47:159][ 51]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0013 seconds. Added 3 classes and 3 folders.
+[2017.04.19-11.49.47:159][ 51]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-11.49.47:210][ 51]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-11.49.47:212][ 51]Display: HotReload took  3.8s.
+[2017.04.19-11.49.50:940][498]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-11.49.50:950][498]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.49.50:950][498]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-11.49.50:950][498]PIE: New page: PIE session: BattleGround (19 Apr 2017 13:49:50)
+[2017.04.19-11.49.50:951][498]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-11.49.50:958][498]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007439s)
+[2017.04.19-11.49.50:958][498]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-11.49.50:959][498]LogPlayLevel: PIE: World Init took: (0.000536s)
+[2017.04.19-11.49.50:959][498]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.008145s)
+[2017.04.19-11.49.50:969][498]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-11.49.50:976][498]LogInit: FAudioDevice initialized.
+[2017.04.19-11.49.51:017][498]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-11.49.51:020][498]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-12.49.51
+[2017.04.19-11.49.51:020][498]LogWorld: Bringing up level for play took: 0.002074
+[2017.04.19-11.49.51:054][498]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
+[2017.04.19-11.49.51:055][498]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-11.49.51:055][498]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.884
+[2017.04.19-11.49.51:055][498]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.49.54:250][878]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.49.54:279][878]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.50.09:707][162]Recompiling BattleTank...
+[2017.04.19-11.50.09:707][162]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6637 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-11.50.09:708][162]Warning: Starting HotReload took  0.0s.
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: New page: Compilation - 19 Apr 2017 13:50:12
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(12) : error C2059: syntax error: 'if'
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(13) : error C2143: syntax error: missing ';' before '{'
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(13) : error C2447: '{': missing function header (old-style formal list?)
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(17) : error C2059: syntax error: 'if'
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(18) : error C2143: syntax error: missing ';' before '{'
+[2017.04.19-11.50.12:665][516]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(18) : error C2447: '{': missing function header (old-style formal list?)
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-6637.dll
+[2017.04.19-11.50.12:665][516]CompilerResultsLog: Info Total build time: 2.74 seconds (Local executor: 0.00 seconds)
+[2017.04.19-11.50.12:665][516]LogMainFrame: MainFrame: Module compiling took 2.962 seconds
+[2017.04.19-11.50.12:665][516]Warning: HotReload failed, recompile failed
+[2017.04.19-11.50.51:925][227]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-11.50.51:936][227]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.50.51:936][227]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-11.50.51:936][227]PIE: New page: PIE session: BattleGround (19 Apr 2017 13:50:51)
+[2017.04.19-11.50.51:936][227]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-11.50.51:943][227]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006718s)
+[2017.04.19-11.50.51:943][227]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-11.50.51:944][227]LogPlayLevel: PIE: World Init took: (0.000497s)
+[2017.04.19-11.50.51:944][227]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007393s)
+[2017.04.19-11.50.51:954][227]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-11.50.51:959][227]LogInit: FAudioDevice initialized.
+[2017.04.19-11.50.51:988][227]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-11.50.51:991][227]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-12.50.51
+[2017.04.19-11.50.51:991][227]LogWorld: Bringing up level for play took: 0.002072
+[2017.04.19-11.50.51:993][227]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-11.50.51:993][227]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.178
+[2017.04.19-11.50.51:993][227]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.50.56:458][760]LogSlate: Took 0.000125 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.04.19-11.51.47:902][927]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-11.51.47:931][927]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.00.12:407][608]LogSlate: Took 0.000149 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.19-12.00.21:592][635]LogSavePackage: Save=144.20ms
+[2017.04.19-12.00.21:592][635]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto1F684938E44D74F471586CEB626C0F4D7.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap'
+[2017.04.19-12.00.21:594][635]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap
+[2017.04.19-12.00.21:597][635]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.170
+[2017.04.19-12.00.21:597][635]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.170
+[2017.04.19-12.00.21:598][635]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Levels/BattleGround_BuiltData] ([1] browsable assets)...
+[2017.04.19-12.00.21:598][635]OBJ SavePackage: Finished generating thumbnails for package [/Game/Levels/BattleGround_BuiltData]
+[2017.04.19-12.00.21:615][635]LogSavePackage: Save=8.28ms
+[2017.04.19-12.00.21:615][635]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData_Auto114A073DE4B3D5E55C42B12AFEFBD44DC.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto1.uasset'
+[2017.04.19-12.00.21:616][635]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto1.uasset
+[2017.04.19-12.00.21:616][635]LogFileHelpers: Auto-saving content packages took 0.018
+[2017.04.19-12.02.32:404][ 29]LogHttp:Warning: 000001DAABEBF280: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-12.02.32:404][ 29]LogHttp:Warning: 000001DAABEBF280: libcurl info message cache 0 (Connection 6 seems to be dead!)
+[2017.04.19-12.02.32:404][ 29]LogHttp:Warning: 000001DAABEBF280: libcurl info message cache 1 (Closing connection 6)
+[2017.04.19-12.02.32:404][ 29]LogHttp:Warning: 000001DAABEBF280: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-12.02.32:404][ 29]LogHttp:Warning: 000001DAABEBF280: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-12.02.32:405][ 29]LogHttp:Warning: 000001DAABEBF280: libcurl info message cache 4 (Closing connection 7)
+[2017.04.19-12.12.25:554][942]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.12.25:565][942]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.12.25:565][942]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.12.25:565][942]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:12:25)
+[2017.04.19-12.12.25:565][942]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.12.25:572][942]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006469s)
+[2017.04.19-12.12.25:572][942]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.12.25:573][942]LogPlayLevel: PIE: World Init took: (0.000755s)
+[2017.04.19-12.12.25:573][942]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007632s)
+[2017.04.19-12.12.25:584][942]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.12.25:590][942]LogInit: FAudioDevice initialized.
+[2017.04.19-12.12.25:619][942]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.12.25:621][942]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.12.25
+[2017.04.19-12.12.25:622][942]LogWorld: Bringing up level for play took: 0.002316
+[2017.04.19-12.12.25:623][942]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.12.25:623][942]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.548
+[2017.04.19-12.12.25:624][942]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.12.29:983][463]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.12.30:014][463]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.12.59:096][984]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.12.59:107][984]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.12.59:107][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.12.59:108][984]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:12:59)
+[2017.04.19-12.12.59:108][984]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.12.59:114][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005992s)
+[2017.04.19-12.12.59:114][984]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.12.59:114][984]LogPlayLevel: PIE: World Init took: (0.000603s)
+[2017.04.19-12.12.59:115][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006951s)
+[2017.04.19-12.12.59:125][984]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.12.59:130][984]LogInit: FAudioDevice initialized.
+[2017.04.19-12.12.59:159][984]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.12.59:161][984]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.12.59
+[2017.04.19-12.12.59:162][984]LogWorld: Bringing up level for play took: 0.002123
+[2017.04.19-12.12.59:163][984]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.12.59:163][984]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.992
+[2017.04.19-12.12.59:163][984]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.13.18:071][769]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.13.18:100][769]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.13.18:970][868]MapCheck: New page: Map Check
+[2017.04.19-12.13.18:982][868]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.19-12.13.18:982][868]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.19-12.13.19:000][868]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.19-12.13.19:001][868]LogTemp:Display: Added material ShaderMap 0x000001DAABDD8800 with Material 0x000001DABB61F700 to ShaderMapsBeingCompiled
+[2017.04.19-12.13.19:003][868]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x000001DAABDD8800
+[2017.04.19-12.13.19:004][868]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_2, compiling. 
+[2017.04.19-12.13.19:005][868]LogTemp:Display: Added material ShaderMap 0x000001DAABDDBC80 with Material 0x000001DAF8227700 to ShaderMapsBeingCompiled
+[2017.04.19-12.13.19:006][868]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_2, GameThreadShaderMap 0x000001DAABDDBC80
+[2017.04.19-12.13.19:008][868]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy LandscapeGizmo_Mat, compiling. 
+[2017.04.19-12.13.19:009][868]LogTemp:Display: Added material ShaderMap 0x000001DAABDD8B80 with Material 0x000001DAC9EAF100 to ShaderMapsBeingCompiled
+[2017.04.19-12.13.19:010][868]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy LandscapeGizmo_Mat, GameThreadShaderMap 0x000001DAABDD8B80
+[2017.04.19-12.13.19:012][868]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MatineeCam_mat, compiling. 
+[2017.04.19-12.13.19:013][868]LogTemp:Display: Added material ShaderMap 0x000001DAABDD8F00 with Material 0x000001DB09514A00 to ShaderMapsBeingCompiled
+[2017.04.19-12.13.19:014][868]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MatineeCam_mat, GameThreadShaderMap 0x000001DAABDD8F00
+[2017.04.19-12.13.19:235][868]LogTemp:Display: Finished compile of shader map 0x000001DAABDD8B80
+[2017.04.19-12.13.19:235][868]LogTemp:Display: Shader map FDebugViewModeMaterialProxy LandscapeGizmo_Mat complete, GameThreadShaderMap 0x000001DAABDD8B80, marking material FDebugViewModeMaterialProxy LandscapeGizmo_Mat as finished
+[2017.04.19-12.13.19:235][868]LogTemp:Display: Marking material as finished 0x000001DAC9EAF100
+[2017.04.19-12.13.19:289][868]LogTemp:Display: Finished compile of shader map 0x000001DAABDD8800
+[2017.04.19-12.13.19:289][868]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x000001DAABDD8800, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.19-12.13.19:290][868]LogTemp:Display: Marking material as finished 0x000001DABB61F700
+[2017.04.19-12.13.19:302][868]LogTemp:Display: Finished compile of shader map 0x000001DAABDDBC80
+[2017.04.19-12.13.19:302][868]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_2 complete, GameThreadShaderMap 0x000001DAABDDBC80, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_2 as finished
+[2017.04.19-12.13.19:302][868]LogTemp:Display: Marking material as finished 0x000001DAF8227700
+[2017.04.19-12.13.19:325][868]LogTemp:Display: Finished compile of shader map 0x000001DAABDD8F00
+[2017.04.19-12.13.19:325][868]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MatineeCam_mat complete, GameThreadShaderMap 0x000001DAABDD8F00, marking material FDebugViewModeMaterialProxy MatineeCam_mat as finished
+[2017.04.19-12.13.19:325][868]LogTemp:Display: Marking material as finished 0x000001DB09514A00
+[2017.04.19-12.13.19:326][868]TextureStreamingBuild:Display: Compiling optional shaders took 0.329 seconds.
+[2017.04.19-12.13.19:345][868]LogLevel:Display: Export Material TexCoord Scales took 0.019 seconds.
+[2017.04.19-12.13.19:348][868]TextureStreamingBuild:Display: Build Texture Streaming took 0.002 seconds.
+[2017.04.19-12.13.19:355][868]LightingResults: New page: Lighting Build - 19 Apr 2017 14:13:19
+[2017.04.19-12.13.19:361][868]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.19-12.13.19:362][868]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.19-12.13.19:362][868]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.19-12.13.19:363][868]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.19-12.13.19:363][868]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8480
+[2017.04.19-12.13.23:874][868]LightingResults:Warning: Performance Warning No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2017.04.19-12.13.23:874][868]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.19-12.13.23:875][868]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.19-12.13.23:875][868]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.19-12.13.23:875][868]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.19-12.13.23:875][868]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.19-12.13.23:918][868]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.19-12.13.23:918][868]MapCheck: New page: BattleGround - 19 Apr 2017 14:13:23
+[2017.04.19-12.13.23:947][868]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 28.195ms to complete.
+[2017.04.19-12.13.23:968][868]LogEditorBuildUtils: Build time 0:04
+[2017.04.19-12.13.27:704][881]Job is a success!
+[2017.04.19-12.13.28:243][882]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512) - 81 MB total VRAM
+[2017.04.19-12.13.28:243][882]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512) - 81 MB total VRAM
+[2017.04.19-12.13.28:243][882]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (BGRA8, 1024X64) - 81 MB total VRAM
+[2017.04.19-12.13.28:259][882]Lightmass on DESKTOP-7RIOMGQ: 3.55 sec total, 118 ms importing, 31 ms setup, 948 ms photons, 2.44 sec processing, 0 ms extra exporting [50/50 mappings]. Threads: 9.73 sec total, 5.30 sec processing.
+[2017.04.19-12.13.28:267][882]LogStaticLightingSystem: Illumination: 8.57 sec (152 ms encoding lightmaps, 14 ms encoding shadowmaps)
+[2017.04.19-12.13.28:267][882]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.19-12.13.28:267][882]LogStaticLightingSystem: Shadowmap texture memory: 0.3 MB (0.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.04.19-12.13.28:876][882]DumpUnbuiltLightIteractions
+[2017.04.19-12.13.28:876][882]Lights with unbuilt interactions: 0
+[2017.04.19-12.13.28:876][882]
+[2017.04.19-12.13.28:876][882]Primitives with unbuilt interactions: 0
+[2017.04.19-12.13.28:882][883]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.19-12.13.28:883][883]MapCheck: New page: BattleGround - 19 Apr 2017 14:13:28
+[2017.04.19-12.13.28:911][883]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 28.138ms to complete.
+[2017.04.19-12.13.36:643][990]Recompiling BattleTank...
+[2017.04.19-12.13.36:643][990]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 2124 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.13.36:644][990]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:13:40
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-2124.dll
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-2124.lib
+[2017.04.19-12.13.40:446][172]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2124.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2124.exp
+[2017.04.19-12.13.40:447][172]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2124.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2124.suppressed.exp
+[2017.04.19-12.13.40:447][172]CompilerResultsLog: Info Total build time: 3.30 seconds (Local executor: 1.83 seconds)
+[2017.04.19-12.13.40:447][172]LogMainFrame: MainFrame: Module compiling took 3.808 seconds
+[2017.04.19-12.13.40:493][172]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.13.40:495][172]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.13.40:515][172]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.13.40:516][172]Display: HotReload took  3.9s.
+[2017.04.19-12.13.42:650][320]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.13.42:660][320]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.13.42:661][320]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.13.42:661][320]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:13:42)
+[2017.04.19-12.13.42:661][320]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.13.42:667][320]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005986s)
+[2017.04.19-12.13.42:667][320]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.13.42:667][320]LogPlayLevel: PIE: World Init took: (0.000591s)
+[2017.04.19-12.13.42:668][320]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006904s)
+[2017.04.19-12.13.42:677][320]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.13.42:683][320]LogInit: FAudioDevice initialized.
+[2017.04.19-12.13.42:713][320]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.13.42:716][320]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.13.42
+[2017.04.19-12.13.42:716][320]LogWorld: Bringing up level for play took: 0.002074
+[2017.04.19-12.13.42:717][320]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.13.42:718][320]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.13.42:718][320]LogTemp:Warning: Tank is possessed
+[2017.04.19-12.13.42:718][320]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.547
+[2017.04.19-12.13.42:718][320]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.09:831][958]LogHotReload: New module detected: UE4Editor-BattleTank-4788.dll
+[2017.04.19-12.14.10:172][960]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-12.14.10:217][960]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0013 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.14.10:218][960]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.14.10:238][960]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.14.10:244][960]Display: HotReload took  0.1s.
+[2017.04.19-12.14.17:368][122]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.17:399][122]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.18:323][227]Recompiling BattleTank...
+[2017.04.19-12.14.18:323][227]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4542 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.14.18:324][227]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.14.19:975][425]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:14:19
+[2017.04.19-12.14.19:976][425]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.14.19:976][425]CompilerResultsLog: Info Target is up to date
+[2017.04.19-12.14.19:976][425]CompilerResultsLog: Info Total build time: 1.45 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2017.04.19-12.14.19:976][425]LogMainFrame: MainFrame: Module compiling took 1.657 seconds
+[2017.04.19-12.14.19:991][425]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.14.19:992][425]Display: HotReload took  1.7s.
+[2017.04.19-12.14.22:281][700]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.14.22:292][700]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.22:292][700]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.14.22:292][700]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:14:22)
+[2017.04.19-12.14.22:292][700]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.14.22:298][700]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005689s)
+[2017.04.19-12.14.22:298][700]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.14.22:299][700]LogPlayLevel: PIE: World Init took: (0.000536s)
+[2017.04.19-12.14.22:299][700]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006532s)
+[2017.04.19-12.14.22:308][700]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.14.22:313][700]LogInit: FAudioDevice initialized.
+[2017.04.19-12.14.22:341][700]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.14.22:343][700]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.14.22
+[2017.04.19-12.14.22:343][700]LogWorld: Bringing up level for play took: 0.002039
+[2017.04.19-12.14.22:345][700]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.22:345][700]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.22:345][700]LogTemp:Warning: Tank is possessed
+[2017.04.19-12.14.22:345][700]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.174
+[2017.04.19-12.14.22:345][700]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.35:049][744]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.35:077][744]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.35:965][847]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.14.35:975][847]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.35:976][847]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.14.35:976][847]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:14:35)
+[2017.04.19-12.14.35:976][847]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.14.35:982][847]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006155s)
+[2017.04.19-12.14.35:984][847]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.14.35:984][847]LogPlayLevel: PIE: World Init took: (0.001717s)
+[2017.04.19-12.14.35:984][847]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.008386s)
+[2017.04.19-12.14.35:997][847]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.14.36:002][847]LogInit: FAudioDevice initialized.
+[2017.04.19-12.14.36:032][847]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.14.36:035][847]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.14.36
+[2017.04.19-12.14.36:035][847]LogWorld: Bringing up level for play took: 0.002150
+[2017.04.19-12.14.36:036][847]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.36:036][847]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.36:036][847]LogTemp:Warning: Tank is possessed
+[2017.04.19-12.14.36:036][847]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.135
+[2017.04.19-12.14.36:037][847]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.40:005][321]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.40:033][321]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.41:391][480]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.14.41:401][480]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.41:402][480]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.14.41:402][480]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:14:41)
+[2017.04.19-12.14.41:402][480]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.14.41:408][480]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005971s)
+[2017.04.19-12.14.41:409][480]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.14.41:409][480]LogPlayLevel: PIE: World Init took: (0.000563s)
+[2017.04.19-12.14.41:409][480]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006861s)
+[2017.04.19-12.14.41:421][480]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.14.41:427][480]LogInit: FAudioDevice initialized.
+[2017.04.19-12.14.41:458][480]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.14.41:460][480]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.14.41
+[2017.04.19-12.14.41:461][480]LogWorld: Bringing up level for play took: 0.002089
+[2017.04.19-12.14.41:462][480]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.41:462][480]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.41:462][480]LogTemp:Warning: Tank is possessed
+[2017.04.19-12.14.41:462][480]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.709
+[2017.04.19-12.14.41:462][480]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.44:252][812]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.44:281][812]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.44:780][869]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.14.44:791][869]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.44:791][869]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.14.44:792][869]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:14:44)
+[2017.04.19-12.14.44:792][869]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.14.44:798][869]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006105s)
+[2017.04.19-12.14.44:800][869]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.14.44:800][869]LogPlayLevel: PIE: World Init took: (0.001223s)
+[2017.04.19-12.14.44:800][869]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007701s)
+[2017.04.19-12.14.44:811][869]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.14.44:817][869]LogInit: FAudioDevice initialized.
+[2017.04.19-12.14.44:843][869]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.14.44:846][869]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.14.44
+[2017.04.19-12.14.44:846][869]LogWorld: Bringing up level for play took: 0.002102
+[2017.04.19-12.14.44:848][869]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.44:848][869]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.14.44:848][869]LogTemp:Warning: Tank is possessed
+[2017.04.19-12.14.44:848][869]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.677
+[2017.04.19-12.14.44:848][869]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.48:709][330]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.14.48:739][330]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.15.27:435][813]LogSavePackage: Save=141.41ms
+[2017.04.19-12.15.27:435][813]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto22C66F40644BAB90A319A84BCC2378C52.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap'
+[2017.04.19-12.15.27:437][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap
+[2017.04.19-12.15.27:438][813]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.161
+[2017.04.19-12.15.27:438][813]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.161
+[2017.04.19-12.15.27:439][813]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Levels/BattleGround_BuiltData] ([1] browsable assets)...
+[2017.04.19-12.15.27:439][813]OBJ SavePackage: Finished generating thumbnails for package [/Game/Levels/BattleGround_BuiltData]
+[2017.04.19-12.15.27:456][813]LogSavePackage: Save=8.12ms
+[2017.04.19-12.15.27:456][813]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData_Auto2E863024B4B6A334BA175DF85093E77AA.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto2.uasset'
+[2017.04.19-12.15.27:457][813]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto2.uasset
+[2017.04.19-12.15.27:458][813]LogFileHelpers: Auto-saving content packages took 0.019
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: libcurl info message cache 0 (Connection 13 seems to be dead!)
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: libcurl info message cache 1 (Closing connection 13)
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-12.15.52:924][891]LogHttp:Warning: 000001DAABB32E00: libcurl info message cache 4 (Closing connection 14)
+[2017.04.19-12.16.46:922][ 52]LogHotReload: New module detected: UE4Editor-BattleTank-1508.dll
+[2017.04.19-12.16.47:271][ 54]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-12.16.47:348][ 54]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0017 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.16.47:350][ 54]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.16.47:370][ 54]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.16.47:376][ 54]Display: HotReload took  0.1s.
+[2017.04.19-12.19.48:925][791]Recompiling BattleTank...
+[2017.04.19-12.19.48:926][791]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 8863 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.19.48:927][791]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.19.50:584][989]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:19:50
+[2017.04.19-12.19.50:584][989]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.19.50:584][989]CompilerResultsLog: Info Target is up to date
+[2017.04.19-12.19.50:584][989]CompilerResultsLog: Info Total build time: 1.46 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2017.04.19-12.19.50:584][989]LogMainFrame: MainFrame: Module compiling took 1.663 seconds
+[2017.04.19-12.19.50:598][989]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.19.50:600][989]Display: HotReload took  1.7s.
+[2017.04.19-12.19.52:930][269]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.19.52:941][269]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.19.52:941][269]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.19.52:941][269]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:19:52)
+[2017.04.19-12.19.52:941][269]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.19.52:947][269]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006104s)
+[2017.04.19-12.19.52:948][269]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.19.52:948][269]LogPlayLevel: PIE: World Init took: (0.000789s)
+[2017.04.19-12.19.52:948][269]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007248s)
+[2017.04.19-12.19.52:958][269]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.19.52:963][269]LogInit: FAudioDevice initialized.
+[2017.04.19-12.19.52:993][269]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.19.52:996][269]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.19.52
+[2017.04.19-12.19.52:996][269]LogWorld: Bringing up level for play took: 0.002146
+[2017.04.19-12.19.52:998][269]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.19.52:998][269]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.19.53:280][269]LogCrashTracker: 
+
+
+[2017.04.19-12.19.53:280][269]LogCrashTracker: 
+
+
+[2017.04.19-12.19.53:280][269]LogWindows:Error: === Critical error: ===
+[2017.04.19-12.19.53:280][269]LogWindows:Error: 
+[2017.04.19-12.19.53:280][269]LogWindows:Error: Fatal error!
+[2017.04.19-12.19.53:280][269]LogWindows:Error: 
+[2017.04.19-12.19.53:280][269]LogWindows:Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x00000018
+[2017.04.19-12.19.53:280][269]LogWindows:Error: 
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-CoreUObject.dll!0x000000006BD0A356
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-BattleTank-1508.dll!ATankPlayerController::BeginPlay() [c:\users\ed\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankplayercontroller.cpp:19]
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-Engine.dll!0x000000006801FE2B
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-Engine.dll!0x00000000691556C4
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-Engine.dll!0x000000006870D5F1
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-Engine.dll!0x0000000069142F6E
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-Engine.dll!0x000000006872C0E3
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-UnrealEd.dll!0x0000000066638AD7
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-UnrealEd.dll!0x00000000666652DD
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-UnrealEd.dll!0x0000000066681764
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-UnrealEd.dll!0x000000006616626B
+[2017.04.19-12.19.53:280][269]LogWindows:Error: UE4Editor-UnrealEd.dll!0x0000000066972086
+[2017.04.19-12.19.53:281][269]LogWindows:Error: UE4Editor.exe!0x000000001AACDEE3
+[2017.04.19-12.19.53:281][269]LogWindows:Error: UE4Editor.exe!0x000000001AABEB40
+[2017.04.19-12.19.53:281][269]LogWindows:Error: UE4Editor.exe!0x000000001AABEBBA
+[2017.04.19-12.19.53:281][269]LogWindows:Error: UE4Editor.exe!0x000000001AAD0A29
+[2017.04.19-12.19.53:281][269]LogWindows:Error: UE4Editor.exe!0x000000001AAD22B6
+[2017.04.19-12.19.53:281][269]LogWindows:Error: KERNEL32.DLL!0x000000009DAB8364
+[2017.04.19-12.19.53:281][269]LogWindows:Error: ntdll.dll!0x00000000A04D70D1
+[2017.04.19-12.19.53:281][269]LogWindows:Error: ntdll.dll!0x00000000A04D70D1
+[2017.04.19-12.19.53:281][269]LogWindows:Error: 
+[2017.04.19-12.19.53:303][269]LogExit: Executing StaticShutdownAfterError
+[2017.04.19-12.19.53:305][269]LogWindows: FPlatformMisc::RequestExit(1)
+[2017.04.19-12.19.53:305][269]Log file closed, 04/19/17 13:19:53

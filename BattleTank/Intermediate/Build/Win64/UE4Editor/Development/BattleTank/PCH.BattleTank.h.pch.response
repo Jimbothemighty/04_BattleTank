@@ -23,9 +23,10 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source"
-/I "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source"
-/I "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Inc\BattleTank"
-/I "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank"
+/I "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source"
+/I "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public"
+/I "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Inc\BattleTank"
+/I "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Core\Public\Async"
@@ -303,11 +304,11 @@
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Editor\Kismet"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public"
 /I "C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming"
-/I "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank"
-/Yc"C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h"
-/Fp"C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h.pch"
-"C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.cpp"
-/Fo"C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h.obj"
+/I "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank"
+/Yc"C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h"
+/Fp"C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h.pch"
+"C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.cpp"
+/Fo"C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h.obj"
 /TP
 /GR-
 /W4
