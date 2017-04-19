@@ -1,0 +1,1438 @@
+﻿Log file open, 04/19/17 13:20:51
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(978408931) SRandInit(978408931).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.067966
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.19-12.20.51:781][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.19-12.20.51:781][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.19-12.20.51:791][  0]LogInit: Computer: DESKTOP-7RIOMGQ
+[2017.04.19-12.20.51:791][  0]LogInit: User: Ed
+[2017.04.19-12.20.51:791][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.19-12.20.51:791][  0]LogInit: High frequency timer resolution =3.421869 MHz
+[2017.04.19-12.20.51:791][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.04.19-12.20.51:791][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.19-12.20.51:791][  0]LogMemory: Process Physical Memory: 263.29 MB used, 263.29 MB peak
+[2017.04.19-12.20.51:791][  0]LogMemory: Process Virtual Memory: 262.39 MB used, 262.39 MB peak
+[2017.04.19-12.20.51:791][  0]LogMemory: Physical Memory: 5132.73 MB used,  11208.25 MB free, 16340.98 MB total
+[2017.04.19-12.20.51:791][  0]LogMemory: Virtual Memory: 643.96 MB used,  11208.25 MB free, 134217728.00 MB total
+[2017.04.19-12.20.51:849][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.04.19-12.20.52:288][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.19-12.20.52:303][  0]LogD3D11RHI:    0. 'Radeon (TM) RX 480 Graphics' (Feature Level 11_0)
+[2017.04.19-12.20.52:303][  0]LogD3D11RHI:       8140/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.19-12.20.52:304][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.19-12.20.52:304][  0]LogD3D11RHI:       0/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.19-12.20.52:304][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.19-12.20.52:307][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.19-12.20.52:307][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2017.04.19-12.20.52:307][  0]LogWindows: EnumDisplayDevices:
+[2017.04.19-12.20.52:307][  0]LogWindows:    0. 'Radeon (TM) RX 480 Graphics' (P:1 D:1)
+[2017.04.19-12.20.52:308][  0]LogWindows:    1. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-12.20.52:308][  0]LogWindows:    2. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-12.20.52:308][  0]LogWindows:    3. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-12.20.52:308][  0]LogWindows:    4. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-12.20.52:308][  0]LogWindows:    5. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.04.19-12.20.52:308][  0]LogWindows: DebugString: FoundDriverCount:6 
+[2017.04.19-12.20.52:308][  0]LogD3D11RHI:     Adapter Name: Radeon (TM) RX 480 Graphics
+[2017.04.19-12.20.52:308][  0]LogD3D11RHI:   Driver Version: Crimson 16.7.2 (internal:16.200.1035.1001, unified:16.200.1035.1001)
+[2017.04.19-12.20.52:308][  0]LogD3D11RHI:      Driver Date: 7-8-2016
+[2017.04.19-12.20.52:308][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.19-12.20.52:753][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.19-12.20.52:762][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2017.04.19-12.20.52:762][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/12368/).
+[2017.04.19-12.20.52:762][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ed/AppData/Local/Temp/UnrealShaderWorkingDir/48ABCCF042C18A6495F8B4AE41C917B0/'.
+[2017.04.19-12.20.52:762][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.19-12.20.53:481][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.19-12.20.53:519][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.19-12.20.53:556][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.19-12.20.53:594][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.19-12.20.53:631][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.19-12.20.53:669][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.19-12.20.53:707][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.19-12.20.53:745][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.19-12.20.53:775][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.19-12.20.53:811][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.19-12.20.53:848][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.19-12.20.53:884][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.19-12.20.53:921][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.19-12.20.53:957][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.19-12.20.53:994][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.19-12.20.54:068][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.19-12.20.54:068][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.19-12.20.54:093][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.19-12.20.54:168][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.19-12.20.54:193][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.19-12.20.54:231][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.19-12.20.54:268][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.19-12.20.54:304][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.19-12.20.54:340][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.19-12.20.54:340][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.19-12.20.54:631][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.19-12.20.54:667][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.19-12.20.54:680][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.19-12.20.54:692][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.19-12.20.54:698][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.19-12.20.54:699][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.19-12.20.54:699][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.19-12.20.54:874][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.19-12.20.54:875][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.19-12.20.55:014][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.19-12.20.55:042][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.19-12.20.55:072][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.19-12.20.55:072][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.19-12.20.55:072][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.19-12.20.55:429][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.19-12.20.55:466][  0]LogAssetRegistry: FAssetRegistry took 0.0210 seconds to start up
+[2017.04.19-12.20.55:495][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.016012 seconds
+[2017.04.19-12.20.55:499][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.04.19-12.20.55:499][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.04.19-12.20.55:499][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.19-12.20.55:541][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.19-12.20.56:590][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.19-12.20.56:619][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.19-12.20.56:965][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.19-12.20.57:212][  0]SourceControl: Info Source control is disabled
+[2017.04.19-12.20.57:232][  0]SourceControl: Info Source control is disabled
+[2017.04.19-12.20.57:262][  0]SourceControl: Info Source control is disabled
+[2017.04.19-12.20.57:292][  0]SourceControl: Info Source control is disabled
+[2017.04.19-12.20.58:099][  0]LogEngine: Initializing Engine...
+[2017.04.19-12.20.58:099][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.19-12.20.58:254][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.19-12.20.58:262][  0]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.20.58:268][  0]LogInit: FAudioDevice initialized.
+[2017.04.19-12.20.58:286][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.19-12.20.58:292][  0]LogInit: Texture streaming: Enabled
+[2017.04.19-12.20.58:353][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.19-12.20.58:353][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={59117DFD-4588-DCC3-3658-CD9E161FCA29}
+[2017.04.19-12.20.58:410][  0]LogInit: Transaction tracking system initialized
+[2017.04.19-12.20.58:638][  0]BlueprintLog: New page: Editor Load
+[2017.04.19-12.20.59:200][  0]LocalizationService: Info Localization service is disabled
+[2017.04.19-12.20.59:630][  0]LogConsoleResponse:Display: 
+[2017.04.19-12.20.59:716][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.19-12.20.59:716][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.19-12.21.00:349][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.01s
+[2017.04.19-12.21.00:377][  0]SourceControl: Info Source control is disabled
+[2017.04.19-12.21.00:377][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.19-12.21.00:377][  0]LightingResults: New page: Lighting Build
+[2017.04.19-12.21.00:403][  0]MapCheck: New page: Map Check
+[2017.04.19-12.21.00:403][  0]LightingResults: New page: Lighting Build
+[2017.04.19-12.21.00:610][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.21.00:640][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.19-12.21.00:640][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.19-12.21.00:666][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 26.363ms to complete.
+[2017.04.19-12.21.00:666][  0]LogFileHelpers: Loading map 'BattleGround' took 0.289
+[2017.04.19-12.21.00:716][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.19-12.21.00:811][  0]LogCollectionManager: Loaded 1 collections in 0.001068 seconds
+[2017.04.19-12.21.00:876][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.19-12.21.00:876][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Ed/Collections/' took 0.01s
+[2017.04.19-12.21.00:876][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.19-12.21.00:876][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000003 seconds
+[2017.04.19-12.21.00:876][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.04.19-12.21.00:883][  0]LogContentBrowser: Native class hierarchy populated in 0.0071 seconds. Added 2248 classes and 456 folders.
+[2017.04.19-12.21.00:886][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.19-12.21.00:886][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.19-12.21.00:927][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.04.19-12.21.00:951][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2017.04.19-12.21.00:980][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.04.19-12.21.01:000][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.19-12.21.01:003][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.19-12.21.01:054][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2017.04.19-12.21.01:054][  0]LogLoad: (Engine Initialization) Total time: 10.61 seconds
+[2017.04.19-12.21.01:054][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.07 seconds
+[2017.04.19-12.21.01:054][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.19-12.21.01:062][  0]LogOcInput: OculusInput pre-init called
+[2017.04.19-12.21.01:074][  0]LogAssetRegistry: Asset discovery search completed in 5.6293 seconds
+[2017.04.19-12.21.01:074][  0]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000003 seconds (found 0 objects)
+[2017.04.19-12.21.01:074][  0]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000015 seconds (updated 0 objects)
+[2017.04.19-12.21.01:078][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.19-12.21.01:084][  0]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.19-12.21.01:086][  0]LogSlate: Took 0.000134 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.19-12.21.01:090][  0]LogSlate: Took 0.000096 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.19-12.21.01:210][  2]LogRenderer: Reallocating scene render targets to support 856x828 NumSamples 1 (Frame:2).
+[2017.04.19-12.21.54:882][554]LogHotReload: New module detected: UE4Editor-BattleTank-1116.dll
+[2017.04.19-12.21.55:511][627]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-12.21.55:511][627]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.04.19-12.21.55:565][627]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0015 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.21.55:566][627]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.21.55:618][627]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.21.55:624][627]Display: HotReload took  0.1s.
+[2017.04.19-12.22.03:141][518]MapCheck: New page: Map Check
+[2017.04.19-12.22.03:164][518]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.19-12.22.03:164][518]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.19-12.22.03:270][518]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.19-12.22.03:271][518]LogTemp:Display: Added material ShaderMap 0x00000177B0D8A080 with Material 0x00000177C352FA00 to ShaderMapsBeingCompiled
+[2017.04.19-12.22.03:274][518]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x00000177B0D8A080
+[2017.04.19-12.22.03:275][518]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, compiling. 
+[2017.04.19-12.22.03:276][518]LogTemp:Display: Added material ShaderMap 0x00000177B0D89980 with Material 0x00000177C352F400 to ShaderMapsBeingCompiled
+[2017.04.19-12.22.03:277][518]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MaterialInstanceDynamic_1, GameThreadShaderMap 0x00000177B0D89980
+[2017.04.19-12.22.03:279][518]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy LandscapeGizmo_Mat, compiling. 
+[2017.04.19-12.22.03:279][518]LogTemp:Display: Added material ShaderMap 0x00000177B0D88B80 with Material 0x00000177C352E800 to ShaderMapsBeingCompiled
+[2017.04.19-12.22.03:281][518]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy LandscapeGizmo_Mat, GameThreadShaderMap 0x00000177B0D88B80
+[2017.04.19-12.22.03:282][518]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MatineeCam_mat, compiling. 
+[2017.04.19-12.22.03:283][518]LogTemp:Display: Added material ShaderMap 0x00000177921A1600 with Material 0x00000177C352C400 to ShaderMapsBeingCompiled
+[2017.04.19-12.22.03:284][518]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy MatineeCam_mat, GameThreadShaderMap 0x00000177921A1600
+[2017.04.19-12.22.03:505][518]LogTemp:Display: Finished compile of shader map 0x00000177B0D88B80
+[2017.04.19-12.22.03:505][518]LogTemp:Display: Shader map FDebugViewModeMaterialProxy LandscapeGizmo_Mat complete, GameThreadShaderMap 0x00000177B0D88B80, marking material FDebugViewModeMaterialProxy LandscapeGizmo_Mat as finished
+[2017.04.19-12.22.03:505][518]LogTemp:Display: Marking material as finished 0x00000177C352E800
+[2017.04.19-12.22.03:570][518]LogTemp:Display: Finished compile of shader map 0x00000177B0D8A080
+[2017.04.19-12.22.03:570][518]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x00000177B0D8A080, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.19-12.22.03:570][518]LogTemp:Display: Marking material as finished 0x00000177C352FA00
+[2017.04.19-12.22.03:583][518]LogTemp:Display: Finished compile of shader map 0x00000177B0D89980
+[2017.04.19-12.22.03:583][518]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 complete, GameThreadShaderMap 0x00000177B0D89980, marking material FDebugViewModeMaterialProxy MaterialInstanceDynamic_1 as finished
+[2017.04.19-12.22.03:583][518]LogTemp:Display: Marking material as finished 0x00000177C352F400
+[2017.04.19-12.22.03:605][518]LogTemp:Display: Finished compile of shader map 0x00000177921A1600
+[2017.04.19-12.22.03:605][518]LogTemp:Display: Shader map FDebugViewModeMaterialProxy MatineeCam_mat complete, GameThreadShaderMap 0x00000177921A1600, marking material FDebugViewModeMaterialProxy MatineeCam_mat as finished
+[2017.04.19-12.22.03:605][518]LogTemp:Display: Marking material as finished 0x00000177C352C400
+[2017.04.19-12.22.03:606][518]TextureStreamingBuild:Display: Compiling optional shaders took 0.340 seconds.
+[2017.04.19-12.22.03:627][518]LogLevel:Display: Export Material TexCoord Scales took 0.021 seconds.
+[2017.04.19-12.22.03:630][518]TextureStreamingBuild:Display: Build Texture Streaming took 0.002 seconds.
+[2017.04.19-12.22.03:637][518]LightingResults: New page: Lighting Build - 19 Apr 2017 14:22:03
+[2017.04.19-12.22.03:660][518]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.19-12.22.03:697][518]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.19-12.22.03:703][518]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.19-12.22.04:208][518]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.19-12.22.04:208][518]LogSwarmInterface: [TryOpenConnection] Local Process ID is 12368
+[2017.04.19-12.22.07:262][518]LightingResults:Warning: Performance Warning No importance volume found and the scene is so large that the automatically synthesized volume will not yield good results.  Please add a tightly bounding lightmass importance volume to optimize your scene's quality and lighting build times.
+[2017.04.19-12.22.07:262][518]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.19-12.22.07:262][518]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.19-12.22.07:262][518]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.19-12.22.07:262][518]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.19-12.22.07:263][518]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.19-12.22.07:325][518]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.19-12.22.07:325][518]MapCheck: New page: BattleGround - 19 Apr 2017 14:22:07
+[2017.04.19-12.22.07:352][518]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 26.936ms to complete.
+[2017.04.19-12.22.07:374][518]LogEditorBuildUtils: Build time 0:04
+[2017.04.19-12.22.10:712][820]Job is a success!
+[2017.04.19-12.22.10:731][822]LogSlate: Took 0.000100 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.19-12.22.10:926][822]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 512X512) - 81 MB total VRAM
+[2017.04.19-12.22.10:926][822]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1, 512X512) - 81 MB total VRAM
+[2017.04.19-12.22.10:926][822]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 1024X64) - 81 MB total VRAM
+[2017.04.19-12.22.10:944][822]Lightmass on DESKTOP-7RIOMGQ: 3.17 sec total, 119 ms importing, 32 ms setup, 970 ms photons, 2.04 sec processing, 0 ms extra exporting [50/50 mappings]. Threads: 8.13 sec total, 5.07 sec processing.
+[2017.04.19-12.22.10:963][822]LogStaticLightingSystem: Illumination: 7.31 sec (147 ms encoding lightmaps, 12 ms encoding shadowmaps)
+[2017.04.19-12.22.10:963][822]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2017.04.19-12.22.10:963][822]LogStaticLightingSystem: Shadowmap texture memory: 0.3 MB (0.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.04.19-12.22.11:264][822]DumpUnbuiltLightIteractions
+[2017.04.19-12.22.11:264][822]Lights with unbuilt interactions: 0
+[2017.04.19-12.22.11:264][822]
+[2017.04.19-12.22.11:264][822]Primitives with unbuilt interactions: 0
+[2017.04.19-12.22.11:275][823]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.19-12.22.11:275][823]MapCheck: New page: BattleGround - 19 Apr 2017 14:22:11
+[2017.04.19-12.22.11:302][823]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 26.692ms to complete.
+[2017.04.19-12.22.14:596][213]Recompiling BattleTank...
+[2017.04.19-12.22.14:596][213]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 8483 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.22.14:597][213]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.22.16:272][413]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:22:16
+[2017.04.19-12.22.16:272][413]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.22.16:272][413]CompilerResultsLog: Info Target is up to date
+[2017.04.19-12.22.16:272][413]CompilerResultsLog: Info Total build time: 1.48 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2017.04.19-12.22.16:272][413]LogMainFrame: MainFrame: Module compiling took 1.680 seconds
+[2017.04.19-12.22.16:285][413]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.22.16:287][413]Display: HotReload took  1.7s.
+[2017.04.19-12.22.17:871][603]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.22.17:882][603]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.22.17:882][603]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.22.17:882][603]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:22:17)
+[2017.04.19-12.22.17:882][603]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.22.17:889][603]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007080s)
+[2017.04.19-12.22.17:889][603]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.22.17:890][603]LogPlayLevel: PIE: World Init took: (0.000549s)
+[2017.04.19-12.22.17:890][603]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007831s)
+[2017.04.19-12.22.17:899][603]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.22.17:904][603]LogInit: FAudioDevice initialized.
+[2017.04.19-12.22.17:942][603]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.22.17:944][603]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.22.17
+[2017.04.19-12.22.17:945][603]LogWorld: Bringing up level for play took: 0.002082
+[2017.04.19-12.22.17:978][603]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0013 seconds. Added 11 classes and 0 folders.
+[2017.04.19-12.22.17:979][603]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.22.17:979][603]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.22.17:979][603]LogTemp:Error:  has not possessed
+[2017.04.19-12.22.17:979][603]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.192
+[2017.04.19-12.22.17:980][603]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.22.21:445][ 14]LogSlate: Took 0.000132 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.04.19-12.22.25:291][474]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.22.25:322][474]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.25.37:296][158]LogHotReload: New module detected: UE4Editor-BattleTank-9730.dll
+[2017.04.19-12.25.37:969][161]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-12.25.38:022][161]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.25.38:023][161]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.25.38:043][161]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.25.38:049][161]Display: HotReload took  0.1s.
+[2017.04.19-12.25.41:624][171]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.25.41:635][171]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.25.41:635][171]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.25.41:635][171]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:25:41)
+[2017.04.19-12.25.41:635][171]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.25.41:642][171]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006653s)
+[2017.04.19-12.25.41:643][171]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.25.41:643][171]LogPlayLevel: PIE: World Init took: (0.000960s)
+[2017.04.19-12.25.41:643][171]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.008039s)
+[2017.04.19-12.25.41:655][171]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.25.41:661][171]LogInit: FAudioDevice initialized.
+[2017.04.19-12.25.41:689][171]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.25.41:691][171]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.25.41
+[2017.04.19-12.25.41:692][171]LogWorld: Bringing up level for play took: 0.002185
+[2017.04.19-12.25.41:693][171]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.25.41:693][171]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.25.41:693][171]LogTemp:Warning: Tank has possessed
+[2017.04.19-12.25.41:693][171]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.477
+[2017.04.19-12.25.41:694][171]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.25.44:324][485]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.25.44:355][485]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.27.17:669][655]LogHotReload: New module detected: UE4Editor-BattleTank-8786.dll
+[2017.04.19-12.27.18:342][658]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-12.27.18:396][658]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0013 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.27.18:397][658]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.27.18:417][658]LogContentBrowser: Native class hierarchy populated in 0.0075 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.27.18:423][658]Display: HotReload took  0.1s.
+[2017.04.19-12.27.22:688][985]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.27.22:699][985]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.27.22:699][985]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.27.22:700][985]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:27:22)
+[2017.04.19-12.27.22:700][985]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.27.22:706][985]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006208s)
+[2017.04.19-12.27.22:706][985]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.27.22:707][985]LogPlayLevel: PIE: World Init took: (0.000644s)
+[2017.04.19-12.27.22:707][985]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007223s)
+[2017.04.19-12.27.22:718][985]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.27.22:724][985]LogInit: FAudioDevice initialized.
+[2017.04.19-12.27.22:750][985]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.27.22:753][985]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.27.22
+[2017.04.19-12.27.22:753][985]LogWorld: Bringing up level for play took: 0.002127
+[2017.04.19-12.27.22:755][985]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.27.22:755][985]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.27.22:755][985]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-12.27.22:755][985]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.584
+[2017.04.19-12.27.22:755][985]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.27.24:596][204]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.27.24:624][204]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.27.39:333][403]Recompiling BattleTank...
+[2017.04.19-12.27.39:333][403]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 2071 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.27.39:335][403]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.27.43:001][608]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:27:43
+[2017.04.19-12.27.43:001][608]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-2071.dll
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-2071.lib
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2071.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2071.exp
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2071.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2071.suppressed.exp
+[2017.04.19-12.27.43:002][608]CompilerResultsLog: Info Total build time: 3.28 seconds (Local executor: 1.84 seconds)
+[2017.04.19-12.27.43:002][608]LogMainFrame: MainFrame: Module compiling took 3.673 seconds
+[2017.04.19-12.27.43:048][608]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0013 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.27.43:049][608]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.27.43:070][608]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.27.43:071][608]Display: HotReload took  3.7s.
+[2017.04.19-12.30.01:779][231]Recompiling BattleTank...
+[2017.04.19-12.30.01:780][231]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 1455 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-12.30.01:781][231]Warning: Starting HotReload took  0.0s.
+[2017.04.19-12.30.05:455][671]CompilerResultsLog: New page: Compilation - 19 Apr 2017 14:30:05
+[2017.04.19-12.30.05:455][671]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-12.30.05:455][671]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-1455.dll
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-1455.lib
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1455.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1455.exp
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1455.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1455.suppressed.exp
+[2017.04.19-12.30.05:456][671]CompilerResultsLog: Info Total build time: 3.46 seconds (Local executor: 2.00 seconds)
+[2017.04.19-12.30.05:456][671]LogMainFrame: MainFrame: Module compiling took 3.681 seconds
+[2017.04.19-12.30.05:502][671]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 3 classes and 3 folders.
+[2017.04.19-12.30.05:503][671]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-12.30.05:523][671]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2250 classes and 460 folders.
+[2017.04.19-12.30.05:525][671]Display: HotReload took  3.8s.
+[2017.04.19-12.30.08:072][977]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-12.30.08:083][977]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.30.08:083][977]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-12.30.08:084][977]PIE: New page: PIE session: BattleGround (19 Apr 2017 14:30:08)
+[2017.04.19-12.30.08:084][977]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-12.30.08:090][977]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005901s)
+[2017.04.19-12.30.08:090][977]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-12.30.08:090][977]LogPlayLevel: PIE: World Init took: (0.000626s)
+[2017.04.19-12.30.08:090][977]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006849s)
+[2017.04.19-12.30.08:100][977]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-12.30.08:105][977]LogInit: FAudioDevice initialized.
+[2017.04.19-12.30.08:135][977]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-12.30.08:137][977]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-13.30.08
+[2017.04.19-12.30.08:137][977]LogWorld: Bringing up level for play took: 0.002129
+[2017.04.19-12.30.08:139][977]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.30.08:139][977]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-12.30.08:139][977]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-12.30.08:139][977]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.032
+[2017.04.19-12.30.08:139][977]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.30.10:404][247]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.30.10:434][247]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-12.31.08:549][662]LogSlate: Took 0.000135 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.19-12.31.17:727][689]LogSavePackage: Save=142.67ms
+[2017.04.19-12.31.17:727][689]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto123D52C2643242CDB707B9882E1BC971A.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap'
+[2017.04.19-12.31.17:729][689]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap
+[2017.04.19-12.31.17:730][689]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.163
+[2017.04.19-12.31.17:730][689]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.163
+[2017.04.19-12.31.17:731][689]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Levels/BattleGround_BuiltData] ([1] browsable assets)...
+[2017.04.19-12.31.17:731][689]OBJ SavePackage: Finished generating thumbnails for package [/Game/Levels/BattleGround_BuiltData]
+[2017.04.19-12.31.17:749][689]LogSavePackage: Save=8.13ms
+[2017.04.19-12.31.17:749][689]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData_Auto191D5B6BD4E210E4CF5C274A27E3CE757.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto1.uasset'
+[2017.04.19-12.31.17:750][689]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_BuiltData_Auto1.uasset
+[2017.04.19-12.31.17:750][689]LogFileHelpers: Auto-saving content packages took 0.019
+[2017.04.19-12.57.12:658][444]LogHttp:Warning: 0000017791DA4A00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-12.57.12:659][444]LogHttp:Warning: 0000017791DA4A00: libcurl info message cache 0 (Connection 14 seems to be dead!)
+[2017.04.19-12.57.12:659][444]LogHttp:Warning: 0000017791DA4A00: libcurl info message cache 1 (Closing connection 14)
+[2017.04.19-12.57.12:659][444]LogHttp:Warning: 0000017791DA4A00: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-12.57.12:659][444]LogHttp:Warning: 0000017791DA4A00: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-12.57.12:659][444]LogHttp:Warning: 0000017791DA4A00: libcurl info message cache 4 (Closing connection 15)
+[2017.04.19-13.03.55:336][669]LogSlate: Took 0.000159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.19-13.04.27:865][525]Running C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank Win64 Development -editorrecompile "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" -invalidatemakefilesonly
+[2017.04.19-13.04.28:167][525]Invalidating makefiles only in this run.
+[2017.04.19-13.04.28:277][525]Recompiling BattleTank...
+[2017.04.19-13.04.28:278][525]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 1646 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.04.29:078][525]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.19-13.04.45:385][525]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:04:45
+[2017.04.19-13.04.45:385][525]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.04.45:385][525]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 5.0546654 seconds
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info MyAIController.cpp
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-1646.dll
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-1646.lib
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1646.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1646.exp
+[2017.04.19-13.04.45:386][525]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1646.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1646.suppressed.exp
+[2017.04.19-13.04.45:387][525]CompilerResultsLog: Info Total build time: 16.92 seconds (Local executor: 2.30 seconds)
+[2017.04.19-13.04.45:387][525]LogMainFrame: MainFrame: Module compiling took 17.113 seconds
+[2017.04.19-13.04.45:433][525]LogClass: Could not find existing class MyAIController in package /Script/BattleTank for HotReload, assuming new class
+[2017.04.19-13.04.45:436][525]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 4 classes and 3 folders.
+[2017.04.19-13.04.45:437][525]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.04.45:458][525]LogContentBrowser: Native class hierarchy populated in 0.0075 seconds. Added 2251 classes and 460 folders.
+[2017.04.19-13.04.45:460][525]Display: HotReload took 17.2s.
+[2017.04.19-13.04.45:460][525]Warning: HotReload operation took 17.2s.
+[2017.04.19-13.04.45:531][525]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Public/MyAIController.h'
+[2017.04.19-13.04.45:580][525]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Private/MyAIController.cpp'
+[2017.04.19-13.04.45:589][525]LogHotReload: New module detected: UE4Editor-BattleTank-1646.dll
+[2017.04.19-13.04.45:607][526]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-13.04.45:660][526]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0013 seconds. Added 4 classes and 3 folders.
+[2017.04.19-13.04.45:661][526]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.04.45:669][526]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2251 classes and 460 folders.
+[2017.04.19-13.04.45:674][526]Display: HotReload took  0.1s.
+[2017.04.19-13.04.56:418][768]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Public/TankPlayerController.h'
+[2017.04.19-13.04.56:465][768]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Private/TankPlayerController.cpp'
+[2017.04.19-13.05.02:271][366]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0016 seconds. Added 112 classes and 0 folders.
+[2017.04.19-13.05.02:792][367]LogSlate: Took 0.000155 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.19-13.06.03:165][976]BlueprintLog: New page: Compile Tank_BP
+[2017.04.19-13.06.03:722][ 29]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.04.19-13.06.03:753][ 29]LogSavePackage: Save=22.87ms
+[2017.04.19-13.06.03:753][ 29]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP5F797CCF418DA2586B6322AC3372FD70.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.04.19-13.06.03:757][ 29]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.04.19-13.08.17:966][236]LogSavePackage: Save=167.19ms
+[2017.04.19-13.08.17:967][236]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto250DAF31649DF8CB96F78BAB6962C2E13.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap'
+[2017.04.19-13.08.17:968][236]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap
+[2017.04.19-13.08.17:972][236]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.204
+[2017.04.19-13.08.17:972][236]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.204
+[2017.04.19-13.08.37:082][294]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.04.19-13.09.43:492][278]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Public/MyAIController.h'
+[2017.04.19-13.09.43:516][278]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Private/MyAIController.cpp'
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: libcurl info message cache 0 (Connection 19 seems to be dead!)
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: libcurl info message cache 1 (Closing connection 19)
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-13.10.07:617][165]LogHttp:Warning: 0000017791E25180: libcurl info message cache 4 (Closing connection 20)
+[2017.04.19-13.10.24:121][122]Running C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank Win64 Development -editorrecompile "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" -invalidatemakefilesonly
+[2017.04.19-13.10.24:323][122]Invalidating makefiles only in this run.
+[2017.04.19-13.10.24:646][122]Recompiling BattleTank...
+[2017.04.19-13.10.24:646][122]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 869 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.10.33:731][122]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:10:33
+[2017.04.19-13.10.33:731][122]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.10.33:731][122]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 4.2701874 seconds
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-869.dll
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-869.lib
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-869.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-869.exp
+[2017.04.19-13.10.33:732][122]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-869.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-869.suppressed.exp
+[2017.04.19-13.10.33:733][122]CompilerResultsLog: Info Total build time: 8.91 seconds (Local executor: 2.32 seconds)
+[2017.04.19-13.10.33:733][122]LogMainFrame: MainFrame: Module compiling took 9.091 seconds
+[2017.04.19-13.10.33:786][122]LogClass: Could not find existing class TankAIController in package /Script/BattleTank for HotReload, assuming new class
+[2017.04.19-13.10.33:789][122]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.10.33:791][122]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.10.33:985][122]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.10.33:988][122]Display: HotReload took  9.6s.
+[2017.04.19-13.10.33:988][122]Warning: HotReload operation took  9.6s.
+[2017.04.19-13.10.34:044][122]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Public/TankAIController.h'
+[2017.04.19-13.10.34:090][122]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Source/BattleTank/Private/TankAIController.cpp'
+[2017.04.19-13.10.34:105][122]LogHotReload: New module detected: UE4Editor-BattleTank-869.dll
+[2017.04.19-13.10.34:124][123]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-13.10.34:200][123]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.10.34:201][123]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.10.34:375][123]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.10.34:383][123]Display: HotReload took  0.3s.
+[2017.04.19-13.10.57:466][496]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.04.19-13.12.21:272][202]BlueprintLog: New page: Compile Tank_BP
+[2017.04.19-13.13.32:601][327]LogHttp:Warning: 00000177E01E0400: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-13.13.32:601][327]LogHttp:Warning: 00000177E01E0400: libcurl info message cache 0 (Connection 21 seems to be dead!)
+[2017.04.19-13.13.32:601][327]LogHttp:Warning: 00000177E01E0400: libcurl info message cache 1 (Closing connection 21)
+[2017.04.19-13.13.32:601][327]LogHttp:Warning: 00000177E01E0400: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-13.13.32:601][327]LogHttp:Warning: 00000177E01E0400: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-13.13.32:602][327]LogHttp:Warning: 00000177E01E0400: libcurl info message cache 4 (Closing connection 22)
+[2017.04.19-13.18.29:187][215]LogSavePackage: Save=186.39ms
+[2017.04.19-13.18.29:187][215]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto303BCE45E405CFC2254DD0AB0877FF180.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto3.umap'
+[2017.04.19-13.18.29:189][215]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto3.umap
+[2017.04.19-13.18.29:190][215]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.214
+[2017.04.19-13.18.29:190][215]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.214
+[2017.04.19-13.18.29:191][215]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Tank/Tank_BP] ([1] browsable assets)...
+[2017.04.19-13.18.29:203][215]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Tank/Tank_BP.Tank_BP]
+[2017.04.19-13.18.29:203][215]OBJ SavePackage: Finished generating thumbnails for package [/Game/Tank/Tank_BP]
+[2017.04.19-13.18.29:244][215]LogSavePackage: Save=25.49ms
+[2017.04.19-13.18.29:244][215]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP_Auto391C6DA7F47C3EE0868172790501714CB.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto3.uasset'
+[2017.04.19-13.18.29:246][215]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto3.uasset
+[2017.04.19-13.18.29:246][215]LogFileHelpers: Auto-saving content packages took 0.055
+[2017.04.19-13.18.40:899][628]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.18.40:910][628]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.18.40:910][628]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.18.40:910][628]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:18:40)
+[2017.04.19-13.18.40:910][628]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.18.40:916][628]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005750s)
+[2017.04.19-13.18.40:917][628]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.18.40:917][628]LogPlayLevel: PIE: World Init took: (0.000619s)
+[2017.04.19-13.18.40:917][628]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006712s)
+[2017.04.19-13.18.40:931][628]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.18.40:936][628]LogInit: FAudioDevice initialized.
+[2017.04.19-13.18.40:963][628]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.18.40:966][628]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.18.40
+[2017.04.19-13.18.40:966][628]LogWorld: Bringing up level for play took: 0.002101
+[2017.04.19-13.18.40:967][628]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.18.40:968][628]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.18.40:968][628]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-13.18.40:968][628]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.797
+[2017.04.19-13.18.40:968][628]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.19.02:041][ 61]LogEditorViewport: Clicking on Actor (LMB): Tank_BP_C (Tank_BP)
+[2017.04.19-13.19.28:089][139]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-9530.000 Y=10400.000 Z=130.000] for [Tank_BP_C]
+[2017.04.19-13.19.28:601][200]LogSpawn:Warning: SpawnActor failed because of collision at the spawn location [X=-9175.000 Y=10580.000 Z=140.000] for [Tank_BP_C]
+[2017.04.19-13.20.11:313][261]Cmd: SELECT NONE
+[2017.04.19-13.20.11:816][319]Cmd: SELECT NONE
+[2017.04.19-13.20.12:484][398]LogEditorViewport: Clicking on Actor (LMB): Tank_BP_C (Tank_BP)
+[2017.04.19-13.20.16:839][876]LogEditorViewport: Clicking on Actor (LMB): Tank_BP_C (Tank_BP)
+[2017.04.19-13.20.31:568][324]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.31:632][324]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.40:311][703]LogRenderer: Reallocating scene render targets to support 860x828 NumSamples 1 (Frame:66713).
+[2017.04.19-13.20.40:472][703]LogRenderer: Reallocating scene render targets to support 864x828 NumSamples 1 (Frame:66717).
+[2017.04.19-13.20.40:689][703]LogRenderer: Reallocating scene render targets to support 868x828 NumSamples 1 (Frame:66721).
+[2017.04.19-13.20.42:641][901]LogEditorViewport: Clicking on Actor (LMB): Tank_BP_C (Tank_BP)
+[2017.04.19-13.20.46:612][363]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.04.19-13.20.49:123][657]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.20.49:135][657]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.49:135][657]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.20.49:135][657]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:20:49)
+[2017.04.19-13.20.49:135][657]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.20.49:142][657]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006324s)
+[2017.04.19-13.20.49:142][657]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.20.49:142][657]LogPlayLevel: PIE: World Init took: (0.000607s)
+[2017.04.19-13.20.49:143][657]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007293s)
+[2017.04.19-13.20.49:158][657]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.20.49:164][657]LogInit: FAudioDevice initialized.
+[2017.04.19-13.20.49:194][657]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.20.49:196][657]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.20.49
+[2017.04.19-13.20.49:197][657]LogWorld: Bringing up level for play took: 0.002349
+[2017.04.19-13.20.49:198][657]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.20.49:198][657]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.20.49:198][657]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-13.20.49:199][657]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 1.028
+[2017.04.19-13.20.49:199][657]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.50:960][866]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.51:002][866]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.20.53:275][102]LogSavePackage: Save=147.78ms
+[2017.04.19-13.20.53:275][102]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGroundB96F88A24D4E6F9DCC5009ADFC44ABA2.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.04.19-13.20.53:279][102]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.04.19-13.20.53:298][102]LogFileHelpers: Saving map 'BattleGround' took 0.216
+[2017.04.19-13.20.53:334][102]LogSavePackage: Save=24.43ms
+[2017.04.19-13.20.53:334][102]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData245288FC441C5698C033ABAA7FD8E035.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset'
+[2017.04.19-13.20.53:337][102]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset
+[2017.04.19-13.20.53:339][102]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.04.19-13.20.53:360][102]LogSavePackage: Save=15.88ms
+[2017.04.19-13.20.53:360][102]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP8A9F79D84A100FC5B9B17DB655156015.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.04.19-13.20.53:363][102]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.04.19-13.21.02:123][605]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.21.02:135][605]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.21.02:135][605]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.21.02:135][605]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:21:02)
+[2017.04.19-13.21.02:135][605]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.21.02:142][605]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006467s)
+[2017.04.19-13.21.02:142][605]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.21.02:142][605]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2017.04.19-13.21.02:143][605]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007456s)
+[2017.04.19-13.21.02:160][605]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.21.02:183][605]LogInit: FAudioDevice initialized.
+[2017.04.19-13.21.02:214][605]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.21.02:216][605]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.21.02
+[2017.04.19-13.21.02:217][605]LogWorld: Bringing up level for play took: 0.002710
+[2017.04.19-13.21.02:219][605]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.21.02:219][605]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.21.02:219][605]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-13.21.02:219][605]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.048
+[2017.04.19-13.21.02:219][605]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.21.06:200][ 73]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.21.06:240][ 73]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.23.30:386][280]LogHotReload: New module detected: UE4Editor-BattleTank-9553.dll
+[2017.04.19-13.23.31:060][283]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-13.23.31:121][283]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.23.31:122][283]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.23.31:316][283]LogContentBrowser: Native class hierarchy populated in 0.0075 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.23.31:323][283]Display: HotReload took  0.3s.
+[2017.04.19-13.24.12:389][407]LogHttp:Warning: 000001781E341780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-13.24.12:390][407]LogHttp:Warning: 000001781E341780: libcurl info message cache 0 (Connection 26 seems to be dead!)
+[2017.04.19-13.24.12:390][407]LogHttp:Warning: 000001781E341780: libcurl info message cache 1 (Closing connection 26)
+[2017.04.19-13.24.12:390][407]LogHttp:Warning: 000001781E341780: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-13.24.12:390][407]LogHttp:Warning: 000001781E341780: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-13.24.12:390][407]LogHttp:Warning: 000001781E341780: libcurl info message cache 4 (Closing connection 27)
+[2017.04.19-13.25.41:176][763]Recompiling BattleTank...
+[2017.04.19-13.25.41:176][763]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 1251 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.25.41:177][763]Warning: Starting HotReload took  0.0s.
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:25:46
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-1251.dll
+[2017.04.19-13.25.46:040][330]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-1251.lib
+[2017.04.19-13.25.46:041][330]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1251.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1251.exp
+[2017.04.19-13.25.46:041][330]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1251.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1251.suppressed.exp
+[2017.04.19-13.25.46:041][330]CompilerResultsLog: Info Total build time: 4.66 seconds (Local executor: 2.31 seconds)
+[2017.04.19-13.25.46:041][330]LogMainFrame: MainFrame: Module compiling took 4.869 seconds
+[2017.04.19-13.25.46:115][330]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.25.46:116][330]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.25.46:310][330]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.25.46:313][330]Display: HotReload took  5.1s.
+[2017.04.19-13.25.47:454][467]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.25.47:465][467]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.25.47:466][467]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.25.47:466][467]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:25:47)
+[2017.04.19-13.25.47:466][467]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.25.47:473][467]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006524s)
+[2017.04.19-13.25.47:473][467]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.25.47:473][467]LogPlayLevel: PIE: World Init took: (0.000647s)
+[2017.04.19-13.25.47:474][467]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007500s)
+[2017.04.19-13.25.47:517][467]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.25.47:522][467]LogInit: FAudioDevice initialized.
+[2017.04.19-13.25.47:552][467]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.25.47:554][467]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.25.47
+[2017.04.19-13.25.47:555][467]LogWorld: Bringing up level for play took: 0.002299
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: Tank_BP2 has possessed
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: Tank_BP_540 has possessed
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: Tank_BP3 has possessed
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.25.47:556][467]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-13.25.47:557][467]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.614
+[2017.04.19-13.25.47:557][467]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.28.11:482][733]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.28.11:529][733]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.29.48:836][502]Recompiling BattleTank...
+[2017.04.19-13.29.48:836][502]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9338 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.29.48:837][502]Warning: Starting HotReload took  0.0s.
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:29:54
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-9338.dll
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-9338.lib
+[2017.04.19-13.29.54:176][119]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9338.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9338.exp
+[2017.04.19-13.29.54:177][119]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9338.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9338.suppressed.exp
+[2017.04.19-13.29.54:177][119]CompilerResultsLog: Info Total build time: 5.12 seconds (Local executor: 2.44 seconds)
+[2017.04.19-13.29.54:177][119]LogMainFrame: MainFrame: Module compiling took 5.346 seconds
+[2017.04.19-13.29.54:230][119]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.29.54:231][119]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.29.54:422][119]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.29.54:426][119]Display: HotReload took  5.6s.
+[2017.04.19-13.29.56:506][363]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.29.56:518][363]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.29.56:519][363]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.29.56:519][363]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:29:56)
+[2017.04.19-13.29.56:519][363]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.29.56:525][363]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006529s)
+[2017.04.19-13.29.56:526][363]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.29.56:526][363]LogPlayLevel: PIE: World Init took: (0.000574s)
+[2017.04.19-13.29.56:526][363]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007442s)
+[2017.04.19-13.29.56:560][363]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.29.56:565][363]LogInit: FAudioDevice initialized.
+[2017.04.19-13.29.56:594][363]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.29.56:597][363]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.29.56
+[2017.04.19-13.29.56:597][363]LogWorld: Bringing up level for play took: 0.002312
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.29.56:599][363]LogTemp:Warning: Tank_BP_C_0 has possessed
+[2017.04.19-13.29.56:599][363]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.428
+[2017.04.19-13.29.56:600][363]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.30.16:826][776]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.30.16:870][776]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.07:977][ 79]LogHotReload: New module detected: UE4Editor-BattleTank-4270.dll
+[2017.04.19-13.31.08:653][ 82]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-13.31.08:725][ 82]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0015 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.31.08:727][ 82]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.31.09:035][ 82]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.31.09:046][ 82]Display: HotReload took  0.4s.
+[2017.04.19-13.31.18:343][220]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.31.18:355][220]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.18:355][220]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.31.18:356][220]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:31:18)
+[2017.04.19-13.31.18:356][220]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.31.18:362][220]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006396s)
+[2017.04.19-13.31.18:363][220]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.31.18:363][220]LogPlayLevel: PIE: World Init took: (0.000618s)
+[2017.04.19-13.31.18:363][220]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007371s)
+[2017.04.19-13.31.18:396][220]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.31.18:402][220]LogInit: FAudioDevice initialized.
+[2017.04.19-13.31.18:430][220]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.31.18:433][220]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.31.18
+[2017.04.19-13.31.18:433][220]LogWorld: Bringing up level for play took: 0.002322
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: AIController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.18:435][220]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.31.18:436][220]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.264
+[2017.04.19-13.31.18:436][220]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.25:321][ 31]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.25:363][ 31]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.43:862][289]Recompiling BattleTank...
+[2017.04.19-13.31.43:862][289]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 951 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.31.43:863][289]Warning: Starting HotReload took  0.0s.
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:31:49
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-951.dll
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-951.lib
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-951.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-951.exp
+[2017.04.19-13.31.49:325][908]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-951.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-951.suppressed.exp
+[2017.04.19-13.31.49:326][908]CompilerResultsLog: Info Total build time: 5.19 seconds (Local executor: 2.55 seconds)
+[2017.04.19-13.31.49:326][908]LogMainFrame: MainFrame: Module compiling took 5.468 seconds
+[2017.04.19-13.31.49:379][908]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.31.49:381][908]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.31.49:572][908]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.31.49:576][908]Display: HotReload took  5.7s.
+[2017.04.19-13.31.50:242][984]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.31.50:255][984]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.31.50:255][984]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.31.50:255][984]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:31:50)
+[2017.04.19-13.31.50:255][984]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.31.50:261][984]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005834s)
+[2017.04.19-13.31.50:262][984]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.31.50:262][984]LogPlayLevel: PIE: World Init took: (0.000708s)
+[2017.04.19-13.31.50:262][984]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.006927s)
+[2017.04.19-13.31.50:294][984]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.31.50:299][984]LogInit: FAudioDevice initialized.
+[2017.04.19-13.31.50:327][984]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.31.50:329][984]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.31.50
+[2017.04.19-13.31.50:330][984]LogWorld: Bringing up level for play took: 0.002316
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.31.50:331][984]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.31.50:332][984]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.161
+[2017.04.19-13.31.50:332][984]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.16:961][165]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.17:001][165]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.35:677][402]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.32.35:688][402]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.35:688][402]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.32.35:688][402]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:32:35)
+[2017.04.19-13.32.35:688][402]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.32.35:694][402]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006095s)
+[2017.04.19-13.32.35:695][402]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.32.35:695][402]LogPlayLevel: PIE: World Init took: (0.000577s)
+[2017.04.19-13.32.35:695][402]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007027s)
+[2017.04.19-13.32.35:708][402]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.32.35:714][402]LogInit: FAudioDevice initialized.
+[2017.04.19-13.32.35:741][402]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.32.35:743][402]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.32.35
+[2017.04.19-13.32.35:744][402]LogWorld: Bringing up level for play took: 0.002304
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.32.35:745][402]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.32.35:746][402]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.32.35:746][402]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.425
+[2017.04.19-13.32.35:746][402]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.41:009][ 31]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.32.41:052][ 31]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.33.48:365][841]Recompiling BattleTank...
+[2017.04.19-13.33.48:365][841]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9367 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.33.48:366][841]Warning: Starting HotReload took  0.0s.
+[2017.04.19-13.33.53:126][ 97]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:33:53
+[2017.04.19-13.33.53:126][ 97]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-9367.dll
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-9367.lib
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9367.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9367.exp
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9367.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9367.suppressed.exp
+[2017.04.19-13.33.53:127][ 97]CompilerResultsLog: Info Total build time: 4.44 seconds (Local executor: 2.12 seconds)
+[2017.04.19-13.33.53:127][ 97]LogMainFrame: MainFrame: Module compiling took 4.766 seconds
+[2017.04.19-13.33.53:179][ 97]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.33.53:180][ 97]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.33.53:389][ 97]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.33.53:392][ 97]Display: HotReload took  5.0s.
+[2017.04.19-13.33.55:122][103]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.33.55:134][103]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.33.55:135][103]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.33.55:135][103]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:33:55)
+[2017.04.19-13.33.55:135][103]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.33.55:141][103]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006402s)
+[2017.04.19-13.33.55:142][103]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.33.55:142][103]LogPlayLevel: PIE: World Init took: (0.000570s)
+[2017.04.19-13.33.55:142][103]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007316s)
+[2017.04.19-13.33.55:174][103]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.33.55:179][103]LogInit: FAudioDevice initialized.
+[2017.04.19-13.33.55:207][103]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.33.55:210][103]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.33.55
+[2017.04.19-13.33.55:210][103]LogWorld: Bringing up level for play took: 0.002265
+[2017.04.19-13.33.55:211][103]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.33.55:212][103]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.33.55:212][103]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.33.55:212][103]LogTemp:Warning: PlayerController Begin Play
+[2017.04.19-13.33.55:212][103]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.33.55:212][103]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 1.041
+[2017.04.19-13.33.55:212][103]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.00:822][766]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.00:865][766]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.16:756][174]Recompiling BattleTank...
+[2017.04.19-13.34.16:756][174]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4673 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.19-13.34.16:758][174]Warning: Starting HotReload took  0.0s.
+[2017.04.19-13.34.21:300][288]CompilerResultsLog: New page: Compilation - 19 Apr 2017 15:34:21
+[2017.04.19-13.34.21:300][288]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info TankPlayerController.cpp
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-4673.dll
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-4673.lib
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4673.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4673.exp
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4673.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4673.suppressed.exp
+[2017.04.19-13.34.21:301][288]CompilerResultsLog: Info Total build time: 4.27 seconds (Local executor: 1.83 seconds)
+[2017.04.19-13.34.21:301][288]LogMainFrame: MainFrame: Module compiling took 4.549 seconds
+[2017.04.19-13.34.21:357][288]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.34.21:359][288]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.34.21:556][288]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.34.21:559][288]Display: HotReload took  4.8s.
+[2017.04.19-13.34.21:560][288]LogHotReload: New module detected: UE4Editor-BattleTank-4673.dll
+[2017.04.19-13.34.21:570][289]LogHotReload: Starting Hot-Reload from IDE
+[2017.04.19-13.34.21:644][289]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0014 seconds. Added 5 classes and 3 folders.
+[2017.04.19-13.34.21:645][289]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2017.04.19-13.34.21:865][289]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2252 classes and 460 folders.
+[2017.04.19-13.34.21:872][289]Display: HotReload took  0.3s.
+[2017.04.19-13.34.24:206][296]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.34.24:219][296]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.24:219][296]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.34.24:219][296]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:34:24)
+[2017.04.19-13.34.24:219][296]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.34.24:226][296]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006441s)
+[2017.04.19-13.34.24:226][296]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.34.24:227][296]LogPlayLevel: PIE: World Init took: (0.000739s)
+[2017.04.19-13.34.24:227][296]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007595s)
+[2017.04.19-13.34.24:272][296]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.34.24:279][296]LogInit: FAudioDevice initialized.
+[2017.04.19-13.34.24:306][296]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.34.24:308][296]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.34.24
+[2017.04.19-13.34.24:309][296]LogWorld: Bringing up level for play took: 0.002325
+[2017.04.19-13.34.24:310][296]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.34.24:310][296]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.34.24:310][296]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.34.24:311][296]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.34.24:311][296]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.14
+[2017.04.19-13.34.24:311][296]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.47:197][ 26]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.47:238][ 26]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.53:488][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:489][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:489][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:489][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:493][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:494][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:494][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:494][711]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:508][713]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:508][713]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:509][713]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:509][713]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:516][714]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:517][714]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:517][714]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:517][714]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:525][715]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:525][715]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:525][715]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:526][715]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:533][716]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:533][716]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:534][716]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:534][716]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:541][717]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:542][717]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:542][717]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:542][717]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:550][718]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:551][718]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:552][718]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:552][718]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:563][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:564][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:564][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:564][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:566][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:566][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:566][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:566][719]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:573][720]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:574][720]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:574][720]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:574][720]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:581][721]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:582][721]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:582][721]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:582][721]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:590][722]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:590][722]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:590][722]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:590][722]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:598][723]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:598][723]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:599][723]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:599][723]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:606][724]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:606][724]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:607][724]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:607][724]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:615][725]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:615][725]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:616][725]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:616][725]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:623][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:624][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:624][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:624][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:626][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:626][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:626][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:627][726]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:642][728]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:642][728]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:642][728]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:643][728]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:650][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:650][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:651][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:651][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:652][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:652][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:653][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:653][729]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:668][731]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:668][731]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:668][731]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:669][731]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:684][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:684][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:685][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:685][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:689][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:689][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:690][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:690][733]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:696][734]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:696][734]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:697][734]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:697][734]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:704][735]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:704][735]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:704][735]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:705][735]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:712][736]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:712][736]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:713][736]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:713][736]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:721][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:722][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:722][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:722][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:724][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:724][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:724][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:724][737]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:740][739]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:740][739]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:741][739]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:741][739]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:751][740]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:751][740]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:752][740]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:752][740]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:766][742]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:766][742]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:766][742]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:766][742]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:782][744]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:782][744]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:783][744]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:783][744]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:790][745]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:791][745]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:791][745]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:791][745]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:801][746]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:801][746]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:802][746]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:802][746]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:808][747]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:808][747]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:809][747]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:809][747]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:817][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:817][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:818][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:818][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:821][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:822][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:822][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:822][748]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:836][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:837][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:837][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:837][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:841][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:841][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:842][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:842][750]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:848][751]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:848][751]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:849][751]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:849][751]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:857][752]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:857][752]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:858][752]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.53:858][752]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:599][840]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:599][840]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:600][840]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:600][840]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:614][842]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:614][842]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:614][842]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:615][842]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:623][843]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:623][843]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:623][843]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:623][843]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:631][844]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:631][844]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:632][844]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:632][844]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:639][845]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:639][845]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:640][845]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:640][845]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:647][846]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:648][846]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:648][846]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:649][846]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:656][847]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:656][847]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:656][847]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:657][847]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:664][848]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:664][848]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:665][848]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.54:665][848]PIE:Warning: Warning Invalid Simulate Options: Body (Tank_BP4.Tank tank_fbx_Body) is set to simulate physics but Collision Enabled is incompatible
+[2017.04.19-13.34.56:045][  3]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.04.19-13.34.57:297][144]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.19-13.34.57:308][144]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.34.57:309][144]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.19-13.34.57:309][144]PIE: New page: PIE session: BattleGround (19 Apr 2017 15:34:57)
+[2017.04.19-13.34.57:309][144]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.19-13.34.57:316][144]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006933s)
+[2017.04.19-13.34.57:316][144]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.19-13.34.57:317][144]LogPlayLevel: PIE: World Init took: (0.000589s)
+[2017.04.19-13.34.57:317][144]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.007896s)
+[2017.04.19-13.34.57:334][144]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.19-13.34.57:339][144]LogInit: FAudioDevice initialized.
+[2017.04.19-13.34.57:371][144]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.19-13.34.57:374][144]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.19-14.34.57
+[2017.04.19-13.34.57:374][144]LogWorld: Bringing up level for play took: 0.002463
+[2017.04.19-13.34.57:375][144]LogTemp:Warning: Tank_BP3 has possessed with AI
+[2017.04.19-13.34.57:375][144]LogTemp:Warning: Tank_BP2 has possessed with AI
+[2017.04.19-13.34.57:375][144]LogTemp:Warning: Tank_BP_540 has possessed with AI
+[2017.04.19-13.34.57:375][144]LogTemp:Warning: Tank_BP4_1033 has possessed with AI
+[2017.04.19-13.34.57:376][144]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.19-13.34.57:376][144]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.795
+[2017.04.19-13.34.57:376][144]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.35.12:328][920]Cmd: SELECT NONE
+[2017.04.19-13.35.14:958][232]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.35.15:003][232]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.19-13.35.48:451][546]LogSavePackage: Save=169.59ms
+[2017.04.19-13.35.48:451][546]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto4AFB116B34E976AEF8C39F4AB5463B162.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto4.umap'
+[2017.04.19-13.35.48:452][546]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto4.umap
+[2017.04.19-13.35.48:454][546]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.208
+[2017.04.19-13.35.48:454][546]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.208
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: libcurl info message cache 0 (Connection 33 seems to be dead!)
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: libcurl info message cache 1 (Closing connection 33)
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.04.19-13.36.04:895][597]LogHttp:Warning: 00000177AC74AF80: libcurl info message cache 4 (Closing connection 34)
+[2017.04.19-13.40.12:416][758]LogSavePackage: Save=152.75ms
+[2017.04.19-13.40.12:416][758]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround4B14929B402437574C5C41ABC374904C.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.04.19-13.40.12:418][758]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.04.19-13.40.12:438][758]LogFileHelpers: Saving map 'BattleGround' took 0.219
+[2017.04.19-13.40.13:350][842]Cmd: QUIT_EDITOR
+[2017.04.19-13.40.13:910][842]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.19-13.40.13:929][842]LogExit: Preparing to exit.
+[2017.04.19-13.40.14:522][842]LogDirectoryWatcher: A directory notification for 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.19-13.40.14:544][842]LogExit: Editor shut down
+[2017.04.19-13.40.14:544][842]LogExit: Transaction tracking system shut down
+[2017.04.19-13.40.14:598][842]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.19-13.40.14:598][842]LogExit: Object subsystem successfully closed.
+[2017.04.19-13.40.14:615][842]LogD3D11RHI: Shutdown
+[2017.04.19-13.40.14:615][842]LogD3D11RHI: CleanupD3DDevice
+[2017.04.19-13.40.14:704][842]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module BattleTank (525)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module BlueprintGraph (515)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (513)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (505)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (503)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (500)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module CrashTracker (498)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module SceneOutliner (496)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module AddContentDialog (494)
+[2017.04.19-13.40.14:714][842]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module WidgetCarousel (493)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module EditorWidgets (490)
+[2017.04.19-13.40.14:714][842]LogModuleManager: Shutting down and abandoning module CollectionManager (488)
+[2017.04.19-13.40.14:714][842]LogDirectoryWatcher: A directory notification for 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' was aborted.
+[2017.04.19-13.40.14:714][842]LogDirectoryWatcher: A directory notification for 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Ed/Collections/' was aborted.
+[2017.04.19-13.40.14:714][842]LogDirectoryWatcher: A directory notification for 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' was aborted.
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module StatsViewer (486)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module FoliageEdit (484)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module LandscapeEditor (482)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (480)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module ActorPickerMode (478)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module GeometryMode (476)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module TextureAlignMode (474)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module BspMode (472)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module HardwareSurvey (470)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (468)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AutomationWorker (466)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (464)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (462)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module PlacementMode (461)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (458)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (456)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module MfMediaFactory (454)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module MfMediaEditor (452)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (450)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (448)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (446)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module Media (445)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (442)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module CharacterAI (440)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AudioCapture (438)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module SequenceRecorder (437)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module SmartSnapping (434)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module SessionServices (432)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module ViewportSnapping (430)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module ViewportInteraction (428)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module LogVisualizer (426)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module IntroTutorials (424)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (423)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (420)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (418)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (416)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (414)
+[2017.04.19-13.40.14:715][842]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (413)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (410)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (408)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module InputBindingEditor (406)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module NiagaraEditor (404)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module MergeActors (402)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module SizeMap (400)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module TreeMap (398)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module ReferenceViewer (396)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (394)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module LocalizationService (393)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module HardwareTargeting (390)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (388)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module UndoHistory (386)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module UserFeedback (384)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module XmlParser (382)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module Blutility (380)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (378)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (377)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (374)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module SettingsEditor (372)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module ProjectLauncher (370)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module SessionFrontend (368)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module ProfilerClient (366)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module DeviceManager (364)
+[2017.04.19-13.40.15:303][842]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (363)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module AutomationController (360)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module AutomationWindow (358)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module Layers (356)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (354)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module DetailCustomizations (352)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module PackagesDialog (350)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module Persona (348)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module AnimGraph (347)
+[2017.04.19-13.40.15:354][842]LogModuleManager: Shutting down and abandoning module Kismet (344)
+[2017.04.19-13.40.15:358][842]LogModuleManager: Shutting down and abandoning module GraphEditor (342)
+[2017.04.19-13.40.15:358][842]LogModuleManager: Shutting down and abandoning module ClassViewer (340)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module Toolbox (338)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module ModuleUI (336)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module MovieSceneTools (334)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module OutputLog (332)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module GammaUI (330)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module Documentation (328)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module Niagara (326)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (324)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module AnalyticsET (322)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module PortalServices (320)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module PortalRpc (318)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module MessagingRpc (316)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module AITestSuite (311)
+[2017.04.19-13.40.15:359][842]LogModuleManager: Shutting down and abandoning module ProfilerService (308)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module TaskGraph (306)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module SteamVRController (304)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module SteamVR (302)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (300)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (298)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module OculusLibrary (296)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module OculusInput (294)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (292)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (290)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module CableComponent (288)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (286)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (282)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module HTML5Networking (280)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module AlembicImporter (278)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module AlembicLibrary (277)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module GeometryCache (276)
+[2017.04.19-13.40.15:464][842]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (275)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (270)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module SuperSearch (269)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (266)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module PluginBrowser (264)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (262)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module EpicSurvey (260)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (258)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module DesktopPlatform (257)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module UObjectPlugin (254)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (252)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (250)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module GitSourceControl (248)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module SourceControl (247)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (244)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (242)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (240)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module Paper2DEditor (238)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module MeshPaint (237)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module LevelEditor (235)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (234)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module MainFrame (232)
+[2017.04.19-13.40.15:465][842]LogModuleManager: Shutting down and abandoning module HotReload (231)
+[2017.04.19-13.40.15:465][842]LogDirectoryWatcher: A directory notification for 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Binaries/Win64' was aborted.
+[2017.04.19-13.40.15:466][842]LogModuleManager: Shutting down and abandoning module ContentBrowser (227)
+[2017.04.19-13.40.15:466][842]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.04.19-13.40.15:466][842]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.04.19-13.40.15:466][842]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.04.19-13.40.15:466][842]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.04.19-13.40.15:567][842]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.04.19-13.40.15:667][842]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.04.19-13.40.15:669][842]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.04.19-13.40.15:842][842]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.19-13.40.15:842][842]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.19-13.40.15:842][842]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.19-13.40.15:842][842]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.04.19-13.40.15:843][842]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.04.19-13.40.15:915][842]LogDerivedDataCache: Shutdown
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.19-13.40.15:915][842]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.19-13.40.15:915][842]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.19-13.40.15:915][842]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.19-13.40.15:915][842]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B2D5E0947-4CF3-B04C-89FF-6E8E8519458D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=f7f8e8e14812d3a9c689c8b3027a32dd%7C58448bdb2ce4468ba1b793c4adc2bec4%7Cb6541784-51a5-4cf3-83aa-c7e3819647ee&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.19-13.40.15:939][842]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.19-13.40.15:940][842]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.19-13.40.15:940][842]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.19-13.40.15:940][842]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.19-13.40.15:940][842]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.19-13.40.15:940][842]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.19-13.40.15:941][842]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.19-13.40.15:942][842]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.19-13.40.15:942][842]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.19-13.40.15:943][842]LogExit: Exiting.
+[2017.04.19-13.40.15:952][842]Log file closed, 04/19/17 14:40:15

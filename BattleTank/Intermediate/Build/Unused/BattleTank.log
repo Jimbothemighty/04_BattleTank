@@ -1,4 +1,25 @@
 ﻿  Compiling game modules for hot reload
-  Target is up to date
-  Deploying BattleTankEditor Win64 Development...
-  Total build time: 2.19 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Parsing headers for BattleTankEditor
+    Running UnrealHeaderTool "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for BattleTankEditor in 4.4472091 seconds
+  Performing 4 actions (4 in parallel)
+  TankPlayerController.cpp
+  BattleTank.generated.cpp
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\TankPlayerController.h(22): warning C4263: 'void ATankPlayerController::Tick(float) const': member function does not override any base class virtual member function
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\TankPlayerController.h(23): warning C4264: 'void AActor::Tick(float,ELevelTick)': no override available for virtual member function from base 'AActor'; function is hidden
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2389): note: see declaration of 'AActor::Tick'
+  C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h(17): note: see declaration of 'AActor'
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\TankPlayerController.h(23): warning C4264: 'void AActor::Tick(float)': no override available for virtual member function from base 'AActor'; function is hidden
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2054): note: see declaration of 'AActor::Tick'
+  C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AnimInstance.generated.h(17): note: see declaration of 'AActor'
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankPlayerController.cpp(34): error C2663: 'AActor::Tick': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public/TankPlayerController.h(22): warning C4263: 'void ATankPlayerController::Tick(float) const': member function does not override any base class virtual member function
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public/TankPlayerController.h(23): warning C4264: 'void AActor::Tick(float,ELevelTick)': no override available for virtual member function from base 'AActor'; function is hidden
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2389): note: see declaration of 'AActor::Tick'
+  C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h(13): note: see declaration of 'AActor'
+C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public/TankPlayerController.h(23): warning C4264: 'void AActor::Tick(float)': no override available for virtual member function from base 'AActor'; function is hidden
+  C:\Program Files\Epic Games\UE_4.15\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(2054): note: see declaration of 'AActor::Tick'
+  C:\Program Files\Epic Games\UE_4.15\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h(13): note: see declaration of 'AActor'
+ERROR : UBT error : Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-7226.dll
+  Total build time: 8.52 seconds (Local executor: 0.00 seconds)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" BattleTankEditor Win64 Development "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

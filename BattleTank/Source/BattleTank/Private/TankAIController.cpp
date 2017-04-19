@@ -6,22 +6,22 @@
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
-//	UE_LOG(LogTemp, Warning, TEXT("AIController Begin Play"));
 
-	auto ControlledTank = GetControlledTank();
+	auto TargetingPlayerTank = GetPlayerTank();
 
-	if (ControlledTank)
+	if (TargetingPlayerTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("%s has possessed with AI"), *GetPawn()->GetName());
+		UE_LOG(LogTemp, Warning, TEXT("AI Tank name: %s is targetting player tank: %s"), *GetPawn()->GetName(), *(TargetingPlayerTank->GetName()));
 	}
-	else if (!ControlledTank)
+	else if (!TargetingPlayerTank)
 	{
-		UE_LOG(LogTemp, Error, TEXT("%s has not possessed with AI"), *GetPawn()->GetName());
+		UE_LOG(LogTemp, Error, TEXT("AI Tank name: %s is not targetting a player."), *GetPawn()->GetName());
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("AI Possession report not functioning. See TankPlayerController.cpp"));
+		UE_LOG(LogTemp, Error, TEXT("AI targetting player report not functioning. See TankAIController.cpp"));
 	};
+
 };
 
 
@@ -30,6 +30,13 @@ void ATankAIController::BeginPlay()
 ATank* ATankAIController::GetControlledTank() const
 {
 	return Cast<ATank>(GetPawn());
+};
+
+ATank* ATankAIController::GetPlayerTank() const
+{
+//	auto PlayerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
+//	if (!PlayerPawn) { return nullptr; };
+	return Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());  // can also return PlayerPawn (as per Ben). But I have kept my original code.
 };
 
 

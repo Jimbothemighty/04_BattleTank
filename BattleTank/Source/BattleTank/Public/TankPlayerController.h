@@ -18,4 +18,8 @@ public:
 	ATank* GetControlledTank() const;
 	
 	virtual void BeginPlay() override; // beginplay inherited from AActor. overridable since originally declared virtual in AActor
+
+	virtual void Tick(float DeltaTime) override;
+
+	void AimTowardsCrosshair();
 };
