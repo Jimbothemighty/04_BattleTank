@@ -1,9 +1,4 @@
 ﻿  Compiling game modules for hot reload
-  Performing 3 actions (4 in parallel)
-  TankPlayerController.cpp
-  [2/3] Link UE4Editor-BattleTank-7850.dll
-  [3/3] Link UE4Editor-BattleTank-7850.lib
-     Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7850.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7850.exp
-     Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7850.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7850.suppressed.exp
+  Target is up to date
   Deploying BattleTankEditor Win64 Development...
-  Total build time: 4.70 seconds (Local executor: 2.12 seconds)
+  Total build time: 2.30 seconds (NoActionsToExecute executor: 0.00 seconds)

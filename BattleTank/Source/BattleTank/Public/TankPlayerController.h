@@ -21,16 +21,10 @@ private:
 
 	virtual void Tick(float DeltaTime) override;
 
-	float Reach = 10000.f;
 
 	void AimTowardsCrosshair();
 
-	FVector GetPlayerViewPointVectorAndRotator();
-	FVector GetReachLineEnd();
-
 	bool GetSightRayHitLocation(FVector& HitLocation) const;
-
-	FHitResult ThePointInSpaceHit();
 
 	UPROPERTY(EditAnywhere)
 	float CrosshairXLocation = 0.5f;

@@ -325,6 +325,7 @@
     <NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" BattleTankEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Clean.bat" BattleTankEditor Win64 Development "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
     <NMakeOutput>C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\Win64\UE4Editor.exe</NMakeOutput>
+    <AdditionalOptions>/Yu</AdditionalOptions>
   </PropertyGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Development_Game|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -421,10 +422,12 @@
     <ClCompile Include="..\..\Source\BattleTank\Private\MyAIController.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\Private\TankAIController.cpp" />
+    <ClCompile Include="..\..\Source\BattleTank\Private\TankAimingComponent.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\Private\TankPlayerController.cpp" />
     <ClInclude Include="..\..\Source\BattleTank\Public\MyAIController.h" />
     <ClInclude Include="..\..\Source\BattleTank\Public\Tank.h" />
     <ClInclude Include="..\..\Source\BattleTank\Public\TankAIController.h" />
+    <ClInclude Include="..\..\Source\BattleTank\Public\TankAimingComponent.h" />
     <ClInclude Include="..\..\Source\BattleTank\Public\TankPlayerController.h" />
   </ItemGroup>
   <PropertyGroup>

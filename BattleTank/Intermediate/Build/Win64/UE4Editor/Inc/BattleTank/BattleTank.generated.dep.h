@@ -12,6 +12,9 @@
 #ifndef BATTLETANK_MyAIController_generated_h
 	#include "Public/MyAIController.h"
 #endif
+#ifndef BATTLETANK_TankAimingComponent_generated_h
+	#include "Public/TankAimingComponent.h"
+#endif
 #ifndef BATTLETANK_Tank_generated_h
 	#include "Public/Tank.h"
 #endif

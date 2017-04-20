@@ -19,6 +19,10 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 	}
 	IMPLEMENT_CLASS(AMyAIController, 359273311);
+	void UTankAimingComponent::StaticRegisterNativesUTankAimingComponent()
+	{
+	}
+	IMPLEMENT_CLASS(UTankAimingComponent, 421911560);
 	void ATank::StaticRegisterNativesATank()
 	{
 	}
@@ -35,6 +39,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 
@@ -42,6 +47,8 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase();
 	BATTLETANK_API class UClass* Z_Construct_UClass_AMyAIController_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_AMyAIController();
+	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister();
+	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankAIController_NoRegister();
@@ -114,6 +121,39 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyAIController(Z_Construct_UClass_AMyAIController, &AMyAIController::StaticClass, TEXT("AMyAIController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyAIController);
+	UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister()
+	{
+		return UTankAimingComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UTankAimingComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_BattleTank();
+			OuterClass = UTankAimingComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankAimingComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UTankAimingComponent(Z_Construct_UClass_UTankAimingComponent, &UTankAimingComponent::StaticClass, TEXT("UTankAimingComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UTankAimingComponent);
 	UClass* Z_Construct_UClass_ATank_NoRegister()
 	{
 		return ATank::StaticClass();
@@ -230,8 +270,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x8BF33191;
-			Guid.B = 0x4C892CB2;
+			Guid.A = 0x2BA0D5F5;
+			Guid.B = 0x3C7FD578;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
