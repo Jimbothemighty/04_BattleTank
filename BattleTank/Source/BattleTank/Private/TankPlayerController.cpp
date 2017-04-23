@@ -6,7 +6,7 @@
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-//	UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
+	//	UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
 
 	auto ControlledTank = GetControlledTank();
 
@@ -27,7 +27,7 @@ void ATankPlayerController::BeginPlay()
 
 void ATankPlayerController::Tick(float DeltaTime)
 {
-	Super::Tick( DeltaTime );
+	Super::Tick(DeltaTime);
 
 	AimTowardsCrosshair(); // TODO <- check appropriate location and usage
 
@@ -59,18 +59,18 @@ void ATankPlayerController::AimTowardsCrosshair()
 bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
 {
 	int32 ViewportSizeX, ViewportSizeY;
-	GetViewportSize(ViewportSizeX, ViewportSizeY); 
-		// GetViewportSize is an Unreal function (not a custom one of mine).
-		// I am outputting to custom variables ViewportSizeX and ViewportSizeY.
-		// The contents of these variables is calculated by the unreal function GetViewportSize()
+	GetViewportSize(ViewportSizeX, ViewportSizeY);
+	// GetViewportSize is an Unreal function (not a custom one of mine).
+	// I am outputting to custom variables ViewportSizeX and ViewportSizeY.
+	// The contents of these variables is calculated by the unreal function GetViewportSize()
 
 	auto ScreenLocation = FVector2D(ViewportSizeX * CrosshairXLocation, ViewportSizeY * CrosshairYLocation);  // 
-		// CrosshairXLocation and CrosshairYLocation are variables defined by me in the .h file. Check UE too as they are "EditAnywhere" UPROPERTYs.
-		// CrosshairXLocation and CrosshairYLocation are float values representing the % of the screen in x and y directions.
-		// ScreenLocation contains a 2D vector (FVector2D), so the two values are X and Y. They can later be called via ScreenLocation.X and ScreenLocation.Y.
+																											  // CrosshairXLocation and CrosshairYLocation are variables defined by me in the .h file. Check UE too as they are "EditAnywhere" UPROPERTYs.
+																											  // CrosshairXLocation and CrosshairYLocation are float values representing the % of the screen in x and y directions.
+																											  // ScreenLocation contains a 2D vector (FVector2D), so the two values are X and Y. They can later be called via ScreenLocation.X and ScreenLocation.Y.
 
 	FVector LookDirection;	/// declared
-	if(GetLookDirection(ScreenLocation, LookDirection))
+	if (GetLookDirection(ScreenLocation, LookDirection))
 	{
 		// Line-trace along that lookDirection, and see what we hit.
 		GetLookVectorHitLocation(LookDirection, HitLocation);
@@ -92,11 +92,11 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 {
 	// GetVectorHitLocaton inputs LookDirection (sourced from the calling of function GetLookDirection() in GetSightRayHitLocation().
 	// I then perform a line trace (Unreal function).
-		// We start at the camera location (StartLocation)
-		// We then trace out from the camera location to the LookDirection * the range (LineTraceRange variable from .h file [it is EditAnywhere UPROPERTY])
-		// Hit type is ECC_Visibility so any object marks a hit.
+	// We start at the camera location (StartLocation)
+	// We then trace out from the camera location to the LookDirection * the range (LineTraceRange variable from .h file [it is EditAnywhere UPROPERTY])
+	// Hit type is ECC_Visibility so any object marks a hit.
 	// The line trace returns HitResult which is a FHitResult (as was required by the LineTraceSingleByChannel() function).
-		// must convert this to an FVector so output HitResult.Location (which is an FVector) to variable HitLocation (also an FVector).
+	// must convert this to an FVector so output HitResult.Location (which is an FVector) to variable HitLocation (also an FVector).
 	// HitLocation value from here is then available to GetSightRayHitLocation(), which is used in AimTowardsCrosshair() and logs the FVector to a UE_LOG then called in Tick().
 
 	FHitResult HitResult;
@@ -108,7 +108,7 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 		StartLocation,
 		EndLocation,
 		ECollisionChannel::ECC_Visibility
-		))
+	))
 	{
 		HitLocation = HitResult.Location;
 		return true;

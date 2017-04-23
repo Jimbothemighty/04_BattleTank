@@ -11,9 +11,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BATTLETANK_TankAimingComponent_generated_h
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_RPC_WRAPPERS
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_INCLASS_NO_PURE_DECLS \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_RPC_WRAPPERS
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUTankAimingComponent(); \
 	friend BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent(); \
@@ -24,7 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_INCLASS \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_INCLASS \
 	private: \
 	static void StaticRegisterNativesUTankAimingComponent(); \
 	friend BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent(); \
@@ -35,7 +35,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_STANDARD_CONSTRUCTORS \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTankAimingComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTankAimingComponent) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_ENHANCED_CONSTRUCTORS \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UTankAimingComponent(UTankAimingComponent&&); \
@@ -59,26 +59,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTankAimingComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTankAimingComponent)
 
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_PRIVATE_PROPERTY_OFFSET
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_9_PROLOG
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_GENERATED_BODY_LEGACY \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_PRIVATE_PROPERTY_OFFSET
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_PROLOG
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_PRIVATE_PROPERTY_OFFSET \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_RPC_WRAPPERS \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_INCLASS \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_STANDARD_CONSTRUCTORS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_RPC_WRAPPERS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_INCLASS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_GENERATED_BODY \
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_PRIVATE_PROPERTY_OFFSET \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_INCLASS_NO_PURE_DECLS \
-	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_12_ENHANCED_CONSTRUCTORS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_INCLASS_NO_PURE_DECLS \
+	BattleTank_Source_BattleTank_Public_TankAimingComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

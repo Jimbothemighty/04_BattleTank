@@ -21,6 +21,9 @@
 #ifndef BATTLETANK_TankAIController_generated_h
 	#include "Public/TankAIController.h"
 #endif
+#ifndef BATTLETANK_TankBarrel_generated_h
+	#include "Public/TankBarrel.h"
+#endif
 #ifndef BATTLETANK_TankPlayerController_generated_h
 	#include "Public/TankPlayerController.h"
 #endif
