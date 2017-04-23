@@ -8,6 +8,7 @@
 class UTankBarrel;  // Forward Declaration (links to TankBarrel.h/.cpp)
 class UTankTurret;  // Forward Declaration (links to TankBarrel.h/.cpp)
 class UTankAimingComponent;   // Forward Declaration (links to TankBarrel.h/.cpp)
+class AProjectile;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -45,5 +46,11 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Firing)
 		float LaunchSpeed = 100000.0f;  // TODO find sensible default
+
+	UPROPERTY(EditAnywhere, Category = Setup)
+		TSubclassOf<AProjectile> ProjectileBlueprint;
+	
+	// Local barrel reference for spawning projectile
+	UTankBarrel* Barrel = nullptr;
 
 };

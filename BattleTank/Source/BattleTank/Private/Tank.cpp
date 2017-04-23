@@ -1,6 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BattleTank.h"
+#include "TankBarrel.h"
+#include "Projectile.h"
 #include "TankAimingComponent.h"
 #include "Tank.h"
 
@@ -48,6 +50,7 @@ void ATank::SetBarrelReference(UTankBarrel* BarrelToSet)
 
 	TankAimingComponent->SetBarrelReference(BarrelToSet); // Gets SetBarrelReference function from UTankAimingComponent class, which outputs the value of BarrelToSet to the ATank 'setter' function.
 														  // The TankAimingComponent.cpp version is a 'getter' that gets the value of BarrelToSet from private variable UStaticMeshComponent* Barrel in the .h file.
+	Barrel = BarrelToSet;
 }
 
 void ATank::SetTurretReference(UTankTurret* TurretToSet)
@@ -61,5 +64,13 @@ void ATank::SetTurretReference(UTankTurret* TurretToSet)
 
 void ATank::Fire()
 {
+	if (!Barrel) { return; }
 	UE_LOG(LogTemp, Warning, TEXT("FIRING MOTHERFUCKER!"));
+
+	// spawn a projectile at the socketlocation on the barrel
+	GetWorld()->SpawnActor<AProjectile>(
+		ProjectileBlueprint,
+		Barrel->GetSocketLocation(FName("Projectile")),
+		Barrel->GetSocketRotation(FName("Projectile"))
+		);
 }
