@@ -49,3 +49,17 @@ void ATank::SetBarrelReference(UTankBarrel* BarrelToSet)
 	TankAimingComponent->SetBarrelReference(BarrelToSet); // Gets SetBarrelReference function from UTankAimingComponent class, which outputs the value of BarrelToSet to the ATank 'setter' function.
 														  // The TankAimingComponent.cpp version is a 'getter' that gets the value of BarrelToSet from private variable UStaticMeshComponent* Barrel in the .h file.
 }
+
+void ATank::SetTurretReference(UTankTurret* TurretToSet)
+{
+	// above function from ATank.h outputs TurretToSet to a staticmeshcomponent class
+
+	TankAimingComponent->SetTurretReference(TurretToSet); // Gets SetTurretReference function from UTankAimingComponent class, which outputs the value of TurretToSet to the ATank 'setter' function.
+														  // The TankAimingComponent.cpp version is a 'getter' that gets the value of TurretToSet from private variable UStaticMeshComponent* Turret in the .h file.
+}
+
+
+void ATank::Fire()
+{
+	UE_LOG(LogTemp, Warning, TEXT("FIRING MOTHERFUCKER!"));
+}

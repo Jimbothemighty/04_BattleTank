@@ -7,6 +7,7 @@
 
 // Forward Declaration (links to TankBarrel.h/.cpp)
 class UTankBarrel;
+class UTankTurret;	//Turrret
 
 // Holds parameters for barrel's properties and elevate method
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -19,12 +20,14 @@ public:
 	UTankAimingComponent();
 
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+	void SetTurretReference(UTankTurret* TurretToSet);	//Turrret
 
 	// TODO add SetTurretReference
 
 	void AimAt(FVector HitLocation, float LaunchSpeed);
 
 	void MoveBarrelTowards(FVector AimDirection);
+	void MoveTurretTowards(FVector AimDirection);	//Turrret
 
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -36,5 +39,6 @@ public:
 
 private:
 	UTankBarrel* Barrel = nullptr;
+	UTankTurret* Turret = nullptr;	//Turrret
 
 };

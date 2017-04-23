@@ -2,6 +2,7 @@
 
 #include "BattleTank.h"
 #include "TankBarrel.h"
+#include "TankTurret.h"
 #include "TankAimingComponent.h"
 
 // Sets default values for this component's properties
@@ -34,11 +35,6 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 {
 	if (!Barrel) { return; }
-	/*
-	auto BarrelName = Barrel->GetName();
-	auto OurTankName = GetOwner()->GetName();
-	UE_LOG(LogTemp, Warning, TEXT("%s is aiming at hit location is: %s"), *OurTankName, *HitLocation.ToString());
-	UE_LOG(LogTemp, Warning, TEXT("firing at %f"), LaunchSpeed); */
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
@@ -60,8 +56,8 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 //		auto OurTankName = GetOwner()->GetName();
 //		UE_LOG(LogTemp, Warning, TEXT("%s is aiming at %s"), *OurTankName, *AimDirection.ToString());
 		MoveBarrelTowards(AimDirection);
+		MoveTurretTowards(AimDirection);
 		auto Time = GetWorld()->GetTimeSeconds();
-		UE_LOG(LogTemp, Warning, TEXT("Time: %f. Barrel Elevate is working"), Time);
 	}
 	else {
 		auto Time = GetWorld()->GetTimeSeconds();
@@ -69,6 +65,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 	}
 }
 
+//Barrrel
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 {
 
@@ -79,8 +76,27 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	Barrel->Elevate(DeltaRotator.Pitch);
 }
 
+//Turrret
+void UTankAimingComponent::MoveTurretTowards(FVector AimDirection)
+{
 
+	auto TurretRotator = Turret->GetForwardVector().Rotation();
+	auto AimAsRotator = AimDirection.Rotation();
+	auto DeltaRotator = AimAsRotator - TurretRotator;
+
+	Turret->Rotate(DeltaRotator.Yaw);
+}
+
+//Barrrel
 void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
 {
+	if (!BarrelToSet) { return; }
 	Barrel = BarrelToSet;
+}
+
+//Turrret
+void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
+{
+	if (!TurretToSet) { return; }
+	Turret = TurretToSet;
 }

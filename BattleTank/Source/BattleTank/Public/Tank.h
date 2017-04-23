@@ -6,6 +6,7 @@
 #include "Tank.generated.h"		// generated.h must be the last #include in the list
 
 class UTankBarrel;  // Forward Declaration (links to TankBarrel.h/.cpp)
+class UTankTurret;  // Forward Declaration (links to TankBarrel.h/.cpp)
 class UTankAimingComponent;   // Forward Declaration (links to TankBarrel.h/.cpp)
 
 UCLASS()
@@ -18,6 +19,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 		void SetBarrelReference(UTankBarrel* BarrelToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+		void SetTurretReference(UTankTurret* TurretToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Firing)
+		void Fire();
 
 protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;   // this means we can refer to TankAimingComponent member functions

@@ -12,6 +12,9 @@
 #ifndef BATTLETANK_MyAIController_generated_h
 	#include "Public/MyAIController.h"
 #endif
+#ifndef BATTLETANK_Projectile_generated_h
+	#include "Public/Projectile.h"
+#endif
 #ifndef BATTLETANK_Tank_generated_h
 	#include "Public/Tank.h"
 #endif
@@ -26,4 +29,7 @@
 #endif
 #ifndef BATTLETANK_TankPlayerController_generated_h
 	#include "Public/TankPlayerController.h"
+#endif
+#ifndef BATTLETANK_TankTurret_generated_h
+	#include "Public/TankTurret.h"
 #endif
