@@ -49,6 +49,9 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		StartLocation,
 		HitLocation,
 		LaunchSpeed,
+		false,
+		0,
+		0,
 		ESuggestProjVelocityTraceOption::DoNotTrace
 	);
 	if (bHaveAimSolution)
@@ -68,24 +71,12 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 {
-	// Moves the barrel in the aimdirection, but only in the y-axis
-	// Barrel->GetComponentRotation
-	/*
+
 	auto BarrelRotator = Barrel->GetForwardVector().Rotation();
 	auto AimAsRotator = AimDirection.Rotation();
 	auto DeltaRotator = AimAsRotator - BarrelRotator;
 
-	UE_LOG(LogTemp, Warning, TEXT("Barrel Rotation is %s and Aim Rotation is %s"), *BarrelRotator.ToString(), *AimAsRotator.ToString());
-	UE_LOG(LogTemp, Error, TEXT("Delta Rotation is %s"), *DeltaRotator.ToString());
-
-	// 	Barrel->SetRelativeRotation to aimdirection.y   (if cannot output this then simply constrain rotation in x and z in UE blueprint/menus
-	// Move the barrel te right amount this frame
-	// given a maximum elevation speed, and the frame time
-
-	*/
-	//	UE_LOG(LogTemp, Warning, TEXT("Barrel Rotation is and Aim Rotation is"));
-	Barrel->Elevate(5.0f); // TODO remove magic number
-
+	Barrel->Elevate(DeltaRotator.Pitch);
 }
 
 

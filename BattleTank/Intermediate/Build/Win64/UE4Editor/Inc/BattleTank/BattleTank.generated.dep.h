@@ -12,14 +12,14 @@
 #ifndef BATTLETANK_MyAIController_generated_h
 	#include "Public/MyAIController.h"
 #endif
-#ifndef BATTLETANK_TankAimingComponent_generated_h
-	#include "Public/TankAimingComponent.h"
-#endif
 #ifndef BATTLETANK_Tank_generated_h
 	#include "Public/Tank.h"
 #endif
 #ifndef BATTLETANK_TankAIController_generated_h
 	#include "Public/TankAIController.h"
+#endif
+#ifndef BATTLETANK_TankAimingComponent_generated_h
+	#include "Public/TankAimingComponent.h"
 #endif
 #ifndef BATTLETANK_TankBarrel_generated_h
 	#include "Public/TankBarrel.h"

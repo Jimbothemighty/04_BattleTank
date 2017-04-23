@@ -6,21 +6,11 @@
 
 void UTankBarrel::Elevate(float RelativeSpeed)
 {
-	// Moves the barrel in the aimdirection, but only in the y-axis
-	// Barrel->GetComponentRotation
+	RelativeSpeed = FMath::Clamp<float>(RelativeSpeed, -1.0f, 1.0f);
+	auto ElevationChange = RelativeSpeed * MaxDegreesPerSecond * GetWorld()->DeltaTimeSeconds;
+	auto RawNewElevation = RelativeRotation.Pitch + ElevationChange;
+	auto Elevation = FMath::Clamp<float>(RawNewElevation, MinElevationDegrees, MaxElevationDegrees);
 
-	//auto BarrelRotator = Barrel->GetForwardVector().Rotation();
-	//auto AimAsRotator = AimDirection.Rotation();
-	//auto DeltaRotator = AimAsRotator - BarrelRotator;
-
-	//UE_LOG(LogTemp, Warning, TEXT("Barrel Rotation is %s and Aim Rotation is %s"), *BarrelRotator.ToString(), *AimAsRotator.ToString());
-	//UE_LOG(LogTemp, Error, TEXT("Delta Rotation is %s"), *DeltaRotator.ToString());
-
-	// 	Barrel->SetRelativeRotation to aimdirection.y   (if cannot output this then simply constrain rotation in x and z in UE blueprint/menus
-	// Move the barrel te right amount this frame
-	// given a maximum elevation speed, and the frame time
-
-//	auto Time = GetWorld()->GetTimeSeconds();
-//	UE_LOG(LogTemp, Error, TEXT("Time: %f. Barrel Elevate is called at speed %f"), Time, RelativeSpeed);
-
+	UE_LOG(LogTemp, Error, TEXT("The name is: , component "));
+	SetRelativeRotation(FRotator(Elevation, 0, 0));
 }

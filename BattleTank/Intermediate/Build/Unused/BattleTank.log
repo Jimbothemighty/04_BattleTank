@@ -1,12 +1,4 @@
 ﻿  Creating makefile for BattleTankEditor (no existing makefile)
-  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.dll".
-  Unable to delete old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.dll". Error: Access to the path 'C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.dll' is denied.
-  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.pdb".
-  Unable to delete old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.pdb". Error: Access to the path 'C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.pdb' is denied.
-  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-8308.dll".
-  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-8308.pdb".
-EXEC : error : System.UnauthorizedAccessException: Access to the path 'C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-2745.dll' is denied.
-     at UnrealBuildTool.UEBuildTarget.CleanFile(String Filename)
-     at UnrealBuildTool.UEBuildTarget.CleanStaleModules()
-     at UnrealBuildTool.UnrealBuildTool.RunUBT(String[] Arguments, FileReference ProjectFile)
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" BattleTankEditor Win64 Development "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.
+  Target is up to date
+  Deploying BattleTankEditor Win64 Development...
+  Total build time: 4.89 seconds (NoActionsToExecute executor: 0.00 seconds)
