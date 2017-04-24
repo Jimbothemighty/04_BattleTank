@@ -2,7 +2,7 @@
 	"TargetName" : "BattleTankEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "c367756b-5fd3-4624-9c9a-996c4daef1e1",
+	"BuildId" : "cf38bb67-1462-4ca6-9de9-db36331ba409",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-BattleTank-7072.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-BattleTank-8946.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-BattleTank-7072.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-BattleTank-8946.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-BattleTank-7072.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-BattleTank-8946.lib",
 			"Type" : "ImportLibrary"
 		},
 		{

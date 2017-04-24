@@ -52,19 +52,6 @@ void ATankAIController::Tick(float DeltaTime)
 }
 
 
-/*
-ATank* ATankAIController::GetControlledTank() const
-{
-	return Cast<ATank>(GetPawn());
-};
-
-ATank* ATankAIController::GetPlayerTank() const
-{
-	auto PlayerPawn = GetWorld()->GetFirstPlayerController()->GetPawn();
-	if (!PlayerPawn) { return nullptr; };
-	return Cast<ATank>(PlayerPawn);  // can also return PlayerPawn (as per Ben). But I have kept my original code. GetWorld()->GetFirstPlayerController()->GetPawn()
-};
-*/
 
 
 

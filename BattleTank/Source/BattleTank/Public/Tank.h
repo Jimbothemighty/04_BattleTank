@@ -5,9 +5,11 @@
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"		// generated.h must be the last #include in the list
 
-class UTankBarrel;  // Forward Declaration (links to TankBarrel.h/.cpp)
-class UTankTurret;  // Forward Declaration (links to TankBarrel.h/.cpp)
-class UTankAimingComponent;   // Forward Declaration (links to TankBarrel.h/.cpp)
+// Forward Declarations
+class UTankBarrel;
+class UTankTurret;  
+class UTankAimingComponent;   
+class UTankMovementComponent;   
 class AProjectile;
 
 UCLASS()
@@ -30,6 +32,8 @@ public:
 protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;   // this means we can refer to TankAimingComponent member functions
 
+	UPROPERTY(BlueprintReadOnly)
+	UTankMovementComponent* TankMovementComponent = nullptr;   // this means we can refer to TankAimingComponent member functions
 
 private:
 	// Sets default values for this pawn's properties
@@ -57,5 +61,4 @@ private:
 	
 	// Local barrel reference for spawning projectile
 	UTankBarrel* Barrel = nullptr;
-
 };
