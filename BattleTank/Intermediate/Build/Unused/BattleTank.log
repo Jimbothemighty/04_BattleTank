@@ -1,13 +1,5 @@
-﻿  Parsing headers for BattleTankEditor
-    Running UnrealHeaderTool "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BattleTankEditor in 18.8163909 seconds
-  Performing 5 actions (4 in parallel)
-  BattleTank.generated.cpp
-  TankTurret.cpp
-  TankAimingComponent.cpp
-  [4/5] Link UE4Editor-BattleTank.dll
-  [5/5] Link UE4Editor-BattleTank.lib
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.exp
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.suppressed.exp
+﻿  Creating makefile for hot reloading BattleTankEditor (modules to compile have changed)
+  Compiling game modules for hot reload
+  Target is up to date
   Deploying BattleTankEditor Win64 Development...
-  Total build time: 29.16 seconds (Local executor: 6.70 seconds)
+  Total build time: 36.25 seconds (NoActionsToExecute executor: 0.01 seconds)

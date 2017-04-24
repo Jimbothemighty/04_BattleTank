@@ -4,6 +4,7 @@
 #include "Tank.h"
 #include "TankAIController.h"
 
+/*
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
@@ -24,23 +25,34 @@ void ATankAIController::BeginPlay()
 	};
 
 };
-
+*/
 
 void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (!GetPlayerTank()) { return; }
+	auto AiTank = Cast<ATank>(GetPawn());
+	auto PlayerTank = Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
+
+	if (!PlayerTank) { return; }
 	else
 	{
 		// TODO Move towards the player
-		GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation()); // Aims at player
-																		 // TODO Fire if ready
+		AiTank->AimAt(PlayerTank->GetActorLocation()); // Aims at player
+
+//		auto AimD = ATank* AimAt(FVector HitLocation);
+
+//		if (AiTank->AimAt(PlayerTank->GetActorLocation()) = PlayerTank->GetActorLocation())
+//		{
+			AiTank->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
+							// TODO Limit firing rate
+//		}
 	}
 	return;
-};
+}
 
 
+/*
 ATank* ATankAIController::GetControlledTank() const
 {
 	return Cast<ATank>(GetPawn());
@@ -52,7 +64,7 @@ ATank* ATankAIController::GetPlayerTank() const
 	if (!PlayerPawn) { return nullptr; };
 	return Cast<ATank>(PlayerPawn);  // can also return PlayerPawn (as per Ben). But I have kept my original code. GetWorld()->GetFirstPlayerController()->GetPawn()
 };
-
+*/
 
 
 
