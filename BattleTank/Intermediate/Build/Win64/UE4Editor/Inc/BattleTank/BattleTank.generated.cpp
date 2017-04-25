@@ -44,9 +44,10 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	IMPLEMENT_CLASS(UTankBarrel, 3816542938);
 	void UTankMovementComponent::StaticRegisterNativesUTankMovementComponent()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "Initialise",(Native)&UTankMovementComponent::execInitialise);
 		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "IntendMoveForward",(Native)&UTankMovementComponent::execIntendMoveForward);
 	}
-	IMPLEMENT_CLASS(UTankMovementComponent, 916901405);
+	IMPLEMENT_CLASS(UTankMovementComponent, 2108519856);
 	void ATankPlayerController::StaticRegisterNativesATankPlayerController()
 	{
 	}
@@ -88,6 +89,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_Initialise();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent();
@@ -427,6 +429,32 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UTankBarrel(Z_Construct_UClass_UTankBarrel, &UTankBarrel::StaticClass, TEXT("UTankBarrel"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UTankBarrel);
+	UFunction* Z_Construct_UFunction_UTankMovementComponent_Initialise()
+	{
+		struct TankMovementComponent_eventInitialise_Parms
+		{
+			UTankTrack* LeftTrackToSet;
+			UTankTrack* RightTrackToSet;
+		};
+		UObject* Outer=Z_Construct_UClass_UTankMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Initialise"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(TankMovementComponent_eventInitialise_Parms));
+			UProperty* NewProp_RightTrackToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("RightTrackToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RightTrackToSet, TankMovementComponent_eventInitialise_Parms), 0x0010000000080080, Z_Construct_UClass_UTankTrack_NoRegister());
+			UProperty* NewProp_LeftTrackToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LeftTrackToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LeftTrackToSet, TankMovementComponent_eventInitialise_Parms), 0x0010000000080080, Z_Construct_UClass_UTankTrack_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankMovementComponent.h"));
+			MetaData->SetValue(NewProp_RightTrackToSet, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_LeftTrackToSet, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward()
 	{
 		struct TankMovementComponent_eventIntendMoveForward_Parms
@@ -445,6 +473,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("float Throw = 0.0f;"));
 #endif
 		}
 		return ReturnFunction;
@@ -466,9 +495,11 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20B00084;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_Initialise());
 				OuterClass->LinkChild(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward());
 
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward(), "IntendMoveForward"); // 3563434643
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_Initialise(), "Initialise"); // 2577814884
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankMovementComponent_IntendMoveForward(), "IntendMoveForward"); // 546379248
 				OuterClass->ClassConfigName = FName(TEXT("Engine"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -477,6 +508,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankMovementComponent.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("Responsibile for driving the tank tracks"));
 #endif
 			}
 		}
@@ -642,8 +674,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xA3C1116C;
-			Guid.B = 0xF3787D57;
+			Guid.A = 0x3C29F956;
+			Guid.B = 0xA532A89B;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

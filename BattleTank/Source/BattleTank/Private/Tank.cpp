@@ -15,7 +15,7 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 
 	TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
-	TankMovementComponent = CreateDefaultSubobject<UTankMovementComponent>(FName("Movement Component"));
+//	TankMovementComponent = CreateDefaultSubobject<UTankMovementComponent>(FName("Movement Component")); // <- not going to have it inherited. (adding manually in UE blueprint editor
 	// No need to protect pointers as added at construction
 }
 
