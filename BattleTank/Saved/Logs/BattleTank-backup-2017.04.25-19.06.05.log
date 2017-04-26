@@ -1,0 +1,1356 @@
+﻿Log file open, 04/25/17 18:37:11
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-943469125) SRandInit(-943469125).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.170338
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.25-17.37.13:868][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.25-17.37.13:868][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.25-17.37.13:906][  0]LogInit: Computer: DESKTOP-0PEK566
+[2017.04.25-17.37.13:906][  0]LogInit: User: Sarah
+[2017.04.25-17.37.13:906][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.25-17.37.13:906][  0]LogInit: High frequency timer resolution =2.143576 MHz
+[2017.04.25-17.37.13:906][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.04.25-17.37.13:906][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.25-17.37.13:906][  0]LogMemory: Process Physical Memory: 263.63 MB used, 263.63 MB peak
+[2017.04.25-17.37.13:906][  0]LogMemory: Process Virtual Memory: 262.44 MB used, 262.44 MB peak
+[2017.04.25-17.37.13:906][  0]LogMemory: Physical Memory: 4076.73 MB used,  4007.54 MB free, 8084.27 MB total
+[2017.04.25-17.37.13:906][  0]LogMemory: Virtual Memory: 644.18 MB used,  4007.54 MB free, 134217728.00 MB total
+[2017.04.25-17.37.14:163][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.25-17.37.16:129][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.25-17.37.16:207][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7600M Series' (Feature Level 11_0)
+[2017.04.25-17.37.16:207][  0]LogD3D11RHI:       1004/0/3840 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.25-17.37.16:215][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2017.04.25-17.37.16:215][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.04.25-17.37.16:219][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.25-17.37.16:219][  0]LogD3D11RHI:       0/0/4042 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.25-17.37.16:219][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.25-17.37.16:248][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.25-17.37.16:248][  0]LogD3D11RHI:     GPU DeviceId: 0x6840 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.25-17.37.16:248][  0]LogWindows: EnumDisplayDevices:
+[2017.04.25-17.37.16:249][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2017.04.25-17.37.16:249][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.25-17.37.16:250][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.25-17.37.16:250][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.04.25-17.37.16:250][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7600M Series
+[2017.04.25-17.37.16:250][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.04.25-17.37.16:250][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.04.25-17.37.16:250][  0]LogRHI: Texture pool is 702 MB (70% of 1004 MB)
+[2017.04.25-17.37.16:313][  0]LogD3D11RHI: AMD Pre GCN architecture detected, some driver workarounds will be in place
+[2017.04.25-17.37.16:404][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.25-17.37.16:429][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.04.25-17.37.16:433][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/73300/).
+[2017.04.25-17.37.16:433][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sarah/AppData/Local/Temp/UnrealShaderWorkingDir/B9197F7A40DCD181E8B67BA255358F08/'.
+[2017.04.25-17.37.16:433][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.25-17.37.20:368][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.25-17.37.20:576][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.25-17.37.20:817][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.25-17.37.21:045][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.25-17.37.21:259][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.25-17.37.21:467][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.25-17.37.21:691][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.25-17.37.21:912][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.25-17.37.22:109][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.25-17.37.22:355][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.25-17.37.22:561][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.25-17.37.22:763][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.25-17.37.22:990][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.25-17.37.23:209][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.25-17.37.23:416][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.25-17.37.23:819][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.25-17.37.23:819][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.25-17.37.23:954][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.25-17.37.24:252][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.25-17.37.24:405][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.25-17.37.24:599][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.25-17.37.24:800][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.25-17.37.24:988][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.25-17.37.25:181][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.25-17.37.25:181][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.25-17.37.27:019][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache: Loaded boot cache 0.13s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.25-17.37.27:146][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.25-17.37.27:203][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.25-17.37.27:217][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sarah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.25-17.37.27:252][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.25-17.37.27:254][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.25-17.37.27:254][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.25-17.37.29:924][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.25-17.37.29:933][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.25-17.37.30:633][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.25-17.37.30:807][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.25-17.37.30:982][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.25-17.37.30:982][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.25-17.37.30:982][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.25-17.37.32:853][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.25-17.37.32:959][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.04.25-17.37.33:144][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.092202 seconds
+[2017.04.25-17.37.33:160][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.04.25-17.37.33:160][  0]LogUObjectAllocator: 7073360 out of 0 bytes used by permanent object pool.
+[2017.04.25-17.37.33:160][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.25-17.37.33:419][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.25-17.37.39:391][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.25-17.37.39:525][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.25-17.37.41:375][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.25-17.37.42:825][  0]SourceControl: Info Source control is disabled
+[2017.04.25-17.37.42:947][  0]SourceControl: Info Source control is disabled
+[2017.04.25-17.37.43:158][  0]SourceControl: Info Source control is disabled
+[2017.04.25-17.37.43:332][  0]SourceControl: Info Source control is disabled
+[2017.04.25-17.37.48:251][  0]LogEngine: Initializing Engine...
+[2017.04.25-17.37.48:253][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.25-17.37.49:096][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.25-17.37.49:119][  0]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-17.37.49:179][  0]LogInit: FAudioDevice initialized.
+[2017.04.25-17.37.49:242][  0]LogDerivedDataCache: Saved boot cache 0.06s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.25-17.37.49:265][  0]LogInit: Texture streaming: Enabled
+[2017.04.25-17.37.49:658][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.25-17.37.50:012][  0]LogInit: Transaction tracking system initialized
+[2017.04.25-17.37.51:311][  0]BlueprintLog: New page: Editor Load
+[2017.04.25-17.37.54:776][  0]LocalizationService: Info Localization service is disabled
+[2017.04.25-17.37.58:036][  0]LogConsoleResponse:Display: 
+[2017.04.25-17.37.58:600][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.25-17.37.58:600][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.25-17.37.59:565][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.03s
+[2017.04.25-17.38.02:939][  0]SourceControl: Info Source control is disabled
+[2017.04.25-17.38.02:939][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.25-17.38.02:941][  0]LightingResults: New page: Lighting Build
+[2017.04.25-17.38.03:095][  0]MapCheck: New page: Map Check
+[2017.04.25-17.38.03:095][  0]LightingResults: New page: Lighting Build
+[2017.04.25-17.38.04:791][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.25-17.38.05:470][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.25-17.38.05:476][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.25-17.38.05:604][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 127.654ms to complete.
+[2017.04.25-17.38.05:604][  0]LogFileHelpers: Loading map 'BattleGround' took 2.664
+[2017.04.25-17.38.06:429][  0]LogCollectionManager: Loaded 1 collections in 0.013032 seconds
+[2017.04.25-17.38.06:646][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.25-17.38.06:646][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' took 0.01s
+[2017.04.25-17.38.06:646][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.25-17.38.06:646][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000011 seconds
+[2017.04.25-17.38.06:646][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2017.04.25-17.38.06:685][  0]LogContentBrowser: Native class hierarchy populated in 0.0353 seconds. Added 2255 classes and 453 folders.
+[2017.04.25-17.38.06:699][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.25-17.38.06:699][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.25-17.38.06:930][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0090 seconds. Added 0 classes and 0 folders.
+[2017.04.25-17.38.07:888][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0114 seconds. Added 0 classes and 0 folders.
+[2017.04.25-17.38.08:089][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0088 seconds. Added 1 classes and 2 folders.
+[2017.04.25-17.38.08:300][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.25-17.38.08:320][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.25-17.38.08:520][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0140 seconds. Added 1 classes and 2 folders.
+[2017.04.25-17.38.08:520][  0]LogLoad: (Engine Initialization) Total time: 61.99 seconds
+[2017.04.25-17.38.08:520][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.43 seconds
+[2017.04.25-17.38.08:520][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.25-17.38.08:860][  0]LogOcInput: OculusInput pre-init called
+[2017.04.25-17.38.08:897][  0]LogContentStreaming: Texture pool size now 600 MB
+[2017.04.25-17.38.08:900][  0]LogSlate: Took 0.000547 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.25-17.38.08:911][  0]LogSlate: Took 0.000536 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.25-17.38.08:946][  0]LogSlate: Took 0.015767 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.25-17.38.08:962][  0]LogSlate: Took 0.014619 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.04.25-17.38.09:666][  0]LogRenderer: Reallocating scene render targets to support 1220x644 NumSamples 1 (Frame:2).
+[2017.04.25-17.38.11:224][  4]LogAssetRegistry: Asset discovery search completed in 38.2871 seconds
+[2017.04.25-17.38.11:225][  4]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000016 seconds (found 0 objects)
+[2017.04.25-17.38.11:225][  4]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000369 seconds (updated 0 objects)
+[2017.04.25-17.47.05:809][678]Recompiling BattleTank...
+[2017.04.25-17.47.05:810][678]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 7035 Win64 Development -editorrecompile -canskiplink "C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.25-17.47.05:815][678]Warning: Starting HotReload took  0.2s.
+[2017.04.25-17.47.20:175][107]CompilerResultsLog: New page: Compilation - Apr 25, 2017, 7:47:20 PM
+[2017.04.25-17.47.20:175][107]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.25-17.47.20:176][107]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.25-17.47.20:176][107]CompilerResultsLog: Info TankMovementComponent.cpp
+[2017.04.25-17.47.20:176][107]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.25-17.47.20:176][107]CompilerResultsLog:Error: Error C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(48) : error C2143: syntax error: missing ')' before ';'
+[2017.04.25-17.47.20:177][107]CompilerResultsLog:Error: Error C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(48) : error C2059: syntax error: ')'
+[2017.04.25-17.47.20:178][107]CompilerResultsLog:Error: Error C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(52) : error C2059: syntax error: 'const'
+[2017.04.25-17.47.20:178][107]CompilerResultsLog:Error: Error C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(48) : error C4390: ';': empty controlled statement found; is this the intent?
+[2017.04.25-17.47.20:180][107]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-7035.dll
+[2017.04.25-17.47.20:181][107]CompilerResultsLog: Info Total build time: 13.56 seconds (Local executor: 0.00 seconds)
+[2017.04.25-17.47.20:181][107]LogMainFrame: MainFrame: Module compiling took 14.389 seconds
+[2017.04.25-17.47.20:182][107]Warning: HotReload failed, recompile failed
+[2017.04.25-17.48.40:756][453]Recompiling BattleTank...
+[2017.04.25-17.48.40:757][453]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6694 Win64 Development -editorrecompile -canskiplink "C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.25-17.48.40:761][453]Warning: Starting HotReload took  0.0s.
+[2017.04.25-17.48.47:826][566]CompilerResultsLog: New page: Compilation - Apr 25, 2017, 7:48:47 PM
+[2017.04.25-17.48.47:827][566]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.25-17.48.47:828][566]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.25-17.48.47:828][566]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.25-17.48.47:829][566]CompilerResultsLog:Error: Error C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(55) : error C2146: syntax error: missing ';' before identifier 'AiTank'
+[2017.04.25-17.48.47:830][566]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-6694.dll
+[2017.04.25-17.48.47:831][566]CompilerResultsLog: Info Total build time: 6.18 seconds (Local executor: 0.00 seconds)
+[2017.04.25-17.48.47:831][566]LogMainFrame: MainFrame: Module compiling took 7.089 seconds
+[2017.04.25-17.48.47:832][566]Warning: HotReload failed, recompile failed
+[2017.04.25-17.49.26:354][  7]Recompiling BattleTank...
+[2017.04.25-17.49.26:355][  7]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 371 Win64 Development -editorrecompile -canskiplink "C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.25-17.49.26:360][  7]Warning: Starting HotReload took  0.0s.
+[2017.04.25-17.49.35:358][296]CompilerResultsLog: New page: Compilation - Apr 25, 2017, 7:49:35 PM
+[2017.04.25-17.49.35:358][296]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.25-17.49.35:359][296]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.04.25-17.49.35:359][296]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.25-17.49.35:359][296]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-371.dll
+[2017.04.25-17.49.35:359][296]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-371.lib
+[2017.04.25-17.49.35:360][296]CompilerResultsLog: Info    Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-371.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-371.exp
+[2017.04.25-17.49.35:361][296]CompilerResultsLog: Info    Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-371.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-371.suppressed.exp
+[2017.04.25-17.49.35:362][296]CompilerResultsLog: Info Total build time: 8.22 seconds (Local executor: 5.55 seconds)
+[2017.04.25-17.49.35:363][296]LogMainFrame: MainFrame: Module compiling took 9.022 seconds
+[2017.04.25-17.49.35:613][296]LogClass: Could not find existing class TankAIController in package /Script/BattleTank for HotReload, assuming new class
+[2017.04.25-17.49.35:630][296]LogHotReload: Re-instancing TankAIController after hot-reload.
+[2017.04.25-17.49.35:792][296]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0131 seconds. Added 11 classes and 3 folders.
+[2017.04.25-17.49.35:796][296]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2017.04.25-17.49.35:936][296]LogContentBrowser: Native class hierarchy populated in 0.0413 seconds. Added 2257 classes and 457 folders.
+[2017.04.25-17.49.35:937][296]Display: HotReload took  9.6s.
+[2017.04.25-17.49.37:361][335]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.25-17.49.37:418][335]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.49.37:420][335]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-17.49.37:424][335]PIE: New page: PIE session: BattleGround (Apr 25, 2017, 7:49:37 PM)
+[2017.04.25-17.49.37:425][335]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.25-17.49.37:479][335]LogPlayLevel: PIE: StaticDuplicateObject took: (0.053728s)
+[2017.04.25-17.49.37:481][335]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.25-17.49.37:483][335]LogPlayLevel: PIE: World Init took: (0.003249s)
+[2017.04.25-17.49.37:484][335]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.059096s)
+[2017.04.25-17.49.37:524][335]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-17.49.37:543][335]LogInit: FAudioDevice initialized.
+[2017.04.25-17.49.37:629][335]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.25-17.49.37:658][335]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.25-18.49.37
+[2017.04.25-17.49.37:675][335]LogWorld: Bringing up level for play took: 0.030073
+[2017.04.25-17.49.37:869][335]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0085 seconds. Added 11 classes and 0 folders.
+[2017.04.25-17.49.37:891][335]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.25-17.49.37:894][335]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.98
+[2017.04.25-17.49.37:895][335]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.50.25:718][323]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.50.25:809][323]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.56.51:921][714]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.25-17.56.51:973][714]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.56.51:975][714]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-17.56.51:976][714]PIE: New page: PIE session: BattleGround (Apr 25, 2017, 7:56:51 PM)
+[2017.04.25-17.56.51:977][714]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.25-17.56.52:017][714]LogPlayLevel: PIE: StaticDuplicateObject took: (0.039481s)
+[2017.04.25-17.56.52:019][714]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.25-17.56.52:020][714]LogPlayLevel: PIE: World Init took: (0.002583s)
+[2017.04.25-17.56.52:021][714]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.043764s)
+[2017.04.25-17.56.52:062][714]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-17.56.52:082][714]LogInit: FAudioDevice initialized.
+[2017.04.25-17.56.52:133][714]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.25-17.56.52:154][714]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.25-18.56.52
+[2017.04.25-17.56.52:158][714]LogWorld: Bringing up level for play took: 0.020529
+[2017.04.25-17.56.52:167][714]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.25-17.56.52:168][714]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.747
+[2017.04.25-17.56.52:169][714]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.57.18:117][828]LogTemp:Error: Time: 26.232767. Barrel Elevate is failing
+[2017.04.25-17.57.18:140][829]LogTemp:Error: Time: 26.255791. Barrel Elevate is failing
+[2017.04.25-17.57.18:163][830]LogTemp:Error: Time: 26.278837. Barrel Elevate is failing
+[2017.04.25-17.57.18:186][831]LogTemp:Error: Time: 26.301874. Barrel Elevate is failing
+[2017.04.25-17.57.18:209][832]LogTemp:Error: Time: 26.324766. Barrel Elevate is failing
+[2017.04.25-17.57.18:232][833]LogTemp:Error: Time: 26.347786. Barrel Elevate is failing
+[2017.04.25-17.57.18:255][834]LogTemp:Error: Time: 26.370707. Barrel Elevate is failing
+[2017.04.25-17.57.18:278][835]LogTemp:Error: Time: 26.393745. Barrel Elevate is failing
+[2017.04.25-17.57.18:301][836]LogTemp:Error: Time: 26.416739. Barrel Elevate is failing
+[2017.04.25-17.57.18:324][837]LogTemp:Error: Time: 26.439777. Barrel Elevate is failing
+[2017.04.25-17.57.18:348][838]LogTemp:Error: Time: 26.462786. Barrel Elevate is failing
+[2017.04.25-17.57.18:371][839]LogTemp:Error: Time: 26.485756. Barrel Elevate is failing
+[2017.04.25-17.57.18:393][840]LogTemp:Error: Time: 26.508766. Barrel Elevate is failing
+[2017.04.25-17.57.18:416][841]LogTemp:Error: Time: 26.531916. Barrel Elevate is failing
+[2017.04.25-17.57.18:439][842]LogTemp:Error: Time: 26.554897. Barrel Elevate is failing
+[2017.04.25-17.57.18:462][843]LogTemp:Error: Time: 26.577997. Barrel Elevate is failing
+[2017.04.25-17.57.18:485][844]LogTemp:Error: Time: 26.601143. Barrel Elevate is failing
+[2017.04.25-17.57.18:508][845]LogTemp:Error: Time: 26.624088. Barrel Elevate is failing
+[2017.04.25-17.57.18:531][846]LogTemp:Error: Time: 26.647058. Barrel Elevate is failing
+[2017.04.25-17.57.18:555][847]LogTemp:Error: Time: 26.670126. Barrel Elevate is failing
+[2017.04.25-17.57.18:577][848]LogTemp:Error: Time: 26.693205. Barrel Elevate is failing
+[2017.04.25-17.57.18:600][849]LogTemp:Error: Time: 26.716278. Barrel Elevate is failing
+[2017.04.25-17.57.18:623][850]LogTemp:Error: Time: 26.739382. Barrel Elevate is failing
+[2017.04.25-17.57.18:646][851]LogTemp:Error: Time: 26.762451. Barrel Elevate is failing
+[2017.04.25-17.57.18:669][852]LogTemp:Error: Time: 26.785425. Barrel Elevate is failing
+[2017.04.25-17.57.18:692][853]LogTemp:Error: Time: 26.808439. Barrel Elevate is failing
+[2017.04.25-17.57.18:715][854]LogTemp:Error: Time: 26.831402. Barrel Elevate is failing
+[2017.04.25-17.57.18:738][855]LogTemp:Error: Time: 26.854422. Barrel Elevate is failing
+[2017.04.25-17.57.18:761][856]LogTemp:Error: Time: 26.877426. Barrel Elevate is failing
+[2017.04.25-17.57.18:784][857]LogTemp:Error: Time: 26.900366. Barrel Elevate is failing
+[2017.04.25-17.57.18:808][858]LogTemp:Error: Time: 26.923336. Barrel Elevate is failing
+[2017.04.25-17.57.18:831][859]LogTemp:Error: Time: 26.946321. Barrel Elevate is failing
+[2017.04.25-17.57.18:853][860]LogTemp:Error: Time: 26.969326. Barrel Elevate is failing
+[2017.04.25-17.57.18:876][861]LogTemp:Error: Time: 26.992279. Barrel Elevate is failing
+[2017.04.25-17.57.18:899][862]LogTemp:Error: Time: 27.015205. Barrel Elevate is failing
+[2017.04.25-17.57.18:922][863]LogTemp:Error: Time: 27.038084. Barrel Elevate is failing
+[2017.04.25-17.57.18:945][864]LogTemp:Error: Time: 27.061136. Barrel Elevate is failing
+[2017.04.25-17.57.18:968][865]LogTemp:Error: Time: 27.084160. Barrel Elevate is failing
+[2017.04.25-17.57.18:991][866]LogTemp:Error: Time: 27.107096. Barrel Elevate is failing
+[2017.04.25-17.57.19:014][867]LogTemp:Error: Time: 27.130024. Barrel Elevate is failing
+[2017.04.25-17.57.19:037][868]LogTemp:Error: Time: 27.153040. Barrel Elevate is failing
+[2017.04.25-17.57.19:060][869]LogTemp:Error: Time: 27.175941. Barrel Elevate is failing
+[2017.04.25-17.57.19:083][870]LogTemp:Error: Time: 27.198952. Barrel Elevate is failing
+[2017.04.25-17.57.19:106][871]LogTemp:Error: Time: 27.221811. Barrel Elevate is failing
+[2017.04.25-17.57.19:129][872]LogTemp:Error: Time: 27.244738. Barrel Elevate is failing
+[2017.04.25-17.57.19:152][873]LogTemp:Error: Time: 27.267710. Barrel Elevate is failing
+[2017.04.25-17.57.19:174][874]LogTemp:Error: Time: 27.290600. Barrel Elevate is failing
+[2017.04.25-17.57.19:198][875]LogTemp:Error: Time: 27.313499. Barrel Elevate is failing
+[2017.04.25-17.57.19:220][876]LogTemp:Error: Time: 27.336500. Barrel Elevate is failing
+[2017.04.25-17.57.19:244][877]LogTemp:Error: Time: 27.359491. Barrel Elevate is failing
+[2017.04.25-17.57.19:267][878]LogTemp:Error: Time: 27.382492. Barrel Elevate is failing
+[2017.04.25-17.57.19:290][879]LogTemp:Error: Time: 27.405519. Barrel Elevate is failing
+[2017.04.25-17.57.19:313][880]LogTemp:Error: Time: 27.428503. Barrel Elevate is failing
+[2017.04.25-17.57.19:336][881]LogTemp:Error: Time: 27.451412. Barrel Elevate is failing
+[2017.04.25-17.57.19:358][882]LogTemp:Error: Time: 27.474232. Barrel Elevate is failing
+[2017.04.25-17.57.19:382][883]LogTemp:Error: Time: 27.497248. Barrel Elevate is failing
+[2017.04.25-17.57.19:404][884]LogTemp:Error: Time: 27.520157. Barrel Elevate is failing
+[2017.04.25-17.57.19:427][885]LogTemp:Error: Time: 27.543005. Barrel Elevate is failing
+[2017.04.25-17.57.19:450][886]LogTemp:Error: Time: 27.566019. Barrel Elevate is failing
+[2017.04.25-17.57.19:473][887]LogTemp:Error: Time: 27.588985. Barrel Elevate is failing
+[2017.04.25-17.57.19:496][888]LogTemp:Error: Time: 27.611944. Barrel Elevate is failing
+[2017.04.25-17.57.19:519][889]LogTemp:Error: Time: 27.634777. Barrel Elevate is failing
+[2017.04.25-17.57.19:542][890]LogTemp:Error: Time: 27.657722. Barrel Elevate is failing
+[2017.04.25-17.57.19:565][891]LogTemp:Error: Time: 27.680540. Barrel Elevate is failing
+[2017.04.25-17.57.19:590][892]LogTemp:Error: Time: 27.703272. Barrel Elevate is failing
+[2017.04.25-17.57.19:610][893]LogTemp:Error: Time: 27.726124. Barrel Elevate is failing
+[2017.04.25-17.57.19:633][894]LogTemp:Error: Time: 27.748842. Barrel Elevate is failing
+[2017.04.25-17.57.19:656][895]LogTemp:Error: Time: 27.771788. Barrel Elevate is failing
+[2017.04.25-17.57.19:679][896]LogTemp:Error: Time: 27.794680. Barrel Elevate is failing
+[2017.04.25-17.57.19:702][897]LogTemp:Error: Time: 27.817511. Barrel Elevate is failing
+[2017.04.25-17.57.19:724][898]LogTemp:Error: Time: 27.840319. Barrel Elevate is failing
+[2017.04.25-17.57.19:747][899]LogTemp:Error: Time: 27.863171. Barrel Elevate is failing
+[2017.04.25-17.57.19:770][900]LogTemp:Error: Time: 27.885891. Barrel Elevate is failing
+[2017.04.25-17.57.19:792][901]LogTemp:Error: Time: 27.908640. Barrel Elevate is failing
+[2017.04.25-17.57.19:815][902]LogTemp:Error: Time: 27.931255. Barrel Elevate is failing
+[2017.04.25-17.57.19:838][903]LogTemp:Error: Time: 27.953896. Barrel Elevate is failing
+[2017.04.25-17.57.19:860][904]LogTemp:Error: Time: 27.976458. Barrel Elevate is failing
+[2017.04.25-17.57.19:883][905]LogTemp:Error: Time: 27.999222. Barrel Elevate is failing
+[2017.04.25-17.57.19:906][906]LogTemp:Error: Time: 28.021978. Barrel Elevate is failing
+[2017.04.25-17.57.19:929][907]LogTemp:Error: Time: 28.044731. Barrel Elevate is failing
+[2017.04.25-17.57.19:951][908]LogTemp:Error: Time: 28.067440. Barrel Elevate is failing
+[2017.04.25-17.57.19:974][909]LogTemp:Error: Time: 28.090040. Barrel Elevate is failing
+[2017.04.25-17.57.19:997][910]LogTemp:Error: Time: 28.112734. Barrel Elevate is failing
+[2017.04.25-17.57.20:020][911]LogTemp:Error: Time: 28.135319. Barrel Elevate is failing
+[2017.04.25-17.57.20:042][912]LogTemp:Error: Time: 28.158047. Barrel Elevate is failing
+[2017.04.25-17.57.20:065][913]LogTemp:Error: Time: 28.180609. Barrel Elevate is failing
+[2017.04.25-17.57.20:087][914]LogTemp:Error: Time: 28.203178. Barrel Elevate is failing
+[2017.04.25-17.57.20:110][915]LogTemp:Error: Time: 28.225771. Barrel Elevate is failing
+[2017.04.25-17.57.20:133][916]LogTemp:Error: Time: 28.248518. Barrel Elevate is failing
+[2017.04.25-17.57.20:155][917]LogTemp:Error: Time: 28.271202. Barrel Elevate is failing
+[2017.04.25-17.57.20:178][918]LogTemp:Error: Time: 28.293949. Barrel Elevate is failing
+[2017.04.25-17.57.20:201][919]LogTemp:Error: Time: 28.316748. Barrel Elevate is failing
+[2017.04.25-17.57.20:224][920]LogTemp:Error: Time: 28.339481. Barrel Elevate is failing
+[2017.04.25-17.57.20:246][921]LogTemp:Error: Time: 28.362280. Barrel Elevate is failing
+[2017.04.25-17.57.20:269][922]LogTemp:Error: Time: 28.385181. Barrel Elevate is failing
+[2017.04.25-17.57.20:292][923]LogTemp:Error: Time: 28.408117. Barrel Elevate is failing
+[2017.04.25-17.57.20:315][924]LogTemp:Error: Time: 28.431446. Barrel Elevate is failing
+[2017.04.25-17.57.20:338][925]LogTemp:Error: Time: 28.454405. Barrel Elevate is failing
+[2017.04.25-17.57.20:361][926]LogTemp:Error: Time: 28.477409. Barrel Elevate is failing
+[2017.04.25-17.57.20:385][927]LogTemp:Error: Time: 28.500799. Barrel Elevate is failing
+[2017.04.25-17.57.20:408][928]LogTemp:Error: Time: 28.523794. Barrel Elevate is failing
+[2017.04.25-17.57.20:431][929]LogTemp:Error: Time: 28.546890. Barrel Elevate is failing
+[2017.04.25-17.57.20:454][930]LogTemp:Error: Time: 28.569990. Barrel Elevate is failing
+[2017.04.25-17.57.20:477][931]LogTemp:Error: Time: 28.592981. Barrel Elevate is failing
+[2017.04.25-17.57.20:500][932]LogTemp:Error: Time: 28.615993. Barrel Elevate is failing
+[2017.04.25-17.57.20:523][933]LogTemp:Error: Time: 28.639149. Barrel Elevate is failing
+[2017.04.25-17.57.20:547][934]LogTemp:Error: Time: 28.662622. Barrel Elevate is failing
+[2017.04.25-17.57.20:570][935]LogTemp:Error: Time: 28.685841. Barrel Elevate is failing
+[2017.04.25-17.57.20:593][936]LogTemp:Error: Time: 28.709013. Barrel Elevate is failing
+[2017.04.25-17.57.20:616][937]LogTemp:Error: Time: 28.732149. Barrel Elevate is failing
+[2017.04.25-17.57.20:639][938]LogTemp:Error: Time: 28.755165. Barrel Elevate is failing
+[2017.04.25-17.57.20:662][939]LogTemp:Error: Time: 28.778172. Barrel Elevate is failing
+[2017.04.25-17.57.20:686][940]LogTemp:Error: Time: 28.801315. Barrel Elevate is failing
+[2017.04.25-17.57.20:709][941]LogTemp:Error: Time: 28.824463. Barrel Elevate is failing
+[2017.04.25-17.57.20:732][942]LogTemp:Error: Time: 28.847488. Barrel Elevate is failing
+[2017.04.25-17.57.20:755][943]LogTemp:Error: Time: 28.870590. Barrel Elevate is failing
+[2017.04.25-17.57.20:778][944]LogTemp:Error: Time: 28.893705. Barrel Elevate is failing
+[2017.04.25-17.57.20:801][945]LogTemp:Error: Time: 28.916798. Barrel Elevate is failing
+[2017.04.25-17.57.20:824][946]LogTemp:Error: Time: 28.939871. Barrel Elevate is failing
+[2017.04.25-17.57.20:847][947]LogTemp:Error: Time: 28.962915. Barrel Elevate is failing
+[2017.04.25-17.57.20:870][948]LogTemp:Error: Time: 28.985929. Barrel Elevate is failing
+[2017.04.25-17.57.20:893][949]LogTemp:Error: Time: 29.008858. Barrel Elevate is failing
+[2017.04.25-17.57.20:916][950]LogTemp:Error: Time: 29.031849. Barrel Elevate is failing
+[2017.04.25-17.57.20:939][951]LogTemp:Error: Time: 29.054823. Barrel Elevate is failing
+[2017.04.25-17.57.20:962][952]LogTemp:Error: Time: 29.077682. Barrel Elevate is failing
+[2017.04.25-17.57.20:985][953]LogTemp:Error: Time: 29.100653. Barrel Elevate is failing
+[2017.04.25-17.57.21:008][954]LogTemp:Error: Time: 29.123617. Barrel Elevate is failing
+[2017.04.25-17.57.21:031][955]LogTemp:Error: Time: 29.146477. Barrel Elevate is failing
+[2017.04.25-17.57.21:054][956]LogTemp:Error: Time: 29.169365. Barrel Elevate is failing
+[2017.04.25-17.57.21:076][957]LogTemp:Error: Time: 29.192211. Barrel Elevate is failing
+[2017.04.25-17.57.21:099][958]LogTemp:Error: Time: 29.214901. Barrel Elevate is failing
+[2017.04.25-17.57.21:122][959]LogTemp:Error: Time: 29.237831. Barrel Elevate is failing
+[2017.04.25-17.57.21:144][960]LogTemp:Error: Time: 29.260538. Barrel Elevate is failing
+[2017.04.25-17.57.21:169][961]LogTemp:Error: Time: 29.283382. Barrel Elevate is failing
+[2017.04.25-17.57.21:191][962]LogTemp:Error: Time: 29.306293. Barrel Elevate is failing
+[2017.04.25-17.57.21:214][963]LogTemp:Error: Time: 29.329151. Barrel Elevate is failing
+[2017.04.25-17.57.21:237][964]LogTemp:Error: Time: 29.352156. Barrel Elevate is failing
+[2017.04.25-17.57.21:260][965]LogTemp:Error: Time: 29.375338. Barrel Elevate is failing
+[2017.04.25-17.57.21:283][966]LogTemp:Error: Time: 29.398497. Barrel Elevate is failing
+[2017.04.25-17.57.21:306][967]LogTemp:Error: Time: 29.421713. Barrel Elevate is failing
+[2017.04.25-17.57.21:330][968]LogTemp:Error: Time: 29.444914. Barrel Elevate is failing
+[2017.04.25-17.57.21:353][969]LogTemp:Error: Time: 29.468153. Barrel Elevate is failing
+[2017.04.25-17.57.21:376][970]LogTemp:Error: Time: 29.491327. Barrel Elevate is failing
+[2017.04.25-17.57.21:399][971]LogTemp:Error: Time: 29.514585. Barrel Elevate is failing
+[2017.04.25-17.57.21:422][972]LogTemp:Error: Time: 29.537767. Barrel Elevate is failing
+[2017.04.25-17.57.21:445][973]LogTemp:Error: Time: 29.561031. Barrel Elevate is failing
+[2017.04.25-17.57.21:469][974]LogTemp:Error: Time: 29.584265. Barrel Elevate is failing
+[2017.04.25-17.57.21:492][975]LogTemp:Error: Time: 29.607918. Barrel Elevate is failing
+[2017.04.25-17.57.21:515][976]LogTemp:Error: Time: 29.631104. Barrel Elevate is failing
+[2017.04.25-17.57.21:538][977]LogTemp:Error: Time: 29.654356. Barrel Elevate is failing
+[2017.04.25-17.57.21:562][978]LogTemp:Error: Time: 29.677475. Barrel Elevate is failing
+[2017.04.25-17.57.21:585][979]LogTemp:Error: Time: 29.700724. Barrel Elevate is failing
+[2017.04.25-17.57.21:608][980]LogTemp:Error: Time: 29.723938. Barrel Elevate is failing
+[2017.04.25-17.57.21:631][981]LogTemp:Error: Time: 29.747118. Barrel Elevate is failing
+[2017.04.25-17.57.21:655][982]LogTemp:Error: Time: 29.770348. Barrel Elevate is failing
+[2017.04.25-17.57.21:677][983]LogTemp:Error: Time: 29.793524. Barrel Elevate is failing
+[2017.04.25-17.57.21:701][984]LogTemp:Error: Time: 29.816620. Barrel Elevate is failing
+[2017.04.25-17.57.21:724][985]LogTemp:Error: Time: 29.839809. Barrel Elevate is failing
+[2017.04.25-17.57.21:747][986]LogTemp:Error: Time: 29.862934. Barrel Elevate is failing
+[2017.04.25-17.57.21:771][987]LogTemp:Error: Time: 29.886087. Barrel Elevate is failing
+[2017.04.25-17.57.21:794][988]LogTemp:Error: Time: 29.909298. Barrel Elevate is failing
+[2017.04.25-17.57.21:817][989]LogTemp:Error: Time: 29.932486. Barrel Elevate is failing
+[2017.04.25-17.57.21:840][990]LogTemp:Error: Time: 29.955593. Barrel Elevate is failing
+[2017.04.25-17.57.21:863][991]LogTemp:Error: Time: 29.978725. Barrel Elevate is failing
+[2017.04.25-17.57.21:886][992]LogTemp:Error: Time: 30.001850. Barrel Elevate is failing
+[2017.04.25-17.57.21:909][993]LogTemp:Error: Time: 30.025003. Barrel Elevate is failing
+[2017.04.25-17.57.21:933][994]LogTemp:Error: Time: 30.048580. Barrel Elevate is failing
+[2017.04.25-17.57.21:956][995]LogTemp:Error: Time: 30.071743. Barrel Elevate is failing
+[2017.04.25-17.57.21:979][996]LogTemp:Error: Time: 30.094839. Barrel Elevate is failing
+[2017.04.25-17.57.22:002][997]LogTemp:Error: Time: 30.117880. Barrel Elevate is failing
+[2017.04.25-17.57.22:025][998]LogTemp:Error: Time: 30.141026. Barrel Elevate is failing
+[2017.04.25-17.57.22:048][999]LogTemp:Error: Time: 30.164085. Barrel Elevate is failing
+[2017.04.25-17.57.22:072][  0]LogTemp:Error: Time: 30.187735. Barrel Elevate is failing
+[2017.04.25-17.57.22:096][  1]LogTemp:Error: Time: 30.210934. Barrel Elevate is failing
+[2017.04.25-17.57.22:120][  2]LogTemp:Error: Time: 30.234221. Barrel Elevate is failing
+[2017.04.25-17.57.22:143][  3]LogTemp:Error: Time: 30.257530. Barrel Elevate is failing
+[2017.04.25-17.57.22:166][  4]LogTemp:Error: Time: 30.280785. Barrel Elevate is failing
+[2017.04.25-17.57.22:188][  5]LogTemp:Error: Time: 30.304056. Barrel Elevate is failing
+[2017.04.25-17.57.22:212][  6]LogTemp:Error: Time: 30.327309. Barrel Elevate is failing
+[2017.04.25-17.57.22:235][  7]LogTemp:Error: Time: 30.350616. Barrel Elevate is failing
+[2017.04.25-17.57.22:258][  8]LogTemp:Error: Time: 30.373884. Barrel Elevate is failing
+[2017.04.25-17.57.22:282][  9]LogTemp:Error: Time: 30.397152. Barrel Elevate is failing
+[2017.04.25-17.57.22:306][ 10]LogTemp:Error: Time: 30.420506. Barrel Elevate is failing
+[2017.04.25-17.57.22:329][ 11]LogTemp:Error: Time: 30.443735. Barrel Elevate is failing
+[2017.04.25-17.57.22:352][ 12]LogTemp:Error: Time: 30.467100. Barrel Elevate is failing
+[2017.04.25-17.57.22:374][ 13]LogTemp:Error: Time: 30.490368. Barrel Elevate is failing
+[2017.04.25-17.57.22:398][ 14]LogTemp:Error: Time: 30.513632. Barrel Elevate is failing
+[2017.04.25-17.57.22:421][ 15]LogTemp:Error: Time: 30.536852. Barrel Elevate is failing
+[2017.04.25-17.57.22:444][ 16]LogTemp:Error: Time: 30.560089. Barrel Elevate is failing
+[2017.04.25-17.57.22:468][ 17]LogTemp:Error: Time: 30.583242. Barrel Elevate is failing
+[2017.04.25-17.57.22:491][ 18]LogTemp:Error: Time: 30.606430. Barrel Elevate is failing
+[2017.04.25-17.57.22:514][ 19]LogTemp:Error: Time: 30.629623. Barrel Elevate is failing
+[2017.04.25-17.57.22:537][ 20]LogTemp:Error: Time: 30.652828. Barrel Elevate is failing
+[2017.04.25-17.57.22:560][ 21]LogTemp:Error: Time: 30.676159. Barrel Elevate is failing
+[2017.04.25-17.57.22:584][ 22]LogTemp:Error: Time: 30.699402. Barrel Elevate is failing
+[2017.04.25-17.57.22:606][ 23]LogTemp:Error: Time: 30.722591. Barrel Elevate is failing
+[2017.04.25-17.57.22:630][ 24]LogTemp:Error: Time: 30.745850. Barrel Elevate is failing
+[2017.04.25-17.57.22:653][ 25]LogTemp:Error: Time: 30.769032. Barrel Elevate is failing
+[2017.04.25-17.57.22:676][ 26]LogTemp:Error: Time: 30.792259. Barrel Elevate is failing
+[2017.04.25-17.57.22:699][ 27]LogTemp:Error: Time: 30.815472. Barrel Elevate is failing
+[2017.04.25-17.57.22:723][ 28]LogTemp:Error: Time: 30.838625. Barrel Elevate is failing
+[2017.04.25-17.57.22:747][ 29]LogTemp:Error: Time: 30.861828. Barrel Elevate is failing
+[2017.04.25-17.57.22:769][ 30]LogTemp:Error: Time: 30.885050. Barrel Elevate is failing
+[2017.04.25-17.57.22:792][ 31]LogTemp:Error: Time: 30.908249. Barrel Elevate is failing
+[2017.04.25-17.57.22:816][ 32]LogTemp:Error: Time: 30.931526. Barrel Elevate is failing
+[2017.04.25-17.57.22:839][ 33]LogTemp:Error: Time: 30.954716. Barrel Elevate is failing
+[2017.04.25-17.57.22:862][ 34]LogTemp:Error: Time: 30.977982. Barrel Elevate is failing
+[2017.04.25-17.57.22:886][ 35]LogTemp:Error: Time: 31.001215. Barrel Elevate is failing
+[2017.04.25-17.57.22:910][ 36]LogTemp:Error: Time: 31.024467. Barrel Elevate is failing
+[2017.04.25-17.57.22:932][ 37]LogTemp:Error: Time: 31.047735. Barrel Elevate is failing
+[2017.04.25-17.57.22:956][ 38]LogTemp:Error: Time: 31.071066. Barrel Elevate is failing
+[2017.04.25-17.57.22:978][ 39]LogTemp:Error: Time: 31.094265. Barrel Elevate is failing
+[2017.04.25-17.57.23:002][ 40]LogTemp:Error: Time: 31.117586. Barrel Elevate is failing
+[2017.04.25-17.57.23:025][ 41]LogTemp:Error: Time: 31.140833. Barrel Elevate is failing
+[2017.04.25-17.57.23:049][ 42]LogTemp:Error: Time: 31.164106. Barrel Elevate is failing
+[2017.04.25-17.57.23:072][ 43]LogTemp:Error: Time: 31.187296. Barrel Elevate is failing
+[2017.04.25-17.57.23:095][ 44]LogTemp:Error: Time: 31.210592. Barrel Elevate is failing
+[2017.04.25-17.57.23:118][ 45]LogTemp:Error: Time: 31.233898. Barrel Elevate is failing
+[2017.04.25-17.57.23:141][ 46]LogTemp:Error: Time: 31.257252. Barrel Elevate is failing
+[2017.04.25-17.57.23:165][ 47]LogTemp:Error: Time: 31.280874. Barrel Elevate is failing
+[2017.04.25-17.57.23:188][ 48]LogTemp:Error: Time: 31.304150. Barrel Elevate is failing
+[2017.04.25-17.57.23:213][ 49]LogTemp:Error: Time: 31.327425. Barrel Elevate is failing
+[2017.04.25-17.57.23:236][ 50]LogTemp:Error: Time: 31.350657. Barrel Elevate is failing
+[2017.04.25-17.57.23:260][ 51]LogTemp:Error: Time: 31.373934. Barrel Elevate is failing
+[2017.04.25-17.57.23:282][ 52]LogTemp:Error: Time: 31.397282. Barrel Elevate is failing
+[2017.04.25-17.57.23:304][ 53]LogTemp:Error: Time: 31.420544. Barrel Elevate is failing
+[2017.04.25-17.57.23:330][ 54]LogTemp:Error: Time: 31.445683. Barrel Elevate is failing
+[2017.04.25-17.57.23:351][ 55]LogTemp:Error: Time: 31.467213. Barrel Elevate is failing
+[2017.04.25-17.57.23:374][ 56]LogTemp:Error: Time: 31.490425. Barrel Elevate is failing
+[2017.04.25-17.57.23:398][ 57]LogTemp:Error: Time: 31.513727. Barrel Elevate is failing
+[2017.04.25-17.57.23:421][ 58]LogTemp:Error: Time: 31.537014. Barrel Elevate is failing
+[2017.04.25-17.57.23:444][ 59]LogTemp:Error: Time: 31.560217. Barrel Elevate is failing
+[2017.04.25-17.57.23:468][ 60]LogTemp:Error: Time: 31.583479. Barrel Elevate is failing
+[2017.04.25-17.57.23:491][ 61]LogTemp:Error: Time: 31.606689. Barrel Elevate is failing
+[2017.04.25-17.57.23:514][ 62]LogTemp:Error: Time: 31.629904. Barrel Elevate is failing
+[2017.04.25-17.57.23:537][ 63]LogTemp:Error: Time: 31.653141. Barrel Elevate is failing
+[2017.04.25-17.57.23:561][ 64]LogTemp:Error: Time: 31.676395. Barrel Elevate is failing
+[2017.04.25-17.57.23:585][ 65]LogTemp:Error: Time: 31.699726. Barrel Elevate is failing
+[2017.04.25-17.57.23:608][ 66]LogTemp:Error: Time: 31.722986. Barrel Elevate is failing
+[2017.04.25-17.57.23:630][ 67]LogTemp:Error: Time: 31.746180. Barrel Elevate is failing
+[2017.04.25-17.57.23:654][ 68]LogTemp:Error: Time: 31.769522. Barrel Elevate is failing
+[2017.04.25-17.57.23:677][ 69]LogTemp:Error: Time: 31.792812. Barrel Elevate is failing
+[2017.04.25-17.57.23:700][ 70]LogTemp:Error: Time: 31.816103. Barrel Elevate is failing
+[2017.04.25-17.57.23:723][ 71]LogTemp:Error: Time: 31.839317. Barrel Elevate is failing
+[2017.04.25-17.57.23:746][ 72]LogTemp:Error: Time: 31.862577. Barrel Elevate is failing
+[2017.04.25-17.57.23:770][ 73]LogTemp:Error: Time: 31.885799. Barrel Elevate is failing
+[2017.04.25-17.57.23:793][ 74]LogTemp:Error: Time: 31.908947. Barrel Elevate is failing
+[2017.04.25-17.57.23:816][ 75]LogTemp:Error: Time: 31.932167. Barrel Elevate is failing
+[2017.04.25-17.57.23:839][ 76]LogTemp:Error: Time: 31.955410. Barrel Elevate is failing
+[2017.04.25-17.57.23:863][ 77]LogTemp:Error: Time: 31.978676. Barrel Elevate is failing
+[2017.04.25-17.57.23:886][ 78]LogTemp:Error: Time: 32.001835. Barrel Elevate is failing
+[2017.04.25-17.57.23:909][ 79]LogTemp:Error: Time: 32.025078. Barrel Elevate is failing
+[2017.04.25-17.57.23:932][ 80]LogTemp:Error: Time: 32.048233. Barrel Elevate is failing
+[2017.04.25-17.57.23:955][ 81]LogTemp:Error: Time: 32.071423. Barrel Elevate is failing
+[2017.04.25-17.57.23:978][ 82]LogTemp:Error: Time: 32.094631. Barrel Elevate is failing
+[2017.04.25-17.57.24:002][ 83]LogTemp:Error: Time: 32.117905. Barrel Elevate is failing
+[2017.04.25-17.57.24:025][ 84]LogTemp:Error: Time: 32.141090. Barrel Elevate is failing
+[2017.04.25-17.57.24:048][ 85]LogTemp:Error: Time: 32.164326. Barrel Elevate is failing
+[2017.04.25-17.57.24:071][ 86]LogTemp:Error: Time: 32.187538. Barrel Elevate is failing
+[2017.04.25-17.57.24:095][ 87]LogTemp:Error: Time: 32.210728. Barrel Elevate is failing
+[2017.04.25-17.57.24:118][ 88]LogTemp:Error: Time: 32.234032. Barrel Elevate is failing
+[2017.04.25-17.57.24:141][ 89]LogTemp:Error: Time: 32.257221. Barrel Elevate is failing
+[2017.04.25-17.57.24:164][ 90]LogTemp:Error: Time: 32.280293. Barrel Elevate is failing
+[2017.04.25-17.57.24:188][ 91]LogTemp:Error: Time: 32.303585. Barrel Elevate is failing
+[2017.04.25-17.57.24:211][ 92]LogTemp:Error: Time: 32.326725. Barrel Elevate is failing
+[2017.04.25-17.57.24:234][ 93]LogTemp:Error: Time: 32.349888. Barrel Elevate is failing
+[2017.04.25-17.57.24:257][ 94]LogTemp:Error: Time: 32.373150. Barrel Elevate is failing
+[2017.04.25-17.57.24:280][ 95]LogTemp:Error: Time: 32.396332. Barrel Elevate is failing
+[2017.04.25-17.57.24:303][ 96]LogTemp:Error: Time: 32.419437. Barrel Elevate is failing
+[2017.04.25-17.57.24:327][ 97]LogTemp:Error: Time: 32.442730. Barrel Elevate is failing
+[2017.04.25-17.57.24:350][ 98]LogTemp:Error: Time: 32.465843. Barrel Elevate is failing
+[2017.04.25-17.57.24:373][ 99]LogTemp:Error: Time: 32.489079. Barrel Elevate is failing
+[2017.04.25-17.57.24:396][100]LogTemp:Error: Time: 32.512207. Barrel Elevate is failing
+[2017.04.25-17.57.24:419][101]LogTemp:Error: Time: 32.535450. Barrel Elevate is failing
+[2017.04.25-17.57.24:442][102]LogTemp:Error: Time: 32.558628. Barrel Elevate is failing
+[2017.04.25-17.57.24:466][103]LogTemp:Error: Time: 32.581863. Barrel Elevate is failing
+[2017.04.25-17.57.24:489][104]LogTemp:Error: Time: 32.605076. Barrel Elevate is failing
+[2017.04.25-17.57.24:512][105]LogTemp:Error: Time: 32.628307. Barrel Elevate is failing
+[2017.04.25-17.57.24:536][106]LogTemp:Error: Time: 32.651508. Barrel Elevate is failing
+[2017.04.25-17.57.24:559][107]LogTemp:Error: Time: 32.674744. Barrel Elevate is failing
+[2017.04.25-17.57.24:582][108]LogTemp:Error: Time: 32.697861. Barrel Elevate is failing
+[2017.04.25-17.57.24:606][109]LogTemp:Error: Time: 32.721069. Barrel Elevate is failing
+[2017.04.25-17.57.24:628][110]LogTemp:Error: Time: 32.744259. Barrel Elevate is failing
+[2017.04.25-17.57.24:652][111]LogTemp:Error: Time: 32.767391. Barrel Elevate is failing
+[2017.04.25-17.57.24:675][112]LogTemp:Error: Time: 32.790699. Barrel Elevate is failing
+[2017.04.25-17.57.24:701][113]LogTemp:Error: Time: 32.813858. Barrel Elevate is failing
+[2017.04.25-17.57.24:721][114]LogTemp:Error: Time: 32.837055. Barrel Elevate is failing
+[2017.04.25-17.57.24:744][115]LogTemp:Error: Time: 32.860271. Barrel Elevate is failing
+[2017.04.25-17.57.24:768][116]LogTemp:Error: Time: 32.883629. Barrel Elevate is failing
+[2017.04.25-17.57.24:791][117]LogTemp:Error: Time: 32.906864. Barrel Elevate is failing
+[2017.04.25-17.57.24:815][118]LogTemp:Error: Time: 32.930744. Barrel Elevate is failing
+[2017.04.25-17.57.24:839][119]LogTemp:Error: Time: 32.954029. Barrel Elevate is failing
+[2017.04.25-17.57.24:862][120]LogTemp:Error: Time: 32.977345. Barrel Elevate is failing
+[2017.04.25-17.57.24:885][121]LogTemp:Error: Time: 33.000546. Barrel Elevate is failing
+[2017.04.25-17.57.24:908][122]LogTemp:Error: Time: 33.023884. Barrel Elevate is failing
+[2017.04.25-17.57.24:931][123]LogTemp:Error: Time: 33.047211. Barrel Elevate is failing
+[2017.04.25-17.57.24:955][124]LogTemp:Error: Time: 33.070419. Barrel Elevate is failing
+[2017.04.25-17.57.24:978][125]LogTemp:Error: Time: 33.093616. Barrel Elevate is failing
+[2017.04.25-17.57.25:001][126]LogTemp:Error: Time: 33.116749. Barrel Elevate is failing
+[2017.04.25-17.57.25:024][127]LogTemp:Error: Time: 33.139923. Barrel Elevate is failing
+[2017.04.25-17.57.25:047][128]LogTemp:Error: Time: 33.163143. Barrel Elevate is failing
+[2017.04.25-17.57.25:071][129]LogTemp:Error: Time: 33.186272. Barrel Elevate is failing
+[2017.04.25-17.57.25:094][130]LogTemp:Error: Time: 33.209389. Barrel Elevate is failing
+[2017.04.25-17.57.25:117][131]LogTemp:Error: Time: 33.232609. Barrel Elevate is failing
+[2017.04.25-17.57.25:140][132]LogTemp:Error: Time: 33.255829. Barrel Elevate is failing
+[2017.04.25-17.57.25:163][133]LogTemp:Error: Time: 33.278877. Barrel Elevate is failing
+[2017.04.25-17.57.25:186][134]LogTemp:Error: Time: 33.302101. Barrel Elevate is failing
+[2017.04.25-17.57.25:212][135]LogTemp:Error: Time: 33.325329. Barrel Elevate is failing
+[2017.04.25-17.57.25:232][136]LogTemp:Error: Time: 33.348530. Barrel Elevate is failing
+[2017.04.25-17.57.25:256][137]LogTemp:Error: Time: 33.371693. Barrel Elevate is failing
+[2017.04.25-17.57.25:279][138]LogTemp:Error: Time: 33.394779. Barrel Elevate is failing
+[2017.04.25-17.57.25:302][139]LogTemp:Error: Time: 33.417992. Barrel Elevate is failing
+[2017.04.25-17.57.25:325][140]LogTemp:Error: Time: 33.441185. Barrel Elevate is failing
+[2017.04.25-17.57.25:349][141]LogTemp:Error: Time: 33.464252. Barrel Elevate is failing
+[2017.04.25-17.57.25:372][142]LogTemp:Error: Time: 33.487480. Barrel Elevate is failing
+[2017.04.25-17.57.25:395][143]LogTemp:Error: Time: 33.510643. Barrel Elevate is failing
+[2017.04.25-17.57.25:419][144]LogTemp:Error: Time: 33.533871. Barrel Elevate is failing
+[2017.04.25-17.57.25:441][145]LogTemp:Error: Time: 33.557167. Barrel Elevate is failing
+[2017.04.25-17.57.25:465][146]LogTemp:Error: Time: 33.580364. Barrel Elevate is failing
+[2017.04.25-17.57.25:488][147]LogTemp:Error: Time: 33.603672. Barrel Elevate is failing
+[2017.04.25-17.57.25:511][148]LogTemp:Error: Time: 33.626862. Barrel Elevate is failing
+[2017.04.25-17.57.25:534][149]LogTemp:Error: Time: 33.650127. Barrel Elevate is failing
+[2017.04.25-17.57.25:557][150]LogTemp:Error: Time: 33.673313. Barrel Elevate is failing
+[2017.04.25-17.57.25:581][151]LogTemp:Error: Time: 33.696568. Barrel Elevate is failing
+[2017.04.25-17.57.25:604][152]LogTemp:Error: Time: 33.719677. Barrel Elevate is failing
+[2017.04.25-17.57.25:627][153]LogTemp:Error: Time: 33.742893. Barrel Elevate is failing
+[2017.04.25-17.57.25:650][154]LogTemp:Error: Time: 33.766113. Barrel Elevate is failing
+[2017.04.25-17.57.25:674][155]LogTemp:Error: Time: 33.789360. Barrel Elevate is failing
+[2017.04.25-17.57.25:696][156]LogTemp:Error: Time: 33.812546. Barrel Elevate is failing
+[2017.04.25-17.57.25:720][157]LogTemp:Error: Time: 33.835850. Barrel Elevate is failing
+[2017.04.25-17.57.25:743][158]LogTemp:Error: Time: 33.858902. Barrel Elevate is failing
+[2017.04.25-17.57.25:766][159]LogTemp:Error: Time: 33.882118. Barrel Elevate is failing
+[2017.04.25-17.57.25:789][160]LogTemp:Error: Time: 33.905235. Barrel Elevate is failing
+[2017.04.25-17.57.25:813][161]LogTemp:Error: Time: 33.928963. Barrel Elevate is failing
+[2017.04.25-17.57.25:837][162]LogTemp:Error: Time: 33.952271. Barrel Elevate is failing
+[2017.04.25-17.57.25:860][163]LogTemp:Error: Time: 33.975590. Barrel Elevate is failing
+[2017.04.25-17.57.25:883][164]LogTemp:Error: Time: 33.998867. Barrel Elevate is failing
+[2017.04.25-17.57.25:907][165]LogTemp:Error: Time: 34.022209. Barrel Elevate is failing
+[2017.04.25-17.57.25:930][166]LogTemp:Error: Time: 34.045486. Barrel Elevate is failing
+[2017.04.25-17.57.25:953][167]LogTemp:Error: Time: 34.068798. Barrel Elevate is failing
+[2017.04.25-17.57.25:977][168]LogTemp:Error: Time: 34.092598. Barrel Elevate is failing
+[2017.04.25-17.57.26:000][169]LogTemp:Error: Time: 34.115971. Barrel Elevate is failing
+[2017.04.25-17.57.26:024][170]LogTemp:Error: Time: 34.139301. Barrel Elevate is failing
+[2017.04.25-17.57.26:047][171]LogTemp:Error: Time: 34.162708. Barrel Elevate is failing
+[2017.04.25-17.57.26:070][172]LogTemp:Error: Time: 34.186119. Barrel Elevate is failing
+[2017.04.25-17.57.26:094][173]LogTemp:Error: Time: 34.209526. Barrel Elevate is failing
+[2017.04.25-17.57.26:117][174]LogTemp:Error: Time: 34.232998. Barrel Elevate is failing
+[2017.04.25-17.57.26:141][175]LogTemp:Error: Time: 34.256424. Barrel Elevate is failing
+[2017.04.25-17.57.26:164][176]LogTemp:Error: Time: 34.279900. Barrel Elevate is failing
+[2017.04.25-17.57.26:188][177]LogTemp:Error: Time: 34.303478. Barrel Elevate is failing
+[2017.04.25-17.57.26:211][178]LogTemp:Error: Time: 34.326965. Barrel Elevate is failing
+[2017.04.25-17.57.26:234][179]LogTemp:Error: Time: 34.350506. Barrel Elevate is failing
+[2017.04.25-17.57.26:258][180]LogTemp:Error: Time: 34.373936. Barrel Elevate is failing
+[2017.04.25-17.57.26:282][181]LogTemp:Error: Time: 34.397518. Barrel Elevate is failing
+[2017.04.25-17.57.26:305][182]LogTemp:Error: Time: 34.420933. Barrel Elevate is failing
+[2017.04.25-17.57.26:329][183]LogTemp:Error: Time: 34.444401. Barrel Elevate is failing
+[2017.04.25-17.57.26:354][184]LogTemp:Error: Time: 34.467850. Barrel Elevate is failing
+[2017.04.25-17.57.26:377][185]LogTemp:Error: Time: 34.491276. Barrel Elevate is failing
+[2017.04.25-17.57.26:400][186]LogTemp:Error: Time: 34.514732. Barrel Elevate is failing
+[2017.04.25-17.57.26:423][187]LogTemp:Error: Time: 34.538380. Barrel Elevate is failing
+[2017.04.25-17.57.26:447][188]LogTemp:Error: Time: 34.562096. Barrel Elevate is failing
+[2017.04.25-17.57.26:470][189]LogTemp:Error: Time: 34.585693. Barrel Elevate is failing
+[2017.04.25-17.57.26:493][190]LogTemp:Error: Time: 34.609222. Barrel Elevate is failing
+[2017.04.25-17.57.26:517][191]LogTemp:Error: Time: 34.632771. Barrel Elevate is failing
+[2017.04.25-17.57.26:540][192]LogTemp:Error: Time: 34.656296. Barrel Elevate is failing
+[2017.04.25-17.57.26:564][193]LogTemp:Error: Time: 34.679844. Barrel Elevate is failing
+[2017.04.25-17.57.26:587][194]LogTemp:Error: Time: 34.703400. Barrel Elevate is failing
+[2017.04.25-17.57.26:611][195]LogTemp:Error: Time: 34.726967. Barrel Elevate is failing
+[2017.04.25-17.57.26:635][196]LogTemp:Error: Time: 34.750618. Barrel Elevate is failing
+[2017.04.25-17.57.26:658][197]LogTemp:Error: Time: 34.774307. Barrel Elevate is failing
+[2017.04.25-17.57.26:682][198]LogTemp:Error: Time: 34.797951. Barrel Elevate is failing
+[2017.04.25-17.57.26:705][199]LogTemp:Error: Time: 34.821533. Barrel Elevate is failing
+[2017.04.25-17.57.26:729][200]LogTemp:Error: Time: 34.845139. Barrel Elevate is failing
+[2017.04.25-17.57.26:753][201]LogTemp:Error: Time: 34.868881. Barrel Elevate is failing
+[2017.04.25-17.57.26:777][202]LogTemp:Error: Time: 34.892517. Barrel Elevate is failing
+[2017.04.25-17.57.26:800][203]LogTemp:Error: Time: 34.916214. Barrel Elevate is failing
+[2017.04.25-17.57.26:824][204]LogTemp:Error: Time: 34.939899. Barrel Elevate is failing
+[2017.04.25-17.57.26:848][205]LogTemp:Error: Time: 34.963554. Barrel Elevate is failing
+[2017.04.25-17.57.26:871][206]LogTemp:Error: Time: 34.987213. Barrel Elevate is failing
+[2017.04.25-17.57.26:895][207]LogTemp:Error: Time: 35.010818. Barrel Elevate is failing
+[2017.04.25-17.57.26:919][208]LogTemp:Error: Time: 35.034458. Barrel Elevate is failing
+[2017.04.25-17.57.26:942][209]LogTemp:Error: Time: 35.058132. Barrel Elevate is failing
+[2017.04.25-17.57.26:966][210]LogTemp:Error: Time: 35.081730. Barrel Elevate is failing
+[2017.04.25-17.57.26:989][211]LogTemp:Error: Time: 35.105278. Barrel Elevate is failing
+[2017.04.25-17.57.27:013][212]LogTemp:Error: Time: 35.128834. Barrel Elevate is failing
+[2017.04.25-17.57.27:037][213]LogTemp:Error: Time: 35.152386. Barrel Elevate is failing
+[2017.04.25-17.57.27:062][214]LogTemp:Error: Time: 35.175880. Barrel Elevate is failing
+[2017.04.25-17.57.27:085][215]LogTemp:Error: Time: 35.199402. Barrel Elevate is failing
+[2017.04.25-17.57.27:109][216]LogTemp:Error: Time: 35.222889. Barrel Elevate is failing
+[2017.04.25-17.57.27:132][217]LogTemp:Error: Time: 35.246426. Barrel Elevate is failing
+[2017.04.25-17.57.27:155][218]LogTemp:Error: Time: 35.269909. Barrel Elevate is failing
+[2017.04.25-17.57.27:179][219]LogTemp:Error: Time: 35.293293. Barrel Elevate is failing
+[2017.04.25-17.57.27:202][220]LogTemp:Error: Time: 35.316761. Barrel Elevate is failing
+[2017.04.25-17.57.27:225][221]LogTemp:Error: Time: 35.340107. Barrel Elevate is failing
+[2017.04.25-17.57.27:248][222]LogTemp:Error: Time: 35.363594. Barrel Elevate is failing
+[2017.04.25-17.57.27:272][223]LogTemp:Error: Time: 35.386993. Barrel Elevate is failing
+[2017.04.25-17.57.27:296][224]LogTemp:Error: Time: 35.410488. Barrel Elevate is failing
+[2017.04.25-17.57.27:318][225]LogTemp:Error: Time: 35.433956. Barrel Elevate is failing
+[2017.04.25-17.57.27:341][226]LogTemp:Error: Time: 35.457455. Barrel Elevate is failing
+[2017.04.25-17.57.27:369][227]LogTemp:Error: Time: 35.483761. Barrel Elevate is failing
+[2017.04.25-17.57.27:389][228]LogTemp:Error: Time: 35.504444. Barrel Elevate is failing
+[2017.04.25-17.57.27:413][229]LogTemp:Error: Time: 35.527874. Barrel Elevate is failing
+[2017.04.25-17.57.27:436][230]LogTemp:Error: Time: 35.551369. Barrel Elevate is failing
+[2017.04.25-17.57.27:459][231]LogTemp:Error: Time: 35.574852. Barrel Elevate is failing
+[2017.04.25-17.57.27:483][232]LogTemp:Error: Time: 35.598305. Barrel Elevate is failing
+[2017.04.25-17.57.27:506][233]LogTemp:Error: Time: 35.621807. Barrel Elevate is failing
+[2017.04.25-17.57.27:529][234]LogTemp:Error: Time: 35.645237. Barrel Elevate is failing
+[2017.04.25-17.57.27:553][235]LogTemp:Error: Time: 35.668861. Barrel Elevate is failing
+[2017.04.25-17.57.27:576][236]LogTemp:Error: Time: 35.692257. Barrel Elevate is failing
+[2017.04.25-17.57.27:599][237]LogTemp:Error: Time: 35.715641. Barrel Elevate is failing
+[2017.04.25-17.57.27:623][238]LogTemp:Error: Time: 35.739071. Barrel Elevate is failing
+[2017.04.25-17.57.27:647][239]LogTemp:Error: Time: 35.762524. Barrel Elevate is failing
+[2017.04.25-17.57.27:670][240]LogTemp:Error: Time: 35.785992. Barrel Elevate is failing
+[2017.04.25-17.57.27:694][241]LogTemp:Error: Time: 35.809441. Barrel Elevate is failing
+[2017.04.25-17.57.27:717][242]LogTemp:Error: Time: 35.832920. Barrel Elevate is failing
+[2017.04.25-17.57.27:740][243]LogTemp:Error: Time: 35.856289. Barrel Elevate is failing
+[2017.04.25-17.57.27:764][244]LogTemp:Error: Time: 35.879745. Barrel Elevate is failing
+[2017.04.25-17.57.27:787][245]LogTemp:Error: Time: 35.903214. Barrel Elevate is failing
+[2017.04.25-17.57.27:811][246]LogTemp:Error: Time: 35.926689. Barrel Elevate is failing
+[2017.04.25-17.57.27:834][247]LogTemp:Error: Time: 35.950157. Barrel Elevate is failing
+[2017.04.25-17.57.27:858][248]LogTemp:Error: Time: 35.973515. Barrel Elevate is failing
+[2017.04.25-17.57.27:882][249]LogTemp:Error: Time: 35.997009. Barrel Elevate is failing
+[2017.04.25-17.57.27:906][250]LogTemp:Error: Time: 36.020458. Barrel Elevate is failing
+[2017.04.25-17.57.27:929][251]LogTemp:Error: Time: 36.044010. Barrel Elevate is failing
+[2017.04.25-17.57.27:952][252]LogTemp:Error: Time: 36.067539. Barrel Elevate is failing
+[2017.04.25-17.57.27:976][253]LogTemp:Error: Time: 36.091022. Barrel Elevate is failing
+[2017.04.25-17.57.27:999][254]LogTemp:Error: Time: 36.114601. Barrel Elevate is failing
+[2017.04.25-17.57.28:023][255]LogTemp:Error: Time: 36.138126. Barrel Elevate is failing
+[2017.04.25-17.57.28:047][256]LogTemp:Error: Time: 36.161716. Barrel Elevate is failing
+[2017.04.25-17.57.28:071][257]LogTemp:Error: Time: 36.185284. Barrel Elevate is failing
+[2017.04.25-17.57.28:093][258]LogTemp:Error: Time: 36.208820. Barrel Elevate is failing
+[2017.04.25-17.57.28:117][259]LogTemp:Error: Time: 36.232388. Barrel Elevate is failing
+[2017.04.25-17.57.28:140][260]LogTemp:Error: Time: 36.256062. Barrel Elevate is failing
+[2017.04.25-17.57.28:164][261]LogTemp:Error: Time: 36.279675. Barrel Elevate is failing
+[2017.04.25-17.57.28:188][262]LogTemp:Error: Time: 36.303169. Barrel Elevate is failing
+[2017.04.25-17.57.28:212][263]LogTemp:Error: Time: 36.326675. Barrel Elevate is failing
+[2017.04.25-17.57.28:236][264]LogTemp:Error: Time: 36.350208. Barrel Elevate is failing
+[2017.04.25-17.57.28:260][265]LogTemp:Error: Time: 36.373783. Barrel Elevate is failing
+[2017.04.25-17.57.28:283][266]LogTemp:Error: Time: 36.397430. Barrel Elevate is failing
+[2017.04.25-17.57.28:306][267]LogTemp:Error: Time: 36.421036. Barrel Elevate is failing
+[2017.04.25-17.57.28:329][268]LogTemp:Error: Time: 36.444603. Barrel Elevate is failing
+[2017.04.25-17.57.28:352][269]LogTemp:Error: Time: 36.468163. Barrel Elevate is failing
+[2017.04.25-17.57.28:376][270]LogTemp:Error: Time: 36.491783. Barrel Elevate is failing
+[2017.04.25-17.57.28:400][271]LogTemp:Error: Time: 36.515530. Barrel Elevate is failing
+[2017.04.25-17.57.28:423][272]LogTemp:Error: Time: 36.539116. Barrel Elevate is failing
+[2017.04.25-17.57.28:447][273]LogTemp:Error: Time: 36.562702. Barrel Elevate is failing
+[2017.04.25-17.57.28:470][274]LogTemp:Error: Time: 36.586292. Barrel Elevate is failing
+[2017.04.25-17.57.28:494][275]LogTemp:Error: Time: 36.609940. Barrel Elevate is failing
+[2017.04.25-17.57.28:518][276]LogTemp:Error: Time: 36.633602. Barrel Elevate is failing
+[2017.04.25-17.57.28:541][277]LogTemp:Error: Time: 36.657280. Barrel Elevate is failing
+[2017.04.25-17.57.28:565][278]LogTemp:Error: Time: 36.680794. Barrel Elevate is failing
+[2017.04.25-17.57.28:588][279]LogTemp:Error: Time: 36.704288. Barrel Elevate is failing
+[2017.04.25-17.57.28:612][280]LogTemp:Error: Time: 36.727867. Barrel Elevate is failing
+[2017.04.25-17.57.28:636][281]LogTemp:Error: Time: 36.751534. Barrel Elevate is failing
+[2017.04.25-17.57.28:659][282]LogTemp:Error: Time: 36.775013. Barrel Elevate is failing
+[2017.04.25-17.57.28:683][283]LogTemp:Error: Time: 36.798630. Barrel Elevate is failing
+[2017.04.25-17.57.28:706][284]LogTemp:Error: Time: 36.822277. Barrel Elevate is failing
+[2017.04.25-17.57.28:730][285]LogTemp:Error: Time: 36.845921. Barrel Elevate is failing
+[2017.04.25-17.57.28:754][286]LogTemp:Error: Time: 36.869560. Barrel Elevate is failing
+[2017.04.25-17.57.28:777][287]LogTemp:Error: Time: 36.893108. Barrel Elevate is failing
+[2017.04.25-17.57.28:801][288]LogTemp:Error: Time: 36.916729. Barrel Elevate is failing
+[2017.04.25-17.57.28:824][289]LogTemp:Error: Time: 36.940308. Barrel Elevate is failing
+[2017.04.25-17.57.28:848][290]LogTemp:Error: Time: 36.964306. Barrel Elevate is failing
+[2017.04.25-17.57.28:872][291]LogTemp:Error: Time: 36.987885. Barrel Elevate is failing
+[2017.04.25-17.57.28:895][292]LogTemp:Error: Time: 37.011501. Barrel Elevate is failing
+[2017.04.25-17.57.28:919][293]LogTemp:Error: Time: 37.035122. Barrel Elevate is failing
+[2017.04.25-17.57.28:943][294]LogTemp:Error: Time: 37.058784. Barrel Elevate is failing
+[2017.04.25-17.57.28:966][295]LogTemp:Error: Time: 37.082378. Barrel Elevate is failing
+[2017.04.25-17.57.28:990][296]LogTemp:Error: Time: 37.106022. Barrel Elevate is failing
+[2017.04.25-17.57.29:014][297]LogTemp:Error: Time: 37.129742. Barrel Elevate is failing
+[2017.04.25-17.57.29:037][298]LogTemp:Error: Time: 37.153450. Barrel Elevate is failing
+[2017.04.25-17.57.29:061][299]LogTemp:Error: Time: 37.177090. Barrel Elevate is failing
+[2017.04.25-17.57.29:085][300]LogTemp:Error: Time: 37.200653. Barrel Elevate is failing
+[2017.04.25-17.57.29:108][301]LogTemp:Error: Time: 37.224247. Barrel Elevate is failing
+[2017.04.25-17.57.29:132][302]LogTemp:Error: Time: 37.247814. Barrel Elevate is failing
+[2017.04.25-17.57.29:155][303]LogTemp:Error: Time: 37.271400. Barrel Elevate is failing
+[2017.04.25-17.57.29:179][304]LogTemp:Error: Time: 37.294918. Barrel Elevate is failing
+[2017.04.25-17.57.29:202][305]LogTemp:Error: Time: 37.318459. Barrel Elevate is failing
+[2017.04.25-17.57.29:227][306]LogTemp:Error: Time: 37.342075. Barrel Elevate is failing
+[2017.04.25-17.57.29:250][307]LogTemp:Error: Time: 37.365562. Barrel Elevate is failing
+[2017.04.25-17.57.29:274][308]LogTemp:Error: Time: 37.389145. Barrel Elevate is failing
+[2017.04.25-17.57.29:297][309]LogTemp:Error: Time: 37.412708. Barrel Elevate is failing
+[2017.04.25-17.57.29:321][310]LogTemp:Error: Time: 37.436218. Barrel Elevate is failing
+[2017.04.25-17.57.29:344][311]LogTemp:Error: Time: 37.459801. Barrel Elevate is failing
+[2017.04.25-17.57.29:368][312]LogTemp:Error: Time: 37.483425. Barrel Elevate is failing
+[2017.04.25-17.57.29:397][313]LogTemp:Error: Time: 37.512543. Barrel Elevate is failing
+[2017.04.25-17.57.29:415][314]LogTemp:Error: Time: 37.530487. Barrel Elevate is failing
+[2017.04.25-17.57.29:438][315]LogTemp:Error: Time: 37.554089. Barrel Elevate is failing
+[2017.04.25-17.57.29:462][316]LogTemp:Error: Time: 37.577663. Barrel Elevate is failing
+[2017.04.25-17.57.29:486][317]LogTemp:Error: Time: 37.601315. Barrel Elevate is failing
+[2017.04.25-17.57.29:509][318]LogTemp:Error: Time: 37.624947. Barrel Elevate is failing
+[2017.04.25-17.57.29:533][319]LogTemp:Error: Time: 37.648537. Barrel Elevate is failing
+[2017.04.25-17.57.29:557][320]LogTemp:Error: Time: 37.672161. Barrel Elevate is failing
+[2017.04.25-17.57.29:580][321]LogTemp:Error: Time: 37.695793. Barrel Elevate is failing
+[2017.04.25-17.57.29:604][322]LogTemp:Error: Time: 37.719490. Barrel Elevate is failing
+[2017.04.25-17.57.29:629][323]LogTemp:Error: Time: 37.743145. Barrel Elevate is failing
+[2017.04.25-17.57.29:653][324]LogTemp:Error: Time: 37.766792. Barrel Elevate is failing
+[2017.04.25-17.57.29:677][325]LogTemp:Error: Time: 37.790451. Barrel Elevate is failing
+[2017.04.25-17.57.29:700][326]LogTemp:Error: Time: 37.814156. Barrel Elevate is failing
+[2017.04.25-17.57.29:724][327]LogTemp:Error: Time: 37.837860. Barrel Elevate is failing
+[2017.04.25-17.57.29:747][328]LogTemp:Error: Time: 37.861538. Barrel Elevate is failing
+[2017.04.25-17.57.29:772][329]LogTemp:Error: Time: 37.885204. Barrel Elevate is failing
+[2017.04.25-17.57.29:795][330]LogTemp:Error: Time: 37.908867. Barrel Elevate is failing
+[2017.04.25-17.57.29:819][331]LogTemp:Error: Time: 37.932598. Barrel Elevate is failing
+[2017.04.25-17.57.29:842][332]LogTemp:Error: Time: 37.956242. Barrel Elevate is failing
+[2017.04.25-17.57.29:866][333]LogTemp:Error: Time: 37.979992. Barrel Elevate is failing
+[2017.04.25-17.57.29:889][334]LogTemp:Error: Time: 38.003681. Barrel Elevate is failing
+[2017.04.25-17.57.29:913][335]LogTemp:Error: Time: 38.027424. Barrel Elevate is failing
+[2017.04.25-17.57.29:937][336]LogTemp:Error: Time: 38.051147. Barrel Elevate is failing
+[2017.04.25-17.57.29:960][337]LogTemp:Error: Time: 38.074833. Barrel Elevate is failing
+[2017.04.25-17.57.29:984][338]LogTemp:Error: Time: 38.098576. Barrel Elevate is failing
+[2017.04.25-17.57.30:007][339]LogTemp:Error: Time: 38.122261. Barrel Elevate is failing
+[2017.04.25-17.57.30:031][340]LogTemp:Error: Time: 38.145962. Barrel Elevate is failing
+[2017.04.25-17.57.30:054][341]LogTemp:Error: Time: 38.169697. Barrel Elevate is failing
+[2017.04.25-17.57.30:077][342]LogTemp:Error: Time: 38.193344. Barrel Elevate is failing
+[2017.04.25-17.57.30:101][343]LogTemp:Error: Time: 38.217072. Barrel Elevate is failing
+[2017.04.25-17.57.30:125][344]LogTemp:Error: Time: 38.240704. Barrel Elevate is failing
+[2017.04.25-17.57.30:149][345]LogTemp:Error: Time: 38.264267. Barrel Elevate is failing
+[2017.04.25-17.57.30:172][346]LogTemp:Error: Time: 38.287796. Barrel Elevate is failing
+[2017.04.25-17.57.30:197][347]LogTemp:Error: Time: 38.311455. Barrel Elevate is failing
+[2017.04.25-17.57.30:220][348]LogTemp:Error: Time: 38.335060. Barrel Elevate is failing
+[2017.04.25-17.57.30:244][349]LogTemp:Error: Time: 38.358734. Barrel Elevate is failing
+[2017.04.25-17.57.30:267][350]LogTemp:Error: Time: 38.382378. Barrel Elevate is failing
+[2017.04.25-17.57.30:292][351]LogTemp:Error: Time: 38.405983. Barrel Elevate is failing
+[2017.04.25-17.57.30:315][352]LogTemp:Error: Time: 38.429672. Barrel Elevate is failing
+[2017.04.25-17.57.30:339][353]LogTemp:Error: Time: 38.453350. Barrel Elevate is failing
+[2017.04.25-17.57.30:362][354]LogTemp:Error: Time: 38.476952. Barrel Elevate is failing
+[2017.04.25-17.57.30:385][355]LogTemp:Error: Time: 38.500572. Barrel Elevate is failing
+[2017.04.25-17.57.30:409][356]LogTemp:Error: Time: 38.524239. Barrel Elevate is failing
+[2017.04.25-17.57.30:432][357]LogTemp:Error: Time: 38.547859. Barrel Elevate is failing
+[2017.04.25-17.57.30:456][358]LogTemp:Error: Time: 38.571442. Barrel Elevate is failing
+[2017.04.25-17.57.30:479][359]LogTemp:Error: Time: 38.595009. Barrel Elevate is failing
+[2017.04.25-17.57.30:504][360]LogTemp:Error: Time: 38.618740. Barrel Elevate is failing
+[2017.04.25-17.57.30:527][361]LogTemp:Error: Time: 38.642223. Barrel Elevate is failing
+[2017.04.25-17.57.30:551][362]LogTemp:Error: Time: 38.665787. Barrel Elevate is failing
+[2017.04.25-17.57.30:574][363]LogTemp:Error: Time: 38.689362. Barrel Elevate is failing
+[2017.04.25-17.57.30:598][364]LogTemp:Error: Time: 38.713047. Barrel Elevate is failing
+[2017.04.25-17.57.30:622][365]LogTemp:Error: Time: 38.736462. Barrel Elevate is failing
+[2017.04.25-17.57.30:645][366]LogTemp:Error: Time: 38.760059. Barrel Elevate is failing
+[2017.04.25-17.57.30:668][367]LogTemp:Error: Time: 38.783493. Barrel Elevate is failing
+[2017.04.25-17.57.30:692][368]LogTemp:Error: Time: 38.806976. Barrel Elevate is failing
+[2017.04.25-17.57.30:715][369]LogTemp:Error: Time: 38.830513. Barrel Elevate is failing
+[2017.04.25-17.57.30:738][370]LogTemp:Error: Time: 38.854099. Barrel Elevate is failing
+[2017.04.25-17.57.30:762][371]LogTemp:Error: Time: 38.877460. Barrel Elevate is failing
+[2017.04.25-17.57.30:785][372]LogTemp:Error: Time: 38.900986. Barrel Elevate is failing
+[2017.04.25-17.57.30:809][373]LogTemp:Error: Time: 38.924316. Barrel Elevate is failing
+[2017.04.25-17.57.30:832][374]LogTemp:Error: Time: 38.947784. Barrel Elevate is failing
+[2017.04.25-17.57.30:855][375]LogTemp:Error: Time: 38.971195. Barrel Elevate is failing
+[2017.04.25-17.57.30:879][376]LogTemp:Error: Time: 38.994663. Barrel Elevate is failing
+[2017.04.25-17.57.30:903][377]LogTemp:Error: Time: 39.018078. Barrel Elevate is failing
+[2017.04.25-17.57.30:925][378]LogTemp:Error: Time: 39.041481. Barrel Elevate is failing
+[2017.04.25-17.57.30:949][379]LogTemp:Error: Time: 39.064960. Barrel Elevate is failing
+[2017.04.25-17.57.30:972][380]LogTemp:Error: Time: 39.088497. Barrel Elevate is failing
+[2017.04.25-17.57.30:996][381]LogTemp:Error: Time: 39.111961. Barrel Elevate is failing
+[2017.04.25-17.57.31:019][382]LogTemp:Error: Time: 39.135422. Barrel Elevate is failing
+[2017.04.25-17.57.31:043][383]LogTemp:Error: Time: 39.158672. Barrel Elevate is failing
+[2017.04.25-17.57.31:066][384]LogTemp:Error: Time: 39.182243. Barrel Elevate is failing
+[2017.04.25-17.57.31:090][385]LogTemp:Error: Time: 39.205761. Barrel Elevate is failing
+[2017.04.25-17.57.31:114][386]LogTemp:Error: Time: 39.229443. Barrel Elevate is failing
+[2017.04.25-17.57.31:138][387]LogTemp:Error: Time: 39.252968. Barrel Elevate is failing
+[2017.04.25-17.57.31:160][388]LogTemp:Error: Time: 39.276558. Barrel Elevate is failing
+[2017.04.25-17.57.31:184][389]LogTemp:Error: Time: 39.300201. Barrel Elevate is failing
+[2017.04.25-17.57.31:208][390]LogTemp:Error: Time: 39.323872. Barrel Elevate is failing
+[2017.04.25-17.57.31:231][391]LogTemp:Error: Time: 39.347443. Barrel Elevate is failing
+[2017.04.25-17.57.31:255][392]LogTemp:Error: Time: 39.370899. Barrel Elevate is failing
+[2017.04.25-17.57.31:278][393]LogTemp:Error: Time: 39.394440. Barrel Elevate is failing
+[2017.04.25-17.57.31:302][394]LogTemp:Error: Time: 39.418015. Barrel Elevate is failing
+[2017.04.25-17.57.31:325][395]LogTemp:Error: Time: 39.441441. Barrel Elevate is failing
+[2017.04.25-17.57.31:349][396]LogTemp:Error: Time: 39.464962. Barrel Elevate is failing
+[2017.04.25-17.57.31:372][397]LogTemp:Error: Time: 39.488476. Barrel Elevate is failing
+[2017.04.25-17.57.31:396][398]LogTemp:Error: Time: 39.512047. Barrel Elevate is failing
+[2017.04.25-17.57.31:423][399]LogTemp:Error: Time: 39.538486. Barrel Elevate is failing
+[2017.04.25-17.57.31:443][400]LogTemp:Error: Time: 39.559208. Barrel Elevate is failing
+[2017.04.25-17.57.31:467][401]LogTemp:Error: Time: 39.582741. Barrel Elevate is failing
+[2017.04.25-17.57.31:491][402]LogTemp:Error: Time: 39.606419. Barrel Elevate is failing
+[2017.04.25-17.57.31:514][403]LogTemp:Error: Time: 39.630070. Barrel Elevate is failing
+[2017.04.25-17.57.31:537][404]LogTemp:Error: Time: 39.653469. Barrel Elevate is failing
+[2017.04.25-17.57.31:561][405]LogTemp:Error: Time: 39.677067. Barrel Elevate is failing
+[2017.04.25-17.57.31:585][406]LogTemp:Error: Time: 39.700577. Barrel Elevate is failing
+[2017.04.25-17.57.31:608][407]LogTemp:Error: Time: 39.724056. Barrel Elevate is failing
+[2017.04.25-17.57.31:632][408]LogTemp:Error: Time: 39.747540. Barrel Elevate is failing
+[2017.04.25-17.57.31:655][409]LogTemp:Error: Time: 39.770985. Barrel Elevate is failing
+[2017.04.25-17.57.31:679][410]LogTemp:Error: Time: 39.794437. Barrel Elevate is failing
+[2017.04.25-17.57.31:703][411]LogTemp:Error: Time: 39.818432. Barrel Elevate is failing
+[2017.04.25-17.57.31:726][412]LogTemp:Error: Time: 39.842014. Barrel Elevate is failing
+[2017.04.25-17.57.31:750][413]LogTemp:Error: Time: 39.865543. Barrel Elevate is failing
+[2017.04.25-17.57.31:773][414]LogTemp:Error: Time: 39.889153. Barrel Elevate is failing
+[2017.04.25-17.57.31:797][415]LogTemp:Error: Time: 39.912663. Barrel Elevate is failing
+[2017.04.25-17.57.31:820][416]LogTemp:Error: Time: 39.936268. Barrel Elevate is failing
+[2017.04.25-17.57.31:844][417]LogTemp:Error: Time: 39.959835. Barrel Elevate is failing
+[2017.04.25-17.57.31:867][418]LogTemp:Error: Time: 39.983379. Barrel Elevate is failing
+[2017.04.25-17.57.31:891][419]LogTemp:Error: Time: 40.006973. Barrel Elevate is failing
+[2017.04.25-17.57.31:915][420]LogTemp:Error: Time: 40.030922. Barrel Elevate is failing
+[2017.04.25-17.57.31:938][421]LogTemp:Error: Time: 40.054195. Barrel Elevate is failing
+[2017.04.25-17.57.31:963][422]LogTemp:Error: Time: 40.079025. Barrel Elevate is failing
+[2017.04.25-17.57.31:986][423]LogTemp:Error: Time: 40.102398. Barrel Elevate is failing
+[2017.04.25-17.57.32:009][424]LogTemp:Error: Time: 40.125595. Barrel Elevate is failing
+[2017.04.25-17.57.32:033][425]LogTemp:Error: Time: 40.148777. Barrel Elevate is failing
+[2017.04.25-17.57.32:056][426]LogTemp:Error: Time: 40.172440. Barrel Elevate is failing
+[2017.04.25-17.57.32:080][427]LogTemp:Error: Time: 40.196136. Barrel Elevate is failing
+[2017.04.25-17.57.32:104][428]LogTemp:Error: Time: 40.219791. Barrel Elevate is failing
+[2017.04.25-17.57.32:127][429]LogTemp:Error: Time: 40.243206. Barrel Elevate is failing
+[2017.04.25-17.57.32:150][430]LogTemp:Error: Time: 40.266422. Barrel Elevate is failing
+[2017.04.25-17.57.32:174][431]LogTemp:Error: Time: 40.289742. Barrel Elevate is failing
+[2017.04.25-17.57.32:197][432]LogTemp:Error: Time: 40.312939. Barrel Elevate is failing
+[2017.04.25-17.57.32:220][433]LogTemp:Error: Time: 40.335842. Barrel Elevate is failing
+[2017.04.25-17.57.32:243][434]LogTemp:Error: Time: 40.358685. Barrel Elevate is failing
+[2017.04.25-17.57.32:266][435]LogTemp:Error: Time: 40.381905. Barrel Elevate is failing
+[2017.04.25-17.57.32:289][436]LogTemp:Error: Time: 40.405403. Barrel Elevate is failing
+[2017.04.25-17.57.32:313][437]LogTemp:Error: Time: 40.428566. Barrel Elevate is failing
+[2017.04.25-17.57.32:336][438]LogTemp:Error: Time: 40.451744. Barrel Elevate is failing
+[2017.04.25-17.57.32:359][439]LogTemp:Error: Time: 40.474930. Barrel Elevate is failing
+[2017.04.25-17.57.32:382][440]LogTemp:Error: Time: 40.498035. Barrel Elevate is failing
+[2017.04.25-17.57.32:405][441]LogTemp:Error: Time: 40.520855. Barrel Elevate is failing
+[2017.04.25-17.57.32:428][442]LogTemp:Error: Time: 40.543861. Barrel Elevate is failing
+[2017.04.25-17.57.32:450][443]LogTemp:Error: Time: 40.566654. Barrel Elevate is failing
+[2017.04.25-17.57.32:474][444]LogTemp:Error: Time: 40.590126. Barrel Elevate is failing
+[2017.04.25-17.57.32:497][445]LogTemp:Error: Time: 40.613480. Barrel Elevate is failing
+[2017.04.25-17.57.32:520][446]LogTemp:Error: Time: 40.636646. Barrel Elevate is failing
+[2017.04.25-17.57.32:544][447]LogTemp:Error: Time: 40.659882. Barrel Elevate is failing
+[2017.04.25-17.57.32:567][448]LogTemp:Error: Time: 40.682949. Barrel Elevate is failing
+[2017.04.25-17.57.32:590][449]LogTemp:Error: Time: 40.705627. Barrel Elevate is failing
+[2017.04.25-17.57.32:613][450]LogTemp:Error: Time: 40.728619. Barrel Elevate is failing
+[2017.04.25-17.57.32:635][451]LogTemp:Error: Time: 40.751308. Barrel Elevate is failing
+[2017.04.25-17.57.32:659][452]LogTemp:Error: Time: 40.774605. Barrel Elevate is failing
+[2017.04.25-17.57.32:682][453]LogTemp:Error: Time: 40.797585. Barrel Elevate is failing
+[2017.04.25-17.57.32:705][454]LogTemp:Error: Time: 40.820595. Barrel Elevate is failing
+[2017.04.25-17.57.32:728][455]LogTemp:Error: Time: 40.843681. Barrel Elevate is failing
+[2017.04.25-17.57.32:751][456]LogTemp:Error: Time: 40.866787. Barrel Elevate is failing
+[2017.04.25-17.57.32:773][457]LogTemp:Error: Time: 40.889412. Barrel Elevate is failing
+[2017.04.25-17.57.32:796][458]LogTemp:Error: Time: 40.912399. Barrel Elevate is failing
+[2017.04.25-17.57.32:819][459]LogTemp:Error: Time: 40.934994. Barrel Elevate is failing
+[2017.04.25-17.57.32:842][460]LogTemp:Error: Time: 40.958393. Barrel Elevate is failing
+[2017.04.25-17.57.32:865][461]LogTemp:Error: Time: 40.981354. Barrel Elevate is failing
+[2017.04.25-17.57.32:888][462]LogTemp:Error: Time: 41.004490. Barrel Elevate is failing
+[2017.04.25-17.57.32:911][463]LogTemp:Error: Time: 41.027615. Barrel Elevate is failing
+[2017.04.25-17.57.32:934][464]LogTemp:Error: Time: 41.050606. Barrel Elevate is failing
+[2017.04.25-17.57.32:957][465]LogTemp:Error: Time: 41.073158. Barrel Elevate is failing
+[2017.04.25-17.57.32:980][466]LogTemp:Error: Time: 41.095982. Barrel Elevate is failing
+[2017.04.25-17.57.33:002][467]LogTemp:Error: Time: 41.118622. Barrel Elevate is failing
+[2017.04.25-17.57.33:026][468]LogTemp:Error: Time: 41.141655. Barrel Elevate is failing
+[2017.04.25-17.57.33:048][469]LogTemp:Error: Time: 41.164490. Barrel Elevate is failing
+[2017.04.25-17.57.33:071][470]LogTemp:Error: Time: 41.187515. Barrel Elevate is failing
+[2017.04.25-17.57.33:095][471]LogTemp:Error: Time: 41.210579. Barrel Elevate is failing
+[2017.04.25-17.57.33:118][472]LogTemp:Error: Time: 41.233608. Barrel Elevate is failing
+[2017.04.25-17.57.33:140][473]LogTemp:Error: Time: 41.256226. Barrel Elevate is failing
+[2017.04.25-17.57.33:163][474]LogTemp:Error: Time: 41.278858. Barrel Elevate is failing
+[2017.04.25-17.57.33:187][475]LogTemp:Error: Time: 41.301556. Barrel Elevate is failing
+[2017.04.25-17.57.33:209][476]LogTemp:Error: Time: 41.324631. Barrel Elevate is failing
+[2017.04.25-17.57.33:210][476]LogTemp:Error: Time: 41.324631. Barrel Elevate is failing
+[2017.04.25-17.57.33:232][477]LogTemp:Error: Time: 41.347637. Barrel Elevate is failing
+[2017.04.25-17.57.33:232][477]LogTemp:Error: Time: 41.347637. Barrel Elevate is failing
+[2017.04.25-17.57.33:255][478]LogTemp:Error: Time: 41.370701. Barrel Elevate is failing
+[2017.04.25-17.57.33:256][478]LogTemp:Error: Time: 41.370701. Barrel Elevate is failing
+[2017.04.25-17.57.33:278][479]LogTemp:Error: Time: 41.393631. Barrel Elevate is failing
+[2017.04.25-17.57.33:278][479]LogTemp:Error: Time: 41.393631. Barrel Elevate is failing
+[2017.04.25-17.57.33:301][480]LogTemp:Error: Time: 41.416679. Barrel Elevate is failing
+[2017.04.25-17.57.33:301][480]LogTemp:Error: Time: 41.416679. Barrel Elevate is failing
+[2017.04.25-17.57.33:324][481]LogTemp:Error: Time: 41.439438. Barrel Elevate is failing
+[2017.04.25-17.57.33:324][481]LogTemp:Error: Time: 41.439438. Barrel Elevate is failing
+[2017.04.25-17.57.33:346][482]LogTemp:Error: Time: 41.461952. Barrel Elevate is failing
+[2017.04.25-17.57.33:346][482]LogTemp:Error: Time: 41.461952. Barrel Elevate is failing
+[2017.04.25-17.57.33:368][483]LogTemp:Error: Time: 41.484577. Barrel Elevate is failing
+[2017.04.25-17.57.33:369][483]LogTemp:Error: Time: 41.484577. Barrel Elevate is failing
+[2017.04.25-17.57.33:391][484]LogTemp:Error: Time: 41.507427. Barrel Elevate is failing
+[2017.04.25-17.57.33:392][484]LogTemp:Error: Time: 41.507427. Barrel Elevate is failing
+[2017.04.25-17.57.33:415][485]LogTemp:Error: Time: 41.530491. Barrel Elevate is failing
+[2017.04.25-17.57.33:415][485]LogTemp:Error: Time: 41.530491. Barrel Elevate is failing
+[2017.04.25-17.57.33:438][486]LogTemp:Error: Time: 41.553616. Barrel Elevate is failing
+[2017.04.25-17.57.33:438][486]LogTemp:Error: Time: 41.553616. Barrel Elevate is failing
+[2017.04.25-17.57.33:461][487]LogTemp:Error: Time: 41.576508. Barrel Elevate is failing
+[2017.04.25-17.57.33:461][487]LogTemp:Error: Time: 41.576508. Barrel Elevate is failing
+[2017.04.25-17.57.33:484][488]LogTemp:Error: Time: 41.599567. Barrel Elevate is failing
+[2017.04.25-17.57.33:484][488]LogTemp:Error: Time: 41.599567. Barrel Elevate is failing
+[2017.04.25-17.57.33:506][489]LogTemp:Error: Time: 41.622208. Barrel Elevate is failing
+[2017.04.25-17.57.33:507][489]LogTemp:Error: Time: 41.622208. Barrel Elevate is failing
+[2017.04.25-17.57.33:529][490]LogTemp:Error: Time: 41.644745. Barrel Elevate is failing
+[2017.04.25-17.57.33:529][490]LogTemp:Error: Time: 41.644745. Barrel Elevate is failing
+[2017.04.25-17.57.33:551][491]LogTemp:Error: Time: 41.667141. Barrel Elevate is failing
+[2017.04.25-17.57.33:552][491]LogTemp:Error: Time: 41.667141. Barrel Elevate is failing
+[2017.04.25-17.57.33:574][492]LogTemp:Error: Time: 41.689999. Barrel Elevate is failing
+[2017.04.25-17.57.33:575][492]LogTemp:Error: Time: 41.689999. Barrel Elevate is failing
+[2017.04.25-17.57.33:597][493]LogTemp:Error: Time: 41.712852. Barrel Elevate is failing
+[2017.04.25-17.57.33:597][493]LogTemp:Error: Time: 41.712852. Barrel Elevate is failing
+[2017.04.25-17.57.33:620][494]LogTemp:Error: Time: 41.735954. Barrel Elevate is failing
+[2017.04.25-17.57.33:621][494]LogTemp:Error: Time: 41.735954. Barrel Elevate is failing
+[2017.04.25-17.57.33:643][495]LogTemp:Error: Time: 41.759361. Barrel Elevate is failing
+[2017.04.25-17.57.33:644][495]LogTemp:Error: Time: 41.759361. Barrel Elevate is failing
+[2017.04.25-17.57.33:666][496]LogTemp:Error: Time: 41.782475. Barrel Elevate is failing
+[2017.04.25-17.57.33:667][496]LogTemp:Error: Time: 41.782475. Barrel Elevate is failing
+[2017.04.25-17.57.33:689][497]LogTemp:Error: Time: 41.805183. Barrel Elevate is failing
+[2017.04.25-17.57.33:690][497]LogTemp:Error: Time: 41.805183. Barrel Elevate is failing
+[2017.04.25-17.57.33:712][498]LogTemp:Error: Time: 41.827728. Barrel Elevate is failing
+[2017.04.25-17.57.33:712][498]LogTemp:Error: Time: 41.827728. Barrel Elevate is failing
+[2017.04.25-17.57.33:734][499]LogTemp:Error: Time: 41.850090. Barrel Elevate is failing
+[2017.04.25-17.57.33:735][499]LogTemp:Error: Time: 41.850090. Barrel Elevate is failing
+[2017.04.25-17.57.33:757][500]LogTemp:Error: Time: 41.872875. Barrel Elevate is failing
+[2017.04.25-17.57.33:757][500]LogTemp:Error: Time: 41.872875. Barrel Elevate is failing
+[2017.04.25-17.57.33:780][501]LogTemp:Error: Time: 41.895817. Barrel Elevate is failing
+[2017.04.25-17.57.33:780][501]LogTemp:Error: Time: 41.895817. Barrel Elevate is failing
+[2017.04.25-17.57.33:803][502]LogTemp:Error: Time: 41.918900. Barrel Elevate is failing
+[2017.04.25-17.57.33:803][502]LogTemp:Error: Time: 41.918900. Barrel Elevate is failing
+[2017.04.25-17.57.33:826][503]LogTemp:Error: Time: 41.941879. Barrel Elevate is failing
+[2017.04.25-17.57.33:826][503]LogTemp:Error: Time: 41.941879. Barrel Elevate is failing
+[2017.04.25-17.57.33:849][504]LogTemp:Error: Time: 41.965046. Barrel Elevate is failing
+[2017.04.25-17.57.33:850][504]LogTemp:Error: Time: 41.965046. Barrel Elevate is failing
+[2017.04.25-17.57.33:872][505]LogTemp:Error: Time: 41.987957. Barrel Elevate is failing
+[2017.04.25-17.57.33:872][505]LogTemp:Error: Time: 41.987957. Barrel Elevate is failing
+[2017.04.25-17.57.33:894][506]LogTemp:Error: Time: 42.010265. Barrel Elevate is failing
+[2017.04.25-17.57.33:895][506]LogTemp:Error: Time: 42.010265. Barrel Elevate is failing
+[2017.04.25-17.57.33:917][507]LogTemp:Error: Time: 42.032806. Barrel Elevate is failing
+[2017.04.25-17.57.33:917][507]LogTemp:Error: Time: 42.032806. Barrel Elevate is failing
+[2017.04.25-17.57.33:939][508]LogTemp:Error: Time: 42.055370. Barrel Elevate is failing
+[2017.04.25-17.57.33:940][508]LogTemp:Error: Time: 42.055370. Barrel Elevate is failing
+[2017.04.25-17.57.33:962][509]LogTemp:Error: Time: 42.078476. Barrel Elevate is failing
+[2017.04.25-17.57.33:963][509]LogTemp:Error: Time: 42.078476. Barrel Elevate is failing
+[2017.04.25-17.57.33:985][510]LogTemp:Error: Time: 42.101391. Barrel Elevate is failing
+[2017.04.25-17.57.33:986][510]LogTemp:Error: Time: 42.101391. Barrel Elevate is failing
+[2017.04.25-17.57.34:008][511]LogTemp:Error: Time: 42.124649. Barrel Elevate is failing
+[2017.04.25-17.57.34:009][511]LogTemp:Error: Time: 42.124649. Barrel Elevate is failing
+[2017.04.25-17.57.34:032][512]LogTemp:Error: Time: 42.147907. Barrel Elevate is failing
+[2017.04.25-17.57.34:032][512]LogTemp:Error: Time: 42.147907. Barrel Elevate is failing
+[2017.04.25-17.57.34:055][513]LogTemp:Error: Time: 42.170952. Barrel Elevate is failing
+[2017.04.25-17.57.34:055][513]LogTemp:Error: Time: 42.170952. Barrel Elevate is failing
+[2017.04.25-17.57.34:077][514]LogTemp:Error: Time: 42.193268. Barrel Elevate is failing
+[2017.04.25-17.57.34:078][514]LogTemp:Error: Time: 42.193268. Barrel Elevate is failing
+[2017.04.25-17.57.34:100][515]LogTemp:Error: Time: 42.215855. Barrel Elevate is failing
+[2017.04.25-17.57.34:100][515]LogTemp:Error: Time: 42.215855. Barrel Elevate is failing
+[2017.04.25-17.57.34:122][516]LogTemp:Error: Time: 42.238350. Barrel Elevate is failing
+[2017.04.25-17.57.34:123][516]LogTemp:Error: Time: 42.238350. Barrel Elevate is failing
+[2017.04.25-17.57.34:145][517]LogTemp:Error: Time: 42.261238. Barrel Elevate is failing
+[2017.04.25-17.57.34:146][517]LogTemp:Error: Time: 42.261238. Barrel Elevate is failing
+[2017.04.25-17.57.34:168][518]LogTemp:Error: Time: 42.284172. Barrel Elevate is failing
+[2017.04.25-17.57.34:169][518]LogTemp:Error: Time: 42.284172. Barrel Elevate is failing
+[2017.04.25-17.57.34:191][519]LogTemp:Error: Time: 42.307404. Barrel Elevate is failing
+[2017.04.25-17.57.34:192][519]LogTemp:Error: Time: 42.307404. Barrel Elevate is failing
+[2017.04.25-17.57.34:215][520]LogTemp:Error: Time: 42.330578. Barrel Elevate is failing
+[2017.04.25-17.57.34:215][520]LogTemp:Error: Time: 42.330578. Barrel Elevate is failing
+[2017.04.25-17.57.34:238][521]LogTemp:Error: Time: 42.353657. Barrel Elevate is failing
+[2017.04.25-17.57.34:238][521]LogTemp:Error: Time: 42.353657. Barrel Elevate is failing
+[2017.04.25-17.57.34:260][522]LogTemp:Error: Time: 42.376003. Barrel Elevate is failing
+[2017.04.25-17.57.34:261][522]LogTemp:Error: Time: 42.376003. Barrel Elevate is failing
+[2017.04.25-17.57.34:283][523]LogTemp:Error: Time: 42.398643. Barrel Elevate is failing
+[2017.04.25-17.57.34:283][523]LogTemp:Error: Time: 42.398643. Barrel Elevate is failing
+[2017.04.25-17.57.34:305][524]LogTemp:Error: Time: 42.421246. Barrel Elevate is failing
+[2017.04.25-17.57.34:306][524]LogTemp:Error: Time: 42.421246. Barrel Elevate is failing
+[2017.04.25-17.57.34:329][525]LogTemp:Error: Time: 42.444366. Barrel Elevate is failing
+[2017.04.25-17.57.34:329][525]LogTemp:Error: Time: 42.444366. Barrel Elevate is failing
+[2017.04.25-17.57.34:352][526]LogTemp:Error: Time: 42.467419. Barrel Elevate is failing
+[2017.04.25-17.57.34:354][526]LogTemp:Error: Time: 42.467419. Barrel Elevate is failing
+[2017.04.25-17.57.34:374][527]LogTemp:Error: Time: 42.490334. Barrel Elevate is failing
+[2017.04.25-17.57.34:375][527]LogTemp:Error: Time: 42.490334. Barrel Elevate is failing
+[2017.04.25-17.57.34:397][528]LogTemp:Error: Time: 42.513027. Barrel Elevate is failing
+[2017.04.25-17.57.34:398][528]LogTemp:Error: Time: 42.513027. Barrel Elevate is failing
+[2017.04.25-17.57.34:421][529]LogTemp:Error: Time: 42.535965. Barrel Elevate is failing
+[2017.04.25-17.57.34:421][529]LogTemp:Error: Time: 42.535965. Barrel Elevate is failing
+[2017.04.25-17.57.34:427][529]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-17.57.34:478][529]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-18.00.17:720][947]Recompiling BattleTank...
+[2017.04.25-18.00.17:720][947]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3439 Win64 Development -editorrecompile -canskiplink "C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.04.25-18.00.17:725][947]Warning: Starting HotReload took  0.0s.
+[2017.04.25-18.01.00:273][136]CompilerResultsLog: New page: Compilation - Apr 25, 2017, 8:01:00 PM
+[2017.04.25-18.01.00:274][136]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.04.25-18.01.00:274][136]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.04.25-18.01.00:274][136]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.04.25-18.01.00:276][136]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 32.3098108 seconds
+[2017.04.25-18.01.00:277][136]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.04.25-18.01.00:277][136]CompilerResultsLog: Info TankAIController.cpp
+[2017.04.25-18.01.00:277][136]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.04.25-18.01.00:278][136]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-3439.dll
+[2017.04.25-18.01.00:278][136]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-3439.lib
+[2017.04.25-18.01.00:278][136]CompilerResultsLog: Info    Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3439.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3439.exp
+[2017.04.25-18.01.00:279][136]CompilerResultsLog: Info    Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3439.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3439.suppressed.exp
+[2017.04.25-18.01.00:280][136]CompilerResultsLog: Info Total build time: 41.77 seconds (Local executor: 6.42 seconds)
+[2017.04.25-18.01.00:281][136]LogMainFrame: MainFrame: Module compiling took 42.579 seconds
+[2017.04.25-18.01.00:486][136]LogClass: Could not find existing class TankAIController in package /Script/BattleTank for HotReload, assuming new class
+[2017.04.25-18.01.00:501][136]LogHotReload: Re-instancing TankAIController after hot-reload.
+[2017.04.25-18.01.00:614][136]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0089 seconds. Added 11 classes and 3 folders.
+[2017.04.25-18.01.00:617][136]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2017.04.25-18.01.00:706][136]LogContentBrowser: Native class hierarchy populated in 0.0348 seconds. Added 2257 classes and 457 folders.
+[2017.04.25-18.01.00:706][136]Display: HotReload took 43.0s.
+[2017.04.25-18.01.04:288][241]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.25-18.01.04:337][241]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-18.01.04:338][241]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.25-18.01.04:339][241]PIE: New page: PIE session: BattleGround (Apr 25, 2017, 8:01:04 PM)
+[2017.04.25-18.01.04:339][241]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.25-18.01.04:374][241]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034330s)
+[2017.04.25-18.01.04:376][241]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.25-18.01.04:377][241]LogPlayLevel: PIE: World Init took: (0.002708s)
+[2017.04.25-18.01.04:377][241]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.038252s)
+[2017.04.25-18.01.04:420][241]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.25-18.01.04:441][241]LogInit: FAudioDevice initialized.
+[2017.04.25-18.01.04:486][241]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.25-18.01.04:507][241]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.25-19.01.04
+[2017.04.25-18.01.04:511][241]LogWorld: Bringing up level for play took: 0.020045
+[2017.04.25-18.01.04:525][241]LogTemp:Warning: Tank_BP_C_0 has possessed by Player
+[2017.04.25-18.01.04:526][241]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.388
+[2017.04.25-18.01.04:527][241]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-18.01.15:922][710]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-18.01.15:981][710]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.25-18.01.20:236][832]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.25-18.01.20:643][833]Cmd: QUIT_EDITOR
+[2017.04.25-18.01.21:022][833]LogExit: Preparing to exit.
+[2017.04.25-18.01.22:112][833]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.25-18.01.22:171][833]LogExit: Editor shut down
+[2017.04.25-18.01.22:171][833]LogExit: Transaction tracking system shut down
+[2017.04.25-18.01.22:295][833]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.25-18.01.22:296][833]LogExit: Object subsystem successfully closed.
+[2017.04.25-18.01.22:321][833]LogD3D11RHI: Shutdown
+[2017.04.25-18.01.22:321][833]LogD3D11RHI: CleanupD3DDevice
+[2017.04.25-18.01.22:500][833]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.25-18.01.22:544][833]LogModuleManager: Shutting down and abandoning module BattleTank (502)
+[2017.04.25-18.01.22:544][833]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (501)
+[2017.04.25-18.01.22:544][833]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.04.25-18.01.22:545][833]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.04.25-18.01.22:545][833]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.04.25-18.01.22:545][833]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.25-18.01.22:549][833]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.25-18.01.22:552][833]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.25-18.01.22:552][833]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.25-18.01.22:552][833]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.25-18.01.22:552][833]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' was aborted.
+[2017.04.25-18.01.22:552][833]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' was aborted.
+[2017.04.25-18.01.22:552][833]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' was aborted.
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.04.25-18.01.22:553][833]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.04.25-18.01.22:554][833]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.04.25-18.01.22:555][833]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.04.25-18.01.22:555][833]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.04.25-18.01.22:555][833]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.04.25-18.01.22:555][833]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.04.25-18.01.22:774][833]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.04.25-18.01.22:775][833]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.04.25-18.01.22:817][833]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.04.25-18.01.22:818][833]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.04.25-18.01.22:818][833]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.04.25-18.01.22:818][833]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.04.25-18.01.22:819][833]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.04.25-18.01.23:044][833]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.04.25-18.01.23:045][833]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.04.25-18.01.23:046][833]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.04.25-18.01.23:047][833]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.04.25-18.01.23:047][833]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.04.25-18.01.23:047][833]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.04.25-18.01.23:047][833]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Binaries/Win64' was aborted.
+[2017.04.25-18.01.23:048][833]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.04.25-18.01.23:050][833]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.04.25-18.01.23:051][833]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.04.25-18.01.23:051][833]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.04.25-18.01.23:051][833]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.04.25-18.01.23:151][833]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.04.25-18.01.23:252][833]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.04.25-18.01.23:253][833]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.04.25-18.01.23:260][833]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.04.25-18.01.23:261][833]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.04.25-18.01.23:261][833]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.04.25-18.01.23:261][833]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.04.25-18.01.23:261][833]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.04.25-18.01.23:261][833]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.04.25-18.01.23:459][833]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.25-18.01.23:459][833]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.25-18.01.23:459][833]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.25-18.01.23:460][833]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.04.25-18.01.23:461][833]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.04.25-18.01.23:461][833]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.04.25-18.01.23:462][833]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.04.25-18.01.23:462][833]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.04.25-18.01.23:462][833]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.04.25-18.01.23:462][833]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.04.25-18.01.23:462][833]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.04.25-18.01.23:466][833]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.04.25-18.01.23:480][833]LogDerivedDataCache: Shutdown
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.04.25-18.01.23:480][833]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.04.25-18.01.23:481][833]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.25-18.01.23:482][833]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.25-18.01.23:482][833]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.25-18.01.23:482][833]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.25-18.01.23:482][833]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B1B59A44B-49E5-EEB6-E5B7-44BDA88E1E3F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=7c76bde54574978307451eb1166a1f79%7C58448bdb2ce4468ba1b793c4adc2bec4%7C1fb00c8d-b537-477f-9d94-6fe8d09492ec&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.25-18.01.23:497][833]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.25-18.01.23:500][833]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.25-18.01.23:500][833]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.25-18.01.23:501][833]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.25-18.01.23:501][833]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.25-18.01.23:501][833]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.25-18.01.23:502][833]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.25-18.01.23:502][833]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.25-18.01.23:502][833]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.25-18.01.23:503][833]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.25-18.01.23:507][833]LogExit: Exiting.
+[2017.04.25-18.01.23:520][833]Log file closed, 04/25/17 19:01:23

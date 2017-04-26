@@ -24,6 +24,15 @@ class UTankTrack;
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execIntendTurnRight) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Throw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->IntendTurnRight(Z_Param_Throw); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execIntendMoveForward) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Throw); \
@@ -43,6 +52,15 @@ class UTankTrack;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		this->Initialise(Z_Param_LeftTrackToSet,Z_Param_RightTrackToSet); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execIntendTurnRight) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Throw); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->IntendTurnRight(Z_Param_Throw); \
 		P_NATIVE_END; \
 	} \
  \

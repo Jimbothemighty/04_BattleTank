@@ -30,6 +30,7 @@ public:
 		void Fire();
 
 protected:
+	UPROPERTY(BlueprintReadOnly)
 	UTankAimingComponent* TankAimingComponent = nullptr;   // this means we can refer to TankAimingComponent member functions
 
 	UPROPERTY(BlueprintReadOnly)

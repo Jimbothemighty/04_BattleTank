@@ -5,7 +5,9 @@
 #include "AIController.h"
 #include "TankAIController.generated.h"     // must be the last include
 
-class ATank; // Forward Declaration
+// Forward Declarations
+class ATank;
+class UTankMovementComponent;
 
 UCLASS()
 class BATTLETANK_API ATankAIController : public AAIController
@@ -22,4 +24,8 @@ public:
 */
 	virtual void Tick(float DeltaTime) override;
 
+	UTankMovementComponent* TankMovementComponent;
+
+private:
+	float AcceptanceRadius = 3000.0f; // TODO check radius in cm
 };

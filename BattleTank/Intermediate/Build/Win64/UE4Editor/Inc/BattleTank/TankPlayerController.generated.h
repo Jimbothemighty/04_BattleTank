@@ -6,13 +6,34 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ATank;
 #ifdef BATTLETANK_TankPlayerController_generated_h
 #error "TankPlayerController.generated.h already included, missing '#pragma once' in TankPlayerController.h"
 #endif
 #define BATTLETANK_TankPlayerController_generated_h
 
-#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS
-#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetControlledTank) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ATank**)Z_Param__Result=this->GetControlledTank(); \
+		P_NATIVE_END; \
+	}
+
+
+#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetControlledTank) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(ATank**)Z_Param__Result=this->GetControlledTank(); \
+		P_NATIVE_END; \
+	}
+
+
 #define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesATankPlayerController(); \
