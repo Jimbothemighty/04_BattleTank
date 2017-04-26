@@ -1,17 +1,10 @@
-﻿  Creating makefile for hot reloading BattleTankEditor (modules to compile have changed)
-  Compiling game modules for hot reload
-  Parsing headers for BattleTankEditor
-    Running UnrealHeaderTool "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BattleTankEditor in 7.5379006 seconds
-  Performing 7 actions (4 in parallel)
-  TankTurret.cpp
-  TankPlayerController.cpp
-  TankAIController.cpp
-  Tank.cpp
-  BattleTank.generated.cpp
-  [6/7] Link UE4Editor-BattleTank-8946.dll
-  [7/7] Link UE4Editor-BattleTank-8946.lib
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8946.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8946.exp
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8946.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8946.suppressed.exp
+﻿  Creating makefile for BattleTankEditor (no existing makefile)
+  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9766.dll".
+  Deleting old hot reload file: "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9766.pdb".
+  Performing 2 actions (4 in parallel)
+  [1/2] Link UE4Editor-BattleTank.dll
+  [2/2] Link UE4Editor-BattleTank.lib
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.exp
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank.suppressed.exp
   Deploying BattleTankEditor Win64 Development...
-  Total build time: 49.36 seconds (Local executor: 15.27 seconds)
+  Total build time: 14.32 seconds (Local executor: 3.39 seconds)

@@ -100,3 +100,9 @@ void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
 	if (!TurretToSet) { return; }
 	Turret = TurretToSet;
 }
+
+/*
+EFiringStatus UTankAimingComponent::FiringStatus(FString Reloading) const
+{
+};
+*/

@@ -34,10 +34,22 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	{
 	}
 	IMPLEMENT_CLASS(ATankAIController, 3531279489);
+static class UEnum* EFiringStatus_StaticEnum()
+{
+	extern BATTLETANK_API class UPackage* Z_Construct_UPackage__Script_BattleTank();
+	static class UEnum* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern BATTLETANK_API class UEnum* Z_Construct_UEnum_BattleTank_EFiringStatus();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_BattleTank_EFiringStatus, Z_Construct_UPackage__Script_BattleTank(), TEXT("EFiringStatus"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringStatus_StaticEnum, TEXT("/Script/BattleTank"), TEXT("EFiringStatus"), false, nullptr, nullptr);
 	void UTankAimingComponent::StaticRegisterNativesUTankAimingComponent()
 	{
 	}
-	IMPLEMENT_CLASS(UTankAimingComponent, 1965778797);
+	IMPLEMENT_CLASS(UTankAimingComponent, 1967551531);
 	void UTankBarrel::StaticRegisterNativesUTankBarrel()
 	{
 	}
@@ -87,6 +99,7 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankAIController_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankAIController();
+	BATTLETANK_API class UEnum* Z_Construct_UEnum_BattleTank_EFiringStatus();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel_NoRegister();
@@ -355,6 +368,30 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATankAIController(Z_Construct_UClass_ATankAIController, &ATankAIController::StaticClass, TEXT("ATankAIController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATankAIController);
+	UEnum* Z_Construct_UEnum_BattleTank_EFiringStatus()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_BattleTank();
+		extern uint32 Get_Z_Construct_UEnum_BattleTank_EFiringStatus_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EFiringStatus"), 0, Get_Z_Construct_UEnum_BattleTank_EFiringStatus_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EFiringStatus"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, int64>> EnumNames;
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EFiringStatus::Locked")), 0));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EFiringStatus::Aiming")), 1));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EFiringStatus::Reloading")), 2));
+			EnumNames.Add(TPairInitializer<FName, int64>(FName(TEXT("EFiringStatus::EFiringStatus_MAX")), 3));
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("EFiringStatus");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("Enum for aiming state"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_BattleTank_EFiringStatus_CRC() { return 3302655049U; }
 	UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister()
 	{
 		return UTankAimingComponent::StaticClass();
@@ -373,6 +410,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20B00080;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_FiringStatus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FiringStatus"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(FiringStatus, UTankAimingComponent), 0x0020080000000014, Z_Construct_UEnum_BattleTank_EFiringStatus());
+				UProperty* NewProp_FiringStatus_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_FiringStatus, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -381,6 +422,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankAimingComponent.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
 				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("Holds parameters for barrel's properties and elevate method"));
+				MetaData->SetValue(NewProp_FiringStatus, TEXT("Category"), TEXT("State"));
+				MetaData->SetValue(NewProp_FiringStatus, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
 #endif
 			}
 		}
@@ -729,8 +772,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xA5651BD2;
-			Guid.B = 0xF2161202;
+			Guid.A = 0xB47CE340;
+			Guid.B = 0x4911FCC3;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
