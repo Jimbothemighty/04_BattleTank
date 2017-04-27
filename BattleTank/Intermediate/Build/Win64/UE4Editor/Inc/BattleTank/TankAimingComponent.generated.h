@@ -6,13 +6,39 @@
 ===========================================================================*/
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UTankBarrel;
+class UTankTurret;
 #ifdef BATTLETANK_TankAimingComponent_generated_h
 #error "TankAimingComponent.generated.h already included, missing '#pragma once' in TankAimingComponent.h"
 #endif
 #define BATTLETANK_TankAimingComponent_generated_h
 
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_20_RPC_WRAPPERS
-#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_20_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execInitialise) \
+	{ \
+		P_GET_OBJECT(UTankBarrel,Z_Param_BarrelToSet); \
+		P_GET_OBJECT(UTankTurret,Z_Param_TurretToSet); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Initialise(Z_Param_BarrelToSet,Z_Param_TurretToSet); \
+		P_NATIVE_END; \
+	}
+
+
+#define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execInitialise) \
+	{ \
+		P_GET_OBJECT(UTankBarrel,Z_Param_BarrelToSet); \
+		P_GET_OBJECT(UTankTurret,Z_Param_TurretToSet); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Initialise(Z_Param_BarrelToSet,Z_Param_TurretToSet); \
+		P_NATIVE_END; \
+	}
+
+
 #define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_20_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUTankAimingComponent(); \

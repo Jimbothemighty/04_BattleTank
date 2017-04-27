@@ -8,32 +8,28 @@
 
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
-	auto Name = GetName();
+//	auto Name = GetName();
 //	UE_LOG(LogTemp, Warning, TEXT("%s: Intend move forwards %f"), *Name, Throw)
 
+	if(!ensure(LeftTrack && RightTrack)) { return; }
 	RightTrack->SetThrottle(Throw);
 	LeftTrack->SetThrottle(Throw);
-	
-		// clamp double speed (due to dual control use)
-
-
 }
 
 
 void UTankMovementComponent::IntendTurnRight(float Throw)
 {
-	auto Name = GetName();
+//	auto Name = GetName();
 //	UE_LOG(LogTemp, Warning, TEXT("%s: Intend move left/right %f"), *Name, Throw)
 
+	if (!ensure(LeftTrack && RightTrack)) { return; }
 	RightTrack->SetThrottle(-Throw);
 	LeftTrack->SetThrottle(Throw);
-
-	// clamp double speed (due to dual control use)
 }
 
 void UTankMovementComponent::Initialise(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet)
 {
-	if (!LeftTrackToSet || !RightTrackToSet) { return; }
+	if (!ensure(LeftTrackToSet || !RightTrackToSet)) { return; }
 		LeftTrack = LeftTrackToSet;
 		RightTrack = RightTrackToSet;
 
@@ -45,7 +41,7 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 {
 	auto TankName = GetOwner()->GetName();
 	auto MoveVelocityString = MoveVelocity.GetSafeNormal().ToString();
-	UE_LOG(LogTemp, Error, TEXT("%s: vectoring to %s"), *TankName, *MoveVelocityString);
+//	UE_LOG(LogTemp, Error, TEXT("%s: vectoring to %s"), *TankName, *MoveVelocityString);
 
 	auto AIForwardIntention = MoveVelocity.GetSafeNormal();
 	auto TankForward = GetOwner()->GetActorForwardVector().GetSafeNormal();

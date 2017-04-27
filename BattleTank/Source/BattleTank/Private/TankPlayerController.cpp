@@ -2,6 +2,7 @@
 
 #include "BattleTank.h"
 #include "Tank.h"
+#include "TankAimingComponent.h"
 #include "TankPlayerController.h"
 
 void ATankPlayerController::BeginPlay()
@@ -11,19 +12,25 @@ void ATankPlayerController::BeginPlay()
 
 	auto ControlledTank = GetControlledTank();
 
-	if (ControlledTank)
+	if (!ensure(ControlledTank))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("%s has possessed by Player"), *GetPawn()->GetName());
-	}
-	else if (!ControlledTank)
-	{
-		UE_LOG(LogTemp, Error, TEXT("%s has not possessed by Player"), *GetPawn()->GetName());
+		return;
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("Possession report not functioning. See TankPlayerController.cpp"));
+		UE_LOG(LogTemp, Warning, TEXT("%s has been possessed by Player"), *GetPawn()->GetName());
 	};
-};
+
+	auto AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+	if (AimingComponent)
+	{
+		FoundAimingComponent(AimingComponent);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("NO FUCKEN AIMING COMPONENT"));
+	}
+}
 
 
 void ATankPlayerController::Tick(float DeltaTime)
@@ -48,7 +55,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	// start the tank moving the barrel so that a shot would hit there
 	// the crosshair intersects the world
 
-	if (!GetControlledTank()) { return; }
+	if (!ensure(GetControlledTank())) { return; }
 
 	FVector HitLocation;
 	if (GetSightRayHitLocation(HitLocation))

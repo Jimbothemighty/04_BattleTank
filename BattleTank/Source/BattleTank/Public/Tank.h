@@ -19,13 +19,13 @@ class BATTLETANK_API ATank : public APawn
 
 public:
 	void AimAt(FVector HitLocation);
-
+/*
 	UFUNCTION(BlueprintCallable, Category = Setup)
 		void SetBarrelReference(UTankBarrel* BarrelToSet);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 		void SetTurretReference(UTankTurret* TurretToSet);
-
+*/
 	UFUNCTION(BlueprintCallable, Category = Firing)
 		void Fire();
 
@@ -53,7 +53,7 @@ private:
 		float ReloadTimeInSeconds = 3.0f;  // TODO find sensible default
 
 	double LastFireTime = 0;
-//
+
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 		float LaunchSpeed = 100000.0f;  // TODO find sensible default
 
@@ -61,5 +61,5 @@ private:
 		TSubclassOf<AProjectile> ProjectileBlueprint;
 	
 	// Local barrel reference for spawning projectile
-	UTankBarrel* Barrel = nullptr;
+	UTankBarrel* Barrel = nullptr;  // TODO remove
 };

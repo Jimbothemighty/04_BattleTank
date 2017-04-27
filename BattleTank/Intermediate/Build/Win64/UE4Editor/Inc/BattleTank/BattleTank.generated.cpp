@@ -11,6 +11,7 @@
 PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
+FName BATTLETANK_FoundAimingComponent = FName(TEXT("FoundAimingComponent"));
 	void ABattleTankGameModeBase::StaticRegisterNativesABattleTankGameModeBase()
 	{
 	}
@@ -26,10 +27,8 @@ void EmptyLinkFunctionForGeneratedCode1BattleTank() {}
 	void ATank::StaticRegisterNativesATank()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "Fire",(Native)&ATank::execFire);
-		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetBarrelReference",(Native)&ATank::execSetBarrelReference);
-		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "SetTurretReference",(Native)&ATank::execSetTurretReference);
 	}
-	IMPLEMENT_CLASS(ATank, 424226681);
+	IMPLEMENT_CLASS(ATank, 249591804);
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 	}
@@ -48,8 +47,9 @@ static class UEnum* EFiringStatus_StaticEnum()
 static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringStatus_StaticEnum, TEXT("/Script/BattleTank"), TEXT("EFiringStatus"), false, nullptr, nullptr);
 	void UTankAimingComponent::StaticRegisterNativesUTankAimingComponent()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(UTankAimingComponent::StaticClass(), "Initialise",(Native)&UTankAimingComponent::execInitialise);
 	}
-	IMPLEMENT_CLASS(UTankAimingComponent, 1967551531);
+	IMPLEMENT_CLASS(UTankAimingComponent, 2261802190);
 	void UTankBarrel::StaticRegisterNativesUTankBarrel()
 	{
 	}
@@ -61,11 +61,17 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 		FNativeFunctionRegistrar::RegisterFunction(UTankMovementComponent::StaticClass(), "IntendTurnRight",(Native)&UTankMovementComponent::execIntendTurnRight);
 	}
 	IMPLEMENT_CLASS(UTankMovementComponent, 4276253040);
+	void ATankPlayerController::FoundAimingComponent(UTankAimingComponent* AimCompRef)
+	{
+		TankPlayerController_eventFoundAimingComponent_Parms Parms;
+		Parms.AimCompRef=AimCompRef;
+		ProcessEvent(FindFunctionChecked(BATTLETANK_FoundAimingComponent),&Parms);
+	}
 	void ATankPlayerController::StaticRegisterNativesATankPlayerController()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ATankPlayerController::StaticClass(), "GetControlledTank",(Native)&ATankPlayerController::execGetControlledTank);
 	}
-	IMPLEMENT_CLASS(ATankPlayerController, 2722602254);
+	IMPLEMENT_CLASS(ATankPlayerController, 3045544955);
 	void UTankTrack::StaticRegisterNativesUTankTrack()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(UTankTrack::StaticClass(), "SetThrottle",(Native)&UTankTrack::execSetThrottle);
@@ -93,13 +99,12 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	BATTLETANK_API class UClass* Z_Construct_UClass_AProjectile_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_AProjectile();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_Fire();
-	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_SetBarrelReference();
-	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_SetTurretReference();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankAIController_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankAIController();
 	BATTLETANK_API class UEnum* Z_Construct_UEnum_BattleTank_EFiringStatus();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankAimingComponent_Initialise();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankBarrel_NoRegister();
@@ -109,6 +114,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankMovementComponent_IntendTurnRight();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankMovementComponent();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATankPlayerController_FoundAimingComponent();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATankPlayerController_GetControlledTank();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController();
@@ -227,52 +233,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Firing"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ATank_SetBarrelReference()
-	{
-		struct Tank_eventSetBarrelReference_Parms
-		{
-			UTankBarrel* BarrelToSet;
-		};
-		UObject* Outer=Z_Construct_UClass_ATank();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetBarrelReference"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Tank_eventSetBarrelReference_Parms));
-			UProperty* NewProp_BarrelToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("BarrelToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(BarrelToSet, Tank_eventSetBarrelReference_Parms), 0x0010000000080080, Z_Construct_UClass_UTankBarrel_NoRegister());
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
-			MetaData->SetValue(NewProp_BarrelToSet, TEXT("EditInline"), TEXT("true"));
-#endif
-		}
-		return ReturnFunction;
-	}
-	UFunction* Z_Construct_UFunction_ATank_SetTurretReference()
-	{
-		struct Tank_eventSetTurretReference_Parms
-		{
-			UTankTurret* TurretToSet;
-		};
-		UObject* Outer=Z_Construct_UClass_ATank();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetTurretReference"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Tank_eventSetTurretReference_Parms));
-			UProperty* NewProp_TurretToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TurretToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TurretToSet, Tank_eventSetTurretReference_Parms), 0x0010000000080080, Z_Construct_UClass_UTankTurret_NoRegister());
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
-			MetaData->SetValue(NewProp_TurretToSet, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("UFUNCTION(BlueprintCallable, Category = Setup)\n        void SetBarrelReference(UTankBarrel* BarrelToSet);\n\nUFUNCTION(BlueprintCallable, Category = Setup)\n        void SetTurretReference(UTankTurret* TurretToSet);"));
 #endif
 		}
 		return ReturnFunction;
@@ -295,8 +256,6 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 				OuterClass->ClassFlags |= 0x20900080;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ATank_Fire());
-				OuterClass->LinkChild(Z_Construct_UFunction_ATank_SetBarrelReference());
-				OuterClass->LinkChild(Z_Construct_UFunction_ATank_SetTurretReference());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_ProjectileBlueprint = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ProjectileBlueprint"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(ProjectileBlueprint, ATank), 0x0044000000010001, Z_Construct_UClass_AProjectile_NoRegister(), UClass::StaticClass());
@@ -305,9 +264,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_TankMovementComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TankMovementComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TankMovementComponent, ATank), 0x002008000008001c, Z_Construct_UClass_UTankMovementComponent_NoRegister());
 				UProperty* NewProp_TankAimingComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TankAimingComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TankAimingComponent, ATank), 0x002008000008001c, Z_Construct_UClass_UTankAimingComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_Fire(), "Fire"); // 849603197
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetBarrelReference(), "SetBarrelReference"); // 2570909085
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_SetTurretReference(), "SetTurretReference"); // 1358035061
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_Fire(), "Fire"); // 3157610892
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -392,6 +349,32 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		return ReturnEnum;
 	}
 	uint32 Get_Z_Construct_UEnum_BattleTank_EFiringStatus_CRC() { return 3302655049U; }
+	UFunction* Z_Construct_UFunction_UTankAimingComponent_Initialise()
+	{
+		struct TankAimingComponent_eventInitialise_Parms
+		{
+			UTankBarrel* BarrelToSet;
+			UTankTurret* TurretToSet;
+		};
+		UObject* Outer=Z_Construct_UClass_UTankAimingComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Initialise"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(TankAimingComponent_eventInitialise_Parms));
+			UProperty* NewProp_TurretToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TurretToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TurretToSet, TankAimingComponent_eventInitialise_Parms), 0x0010000000080080, Z_Construct_UClass_UTankTurret_NoRegister());
+			UProperty* NewProp_BarrelToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("BarrelToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(BarrelToSet, TankAimingComponent_eventInitialise_Parms), 0x0010000000080080, Z_Construct_UClass_UTankBarrel_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
+			MetaData->SetValue(NewProp_TurretToSet, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_BarrelToSet, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UTankAimingComponent_NoRegister()
 	{
 		return UTankAimingComponent::StaticClass();
@@ -409,11 +392,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20B00080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_UTankAimingComponent_Initialise());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FiringStatus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FiringStatus"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(FiringStatus, UTankAimingComponent), 0x0020080000000014, Z_Construct_UEnum_BattleTank_EFiringStatus());
 				UProperty* NewProp_FiringStatus_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_FiringStatus, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankAimingComponent_Initialise(), "Initialise"); // 3812820548
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -591,6 +576,25 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UTankMovementComponent(Z_Construct_UClass_UTankMovementComponent, &UTankMovementComponent::StaticClass, TEXT("UTankMovementComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UTankMovementComponent);
+	UFunction* Z_Construct_UFunction_ATankPlayerController_FoundAimingComponent()
+	{
+		UObject* Outer=Z_Construct_UClass_ATankPlayerController();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FoundAimingComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08080800, 65535, sizeof(TankPlayerController_eventFoundAimingComponent_Parms));
+			UProperty* NewProp_AimCompRef = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("AimCompRef"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(AimCompRef, TankPlayerController_eventFoundAimingComponent_Parms), 0x0010000000080080, Z_Construct_UClass_UTankAimingComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankPlayerController.h"));
+			MetaData->SetValue(NewProp_AimCompRef, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ATankPlayerController_GetControlledTank()
 	{
 		struct TankPlayerController_eventGetControlledTank_Parms
@@ -630,6 +634,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900284;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ATankPlayerController_FoundAimingComponent());
 				OuterClass->LinkChild(Z_Construct_UFunction_ATankPlayerController_GetControlledTank());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -637,6 +642,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_CrosshairYLocation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CrosshairYLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CrosshairYLocation, ATankPlayerController), 0x0040000000010001);
 				UProperty* NewProp_CrosshairXLocation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CrosshairXLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(CrosshairXLocation, ATankPlayerController), 0x0040000000010001);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATankPlayerController_FoundAimingComponent(), "FoundAimingComponent"); // 1961847990
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATankPlayerController_GetControlledTank(), "GetControlledTank"); // 704037422
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
@@ -645,7 +651,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankPlayerController.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankPlayerController.h"));
-				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("Forward declaration"));
 				MetaData->SetValue(NewProp_LineTraceRange, TEXT("Category"), TEXT("TankPlayerController"));
 				MetaData->SetValue(NewProp_LineTraceRange, TEXT("ModuleRelativePath"), TEXT("Public/TankPlayerController.h"));
 				MetaData->SetValue(NewProp_CrosshairYLocation, TEXT("Category"), TEXT("TankPlayerController"));
@@ -772,8 +777,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xB47CE340;
-			Guid.B = 0x4911FCC3;
+			Guid.A = 0x9A07DEBB;
+			Guid.B = 0x5A24FCF5;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
