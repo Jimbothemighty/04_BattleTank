@@ -48,8 +48,9 @@ void ATankAIController::Tick(float DeltaTime)
 		{
 			AimingComponent->AimAt(PlayerTank->GetActorLocation());
 		}
+		
 		// TODO fix firing
-		// TankAimingComponent->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
+		AimingComponent->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
 	
 	return;
 }

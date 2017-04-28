@@ -9,6 +9,7 @@
 
 class UTankBarrel;
 class UTankTurret;
+class AProjectile;
 
 // Enum for aiming state
 UENUM()
@@ -32,8 +33,8 @@ public:
 	// Called every frame
 //	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-//	UFUNCTION(BlueprintCallable, Category = "Firing")
-//		void Fire();
+	UFUNCTION(BlueprintCallable, Category = "Firing")
+		void Fire();
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
@@ -56,8 +57,8 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		float LaunchSpeed = 100000.0f;  // TODO find sensible default
-/*
+
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 		TSubclassOf<AProjectile> ProjectileBlueprint;
-*/
+
 };

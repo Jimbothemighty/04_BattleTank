@@ -3,6 +3,7 @@
 #include "BattleTank.h"
 #include "TankBarrel.h"
 #include "TankTurret.h"
+#include "Projectile.h"
 #include "TankAimingComponent.h"
 
 // Sets default values for this component's properties
@@ -98,8 +99,8 @@ void UTankAimingComponent::MoveTurretTowards(FVector AimDirection)
 	};
 */
 
-/*
-void ATank::Fire()
+
+void UTankAimingComponent::Fire()
 {
 	if (!ensure(Barrel)) { return; }
 	bool IsReloaded = (FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds;
@@ -117,4 +118,3 @@ void ATank::Fire()
 		LastFireTime = FPlatformTime::Seconds();
 	}
 }
-*/
