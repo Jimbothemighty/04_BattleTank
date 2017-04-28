@@ -8,7 +8,7 @@
 // Forward Declaration (links to TankBarrel.h/.cpp)
 
 class UTankBarrel;
-class UTankTurret;	//Turrret
+class UTankTurret;
 
 // Enum for aiming state
 UENUM()
@@ -19,8 +19,6 @@ UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class BATTLETANK_API UTankAimingComponent : public UActorComponent
 {
 	GENERATED_BODY()
-
-
 
 public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
