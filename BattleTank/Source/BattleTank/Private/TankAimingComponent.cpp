@@ -14,7 +14,7 @@ UTankAimingComponent::UTankAimingComponent()
 
 	// ...
 }
-
+/*
 // Called when the game starts
 void UTankAimingComponent::BeginPlay()
 {
@@ -31,10 +31,11 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 
 	// ...
 }
+*/
 
 void UTankAimingComponent::Initialise(UTankBarrel *BarrelToSet, UTankTurret *TurretToSet)
 {
-	if (!ensure(BarrelToSet || TurretToSet)) { return; }
+//	if (!ensure(BarrelToSet || TurretToSet)) { return; }
 	Barrel = BarrelToSet;
 	Turret = TurretToSet;
 }

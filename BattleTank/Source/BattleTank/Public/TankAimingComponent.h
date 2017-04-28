@@ -21,22 +21,22 @@ class BATTLETANK_API UTankAimingComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintCallable, Category = Setup)
+	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Initialise(UTankBarrel *BarrelToSet, UTankTurret* TurretToSet);
 
 	void AimAt(FVector HitLocation);
 
 	// Called when the game starts
-	virtual void BeginPlay() override;
+//	virtual void BeginPlay() override;
 
 	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+//	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-//	UFUNCTION(BlueprintCallable, Category = Firing)
+//	UFUNCTION(BlueprintCallable, Category = "Firing")
 //		void Fire();
 
 protected:
-	UPROPERTY(BlueprintReadOnly, Category = State)
+	UPROPERTY(BlueprintReadOnly, Category = "State")
 		EFiringStatus FiringStatus = EFiringStatus::Aiming;
 
 private:
@@ -51,13 +51,13 @@ private:
 
 	double LastFireTime = 0;
 	
-	UPROPERTY(EditDefaultsOnly, Category = Firing)
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		float ReloadTimeInSeconds = 3.0f;  // TODO find sensible default
 
-	UPROPERTY(EditDefaultsOnly, Category = Firing)
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		float LaunchSpeed = 100000.0f;  // TODO find sensible default
 /*
-	UPROPERTY(EditDefaultsOnly, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 		TSubclassOf<AProjectile> ProjectileBlueprint;
 */
 };

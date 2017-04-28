@@ -17,7 +17,7 @@ public:
 
 protected:
 
-	UFUNCTION(BlueprintImplementableEvent, Category = Setup)
+	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
 		void FoundAimingComponent(UTankAimingComponent* AimCompRef);
 
 private:

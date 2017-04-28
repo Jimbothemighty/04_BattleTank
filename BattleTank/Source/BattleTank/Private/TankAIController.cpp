@@ -33,24 +33,24 @@ void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	auto AiTank = GetPawn();
-	auto PlayerTank = GetWorld()->GetFirstPlayerController()->GetPawn();
+		auto PlayerTank = GetWorld()->GetFirstPlayerController()->GetPawn();
+		auto ControlledTank = GetPawn();
 
-	if (!ensure(PlayerTank)) { return; }
-	else
-	{
-		// TODO Move towards the player
-		MoveToActor(
-			PlayerTank,
-			AcceptanceRadius,
-			true, true, false
-		);
+		if (!ensure(PlayerTank && ControlledTank)) { return; }
 
-		TankAimingComponent->AimAt(PlayerTank->GetActorLocation()); // Aims at player
+		// Move towards the player
+		MoveToActor(PlayerTank, AcceptanceRadius); // TODO check radius is in cm
 
-// TODO fix firing
-//		TankAimingComponent->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
-	}
+		// Aim towards the player
+		auto AimingComponent = ControlledTank->FindComponentByClass<UTankAimingComponent>();
+		if (!ensure(AimingComponent)) { return; }
+		else
+		{
+			AimingComponent->AimAt(PlayerTank->GetActorLocation());
+		}
+		// TODO fix firing
+		// TankAimingComponent->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
+	
 	return;
 }
 
