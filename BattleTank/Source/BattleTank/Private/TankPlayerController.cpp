@@ -12,10 +12,7 @@ void ATankPlayerController::BeginPlay()
 
 	auto ControlledTank = GetControlledTank();
 
-	if (!ensure(ControlledTank))
-	{
-		return;
-	}
+	if (!ensure(ControlledTank)) { return; }
 	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s has been possessed by Player"), *GetPawn()->GetName());

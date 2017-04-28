@@ -4,12 +4,13 @@
 #include "Tank.h"
 #include "TankMovementComponent.h"
 #include "TankAIController.h"
+// Depends on movement component via pathfinding system
 
-/*
+
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
-
+/*
 	auto TargetingPlayerTank = GetPlayerTank();
 
 	if (TargetingPlayerTank)
@@ -24,9 +25,9 @@ void ATankAIController::BeginPlay()
 	{
 		UE_LOG(LogTemp, Error, TEXT("AI targetting player report not functioning. See TankAIController.cpp"));
 	};
-
-};
 */
+};
+
 
 void ATankAIController::Tick(float DeltaTime)
 {
