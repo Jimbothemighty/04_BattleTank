@@ -3,6 +3,19 @@
 #include "BattleTank.h"
 #include "TankTrack.h"
 
+UTankTrack::UTankTrack()
+{
+	PrimaryComponentTick.bCanEverTick = true;
+}
+
+
+void UTankTrack::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	UE_LOG(LogTemp, Warning, TEXT("Ding Dong Dongle"));
+}
+
 
 void UTankTrack::SetThrottle(float Throttle)
 {

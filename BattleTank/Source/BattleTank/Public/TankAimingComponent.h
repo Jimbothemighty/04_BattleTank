@@ -28,21 +28,24 @@ public:
 	void AimAt(FVector HitLocation);
 
 	// Called when the game starts
-//	virtual void BeginPlay() override;
-
-	// Called every frame
-//	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Firing")
 		void Fire();
 
+	FVector AimDirection;
+
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
-		EFiringStatus FiringStatus = EFiringStatus::Aiming;
+		EFiringStatus FiringStatus = EFiringStatus::Reloading;
 
 private:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
+
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	bool BarrelIsMoving();
 
 	void MoveBarrelTowards(FVector AimDirection);
 	void MoveTurretTowards(FVector AimDirection);	//Turrret

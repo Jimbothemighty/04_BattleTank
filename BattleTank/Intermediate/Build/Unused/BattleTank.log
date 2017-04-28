@@ -1,35 +1,15 @@
-﻿  Cleaning BattleTankEditor Binaries...
-  Compiling game modules for hot reload
-  Creating makefile for hot reloading BattleTankEditor (no existing makefile)
-  Compiling game modules for hot reload
-  Performing full C++ include scan (no include cache file)
+﻿  Compiling game modules for hot reload
   Parsing headers for BattleTankEditor
     Running UnrealHeaderTool "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BattleTankEditor in 17.0910725 seconds
-  Performing 18 actions (4 in parallel)
-  [2/18] Resource PCLaunch.rc
-  [3/18] Resource ModuleVersionResource.rc.inl
-  PCH.BattleTank.cpp
-  BattleTank.cpp
-  TankAimingComponent.cpp
-  BattleTankGameModeBase.cpp
-  MyAIController.cpp
-  Projectile.cpp
-  Tank.cpp
-  TankAIController.cpp
-  TankBarrel.cpp
-  TankMovementComponent.cpp
-  TankPlayerController.cpp
-  TankTrack.cpp
-  TankTurret.cpp
+  Reflection code generated for BattleTankEditor in 18.1181152 seconds
+  Performing 5 actions (4 in parallel)
   BattleTank.generated.cpp
-  [17/18] Link UE4Editor-BattleTank-5677.dll
-  [18/18] Link UE4Editor-BattleTank-5677.lib
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5677.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5677.exp
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5677.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5677.suppressed.exp
-Tank.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl ATank::Fire(void)" (?Fire@ATank@@QEAAXXZ) referenced in function "public: void __cdecl ATank::execFire(struct FFrame &,void * const)" (?execFire@ATank@@QEAAXAEAUFFrame@@QEAX@Z)
-BattleTank.generated.cpp.obj : error LNK2001: unresolved external symbol "public: void __cdecl ATank::Fire(void)" (?Fire@ATank@@QEAAXXZ)
-C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-5677.dll : fatal error LNK1120: 1 unresolved externals
-ERROR : UBT error : Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-5677.dll
-  Total build time: 140.50 seconds (Local executor: 0.00 seconds)
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(49,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Rebuild.bat" BattleTankEditor Win64 Development "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" -waitmutex" exited with code -1.
+  TankMovementComponent.cpp
+  TankTrack.cpp
+  [4/5] Link UE4Editor-BattleTank-8334.dll
+  [5/5] Link UE4Editor-BattleTank-3025.lib
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.exp
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.suppressed.exp
+ERROR : UBT error : Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3025.lib
+  Total build time: 25.15 seconds (Local executor: 0.00 seconds)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" BattleTankEditor Win64 Development "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

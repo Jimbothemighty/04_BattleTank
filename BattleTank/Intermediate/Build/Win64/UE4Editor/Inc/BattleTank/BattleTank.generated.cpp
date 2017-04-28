@@ -49,7 +49,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 		FNativeFunctionRegistrar::RegisterFunction(UTankAimingComponent::StaticClass(), "Fire",(Native)&UTankAimingComponent::execFire);
 		FNativeFunctionRegistrar::RegisterFunction(UTankAimingComponent::StaticClass(), "Initialise",(Native)&UTankAimingComponent::execInitialise);
 	}
-	IMPLEMENT_CLASS(UTankAimingComponent, 1709733812);
+	IMPLEMENT_CLASS(UTankAimingComponent, 54699327);
 	void UTankBarrel::StaticRegisterNativesUTankBarrel()
 	{
 	}
@@ -319,7 +319,6 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Firing"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankAimingComponent.h"));
-			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called every frame\n      virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;"));
 #endif
 		}
 		return ReturnFunction;
@@ -377,7 +376,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_FiringStatus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FiringStatus"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(FiringStatus, UTankAimingComponent), 0x0020080000000014, Z_Construct_UEnum_BattleTank_EFiringStatus());
 				UProperty* NewProp_FiringStatus_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_FiringStatus, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankAimingComponent_Fire(), "Fire"); // 3851364369
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankAimingComponent_Fire(), "Fire"); // 3453538568
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankAimingComponent_Initialise(), "Initialise"); // 3812820548
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -741,7 +740,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x4954DE2B;
+			Guid.A = 0x32553CDB;
 			Guid.B = 0xAD5A44E0;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
