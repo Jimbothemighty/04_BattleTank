@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BattleTank.h"
-#include "Tank.h"
+#include "TankAimingComponent.h"
 #include "TankMovementComponent.h"
 #include "TankAIController.h"
 // Depends on movement component via pathfinding system
@@ -33,8 +33,8 @@ void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	auto AiTank = Cast<ATank>(GetPawn());
-	auto PlayerTank = Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
+	auto AiTank = GetPawn();
+	auto PlayerTank = GetWorld()->GetFirstPlayerController()->GetPawn();
 
 	if (!ensure(PlayerTank)) { return; }
 	else
@@ -46,19 +46,10 @@ void ATankAIController::Tick(float DeltaTime)
 			true, true, false
 		);
 
-			
-//			TankMovementComponent->RequestDirectMove(MoveVelocityString, bForceMaxSpeed);
+		TankAimingComponent->AimAt(PlayerTank->GetActorLocation()); // Aims at player
 
-	
-		AiTank->AimAt(PlayerTank->GetActorLocation()); // Aims at player
-
-//		auto AimD = ATank* AimAt(FVector HitLocation);
-
-//		if (AiTank->AimAt(PlayerTank->GetActorLocation()) = PlayerTank->GetActorLocation())
-//		{
-			AiTank->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
-							// TODO Limit firing rate
-//		}
+// TODO fix firing
+//		TankAimingComponent->Fire(); // TODO (make it so fire ONLY when ready) e.g. if Aimdirection = PlayerTank Actor Location then fire.
 	}
 	return;
 }

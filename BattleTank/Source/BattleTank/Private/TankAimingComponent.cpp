@@ -32,10 +32,18 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	// ...
 }
 
-
-void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
+void UTankAimingComponent::Initialise(UTankBarrel * BarrelToSet, UTankTurret * TurretToSet)
 {
-	if (!ensure(Barrel)) { return; }
+	if (!ensure(BarrelToSet || TurretToSet)) { return; }
+	Barrel = BarrelToSet;
+	Turret = TurretToSet;
+}
+
+void UTankAimingComponent::AimAt(FVector HitLocation)
+{
+	if (!ensure(Barrel)) { 
+		UE_LOG(LogTemp, Warning, TEXT("The barrel is fucked... NULLPTR?"));
+		return; }
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
@@ -58,11 +66,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 //		UE_LOG(LogTemp, Warning, TEXT("%s is aiming at %s"), *OurTankName, *AimDirection.ToString());
 		MoveBarrelTowards(AimDirection);
 		MoveTurretTowards(AimDirection);
-		auto Time = GetWorld()->GetTimeSeconds();
-	}
-	else {
-		auto Time = GetWorld()->GetTimeSeconds();
-		UE_LOG(LogTemp, Error, TEXT("Time: %f. Barrel Elevate is failing"), Time);
+//		auto Time = GetWorld()->GetTimeSeconds();
 	}
 }
 
@@ -87,21 +91,7 @@ void UTankAimingComponent::MoveTurretTowards(FVector AimDirection)
 
 	Turret->Rotate(DeltaRotator.Yaw);
 }
-/*
-		//Barrrel
-	void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
-	{
-		if (!BarrelToSet) { return; }
-		Barrel = BarrelToSet;
-	}
 
-		//Turrret
-	void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
-	{
-		if (!TurretToSet) { return; }
-		Turret = TurretToSet;
-	}
-*/
 
 /*
 	EFiringStatus UTankAimingComponent::FiringStatus(FString Reloading) const
@@ -109,9 +99,23 @@ void UTankAimingComponent::MoveTurretTowards(FVector AimDirection)
 	};
 */
 
-void UTankAimingComponent::Initialise(UTankBarrel * BarrelToSet, UTankTurret * TurretToSet)
+/*
+void ATank::Fire()
 {
-	if (!ensure(BarrelToSet || !TurretToSet)) { return; }
-	Barrel = BarrelToSet;
-	Turret = TurretToSet;
+	if (!ensure(Barrel)) { return; }
+	bool IsReloaded = (FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds;
+
+	if (Barrel && IsReloaded)
+	{
+		// spawn a projectile at the socketlocation on the barrel
+		auto Projectile = GetWorld()->SpawnActor<AProjectile>(
+			ProjectileBlueprint,
+			Barrel->GetSocketLocation(FName("Projectile")),
+			Barrel->GetSocketRotation(FName("Projectile"))
+			);
+
+		Projectile->LaunchProjectile(LaunchSpeed);
+		LastFireTime = FPlatformTime::Seconds();
+	}
 }
+*/

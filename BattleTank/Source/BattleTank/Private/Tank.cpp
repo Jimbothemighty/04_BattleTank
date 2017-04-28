@@ -2,8 +2,8 @@
 
 #include "BattleTank.h"
 #include "TankBarrel.h"
+#include "TankTurret.h"
 #include "Projectile.h"
-#include "TankAimingComponent.h"
 #include "Tank.h"
 
 
@@ -23,7 +23,7 @@ void ATank::BeginPlay()
 {
 	Super::BeginPlay();
 
-	TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
+//	TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
 }
 
 
@@ -35,7 +35,7 @@ void ATank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
-
+/*
 void ATank::AimAt(FVector HitLocation)  // refers to the Tank.h for function AimAt
 {
 	if (!ensure(TankAimingComponent)) { return; }
@@ -45,6 +45,8 @@ void ATank::AimAt(FVector HitLocation)  // refers to the Tank.h for function Aim
 														   // It uses the statements from the TankAimingComponent.cpp file and then passes in HitLocation calculated from the TankPlayerController.cpp and TankAIController.cpp files.
 														   // statements for AimAt are called from TankPlayer/AIController.cpp/h (which are requested from its pawn) Tank.cpp/h (which the pawn gets from it's component) TankAimingComponent.cpp/h
 }
+*/
+
 /*
 void ATank::SetBarrelReference(UTankBarrel* BarrelToSet)
 {
@@ -64,6 +66,7 @@ void ATank::SetTurretReference(UTankTurret* TurretToSet)
 }
 */
 
+/*
 void ATank::Fire()
 {
 	if (!ensure(Barrel)) { return; }
@@ -82,3 +85,4 @@ void ATank::Fire()
 		LastFireTime = FPlatformTime::Seconds();
 	}
 }
+*/
