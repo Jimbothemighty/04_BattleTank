@@ -22,6 +22,8 @@ public:
 	UTankMovementComponent* TankMovementComponent;
 	UTankAimingComponent* TankAimingComponent;
 
-private:
-	float AcceptanceRadius = 3000.0f; // TODO check radius in cm
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	float AcceptanceRadius = 8000.0f; // TODO check radius in metres
+
 };

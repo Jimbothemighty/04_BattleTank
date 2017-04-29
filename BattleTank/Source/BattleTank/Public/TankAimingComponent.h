@@ -35,6 +35,8 @@ public:
 
 	FVector AimDirection;
 
+	EFiringStatus GetFiringStatus() const;
+
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
 		EFiringStatus FiringStatus = EFiringStatus::Reloading;

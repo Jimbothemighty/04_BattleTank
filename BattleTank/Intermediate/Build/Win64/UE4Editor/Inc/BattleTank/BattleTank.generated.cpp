@@ -31,7 +31,7 @@ FName BATTLETANK_FoundAimingComponent = FName(TEXT("FoundAimingComponent"));
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 	}
-	IMPLEMENT_CLASS(ATankAIController, 3531279489);
+	IMPLEMENT_CLASS(ATankAIController, 2576682902);
 static class UEnum* EFiringStatus_StaticEnum()
 {
 	extern BATTLETANK_API class UPackage* Z_Construct_UPackage__Script_BattleTank();
@@ -274,12 +274,17 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 				OuterClass->ClassFlags |= 0x20900280;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_AcceptanceRadius = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("AcceptanceRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(AcceptanceRadius, ATankAIController), 0x0020080000010001);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TankAIController.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/TankAIController.h"));
+				MetaData->SetValue(NewProp_AcceptanceRadius, TEXT("Category"), TEXT("Setup"));
+				MetaData->SetValue(NewProp_AcceptanceRadius, TEXT("ModuleRelativePath"), TEXT("Public/TankAIController.h"));
 #endif
 			}
 		}
@@ -780,7 +785,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xBD9D1823;
+			Guid.A = 0x0F440614;
 			Guid.B = 0x988A76F8;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
