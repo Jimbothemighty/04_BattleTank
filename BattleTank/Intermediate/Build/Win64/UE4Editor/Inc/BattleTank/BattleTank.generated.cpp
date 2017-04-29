@@ -73,9 +73,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	IMPLEMENT_CLASS(ATankPlayerController, 2117411282);
 	void UTankTrack::StaticRegisterNativesUTankTrack()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(UTankTrack::StaticClass(), "OnHit",(Native)&UTankTrack::execOnHit);
 		FNativeFunctionRegistrar::RegisterFunction(UTankTrack::StaticClass(), "SetThrottle",(Native)&UTankTrack::execSetThrottle);
 	}
-	IMPLEMENT_CLASS(UTankTrack, 1092907722);
+	IMPLEMENT_CLASS(UTankTrack, 589581565);
 	void UTankTurret::StaticRegisterNativesUTankTurret()
 	{
 	}
@@ -90,6 +91,10 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_UNavMovementComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase();
@@ -116,6 +121,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATankPlayerController_FoundAimingComponent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATankPlayerController();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankTrack_OnHit();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_UTankTrack_SetThrottle();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankTrack_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_UTankTrack();
@@ -628,6 +634,38 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATankPlayerController(Z_Construct_UClass_ATankPlayerController, &ATankPlayerController::StaticClass, TEXT("ATankPlayerController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATankPlayerController);
+	UFunction* Z_Construct_UFunction_UTankTrack_OnHit()
+	{
+		struct TankTrack_eventOnHit_Parms
+		{
+			UPrimitiveComponent* HitComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComponent;
+			FVector NormalImpulse;
+			FHitResult Hit;
+		};
+		UObject* Outer=Z_Construct_UClass_UTankTrack();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnHit"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00C40401, 65535, sizeof(TankTrack_eventOnHit_Parms));
+			UProperty* NewProp_Hit = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Hit"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(Hit, TankTrack_eventOnHit_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FHitResult());
+			UProperty* NewProp_NormalImpulse = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NormalImpulse"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(NormalImpulse, TankTrack_eventOnHit_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_OtherComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherComponent, TankTrack_eventOnHit_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, TankTrack_eventOnHit_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_HitComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HitComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HitComponent, TankTrack_eventOnHit_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/TankTrack.h"));
+			MetaData->SetValue(NewProp_Hit, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_OtherComponent, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_HitComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_UTankTrack_SetThrottle()
 	{
 		struct TankTrack_eventSetThrottle_Parms
@@ -667,11 +705,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20B01080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_UTankTrack_OnHit());
 				OuterClass->LinkChild(Z_Construct_UFunction_UTankTrack_SetThrottle());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_TrackMaxDrivingForce = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TrackMaxDrivingForce"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TrackMaxDrivingForce, UTankTrack), 0x0010000000010001);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankTrack_OnHit(), "OnHit"); // 121428265
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTankTrack_SetThrottle(), "SetThrottle"); // 2719795409
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -740,8 +780,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x32553CDB;
-			Guid.B = 0xAD5A44E0;
+			Guid.A = 0xBD9D1823;
+			Guid.B = 0x988A76F8;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

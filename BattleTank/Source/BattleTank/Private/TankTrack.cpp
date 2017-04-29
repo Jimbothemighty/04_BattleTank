@@ -5,34 +5,72 @@
 
 UTankTrack::UTankTrack()
 {
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = false;
 }
 
-
-void UTankTrack::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UTankTrack::BeginPlay()
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	Super::BeginPlay();
 
-	UE_LOG(LogTemp, Warning, TEXT("Ding Dong Dongle"));
+	OnComponentHit.AddDynamic(this, &UTankTrack::OnHit);
+}
+
+void UTankTrack::OnHit
+(
+	UPrimitiveComponent* HitComponent,
+	AActor* OtherActor,
+	UPrimitiveComponent* OtherComponent,
+	FVector NormalImpulse,
+	const FHitResult& Hit
+)
+{
+	DriveTrack(); // Drive the tracks
+	// Apply Sideways force
+	ApplySidewaysForce();
+	// reset throttle
+	CurrentThrottle = 0.f;
+	
+}
+
+void UTankTrack::ApplySidewaysForce()
+{
+	auto SlippageSpeed = FVector::DotProduct(GetComponentVelocity(), GetOwner()->GetActorRightVector());
+
+//	UE_LOG(LogTemp, Warning, TEXT("Slippage speed is %f"), SlippageSpeed);
+
+	auto DeltaTime = GetWorld()->GetDeltaSeconds();
+
+	auto CorrectionAcceleration = -SlippageSpeed / DeltaTime * GetRightVector(); // speed / time
+
+	auto TankRoot = Cast<UStaticMeshComponent>(GetOwner()->GetRootComponent());
+
+	auto CorrectionForce = (TankRoot->GetMass() * (CorrectionAcceleration)) / 2;
+
+	TankRoot->AddForce(CorrectionForce);
 }
 
 
 void UTankTrack::SetThrottle(float Throttle)
 {
-	//auto Time = GetWorld()->GetTimeSeconds();
-
-	auto Name = GetName();
+//	auto Time = GetWorld()->GetTimeSeconds();
+//	auto Name = GetName();
 //	UE_LOG(LogTemp, Warning, TEXT("%s: Throttle pressed %f!"), *Name, Throttle)
 
-	auto ForceApplied = GetForwardVector() * Throttle * TrackMaxDrivingForce;
+	CurrentThrottle = FMath::Clamp<float>(CurrentThrottle + Throttle, -1, 1);
+	DriveTrack();
+}
+
+void UTankTrack::DriveTrack()
+{
+	auto ForceApplied = GetForwardVector() *CurrentThrottle * TrackMaxDrivingForce;
 	auto ForceLocation = GetComponentLocation();
 
 	auto TankRoot = Cast<UPrimitiveComponent>(GetOwner()->GetRootComponent());
 
 	TankRoot->AddForceAtLocation(
-	ForceApplied,
-	ForceLocation
+		ForceApplied,
+		ForceLocation
 	);
-	// TODO clamp actual throttle value so player can't over-drive
 }
+// TODO clamp actual throttle value so player can't over-drive
 
