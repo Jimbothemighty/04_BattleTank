@@ -48,6 +48,15 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 		FiringStatus = EFiringStatus::Locked;
 	}
 	// TODO handle aiming and locked states
+
+	if (AmmoLevel < 5)
+	{
+		if((FPlatformTime::Seconds() - LastAmmoRegenerationTime) > RegenDelay)
+		{
+			LastAmmoRegenerationTime = FPlatformTime::Seconds();
+			AmmoLevel++;
+		}
+	}
 }
 
 EFiringStatus UTankAimingComponent::GetFiringStatus() const

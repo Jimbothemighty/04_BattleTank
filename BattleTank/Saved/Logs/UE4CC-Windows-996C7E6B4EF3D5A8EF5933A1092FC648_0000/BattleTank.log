@@ -1,0 +1,1104 @@
+﻿Log file open, 05/02/17 17:39:31
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-595002450) SRandInit(-595002450).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.068200
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.02-16.39.32:028][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.02-16.39.32:028][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.02-16.39.32:036][  0]LogInit: Computer: DESKTOP-7RIOMGQ
+[2017.05.02-16.39.32:036][  0]LogInit: User: Ed
+[2017.05.02-16.39.32:036][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.02-16.39.32:036][  0]LogInit: High frequency timer resolution =3.421878 MHz
+[2017.05.02-16.39.32:037][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.05.02-16.39.32:037][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.02-16.39.32:037][  0]LogMemory: Process Physical Memory: 263.66 MB used, 263.66 MB peak
+[2017.05.02-16.39.32:037][  0]LogMemory: Process Virtual Memory: 259.43 MB used, 259.43 MB peak
+[2017.05.02-16.39.32:037][  0]LogMemory: Physical Memory: 8552.45 MB used,  7788.54 MB free, 16340.98 MB total
+[2017.05.02-16.39.32:037][  0]LogMemory: Virtual Memory: 640.96 MB used,  7788.54 MB free, 134217728.00 MB total
+[2017.05.02-16.39.32:096][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.05.02-16.39.32:536][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.02-16.39.32:551][  0]LogD3D11RHI:    0. 'Radeon (TM) RX 480 Graphics' (Feature Level 11_0)
+[2017.05.02-16.39.32:551][  0]LogD3D11RHI:       8140/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.05.02-16.39.32:552][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.02-16.39.32:552][  0]LogD3D11RHI:       0/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.02-16.39.32:552][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.02-16.39.32:557][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.02-16.39.32:557][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2017.05.02-16.39.32:557][  0]LogWindows: EnumDisplayDevices:
+[2017.05.02-16.39.32:557][  0]LogWindows:    0. 'Radeon (TM) RX 480 Graphics' (P:1 D:1)
+[2017.05.02-16.39.32:558][  0]LogWindows:    1. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-16.39.32:558][  0]LogWindows:    2. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-16.39.32:558][  0]LogWindows:    3. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-16.39.32:558][  0]LogWindows:    4. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-16.39.32:558][  0]LogWindows:    5. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-16.39.32:558][  0]LogWindows: DebugString: FoundDriverCount:6 
+[2017.05.02-16.39.32:558][  0]LogD3D11RHI:     Adapter Name: Radeon (TM) RX 480 Graphics
+[2017.05.02-16.39.32:558][  0]LogD3D11RHI:   Driver Version: Crimson 16.7.2 (internal:16.200.1035.1001, unified:16.200.1035.1001)
+[2017.05.02-16.39.32:558][  0]LogD3D11RHI:      Driver Date: 7-8-2016
+[2017.05.02-16.39.32:558][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.02-16.39.33:006][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.02-16.39.33:015][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2017.05.02-16.39.33:015][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/32100/).
+[2017.05.02-16.39.33:015][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ed/AppData/Local/Temp/UnrealShaderWorkingDir/7E6E0CB54DD386A40EDD75AB8B76A158/'.
+[2017.05.02-16.39.33:015][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.02-16.39.33:772][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.02-16.39.33:812][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.02-16.39.33:854][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.02-16.39.33:895][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.02-16.39.33:940][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.02-16.39.33:983][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.02-16.39.34:026][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.02-16.39.34:070][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.02-16.39.34:103][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.02-16.39.34:145][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.02-16.39.34:186][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.02-16.39.34:228][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.02-16.39.34:274][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.02-16.39.34:317][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.02-16.39.34:357][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.02-16.39.34:437][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.02-16.39.34:437][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.02-16.39.34:464][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.02-16.39.34:539][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.02-16.39.34:565][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.02-16.39.34:603][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.02-16.39.34:642][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.02-16.39.34:680][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.02-16.39.34:719][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.02-16.39.34:719][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.02-16.39.35:037][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.02-16.39.35:078][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.02-16.39.35:093][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.02-16.39.35:105][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.02-16.39.35:113][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.02-16.39.35:113][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.02-16.39.35:113][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.02-16.39.35:331][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.02-16.39.35:333][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.02-16.39.35:509][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.02-16.39.35:552][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.02-16.39.35:591][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.02-16.39.35:591][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.02-16.39.35:591][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.02-16.39.35:984][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.05.02-16.39.36:023][  0]LogAssetRegistry: FAssetRegistry took 0.0218 seconds to start up
+[2017.05.02-16.39.36:058][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.020521 seconds
+[2017.05.02-16.39.36:062][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.02-16.39.36:062][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.02-16.39.36:062][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.02-16.39.36:105][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.02-16.39.37:230][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.02-16.39.37:261][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.02-16.39.37:627][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.02-16.39.37:913][  0]SourceControl: Info Source control is disabled
+[2017.05.02-16.39.37:934][  0]SourceControl: Info Source control is disabled
+[2017.05.02-16.39.37:966][  0]SourceControl: Info Source control is disabled
+[2017.05.02-16.39.37:998][  0]SourceControl: Info Source control is disabled
+[2017.05.02-16.39.38:858][  0]LogEngine: Initializing Engine...
+[2017.05.02-16.39.38:858][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.02-16.39.39:038][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.02-16.39.39:046][  0]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-16.39.39:058][  0]LogInit: FAudioDevice initialized.
+[2017.05.02-16.39.39:076][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.02-16.39.39:080][  0]LogInit: Texture streaming: Enabled
+[2017.05.02-16.39.39:144][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.02-16.39.39:206][  0]LogInit: Transaction tracking system initialized
+[2017.05.02-16.39.39:441][  0]BlueprintLog: New page: Editor Load
+[2017.05.02-16.39.40:075][  0]LocalizationService: Info Localization service is disabled
+[2017.05.02-16.39.40:558][  0]LogConsoleResponse:Display: 
+[2017.05.02-16.39.40:652][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.02-16.39.40:652][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.02-16.39.41:367][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.01s
+[2017.05.02-16.39.41:367][  0]SourceControl: Info Source control is disabled
+[2017.05.02-16.39.41:367][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.02-16.39.41:368][  0]LightingResults: New page: Lighting Build
+[2017.05.02-16.39.41:395][  0]MapCheck: New page: Map Check
+[2017.05.02-16.39.41:395][  0]LightingResults: New page: Lighting Build
+[2017.05.02-16.39.41:745][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-16.39.41:779][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.02-16.39.41:780][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.02-16.39.41:812][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 31.262ms to complete.
+[2017.05.02-16.39.41:812][  0]LogFileHelpers: Loading map 'BattleGround' took 0.445
+[2017.05.02-16.39.41:872][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-16.39.41:958][  0]LogCollectionManager: Loaded 1 collections in 0.001185 seconds
+[2017.05.02-16.39.42:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.05.02-16.39.42:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Ed/Collections/' took 0.01s
+[2017.05.02-16.39.42:030][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.05.02-16.39.42:030][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000003 seconds
+[2017.05.02-16.39.42:030][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.05.02-16.39.42:038][  0]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2256 classes and 456 folders.
+[2017.05.02-16.39.42:040][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.02-16.39.42:041][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.02-16.39.42:092][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0016 seconds. Added 0 classes and 0 folders.
+[2017.05.02-16.39.42:120][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0016 seconds. Added 0 classes and 0 folders.
+[2017.05.02-16.39.42:157][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2017.05.02-16.39.42:194][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.02-16.39.42:198][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.02-16.39.42:253][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2017.05.02-16.39.42:253][  0]LogLoad: (Engine Initialization) Total time: 11.71 seconds
+[2017.05.02-16.39.42:253][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.09 seconds
+[2017.05.02-16.39.42:253][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.05.02-16.39.42:262][  0]LogOcInput: OculusInput pre-init called
+[2017.05.02-16.39.42:276][  0]LogAssetRegistry: Asset discovery search completed in 6.2749 seconds
+[2017.05.02-16.39.42:276][  0]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000004 seconds (found 0 objects)
+[2017.05.02-16.39.42:276][  0]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000018 seconds (updated 0 objects)
+[2017.05.02-16.39.42:280][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.02-16.39.42:287][  0]LogSlate: Took 0.000171 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.02-16.39.42:289][  0]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.02-16.39.42:293][  0]LogSlate: Took 0.000113 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.02-16.39.42:434][  1]LogRenderer: Reallocating scene render targets to support 1140x736 NumSamples 1 (Frame:2).
+[2017.05.02-16.39.43:861][129]Recompiling BattleTank...
+[2017.05.02-16.39.43:861][129]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4515 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-16.39.43:862][129]Warning: Starting HotReload took  0.0s.
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: New page: Compilation - 2 May 2017 18:39:48
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-4515.dll
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-4515.lib
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4515.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4515.exp
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4515.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4515.suppressed.exp
+[2017.05.02-16.39.48:742][698]CompilerResultsLog: Info Total build time: 4.68 seconds (Local executor: 2.16 seconds)
+[2017.05.02-16.39.48:742][698]LogMainFrame: MainFrame: Module compiling took 4.885 seconds
+[2017.05.02-16.39.48:796][698]LogClass: EFiringStatus HotReload.
+[2017.05.02-16.39.48:800][698]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0015 seconds. Added 11 classes and 3 folders.
+[2017.05.02-16.39.48:801][698]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-16.39.48:855][698]LogContentBrowser: Native class hierarchy populated in 0.0077 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-16.39.48:856][698]Display: HotReload took  5.0s.
+[2017.05.02-16.39.51:688][ 27]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-16.39.51:703][ 27]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.39.51:703][ 27]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-16.39.51:703][ 27]PIE: New page: PIE session: BattleGround (2 May 2017 18:39:51)
+[2017.05.02-16.39.51:704][ 27]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-16.39.51:731][ 27]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027486s)
+[2017.05.02-16.39.51:731][ 27]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-16.39.51:732][ 27]LogPlayLevel: PIE: World Init took: (0.000577s)
+[2017.05.02-16.39.51:732][ 27]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.028240s)
+[2017.05.02-16.39.51:744][ 27]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-16.39.51:768][ 27]LogInit: FAudioDevice initialized.
+[2017.05.02-16.39.51:809][ 27]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-16.39.51:813][ 27]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-17.39.51
+[2017.05.02-16.39.51:814][ 27]LogWorld: Bringing up level for play took: 0.003552
+[2017.05.02-16.39.51:850][ 27]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0015 seconds. Added 11 classes and 0 folders.
+[2017.05.02-16.39.51:851][ 27]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.682
+[2017.05.02-16.39.51:852][ 27]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.39.54:204][286]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.39.54:204][286]LogTemp:Warning: Name:, Current Health=80
+[2017.05.02-16.39.56:024][504]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.39.56:054][504]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.00:123][146]Recompiling BattleTank...
+[2017.05.02-16.45.00:123][146]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 5118 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-16.45.00:124][146]Warning: Starting HotReload took  0.0s.
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: New page: Compilation - 2 May 2017 18:45:04
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-5118.dll
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-5118.lib
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5118.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5118.exp
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5118.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5118.suppressed.exp
+[2017.05.02-16.45.04:964][711]CompilerResultsLog: Info Total build time: 4.59 seconds (Local executor: 2.02 seconds)
+[2017.05.02-16.45.04:964][711]LogMainFrame: MainFrame: Module compiling took 4.846 seconds
+[2017.05.02-16.45.05:024][711]LogClass: EFiringStatus HotReload.
+[2017.05.02-16.45.05:028][711]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0016 seconds. Added 11 classes and 3 folders.
+[2017.05.02-16.45.05:029][711]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-16.45.05:052][711]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-16.45.05:052][711]Display: HotReload took  4.9s.
+[2017.05.02-16.45.06:227][849]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-16.45.06:259][849]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.06:260][849]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-16.45.06:260][849]PIE: New page: PIE session: BattleGround (2 May 2017 18:45:06)
+[2017.05.02-16.45.06:260][849]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-16.45.06:285][849]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024988s)
+[2017.05.02-16.45.06:285][849]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-16.45.06:285][849]LogPlayLevel: PIE: World Init took: (0.000792s)
+[2017.05.02-16.45.06:286][849]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.025956s)
+[2017.05.02-16.45.06:296][849]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-16.45.06:302][849]LogInit: FAudioDevice initialized.
+[2017.05.02-16.45.06:330][849]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-16.45.06:334][849]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-17.45.06
+[2017.05.02-16.45.06:335][849]LogWorld: Bringing up level for play took: 0.003458
+[2017.05.02-16.45.06:336][849]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.834
+[2017.05.02-16.45.06:336][849]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.07:390][971]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.07:423][971]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.09:450][193]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.05.02-16.45.11:750][467]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-16.45.11:765][467]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.11:765][467]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-16.45.11:765][467]PIE: New page: PIE session: BattleGround (2 May 2017 18:45:11)
+[2017.05.02-16.45.11:766][467]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-16.45.11:792][467]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026601s)
+[2017.05.02-16.45.11:792][467]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-16.45.11:793][467]LogPlayLevel: PIE: World Init took: (0.000512s)
+[2017.05.02-16.45.11:793][467]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.027282s)
+[2017.05.02-16.45.11:809][467]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-16.45.11:830][467]LogInit: FAudioDevice initialized.
+[2017.05.02-16.45.11:859][467]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-16.45.11:862][467]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-17.45.11
+[2017.05.02-16.45.11:863][467]LogWorld: Bringing up level for play took: 0.003478
+[2017.05.02-16.45.11:864][467]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.694
+[2017.05.02-16.45.11:864][467]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.15:416][886]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.15:416][886]LogTemp:Warning: Name:, Current Health=-1172017920
+[2017.05.02-16.45.18:783][290]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.18:783][290]LogTemp:Warning: Name:, Current Health=-1172025792
+[2017.05.02-16.45.18:816][294]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.18:816][294]LogTemp:Warning: Name:, Current Health=-1172023008
+[2017.05.02-16.45.18:841][297]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.18:841][297]LogTemp:Warning: Name:, Current Health=-1172014112
+[2017.05.02-16.45.20:141][453]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.20:141][453]LogTemp:Warning: Name:, Current Health=-1172019264
+[2017.05.02-16.45.20:716][522]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.20:716][522]LogTemp:Warning: Name:, Current Health=-1172017120
+[2017.05.02-16.45.21:191][579]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.21:191][579]LogTemp:Warning: Name:, Current Health=-1172018432
+[2017.05.02-16.45.21:891][663]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.21:892][663]LogTemp:Warning: Name:, Current Health=-1172015968
+[2017.05.02-16.45.24:550][982]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.24:550][982]LogTemp:Warning: Name:, Current Health=-1172020544
+[2017.05.02-16.45.24:742][  5]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.24:742][  5]LogTemp:Warning: Name:, Current Health=-1172015200
+[2017.05.02-16.45.26:525][219]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.26:525][219]LogTemp:Warning: Name:, Current Health=-1167751040
+[2017.05.02-16.45.29:158][535]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.29:158][535]LogTemp:Warning: Name:, Current Health=-1167750688
+[2017.05.02-16.45.30:483][694]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.30:483][694]LogTemp:Warning: Name:, Current Health=-1167738880
+[2017.05.02-16.45.35:500][296]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.35:500][296]LogTemp:Warning: Name:, Current Health=-1167747520
+[2017.05.02-16.45.35:708][321]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.45.35:708][321]LogTemp:Warning: Name:, Current Health=-1167752032
+[2017.05.02-16.45.35:891][343]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.45.35:891][343]LogTemp:Warning: Name:, Current Health=-1167737408
+[2017.05.02-16.45.36:467][412]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.45.36:500][412]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.49.33:873][842]Recompiling BattleTank...
+[2017.05.02-16.49.33:874][842]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 5336 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-16.49.33:875][842]Warning: Starting HotReload took  0.0s.
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: New page: Compilation - 2 May 2017 18:49:38
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-5336.dll
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-5336.lib
+[2017.05.02-16.49.38:848][413]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5336.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5336.exp
+[2017.05.02-16.49.38:849][413]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5336.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-5336.suppressed.exp
+[2017.05.02-16.49.38:849][413]CompilerResultsLog: Info Total build time: 4.76 seconds (Local executor: 2.11 seconds)
+[2017.05.02-16.49.38:849][413]LogMainFrame: MainFrame: Module compiling took 4.980 seconds
+[2017.05.02-16.49.38:905][413]LogClass: EFiringStatus HotReload.
+[2017.05.02-16.49.38:909][413]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0016 seconds. Added 11 classes and 3 folders.
+[2017.05.02-16.49.38:910][413]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-16.49.38:934][413]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-16.49.38:934][413]Display: HotReload took  5.1s.
+[2017.05.02-16.49.40:557][605]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-16.49.40:597][605]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.49.40:597][605]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-16.49.40:597][605]PIE: New page: PIE session: BattleGround (2 May 2017 18:49:40)
+[2017.05.02-16.49.40:598][605]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-16.49.40:625][605]LogPlayLevel: PIE: StaticDuplicateObject took: (0.027502s)
+[2017.05.02-16.49.40:626][605]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-16.49.40:626][605]LogPlayLevel: PIE: World Init took: (0.000705s)
+[2017.05.02-16.49.40:626][605]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.028568s)
+[2017.05.02-16.49.40:637][605]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-16.49.40:643][605]LogInit: FAudioDevice initialized.
+[2017.05.02-16.49.40:673][605]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-16.49.40:677][605]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-17.49.40
+[2017.05.02-16.49.40:678][605]LogWorld: Bringing up level for play took: 0.003782
+[2017.05.02-16.49.40:680][605]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.49
+[2017.05.02-16.49.40:681][605]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.49.44:136][  7]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.46:036][235]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.46:395][278]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.47:620][425]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.47:711][436]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.47:895][458]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.48:845][572]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.51:011][832]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.51:228][858]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.52:570][ 19]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.53:120][ 85]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.53:120][ 85]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.53:570][139]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.53:986][189]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.49.53:987][189]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.53:987][189]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.49.53:987][189]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.54:578][260]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.49.54:578][260]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.58:712][756]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.49.58:712][756]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.59:037][795]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.49.59:037][795]LogTemp:Warning: Tank died!
+[2017.05.02-16.49.59:304][827]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=20
+[2017.05.02-16.50.03:012][272]LogTemp:Warning: DamageAmount=20.000000, DamageToApply=0
+[2017.05.02-16.50.03:012][272]LogTemp:Warning: Tank died!
+[2017.05.02-16.50.06:896][738]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.50.06:926][738]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-16.50.09:178][985]LogSlate: Took 0.000106 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.02-16.50.09:378][985]LogSavePackage: Save=160.32ms
+[2017.05.02-16.50.09:378][985]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGroundB74C68524CD2E24886C8C084C9D4EF29.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.05.02-16.50.09:380][985]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.05.02-16.50.09:467][985]LogSavePackage: Save=32.99ms
+[2017.05.02-16.50.09:467][985]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData9DEE44544A537D4E54C5FAB5504C8BB6.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset'
+[2017.05.02-16.50.09:468][985]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset
+[2017.05.02-17.10.01:971][339]Recompiling BattleTank...
+[2017.05.02-17.10.01:972][339]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6627 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-17.10.01:973][339]Warning: Starting HotReload took  0.0s.
+[2017.05.02-17.10.07:462][945]CompilerResultsLog: New page: Compilation - 2 May 2017 19:10:07
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-6627.dll
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-6627.lib
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6627.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6627.exp
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6627.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6627.suppressed.exp
+[2017.05.02-17.10.07:463][945]CompilerResultsLog: Info Total build time: 5.25 seconds (Local executor: 2.25 seconds)
+[2017.05.02-17.10.07:463][945]LogMainFrame: MainFrame: Module compiling took 5.497 seconds
+[2017.05.02-17.10.07:521][945]LogClass: EFiringStatus HotReload.
+[2017.05.02-17.10.07:524][945]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0016 seconds. Added 11 classes and 3 folders.
+[2017.05.02-17.10.07:526][945]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-17.10.07:549][945]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-17.10.07:549][945]Display: HotReload took  5.6s.
+[2017.05.02-17.11.01:588][236]LogRenderer: Reallocating scene render targets to support 1140x752 NumSamples 1 (Frame:41771).
+[2017.05.02-17.11.01:641][236]LogRenderer: Reallocating scene render targets to support 1140x764 NumSamples 1 (Frame:41772).
+[2017.05.02-17.11.02:099][236]LogRenderer: Reallocating scene render targets to support 1140x824 NumSamples 1 (Frame:41773).
+[2017.05.02-17.11.02:544][236]LogRenderer: Reallocating scene render targets to support 1140x828 NumSamples 1 (Frame:41779).
+[2017.05.02-17.11.02:812][236]LogRenderer: Reallocating scene render targets to support 1140x832 NumSamples 1 (Frame:41785).
+[2017.05.02-17.11.02:943][236]LogRenderer: Reallocating scene render targets to support 1140x836 NumSamples 1 (Frame:41787).
+[2017.05.02-17.11.03:024][236]LogRenderer: Reallocating scene render targets to support 1140x840 NumSamples 1 (Frame:41788).
+[2017.05.02-17.11.03:166][236]LogRenderer: Reallocating scene render targets to support 1140x844 NumSamples 1 (Frame:41790).
+[2017.05.02-17.11.03:385][236]LogRenderer: Reallocating scene render targets to support 1140x848 NumSamples 1 (Frame:41793).
+[2017.05.02-17.11.03:443][236]LogRenderer: Reallocating scene render targets to support 1144x848 NumSamples 1 (Frame:41794).
+[2017.05.02-17.11.15:932][540]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0018 seconds. Added 112 classes and 0 folders.
+[2017.05.02-17.11.16:415][540]LogSlate: Took 0.000102 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.02-17.11.16:478][540]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.02-17.11.16:563][541]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.02-17.11.50:891][ 65]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.11.52:595][180]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.11.52:667][180]LogSavePackage: Save=47.54ms
+[2017.05.02-17.11.52:667][180]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP4ADE952C4DA750D8BC1EADB3381C897D.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.11.52:673][180]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.12.18:865][609]LogSlate: Took 0.000112 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.02-17.13.26:969][397]LogSavePackage: Save=199.75ms
+[2017.05.02-17.13.26:969][397]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto1E1BFABFB4FCBAF2B24299FB5EDC6A951.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap'
+[2017.05.02-17.13.26:971][397]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap
+[2017.05.02-17.13.26:973][397]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.250
+[2017.05.02-17.13.26:973][397]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.250
+[2017.05.02-17.13.26:974][397]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UI/HealthBar] ([1] browsable assets)...
+[2017.05.02-17.13.26:974][397]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/HealthBar]
+[2017.05.02-17.13.26:981][397]LogSavePackage: Save=6.20ms
+[2017.05.02-17.13.26:981][397]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBar_Auto138CC3E6F4946F98EFD58B480B11FB22F.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/UI/HealthBar_Auto1.uasset'
+[2017.05.02-17.13.26:982][397]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/UI/HealthBar_Auto1.uasset
+[2017.05.02-17.13.26:983][397]LogFileHelpers: Auto-saving content packages took 0.009
+[2017.05.02-17.14.12:542][ 36]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.14.13:049][ 84]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.14.13:060][ 84]LogSavePackage: Save=8.90ms
+[2017.05.02-17.14.13:060][ 84]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBar8A77250D4BDB17AFD54F3A972C85E2B3.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.14.13:064][ 84]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.14.26:947][490]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.14.27:498][527]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.14.27:555][527]LogSavePackage: Save=38.45ms
+[2017.05.02-17.14.27:555][527]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPA0C967D3429AB00B6D372EA9A15D6F0D.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.14.27:558][527]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.18.03:209][241]Recompiling BattleTank...
+[2017.05.02-17.18.03:209][241]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 6177 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-17.18.03:211][241]Warning: Starting HotReload took  0.0s.
+[2017.05.02-17.18.15:841][637]CompilerResultsLog: New page: Compilation - 2 May 2017 19:18:15
+[2017.05.02-17.18.15:841][637]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-17.18.15:841][637]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.05.02-17.18.15:841][637]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 6.2011725 seconds
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info [3/4] Link UE4Editor-BattleTank-6177.dll
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info [4/4] Link UE4Editor-BattleTank-6177.lib
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6177.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6177.exp
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6177.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-6177.suppressed.exp
+[2017.05.02-17.18.15:842][637]CompilerResultsLog: Info Total build time: 12.29 seconds (Local executor: 2.85 seconds)
+[2017.05.02-17.18.15:843][637]LogMainFrame: MainFrame: Module compiling took 12.638 seconds
+[2017.05.02-17.18.15:909][637]LogClass: Could not find existing class Tank in package /Script/BattleTank for HotReload, assuming new class
+[2017.05.02-17.18.15:910][637]LogClass: Function GetHealthPercent is new.
+[2017.05.02-17.18.15:915][637]LogClass: EFiringStatus HotReload.
+[2017.05.02-17.18.15:919][637]LogHotReload: Re-instancing Tank after hot-reload.
+[2017.05.02-17.18.16:394][637]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0019 seconds. Added 11 classes and 3 folders.
+[2017.05.02-17.18.16:396][637]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-17.18.16:611][637]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-17.18.16:611][637]Display: HotReload took 13.4s.
+[2017.05.02-17.20.34:665][998]LogSlate: Took 0.003671 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.05.02-17.21.15:680][904]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.21.16:931][ 33]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.21.16:965][ 33]LogSavePackage: Save=8.22ms
+[2017.05.02-17.21.16:965][ 33]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBarC2E5D366404B43FE3CBA028BF885526F.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.21.16:967][ 33]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.22.46:105][371]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.22.46:701][423]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.22.46:767][423]LogSavePackage: Save=41.82ms
+[2017.05.02-17.22.46:767][423]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP7C12BAF24CC3D40436967882DE98924A.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.22.46:770][423]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.25.06:405][210]LogSavePackage: Save=184.58ms
+[2017.05.02-17.25.06:405][210]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto204F35CEB4C96737D6809F6AD600977D9.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap'
+[2017.05.02-17.25.06:407][210]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto2.umap
+[2017.05.02-17.25.06:408][210]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.278
+[2017.05.02-17.25.06:408][210]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.278
+[2017.05.02-17.25.06:409][210]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Tank/Tank_BP] ([1] browsable assets)...
+[2017.05.02-17.25.06:421][210]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Tank/Tank_BP.Tank_BP]
+[2017.05.02-17.25.06:421][210]OBJ SavePackage: Finished generating thumbnails for package [/Game/Tank/Tank_BP]
+[2017.05.02-17.25.06:474][210]LogSavePackage: Save=32.56ms
+[2017.05.02-17.25.06:474][210]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP_Auto2E1D03E394BADB5235E4937B997D764F5.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto2.uasset'
+[2017.05.02-17.25.06:475][210]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto2.uasset
+[2017.05.02-17.25.06:476][210]LogFileHelpers: Auto-saving content packages took 0.067
+[2017.05.02-17.27.54:126][265]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.27.55:056][308]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.27.55:118][308]LogSavePackage: Save=37.70ms
+[2017.05.02-17.27.55:118][308]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP89ADB3354587B527CBADCA8C404F33E0.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.27.55:127][308]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.28.39:485][628]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.28.42:675][992]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.28.42:707][992]LogSavePackage: Save=8.38ms
+[2017.05.02-17.28.42:707][992]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBar3DA2CB034ECCE95C79955C972CD55C21.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.28.42:709][992]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.29.16:401][571]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.29.17:062][637]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.29.17:091][637]LogSavePackage: Save=8.43ms
+[2017.05.02-17.29.17:091][637]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBarF9B2BA6847748B69C452D2AF0AE2C480.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.29.17:093][637]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.29.55:018][395]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.29.55:644][454]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.29.55:672][454]LogSavePackage: Save=8.76ms
+[2017.05.02-17.29.55:672][454]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBar9D745CD2455CC30F4748798AD2AA6F72.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.29.55:677][454]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.31.48:899][696]BlueprintLog: New page: Collapse to Function
+[2017.05.02-17.32.18:368][182]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.32.18:384][182]LogBlueprint:Error: [Compiler Tank_BP] Error Exec output pin    cannot have more than one connection
+[2017.05.02-17.32.18:826][182]BlueprintEditorCompileResults:Error: Error Exec output pin    cannot have more than one connection
+[2017.05.02-17.32.18:826][182]LogBlueprint:Warning: [Compiler Tank_BP] Warning [3168.28] Compile of Tank_BP failed. 1 Fatal Issue(s) 0 Warning(s) [in 457 ms] (/Game/Tank/Tank_BP.Tank_BP)
+[2017.05.02-17.32.19:437][250]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.32.19:495][250]LogSavePackage: Save=38.74ms
+[2017.05.02-17.32.19:495][250]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPE6EC0D6F47667213DE9FD59AE5908558.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.32.19:497][250]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.34.32:834][139]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.34.32:847][139]LogBlueprint:Error: [Compiler Tank_BP] Error Exec output pin    cannot have more than one connection
+[2017.05.02-17.34.32:971][139]BlueprintEditorCompileResults:Error: Error Exec output pin    cannot have more than one connection
+[2017.05.02-17.34.32:971][139]LogBlueprint:Warning: [Compiler Tank_BP] Warning [3302.42] Compile of Tank_BP failed. 1 Fatal Issue(s) 0 Warning(s) [in 137 ms] (/Game/Tank/Tank_BP.Tank_BP)
+[2017.05.02-17.34.33:650][216]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.34.33:713][216]LogSavePackage: Save=39.38ms
+[2017.05.02-17.34.33:714][216]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPF231190748B60C00468BF4B0CB33FAE0.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.34.33:717][216]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.34.53:125][383]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.34.53:816][452]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.34.53:846][452]LogSavePackage: Save=8.06ms
+[2017.05.02-17.34.53:846][452]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBarD31F71D84FD0843F112EB3BFC9BE71ED.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.34.53:848][452]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.34.54:274][503]BlueprintLog: New page: Compile HealthBar
+[2017.05.02-17.35.48:221][769]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.35.49:012][847]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.35.49:079][847]LogSavePackage: Save=46.88ms
+[2017.05.02-17.35.49:079][847]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP5DD548344B6AC1B002F49A860674A96C.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.35.49:082][847]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.35.54:747][516]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.35.55:254][557]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.35.55:307][557]LogSavePackage: Save=33.65ms
+[2017.05.02-17.35.55:307][557]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPAD94A47B42C4F63B915566A63916D657.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.35.55:308][557]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.35.57:885][856]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.35.57:906][856]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.35.57:906][856]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.35.57:906][856]PIE: New page: PIE session: BattleGround (2 May 2017 19:35:57)
+[2017.05.02-17.35.57:907][856]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.35.57:933][856]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026874s)
+[2017.05.02-17.35.57:934][856]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.35.57:934][856]LogPlayLevel: PIE: World Init took: (0.000655s)
+[2017.05.02-17.35.57:934][856]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.027938s)
+[2017.05.02-17.35.57:952][856]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.35.57:977][856]LogInit: FAudioDevice initialized.
+[2017.05.02-17.35.58:007][856]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.35.58:012][856]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.35.58
+[2017.05.02-17.35.58:015][856]LogWorld: Bringing up level for play took: 0.007034
+[2017.05.02-17.35.58:017][856]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.847
+[2017.05.02-17.35.58:018][856]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.36.01:059][207]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.36.01:093][207]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.36.33:856][171]LogSavePackage: Save=182.00ms
+[2017.05.02-17.36.33:856][171]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto356DBB5334E723D336F8571885324EEE4.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto3.umap'
+[2017.05.02-17.36.33:858][171]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto3.umap
+[2017.05.02-17.36.33:859][171]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.220
+[2017.05.02-17.36.33:859][171]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.220
+[2017.05.02-17.36.33:860][171]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Tank/Tank_BP] ([1] browsable assets)...
+[2017.05.02-17.36.33:860][171]OBJ SavePackage: Finished generating thumbnails for package [/Game/Tank/Tank_BP]
+[2017.05.02-17.36.33:907][171]LogSavePackage: Save=27.84ms
+[2017.05.02-17.36.33:907][171]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP_Auto39D4B46D6402BF8CDB3E74A831405926B.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto3.uasset'
+[2017.05.02-17.36.33:909][171]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Tank/Tank_BP_Auto3.uasset
+[2017.05.02-17.36.33:909][171]LogFileHelpers: Auto-saving content packages took 0.049
+[2017.05.02-17.37.41:946][ 61]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.37.42:051][ 61]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.37.42:736][134]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.37.42:804][134]LogSavePackage: Save=47.54ms
+[2017.05.02-17.37.42:804][134]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP6BBAA27545280B96B73A77A0F2B47ABE.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.37.42:806][134]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.37.43:278][188]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.37.43:379][188]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.39.11:437][739]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.39.11:581][739]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.39.12:297][806]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.39.12:367][806]LogSavePackage: Save=49.84ms
+[2017.05.02-17.39.12:367][806]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP7C6239504C879313CFF8029670936670.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.39.12:370][806]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.39.14:499][ 35]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.39.14:520][ 35]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.39.14:521][ 35]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.39.14:521][ 35]PIE: New page: PIE session: BattleGround (2 May 2017 19:39:14)
+[2017.05.02-17.39.14:521][ 35]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.39.14:545][ 35]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024595s)
+[2017.05.02-17.39.14:546][ 35]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.39.14:546][ 35]LogPlayLevel: PIE: World Init took: (0.000594s)
+[2017.05.02-17.39.14:546][ 35]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.025590s)
+[2017.05.02-17.39.14:564][ 35]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.39.14:569][ 35]LogInit: FAudioDevice initialized.
+[2017.05.02-17.39.14:602][ 35]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.39.14:606][ 35]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.39.14
+[2017.05.02-17.39.14:607][ 35]LogWorld: Bringing up level for play took: 0.004390
+[2017.05.02-17.39.14:609][ 35]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.561
+[2017.05.02-17.39.14:609][ 35]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.39.16:118][201]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.39.16:150][201]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.39.59:987][786]Cmd: TRANSACTION UNDO
+[2017.05.02-17.39.59:987][786]LogEditorTransaction: Undo Edit Space
+[2017.05.02-17.40.06:054][384]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.40.06:174][384]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.40.06:581][418]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.40.06:656][418]LogSavePackage: Save=48.66ms
+[2017.05.02-17.40.06:656][418]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPF7C82E9D46AE52FBB79F789FFB9EE861.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.40.06:659][418]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.40.22:579][639]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/HealthBar" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset" SILENT=true
+[2017.05.02-17.40.22:610][639]LogSavePackage: Save=8.53ms
+[2017.05.02-17.40.22:610][639]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/HealthBarCCDCC84F4EA814368746EE97CF3B76B3.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset'
+[2017.05.02-17.40.22:612][639]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/UI/HealthBar.uasset
+[2017.05.02-17.41.22:065][ 86]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.41.22:181][ 86]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.41.22:835][143]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.41.22:905][143]LogSavePackage: Save=49.94ms
+[2017.05.02-17.41.22:905][143]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPA32540074CE1070641D746B80B649A3E.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.41.22:908][143]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.41.24:846][352]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.41.24:865][352]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.41.24:866][352]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.41.24:866][352]PIE: New page: PIE session: BattleGround (2 May 2017 19:41:24)
+[2017.05.02-17.41.24:866][352]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.41.24:890][352]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024077s)
+[2017.05.02-17.41.24:890][352]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.41.24:891][352]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2017.05.02-17.41.24:891][352]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.025046s)
+[2017.05.02-17.41.24:912][352]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.41.24:917][352]LogInit: FAudioDevice initialized.
+[2017.05.02-17.41.24:948][352]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.41.24:952][352]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.41.24
+[2017.05.02-17.41.24:953][352]LogWorld: Bringing up level for play took: 0.003873
+[2017.05.02-17.41.24:954][352]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.216
+[2017.05.02-17.41.24:955][352]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.41.36:484][688]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.41.36:514][688]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.41.56:315][530]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.41.56:426][530]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.41.56:882][569]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.41.56:941][569]LogSavePackage: Save=39.90ms
+[2017.05.02-17.41.56:941][569]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPA742055A435744D0EB0F93A4ABB9C722.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.41.56:946][569]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.41.59:218][817]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.41.59:234][817]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.41.59:234][817]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.41.59:234][817]PIE: New page: PIE session: BattleGround (2 May 2017 19:41:59)
+[2017.05.02-17.41.59:234][817]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.41.59:258][817]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024070s)
+[2017.05.02-17.41.59:259][817]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.41.59:259][817]LogPlayLevel: PIE: World Init took: (0.000706s)
+[2017.05.02-17.41.59:260][817]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.025291s)
+[2017.05.02-17.41.59:279][817]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.41.59:285][817]LogInit: FAudioDevice initialized.
+[2017.05.02-17.41.59:317][817]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.41.59:321][817]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.41.59
+[2017.05.02-17.41.59:322][817]LogWorld: Bringing up level for play took: 0.004402
+[2017.05.02-17.41.59:324][817]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.154
+[2017.05.02-17.41.59:324][817]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.00:856][990]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.00:887][990]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.11:342][745]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.42.11:445][745]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.42.11:894][785]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.42.11:953][785]LogSavePackage: Save=39.55ms
+[2017.05.02-17.42.11:953][785]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPC8356A884C90C6655054599533ACECB5.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.42.11:956][785]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.42.14:450][ 69]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.42.14:468][ 69]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.14:469][ 69]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.42.14:469][ 69]PIE: New page: PIE session: BattleGround (2 May 2017 19:42:14)
+[2017.05.02-17.42.14:469][ 69]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.42.14:493][ 69]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023918s)
+[2017.05.02-17.42.14:493][ 69]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.42.14:494][ 69]LogPlayLevel: PIE: World Init took: (0.000639s)
+[2017.05.02-17.42.14:494][ 69]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.025073s)
+[2017.05.02-17.42.14:519][ 69]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.42.14:529][ 69]LogInit: FAudioDevice initialized.
+[2017.05.02-17.42.14:558][ 69]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.42.14:562][ 69]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.42.14
+[2017.05.02-17.42.14:563][ 69]LogWorld: Bringing up level for play took: 0.004013
+[2017.05.02-17.42.14:565][ 69]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.605
+[2017.05.02-17.42.14:565][ 69]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.18:786][565]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.18:818][565]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.28:874][618]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-17.42.28:978][618]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-17.42.29:380][653]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-17.42.29:459][653]LogSavePackage: Save=59.82ms
+[2017.05.02-17.42.29:459][653]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BPDDC3AAB045F1D05D7E42E4A3F5ACE62A.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-17.42.29:461][653]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-17.42.31:353][866]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-17.42.31:368][866]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.42.31:368][866]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-17.42.31:369][866]PIE: New page: PIE session: BattleGround (2 May 2017 19:42:31)
+[2017.05.02-17.42.31:369][866]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-17.42.31:392][866]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022855s)
+[2017.05.02-17.42.31:392][866]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-17.42.31:393][866]LogPlayLevel: PIE: World Init took: (0.000543s)
+[2017.05.02-17.42.31:393][866]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.023756s)
+[2017.05.02-17.42.31:408][866]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-17.42.31:413][866]LogInit: FAudioDevice initialized.
+[2017.05.02-17.42.31:444][866]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-17.42.31:448][866]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-18.42.31
+[2017.05.02-17.42.31:449][866]LogWorld: Bringing up level for play took: 0.003869
+[2017.05.02-17.42.31:450][866]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.28
+[2017.05.02-17.42.31:451][866]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.43.57:276][152]LogTemp:Warning: Tank died!
+[2017.05.02-17.44.01:592][670]LogTemp:Warning: Tank died!
+[2017.05.02-17.44.48:986][356]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.44.49:016][356]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-17.46.51:762][692]LogSavePackage: Save=236.96ms
+[2017.05.02-17.46.51:762][692]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround4D2938954E54D30954FB6EB5A5C7656B.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.05.02-17.46.51:765][692]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.05.02-17.46.51:847][692]LogSavePackage: Save=26.73ms
+[2017.05.02-17.46.51:847][692]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData2F61124544AF82FB59D9B79CB2DB4867.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset'
+[2017.05.02-17.46.51:849][692]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset
+[2017.05.02-18.30.14:116][443]Recompiling BattleTank...
+[2017.05.02-18.30.14:117][443]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 7465 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-18.30.14:118][443]Warning: Starting HotReload took  0.0s.
+[2017.05.02-18.30.18:390][932]CompilerResultsLog: New page: Compilation - 2 May 2017 20:30:18
+[2017.05.02-18.30.18:390][932]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-18.30.18:391][932]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-18.30.18:391][932]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-18.30.18:391][932]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\Tank.cpp(35) : error C2039: 'BroadCast': is not a member of 'FTankDelegate'
+[2017.05.02-18.30.18:391][932]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\Tank.h(10) : note: see declaration of 'FTankDelegate'
+[2017.05.02-18.30.18:391][932]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-7465.dll
+[2017.05.02-18.30.18:391][932]CompilerResultsLog: Info Total build time: 4.07 seconds (Local executor: 0.00 seconds)
+[2017.05.02-18.30.18:391][932]LogMainFrame: MainFrame: Module compiling took 4.282 seconds
+[2017.05.02-18.30.18:392][932]Warning: HotReload failed, recompile failed
+[2017.05.02-18.30.41:885][806]Recompiling BattleTank...
+[2017.05.02-18.30.41:886][806]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3265 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-18.30.41:887][806]Warning: Starting HotReload took  0.0s.
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: New page: Compilation - 2 May 2017 20:30:46
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-3265.dll
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-3265.lib
+[2017.05.02-18.30.46:684][363]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3265.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3265.exp
+[2017.05.02-18.30.46:685][363]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3265.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3265.suppressed.exp
+[2017.05.02-18.30.46:685][363]CompilerResultsLog: Info Total build time: 4.56 seconds (Local executor: 1.94 seconds)
+[2017.05.02-18.30.46:685][363]LogMainFrame: MainFrame: Module compiling took 4.804 seconds
+[2017.05.02-18.30.46:928][363]LogClass: Could not find existing class Tank in package /Script/BattleTank for HotReload, assuming new class
+[2017.05.02-18.30.46:928][363]LogClass: Function GetHealthPercent is new.
+[2017.05.02-18.30.46:934][363]LogClass: EFiringStatus HotReload.
+[2017.05.02-18.30.46:939][363]LogHotReload: Re-instancing Tank after hot-reload.
+[2017.05.02-18.30.47:431][363]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0019 seconds. Added 11 classes and 3 folders.
+[2017.05.02-18.30.47:433][363]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2017.05.02-18.30.47:705][363]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-18.30.47:705][363]Display: HotReload took  5.8s.
+[2017.05.02-18.44.53:445][435]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.44.53:445][435]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Connection 50 seems to be dead!)
+[2017.05.02-18.44.53:445][435]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 50)
+[2017.05.02-18.44.53:445][435]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-18.44.53:446][435]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.44.53:446][435]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 4 (Closing connection 51)
+[2017.05.02-18.45.42:778][583]LogHttp:Warning: 000002C42A00A200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.45.42:778][583]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.45.42:778][583]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 1 (Closing connection 52)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: libcurl info message cache 0 (Connection 53 seems to be dead!)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: libcurl info message cache 1 (Closing connection 53)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.49.53:780][336]LogHttp:Warning: 000002C42A00A800: libcurl info message cache 4 (Closing connection 54)
+[2017.05.02-18.51.42:779][663]LogHttp:Warning: 000002C42A009900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.51.42:780][663]LogHttp:Warning: 000002C42A009900: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.51.42:780][663]LogHttp:Warning: 000002C42A009900: libcurl info message cache 1 (Closing connection 55)
+[2017.05.02-18.53.42:779][ 23]LogHttp:Warning: 000002C42A009480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.53.42:780][ 23]LogHttp:Warning: 000002C42A009480: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.53.42:780][ 23]LogHttp:Warning: 000002C42A009480: libcurl info message cache 1 (Closing connection 56)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 0 (Connection 57 seems to be dead!)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 1 (Closing connection 57)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.57.42:781][743]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 4 (Closing connection 58)
+[2017.05.02-18.59.42:781][103]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-18.59.42:781][103]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-18.59.42:781][103]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 59)
+[2017.05.02-19.01.42:781][463]LogHttp:Warning: 000002C42A009780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.01.42:781][463]LogHttp:Warning: 000002C42A009780: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.01.42:781][463]LogHttp:Warning: 000002C42A009780: libcurl info message cache 1 (Closing connection 60)
+[2017.05.02-19.03.53:781][856]LogHttp:Warning: 000002C42A00A980: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.03.53:781][856]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.03.53:781][856]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 1 (Closing connection 61)
+[2017.05.02-19.05.53:781][216]LogHttp:Warning: 000002C42A009780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.05.53:781][216]LogHttp:Warning: 000002C42A009780: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.05.53:781][216]LogHttp:Warning: 000002C42A009780: libcurl info message cache 1 (Closing connection 62)
+[2017.05.02-19.07.42:913][543]LogHttp:Warning: 000002C42A009480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.07.42:913][543]LogHttp:Warning: 000002C42A009480: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.07.42:913][543]LogHttp:Warning: 000002C42A009480: libcurl info message cache 1 (Closing connection 63)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Connection 64 seems to be dead!)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 64)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.11.53:913][296]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 4 (Closing connection 65)
+[2017.05.02-19.19.53:607][735]LogHttp:Warning: 000002C42A009600: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.19.53:608][735]LogHttp:Warning: 000002C42A009600: libcurl info message cache 0 (Connection 68 seems to be dead!)
+[2017.05.02-19.19.53:608][735]LogHttp:Warning: 000002C42A009600: libcurl info message cache 1 (Closing connection 68)
+[2017.05.02-19.19.53:608][735]LogHttp:Warning: 000002C42A009600: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.19.53:608][735]LogHttp:Warning: 000002C42A009600: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.19.53:608][735]LogHttp:Warning: 000002C42A009600: libcurl info message cache 4 (Closing connection 69)
+[2017.05.02-19.21.42:607][ 62]LogHttp:Warning: 000002C42A009480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.21.42:608][ 62]LogHttp:Warning: 000002C42A009480: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.21.42:608][ 62]LogHttp:Warning: 000002C42A009480: libcurl info message cache 1 (Closing connection 70)
+[2017.05.02-19.23.42:607][422]LogHttp:Warning: 000002C42A00A680: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.23.42:608][422]LogHttp:Warning: 000002C42A00A680: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.23.42:608][422]LogHttp:Warning: 000002C42A00A680: libcurl info message cache 1 (Closing connection 71)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: libcurl info message cache 0 (Connection 72 seems to be dead!)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: libcurl info message cache 1 (Closing connection 72)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.27.42:608][142]LogHttp:Warning: 000002C42A009480: libcurl info message cache 4 (Closing connection 73)
+[2017.05.02-19.29.42:608][502]LogHttp:Warning: 000002C42A009C00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.29.42:608][502]LogHttp:Warning: 000002C42A009C00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.29.42:608][502]LogHttp:Warning: 000002C42A009C00: libcurl info message cache 1 (Closing connection 74)
+[2017.05.02-19.35.42:318][581]LogHttp:Warning: 000002C42A009480: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.35.42:319][581]LogHttp:Warning: 000002C42A009480: libcurl info message cache 0 (Connection 76 seems to be dead!)
+[2017.05.02-19.35.42:319][581]LogHttp:Warning: 000002C42A009480: libcurl info message cache 1 (Closing connection 76)
+[2017.05.02-19.35.42:319][581]LogHttp:Warning: 000002C42A009480: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.35.42:319][581]LogHttp:Warning: 000002C42A009480: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.35.42:319][581]LogHttp:Warning: 000002C42A009480: libcurl info message cache 4 (Closing connection 77)
+[2017.05.02-19.36.42:652][762]LogHttp:Warning: 000002C42A00A980: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.36.42:652][762]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.36.42:652][762]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 1 (Closing connection 78)
+[2017.05.02-19.40.53:652][515]LogHttp:Warning: 000002C42A009D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.40.53:652][515]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 0 (Connection 79 seems to be dead!)
+[2017.05.02-19.40.53:652][515]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 1 (Closing connection 79)
+[2017.05.02-19.40.53:652][515]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.40.53:652][515]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.40.53:653][515]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 4 (Closing connection 80)
+[2017.05.02-19.42.42:652][842]LogHttp:Warning: 000002C42A00A500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.42.42:652][842]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.42.42:652][842]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 1 (Closing connection 81)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 0 (Connection 82 seems to be dead!)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 1 (Closing connection 82)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.46.53:320][594]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 4 (Closing connection 83)
+[2017.05.02-19.49.42:653][102]LogHttp:Warning: 000002C42A00A500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.49.42:653][102]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 0 (Connection 84 seems to be dead!)
+[2017.05.02-19.49.42:654][102]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 1 (Closing connection 84)
+[2017.05.02-19.49.42:654][102]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-19.49.42:654][102]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.49.42:654][102]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 4 (Closing connection 85)
+[2017.05.02-19.51.42:653][462]LogHttp:Warning: 000002C42A00A980: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.51.42:653][462]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.51.42:653][462]LogHttp:Warning: 000002C42A00A980: libcurl info message cache 1 (Closing connection 86)
+[2017.05.02-19.53.53:321][854]LogHttp:Warning: 000002C42A00A200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.53.53:321][854]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.53.53:321][854]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 1 (Closing connection 87)
+[2017.05.02-19.54.42:653][  2]LogHttp:Warning: 000002C42A00A500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.54.42:654][  2]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.54.42:654][  2]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 1 (Closing connection 88)
+[2017.05.02-19.56.42:654][362]LogHttp:Warning: 000002C42A009780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.56.42:654][362]LogHttp:Warning: 000002C42A009780: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.56.42:654][362]LogHttp:Warning: 000002C42A009780: libcurl info message cache 1 (Closing connection 89)
+[2017.05.02-19.58.42:654][722]LogHttp:Warning: 000002C42A009A80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-19.58.42:654][722]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-19.58.42:654][722]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 1 (Closing connection 90)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Connection 91 seems to be dead!)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 91)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.02.42:654][442]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 4 (Closing connection 92)
+[2017.05.02-20.04.42:654][802]LogHttp:Warning: 000002C42A009600: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.04.42:655][802]LogHttp:Warning: 000002C42A009600: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.04.42:655][802]LogHttp:Warning: 000002C42A009600: libcurl info message cache 1 (Closing connection 93)
+[2017.05.02-20.11.53:675][ 95]LogHttp:Warning: 000002C42A009900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.11.53:676][ 95]LogHttp:Warning: 000002C42A009900: libcurl info message cache 0 (Connection 95 seems to be dead!)
+[2017.05.02-20.11.53:676][ 95]LogHttp:Warning: 000002C42A009900: libcurl info message cache 1 (Closing connection 95)
+[2017.05.02-20.11.53:676][ 95]LogHttp:Warning: 000002C42A009900: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.11.53:676][ 95]LogHttp:Warning: 000002C42A009900: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.11.53:676][ 95]LogHttp:Warning: 000002C42A009900: libcurl info message cache 4 (Closing connection 96)
+[2017.05.02-20.15.53:675][815]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.15.53:676][815]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Connection 97 seems to be dead!)
+[2017.05.02-20.15.53:676][815]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 97)
+[2017.05.02-20.15.53:676][815]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.15.53:676][815]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.15.53:676][815]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 4 (Closing connection 98)
+[2017.05.02-20.25.53:676][615]LogHttp:Warning: 000002C42A009900: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.25.53:677][615]LogHttp:Warning: 000002C42A009900: libcurl info message cache 0 (Connection 102 seems to be dead!)
+[2017.05.02-20.25.53:677][615]LogHttp:Warning: 000002C42A009900: libcurl info message cache 1 (Closing connection 102)
+[2017.05.02-20.25.53:677][615]LogHttp:Warning: 000002C42A009900: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.25.53:677][615]LogHttp:Warning: 000002C42A009900: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.25.53:677][615]LogHttp:Warning: 000002C42A009900: libcurl info message cache 4 (Closing connection 103)
+[2017.05.02-20.29.53:677][335]LogHttp:Warning: 000002C42A00A200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.29.53:678][335]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 0 (Connection 104 seems to be dead!)
+[2017.05.02-20.29.53:678][335]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 1 (Closing connection 104)
+[2017.05.02-20.29.53:678][335]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.29.53:678][335]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.29.53:678][335]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 4 (Closing connection 105)
+[2017.05.02-20.31.42:677][662]LogHttp:Warning: 000002C42A00A500: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.31.42:677][662]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.31.42:677][662]LogHttp:Warning: 000002C42A00A500: libcurl info message cache 1 (Closing connection 106)
+[2017.05.02-20.33.42:677][ 22]LogHttp:Warning: 000002C42A009D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.33.42:677][ 22]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.33.42:677][ 22]LogHttp:Warning: 000002C42A009D80: libcurl info message cache 1 (Closing connection 107)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: libcurl info message cache 0 (Connection 108 seems to be dead!)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: libcurl info message cache 1 (Closing connection 108)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.39.42:700][102]LogHttp:Warning: 000002C42A009600: libcurl info message cache 4 (Closing connection 109)
+[2017.05.02-20.41.42:700][462]LogHttp:Warning: 000002C42A009C00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.41.42:700][462]LogHttp:Warning: 000002C42A009C00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.41.42:700][462]LogHttp:Warning: 000002C42A009C00: libcurl info message cache 1 (Closing connection 110)
+[2017.05.02-20.43.53:700][855]LogHttp:Warning: 000002C42A00A080: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.43.53:700][855]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.43.53:700][855]LogHttp:Warning: 000002C42A00A080: libcurl info message cache 1 (Closing connection 111)
+[2017.05.02-20.45.53:701][215]LogHttp:Warning: 000002C42A00A200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.45.53:701][215]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.45.53:701][215]LogHttp:Warning: 000002C42A00A200: libcurl info message cache 1 (Closing connection 112)
+[2017.05.02-20.53.42:902][622]LogHttp:Warning: 000002C42A009A80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.53.42:903][622]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 0 (Connection 115 seems to be dead!)
+[2017.05.02-20.53.42:903][622]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 1 (Closing connection 115)
+[2017.05.02-20.53.42:903][622]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.53.42:903][622]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.53.42:903][622]LogHttp:Warning: 000002C42A009A80: libcurl info message cache 4 (Closing connection 116)
+[2017.05.02-20.55.42:903][982]LogHttp:Warning: 000002C42A009780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.55.42:903][982]LogHttp:Warning: 000002C42A009780: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.55.42:903][982]LogHttp:Warning: 000002C42A009780: libcurl info message cache 1 (Closing connection 117)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: libcurl info message cache 0 (Connection 118 seems to be dead!)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: libcurl info message cache 1 (Closing connection 118)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-20.59.53:546][488]LogHttp:Warning: 000002C44B444580: libcurl info message cache 4 (Closing connection 119)
+[2017.05.02-21.00.53:662][668]LogHttp:Warning: 000002C44B447E80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.00.53:662][668]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.00.53:662][668]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 1 (Closing connection 120)
+[2017.05.02-21.09.42:801][255]LogHttp:Warning: 000002C44B447E80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.09.42:801][255]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 0 (Connection 121 seems to be dead!)
+[2017.05.02-21.09.42:801][255]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 1 (Closing connection 121)
+[2017.05.02-21.09.42:801][255]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-21.09.42:801][255]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.09.42:802][255]LogHttp:Warning: 000002C44B447E80: libcurl info message cache 4 (Closing connection 122)
+[2017.05.02-21.19.53:806][ 88]LogHttp:Warning: 000002C44B447580: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.19.53:807][ 88]LogHttp:Warning: 000002C44B447580: libcurl info message cache 0 (Connection 126 seems to be dead!)
+[2017.05.02-21.19.53:807][ 88]LogHttp:Warning: 000002C44B447580: libcurl info message cache 1 (Closing connection 126)
+[2017.05.02-21.19.53:807][ 88]LogHttp:Warning: 000002C44B447580: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-21.19.53:807][ 88]LogHttp:Warning: 000002C44B447580: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.19.53:807][ 88]LogHttp:Warning: 000002C44B447580: libcurl info message cache 4 (Closing connection 127)
+[2017.05.02-21.21.42:806][415]LogHttp:Warning: 000002C44B444A00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.21.42:806][415]LogHttp:Warning: 000002C44B444A00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.21.42:806][415]LogHttp:Warning: 000002C44B444A00: libcurl info message cache 1 (Closing connection 128)
+[2017.05.02-21.23.42:806][775]LogHttp:Warning: 000002C44B444280: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.23.42:806][775]LogHttp:Warning: 000002C44B444280: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.23.42:806][775]LogHttp:Warning: 000002C44B444280: libcurl info message cache 1 (Closing connection 129)
+[2017.05.02-21.24.31:492][920]Recompiling BattleTank...
+[2017.05.02-21.24.31:492][920]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9033 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-21.24.31:493][920]Warning: Starting HotReload took  0.0s.
+[2017.05.02-21.24.43:346][228]CompilerResultsLog: New page: Compilation - 2 May 2017 23:24:43
+[2017.05.02-21.24.43:346][228]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-21.24.43:346][228]CompilerResultsLog: Info Parsing headers for BattleTankEditor
+[2017.05.02-21.24.43:346][228]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2017.05.02-21.24.43:347][228]CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 6.1504226 seconds
+[2017.05.02-21.24.43:347][228]CompilerResultsLog: Info Performing 5 actions (4 in parallel)
+[2017.05.02-21.24.43:347][228]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-21.24.43:347][228]CompilerResultsLog: Info TankAIController.cpp
+[2017.05.02-21.24.43:347][228]CompilerResultsLog: Info BattleTank.generated.cpp
+[2017.05.02-21.24.43:347][228]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : error C2102: '&' requires l-value
+[2017.05.02-21.24.43:348][228]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : error C2664: 'void TBaseDynamicMulticastDelegate<FWeakObjectPtr,void>::__Internal_AddUniqueDynamic<ATankAIController>(UserClass *,void (__cdecl ATankAIController::* )(void),FName)': cannot convert argument 2 from 'void *' to 'void (__cdecl ATankAIController::* )(void)'
+[2017.05.02-21.24.43:348][228]CompilerResultsLog: Info         with
+[2017.05.02-21.24.43:348][228]CompilerResultsLog: Info         [
+[2017.05.02-21.24.43:348][228]CompilerResultsLog: Info             UserClass=ATankAIController
+[2017.05.02-21.24.43:348][228]CompilerResultsLog: Info         ]
+[2017.05.02-21.24.43:348][228]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : note: There is no context in which this conversion is possible
+[2017.05.02-21.24.43:348][228]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9033.dll
+[2017.05.02-21.24.43:349][228]CompilerResultsLog: Info Total build time: 11.55 seconds (Local executor: 0.00 seconds)
+[2017.05.02-21.24.43:349][228]LogMainFrame: MainFrame: Module compiling took 11.862 seconds
+[2017.05.02-21.24.43:349][228]Warning: HotReload failed, recompile failed
+[2017.05.02-21.25.36:621][659]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-21.25.36:683][659]LogSavePackage: Save=36.12ms
+[2017.05.02-21.25.36:684][659]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP87ADD798438311F69A70AFAC879C026F.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-21.25.36:685][659]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-21.25.37:117][706]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-21.25.37:295][706]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-21.26.22:807][867]LogSavePackage: Save=199.51ms
+[2017.05.02-21.26.22:807][867]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto48E57A5AC4E6602EEAD39969909778720.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto4.umap'
+[2017.05.02-21.26.22:808][867]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto4.umap
+[2017.05.02-21.26.22:810][867]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 0.266
+[2017.05.02-21.26.22:810][867]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.266
+[2017.05.02-21.26.31:612][687]Recompiling BattleTank...
+[2017.05.02-21.26.31:613][687]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 4802 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-21.26.31:614][687]Warning: Starting HotReload took  0.0s.
+[2017.05.02-21.26.36:238][219]CompilerResultsLog: New page: Compilation - 2 May 2017 23:26:36
+[2017.05.02-21.26.36:238][219]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-21.26.36:238][219]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-21.26.36:238][219]CompilerResultsLog: Info TankAIController.cpp
+[2017.05.02-21.26.36:238][219]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : error C2102: '&' requires l-value
+[2017.05.02-21.26.36:239][219]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : error C2664: 'void TBaseDynamicMulticastDelegate<FWeakObjectPtr,void>::__Internal_AddUniqueDynamic<ATankAIController>(UserClass *,void (__cdecl ATankAIController::* )(void),FName)': cannot convert argument 2 from 'void *' to 'void (__cdecl ATankAIController::* )(void)'
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info         with
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info         [
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info             UserClass=ATankAIController
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info         ]
+[2017.05.02-21.26.36:239][219]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : note: There is no context in which this conversion is possible
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-4802.dll
+[2017.05.02-21.26.36:239][219]CompilerResultsLog: Info Total build time: 4.41 seconds (Local executor: 0.00 seconds)
+[2017.05.02-21.26.36:239][219]LogMainFrame: MainFrame: Module compiling took 4.631 seconds
+[2017.05.02-21.26.36:240][219]Warning: HotReload failed, recompile failed
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: libcurl info message cache 0 (Connection 130 seems to be dead!)
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: libcurl info message cache 1 (Closing connection 130)
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-21.26.48:270][348]LogHttp:Warning: 000002C41DE5B100: libcurl info message cache 4 (Closing connection 131)
+[2017.05.02-21.27.01:416][597]Recompiling BattleTank...
+[2017.05.02-21.27.01:417][597]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 3721 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-21.27.01:418][597]Warning: Starting HotReload took  0.0s.
+[2017.05.02-21.27.07:967][756]CompilerResultsLog: New page: Compilation - 2 May 2017 23:27:07
+[2017.05.02-21.27.07:967][756]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-21.27.07:967][756]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-21.27.07:967][756]CompilerResultsLog: Info TankAIController.cpp
+[2017.05.02-21.27.07:968][756]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp(68) : error C2100: illegal indirection
+[2017.05.02-21.27.07:968][756]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-3721.dll
+[2017.05.02-21.27.07:968][756]CompilerResultsLog: Info Total build time: 6.05 seconds (Local executor: 0.00 seconds)
+[2017.05.02-21.27.07:968][756]LogMainFrame: MainFrame: Module compiling took 6.556 seconds
+[2017.05.02-21.27.07:968][756]Warning: HotReload failed, recompile failed
+[2017.05.02-21.27.36:076][ 46]Recompiling BattleTank...
+[2017.05.02-21.27.36:076][ 46]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9424 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-21.27.36:077][ 46]Warning: Starting HotReload took  0.0s.
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: New page: Compilation - 2 May 2017 23:27:41
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info TankAIController.cpp
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-9424.dll
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-9424.lib
+[2017.05.02-21.27.41:418][502]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9424.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9424.exp
+[2017.05.02-21.27.41:419][502]CompilerResultsLog: Info    Creating library C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9424.suppressed.lib and object C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-9424.suppressed.exp
+[2017.05.02-21.27.41:419][502]CompilerResultsLog: Info Total build time: 4.91 seconds (Local executor: 2.18 seconds)
+[2017.05.02-21.27.41:419][502]LogMainFrame: MainFrame: Module compiling took 5.347 seconds
+[2017.05.02-21.27.41:473][502]LogClass: Could not find existing class TankAIController in package /Script/BattleTank for HotReload, assuming new class
+[2017.05.02-21.27.41:473][502]LogClass: Function OnPossessedTankDeath is new.
+[2017.05.02-21.27.41:478][502]LogClass: EFiringStatus HotReload.
+[2017.05.02-21.27.41:483][502]LogHotReload: Re-instancing TankAIController after hot-reload.
+[2017.05.02-21.27.41:645][502]LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0016 seconds. Added 11 classes and 3 folders.
+[2017.05.02-21.27.41:647][502]Display: HotReload successful (10 functions remapped  0 scriptstructs remapped)
+[2017.05.02-21.27.41:857][502]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 2258 classes and 460 folders.
+[2017.05.02-21.27.41:857][502]Display: HotReload took  5.8s.
+[2017.05.02-21.27.50:298][351]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.02-21.27.50:314][351]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.05.02-21.27.50:314][351]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.02-21.27.50:315][351]PIE: New page: PIE session: BattleGround (2 May 2017 23:27:50)
+[2017.05.02-21.27.50:315][351]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.05.02-21.27.50:345][351]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030148s)
+[2017.05.02-21.27.50:345][351]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-21.27.50:346][351]LogPlayLevel: PIE: World Init took: (0.000661s)
+[2017.05.02-21.27.50:346][351]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.031192s)
+[2017.05.02-21.27.50:390][351]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-21.27.50:396][351]LogInit: FAudioDevice initialized.
+[2017.05.02-21.27.50:425][351]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.05.02-21.27.50:430][351]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.05.02-22.27.50
+[2017.05.02-21.27.50:578][351]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.148 s
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: === Handled ensure: ===
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: 
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: Ensure condition failed: PossessedTank [File:C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAIController.cpp] [Line: 66]
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: 
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: Stack: 
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000000F295E6
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000000CD9B82
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000000CEB666
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-BattleTank-9424.dll!ATankAIController::SetPawn() [c:\users\ed\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankaicontroller.cpp:66]
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F8B3CD74
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-AIModule.dll!0x00000000F4CA60DF
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F917D6D8
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F9171511
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F8E07DC1
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F96D28EF
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000F8CABF77
+[2017.05.02-21.27.50:579][351]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000F7498AD7
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000F74C52DD
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000F74E1764
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000F6FC626B
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000F77D2086
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor.exe!0x00000000E4E6DEE3
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor.exe!0x00000000E4E5EB40
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor.exe!0x00000000E4E5EBBA
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor.exe!0x00000000E4E70A29
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: UE4Editor.exe!0x00000000E4E722B6
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: KERNEL32.DLL!0x000000003ABD8364
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: ntdll.dll!0x000000003AEF70D1
+[2017.05.02-21.27.50:580][351]LogOutputDevice:Error: 
+[2017.05.02-21.27.50:582][351]LogStats:                SubmitErrorReport -  0.000 s

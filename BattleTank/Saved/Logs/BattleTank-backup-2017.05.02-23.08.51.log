@@ -1,0 +1,442 @@
+﻿Log file open, 05/02/17 23:01:07
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1009340104) SRandInit(1009340104).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.067203
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.02-22.01.08:122][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.02-22.01.08:122][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.02-22.01.08:130][  0]LogInit: Computer: DESKTOP-7RIOMGQ
+[2017.05.02-22.01.08:130][  0]LogInit: User: Ed
+[2017.05.02-22.01.08:130][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.02-22.01.08:130][  0]LogInit: High frequency timer resolution =3.421878 MHz
+[2017.05.02-22.01.08:131][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.05.02-22.01.08:131][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.02-22.01.08:131][  0]LogMemory: Process Physical Memory: 264.35 MB used, 264.35 MB peak
+[2017.05.02-22.01.08:131][  0]LogMemory: Process Virtual Memory: 262.41 MB used, 262.41 MB peak
+[2017.05.02-22.01.08:131][  0]LogMemory: Physical Memory: 7651.42 MB used,  8689.56 MB free, 16340.98 MB total
+[2017.05.02-22.01.08:131][  0]LogMemory: Virtual Memory: 643.96 MB used,  8689.56 MB free, 134217728.00 MB total
+[2017.05.02-22.01.08:190][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.05.02-22.01.08:632][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.02-22.01.08:647][  0]LogD3D11RHI:    0. 'Radeon (TM) RX 480 Graphics' (Feature Level 11_0)
+[2017.05.02-22.01.08:647][  0]LogD3D11RHI:       8140/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.05.02-22.01.08:648][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.02-22.01.08:648][  0]LogD3D11RHI:       0/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.02-22.01.08:648][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.02-22.01.08:653][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.02-22.01.08:653][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2017.05.02-22.01.08:653][  0]LogWindows: EnumDisplayDevices:
+[2017.05.02-22.01.08:653][  0]LogWindows:    0. 'Radeon (TM) RX 480 Graphics' (P:1 D:1)
+[2017.05.02-22.01.08:653][  0]LogWindows:    1. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-22.01.08:653][  0]LogWindows:    2. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-22.01.08:654][  0]LogWindows:    3. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-22.01.08:654][  0]LogWindows:    4. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-22.01.08:654][  0]LogWindows:    5. 'Radeon (TM) RX 480 Graphics' (P:0 D:0)
+[2017.05.02-22.01.08:654][  0]LogWindows: DebugString: FoundDriverCount:6 
+[2017.05.02-22.01.08:654][  0]LogD3D11RHI:     Adapter Name: Radeon (TM) RX 480 Graphics
+[2017.05.02-22.01.08:654][  0]LogD3D11RHI:   Driver Version: Crimson 16.7.2 (internal:16.200.1035.1001, unified:16.200.1035.1001)
+[2017.05.02-22.01.08:654][  0]LogD3D11RHI:      Driver Date: 7-8-2016
+[2017.05.02-22.01.08:654][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.02-22.01.08:701][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.02-22.01.08:710][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2017.05.02-22.01.08:710][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/34120/).
+[2017.05.02-22.01.08:710][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ed/AppData/Local/Temp/UnrealShaderWorkingDir/D5E1AFCF48CCB6CAF49914A7C3963294/'.
+[2017.05.02-22.01.08:710][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.02-22.01.09:477][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.02-22.01.09:517][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.02-22.01.09:557][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.02-22.01.09:598][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.02-22.01.09:637][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.02-22.01.09:677][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.02-22.01.09:717][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.02-22.01.09:756][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.02-22.01.09:788][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.02-22.01.09:827][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.02-22.01.09:866][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.02-22.01.09:905][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.02-22.01.09:949][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.02-22.01.09:993][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.02-22.01.10:037][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.02-22.01.10:121][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.02-22.01.10:121][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.02-22.01.10:153][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.02-22.01.10:234][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.02-22.01.10:267][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.02-22.01.10:307][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.02-22.01.10:349][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.02-22.01.10:397][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.02-22.01.10:437][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.02-22.01.10:437][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.02-22.01.10:746][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.02-22.01.10:783][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.02-22.01.10:797][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.02-22.01.10:808][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ed/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.02-22.01.10:815][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.02-22.01.10:815][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.02-22.01.10:815][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.02-22.01.11:001][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.02-22.01.11:003][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.02-22.01.11:171][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.02-22.01.11:205][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.02-22.01.11:246][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.02-22.01.11:246][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.02-22.01.11:246][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.02-22.01.11:669][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.05.02-22.01.11:707][  0]LogAssetRegistry: FAssetRegistry took 0.0218 seconds to start up
+[2017.05.02-22.01.11:742][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.020144 seconds
+[2017.05.02-22.01.11:746][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.02-22.01.11:746][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.02-22.01.11:746][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.02-22.01.11:789][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.02-22.01.12:942][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.02-22.01.12:975][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.02-22.01.13:343][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.02-22.01.13:614][  0]SourceControl: Info Source control is disabled
+[2017.05.02-22.01.13:634][  0]SourceControl: Info Source control is disabled
+[2017.05.02-22.01.13:667][  0]SourceControl: Info Source control is disabled
+[2017.05.02-22.01.13:699][  0]SourceControl: Info Source control is disabled
+[2017.05.02-22.01.14:591][  0]LogEngine: Initializing Engine...
+[2017.05.02-22.01.14:591][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.02-22.01.14:763][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.02-22.01.14:772][  0]LogInit: XAudio2 using '1 - Acer XR341CK (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.02-22.01.14:785][  0]LogInit: FAudioDevice initialized.
+[2017.05.02-22.01.14:803][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Ed/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.02-22.01.14:806][  0]LogInit: Texture streaming: Enabled
+[2017.05.02-22.01.14:872][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.02-22.01.14:936][  0]LogInit: Transaction tracking system initialized
+[2017.05.02-22.01.15:207][  0]BlueprintLog: New page: Editor Load
+[2017.05.02-22.01.15:918][  0]LocalizationService: Info Localization service is disabled
+[2017.05.02-22.01.16:417][  0]LogConsoleResponse:Display: 
+[2017.05.02-22.01.16:513][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.02-22.01.16:513][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.02-22.01.17:229][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.01s
+[2017.05.02-22.01.17:229][  0]SourceControl: Info Source control is disabled
+[2017.05.02-22.01.17:286][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-22.01.17:307][  0]LogSlate: Took 0.000147 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.02-22.01.20:536][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-22.01.20:537][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-22.01.22:007][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-22.01.22:008][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.02-22.01.22:016][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.02-22.01.22:016][  0]LightingResults: New page: Lighting Build
+[2017.05.02-22.01.22:049][  0]MapCheck: New page: Map Check
+[2017.05.02-22.01.22:049][  0]LightingResults: New page: Lighting Build
+[2017.05.02-22.01.22:449][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.05.02-22.01.22:492][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.02-22.01.22:494][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.02-22.01.22:531][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 32.527ms to complete.
+[2017.05.02-22.01.22:531][  0]LogFileHelpers: Loading map 'BattleGround' took 0.515
+[2017.05.02-22.01.22:629][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_8bd0_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_7f18_0///####STATCAT_Advanced####
+[2017.05.02-22.01.22:629][  0]LogCollectionManager: Loaded 1 collections in 0.001110 seconds
+[2017.05.02-22.01.22:695][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.05.02-22.01.22:695][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Ed/Collections/' took 0.01s
+[2017.05.02-22.01.22:695][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.05.02-22.01.22:695][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000002 seconds
+[2017.05.02-22.01.22:695][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.05.02-22.01.22:704][  0]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2256 classes and 456 folders.
+[2017.05.02-22.01.22:706][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.02-22.01.22:706][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.02-22.01.22:750][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2017.05.02-22.01.22:776][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2017.05.02-22.01.22:810][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2017.05.02-22.01.22:846][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.02-22.01.22:849][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.02-22.01.22:903][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2017.05.02-22.01.22:903][  0]LogLoad: (Engine Initialization) Total time: 16.27 seconds
+[2017.05.02-22.01.22:903][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.10 seconds
+[2017.05.02-22.01.22:903][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.05.02-22.01.22:912][  0]LogOcInput: OculusInput pre-init called
+[2017.05.02-22.01.22:925][  0]LogAssetRegistry: Asset discovery search completed in 11.2397 seconds
+[2017.05.02-22.01.22:925][  0]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000003 seconds (found 0 objects)
+[2017.05.02-22.01.22:925][  0]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000016 seconds (updated 0 objects)
+[2017.05.02-22.01.22:929][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.02-22.01.22:936][  0]LogSlate: Took 0.000154 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.02-22.01.22:940][  0]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.02-22.01.23:074][  1]LogRenderer: Reallocating scene render targets to support 1140x736 NumSamples 1 (Frame:2).
+[2017.05.02-22.01.23:074][  1]LogHttp:Warning: 000001ED86D79D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-22.01.23:074][  1]LogHttp:Warning: 000001ED86D79D80: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.02-22.01.23:074][  1]LogHttp:Warning: 000001ED86D79D80: libcurl info message cache 1 (Closing connection 0)
+[2017.05.02-22.01.23:097][  1]LogActor:Warning: Tank_BP_C /Engine/Transient.World_1:PersistentLevel.Tank_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.01.23:265][  2]LogHttp:Warning: 000001ED89D11D80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-22.01.23:265][  2]LogHttp:Warning: 000001ED89D11D80: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.02-22.01.23:265][  2]LogHttp:Warning: 000001ED89D11D80: libcurl info message cache 1 (Closing connection 1)
+[2017.05.02-22.01.23:319][  3]LogHttp:Warning: 000001ED8AAED180: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-22.01.23:319][  3]LogHttp:Warning: 000001ED8AAED180: libcurl info message cache 0 (Could not resolve host: cdn.unrealengine.com)
+[2017.05.02-22.01.23:319][  3]LogHttp:Warning: 000001ED8AAED180: libcurl info message cache 1 (Closing connection 2)
+[2017.05.02-22.01.34:828][292]Recompiling BattleTank...
+[2017.05.02-22.01.34:828][292]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 9330 Win64 Development -editorrecompile -canskiplink "C:/Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/BattleTank.uproject" ]
+[2017.05.02-22.01.34:829][292]Warning: Starting HotReload took  0.0s.
+[2017.05.02-22.01.39:200][702]CompilerResultsLog: New page: Compilation - 3 May 2017 00:01:39
+[2017.05.02-22.01.39:201][702]CompilerResultsLog: Info Compiling game modules for hot reload
+[2017.05.02-22.01.39:201][702]CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+[2017.05.02-22.01.39:201][702]CompilerResultsLog: Info Tank.cpp
+[2017.05.02-22.01.39:201][702]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\Tank.cpp(30) : error C2065: 'CurrentHealth': undeclared identifier
+[2017.05.02-22.01.39:201][702]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\Tank.cpp(32) : error C2065: 'SeriouslyDamagedEffect': undeclared identifier
+[2017.05.02-22.01.39:201][702]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\Tank.cpp(32) : error C2227: left of '->Activate' must point to class/struct/union/generic type
+[2017.05.02-22.01.39:201][702]CompilerResultsLog:Error: Error C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\Tank.cpp(32) : note: type is 'unknown-type'
+[2017.05.02-22.01.39:201][702]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Ed\Documents\Unreal Projects\04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9330.dll
+[2017.05.02-22.01.39:201][702]CompilerResultsLog: Info Total build time: 4.17 seconds (Local executor: 0.00 seconds)
+[2017.05.02-22.01.39:201][702]LogMainFrame: MainFrame: Module compiling took 4.377 seconds
+[2017.05.02-22.01.39:201][702]Warning: HotReload failed, recompile failed
+[2017.05.02-22.02.23:330][484]LogHttp:Warning: 000001EDAA4B6B00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2017.05.02-22.02.23:330][484]LogHttp:Warning: 000001EDAA4B6B00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2017.05.02-22.02.23:330][484]LogHttp:Warning: 000001EDAA4B6B00: libcurl info message cache 1 (Closing connection 3)
+[2017.05.02-22.03.14:194][906]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.02-22.03.14:531][906]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0018 seconds. Added 112 classes and 0 folders.
+[2017.05.02-22.03.14:983][906]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.02-22.03.15:044][906]LogActor:Warning: Tank_BP_C /Engine/Transient.World_2:PersistentLevel.Tank_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.15:048][906]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.02-22.03.15:110][907]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.02-22.03.28:605][427]LogSlate: Took 0.000121 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.02-22.03.38:990][607]BlueprintLog: New page: Compile Tank_BP
+[2017.05.02-22.03.39:008][607]LogActor:Warning: Tank_BP_C /Game/Levels/BattleGround.BattleGround:PersistentLevel.Tank_BP2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:009][607]LogActor:Warning: Tank_BP_C /Game/Levels/BattleGround.BattleGround:PersistentLevel.Tank_BP3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:010][607]LogActor:Warning: Tank_BP_C /Game/Levels/BattleGround.BattleGround:PersistentLevel.Tank_BP4_1033 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:010][607]LogActor:Warning: Tank_BP_C /Game/Levels/BattleGround.BattleGround:PersistentLevel.Tank_BP_540 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:011][607]LogActor:Warning: Tank_BP_C /Engine/Transient.World_1:PersistentLevel.Tank_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:012][607]LogActor:Warning: Tank_BP_C /Engine/Transient.World_2:PersistentLevel.Tank_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:485][607]LogActor:Warning: Tank_BP_C /Engine/Transient.World_1:PersistentLevel.Tank_BP_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2017.05.02-22.03.39:489][607]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  Cast Failed
+[2017.05.02-22.03.40:212][683]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Tank_BP" FILE="../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset" SILENT=true
+[2017.05.02-22.03.40:278][683]LogSavePackage: Save=43.92ms
+[2017.05.02-22.03.40:278][683]LogSavePackage: Moving '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Tank_BP87AA41DA4396775AC694CEA8CD3C5B16.tmp' to '../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset'
+[2017.05.02-22.03.40:282][683]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Ed/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Tank_BP.uasset
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: WidgetMapToItem length (13) does not match ItemsWithGeneratedWidgets length (15). This is often because the same item is in the list more than once in SSCSTreeType [SSCSEditor.cpp(3328)]. Diagnostics follow.
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: ItemToWidgetMap :
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbe8c0 -> 0xb62f4b90 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbe980 -> 0xb9af0110 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbc700 -> 0xb5cf6090 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbee00 -> 0x02d39610 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbf040 -> 0xb0edf590 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbe740 -> 0xba2ecb90 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbd3c0 -> 0x876f6090 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbdd80 -> 0xb5f19610 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbd000 -> 0x035fd610 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbca00 -> 0xba356090 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbc280 -> 0x0336a090 @ SSCS_RowWidget [SSCSEditor.cpp(3632)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb9e707c0 -> 0x03369610 @ SSCS_RowWidget_Separator [SSCSEditor.cpp(3629)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x82bbc7c0 -> 0xb6049610 @ SSCS_RowWidget_ActorRoot [SSCSEditor.cpp(3625)]
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: WidgetMapToItem:
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb62f4b80 -> 0x82bbe8c0
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb9af0100 -> 0x82bbe980
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb5cf6080 -> 0x82bbc700
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x02d39600 -> 0x82bbee00
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb0edf580 -> 0x82bbf040
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xba2ecb80 -> 0x82bbe740
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x876f6080 -> 0x82bbd3c0
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb5f19600 -> 0x82bbdd80
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x035fd600 -> 0x82bbd000
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xba356080 -> 0x82bbca00
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x0336a080 -> 0x82bbc280
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0x03369600 -> 0xb9e707c0
+[2017.05.02-22.04.05:609][609]LogSlate:Warning: 0xb6049600 -> 0x82bbc7c0
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: 
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: ItemsWithGeneratedWidgets:
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [0] 0x82bbc7c0
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [1] 0xb9e707c0
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [2] 0x82bbc280
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [3] 0x82bbca00
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [4] 0x82bbd000
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [5] 0x82bbdd80
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [6] 0x82bbd3c0
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [7] 0x82bbe740
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [8] 0x82bbf040
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [9] 0x82bbee00
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [10] 0x82bbc700
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [11] 0x82bbe980
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [12] 0x82bbe740
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [13] 0x82bbf040
+[2017.05.02-22.04.05:610][609]LogSlate:Warning: [14] 0x82bbe8c0
+[2017.05.02-22.04.05:610][609]LogSCSEditor: ---------------------
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  STreeView NODE DUMP
+[2017.05.02-22.04.05:610][609]LogSCSEditor: ---------------------
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  [BLUEPRINT] Tank_BP (self)
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  [SEPARATOR]
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  SeriouslyDamagedEffect (Inherited)
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  +- Tank
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- Azimuth Gimbal
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |  +- SpringArm
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |     |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |     +- Camera
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |     
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- TankTurret
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |  +- TankBarrel
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |  
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- TankTrack (Left)
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- TankTrack (Right)
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- Widget
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  +- TankTurret
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  +- TankBarrel
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |  
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  TankMovement
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  |
+[2017.05.02-22.04.05:610][609]LogSCSEditor:  TankAiming
+[2017.05.02-22.04.05:610][609]LogSCSEditor: --------(end)--------
+[2017.05.02-22.04.05:615][609]LogWindows: Windows GetLastError: The operation completed successfully. (0)
+[2017.05.02-22.04.05:845][609]LogCrashTracker: 
+
+
+[2017.05.02-22.04.05:845][609]LogCrashTracker: 
+
+
+[2017.05.02-22.04.05:845][609]LogWindows:Error: === Critical error: ===
+[2017.05.02-22.04.05:845][609]LogWindows:Error: 
+[2017.05.02-22.04.05:845][609]LogWindows:Error: Assertion failed: false [File:D:\Build\++UE4+Release-4.15+Compile\Sync\Engine\Source\Runtime\Slate\Public\Widgets/Views/SListView.h] [Line: 612] 
+[2017.05.02-22.04.05:845][609]LogWindows:Error: SSCSTreeType [SSCSEditor.cpp(3328)] detected a critical error. See diagnostic dump above. Provide a custom 'OnItemToString_Debug' for more detailed diagnostics.
+[2017.05.02-22.04.05:845][609]LogWindows:Error: 
+[2017.05.02-22.04.05:845][609]LogWindows:Error: 
+[2017.05.02-22.04.05:845][609]LogWindows:Error: KERNELBASE.dll!0x0000000037DF3C58
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Core.dll!0x0000000000F264EE
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Core.dll!0x0000000000D4CEEE
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Core.dll!0x0000000000CD2729
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Kismet.dll!0x00000000F528DE4A
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Kismet.dll!0x00000000F5259023
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Kismet.dll!0x00000000F5275673
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Slate.dll!0x000000000037B7E0
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Kismet.dll!0x00000000F5284A1C
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C02
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000002CCECC
+[2017.05.02-22.04.05:845][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000002CCECC
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187ABE
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000003491BD
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000003491BD
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187ABE
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000002CCECC
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187ABE
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000003491BD
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187ABE
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8189060
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187C08
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187ABE
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F818778E
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8187CAA
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-SlateCore.dll!0x00000000F8188C55
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000001130FD
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x000000000011411C
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x000000000014CF94
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000001141C0
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x0000000000172674
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor-Slate.dll!0x00000000001715C0
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor.exe!0x00000000E4E6EA1D
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor.exe!0x00000000E4E5EB40
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor.exe!0x00000000E4E5EBBA
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor.exe!0x00000000E4E70A29
+[2017.05.02-22.04.05:846][609]LogWindows:Error: UE4Editor.exe!0x00000000E4E722B6
+[2017.05.02-22.04.05:846][609]LogWindows:Error: KERNEL32.DLL!0x000000003ABD8364
+[2017.05.02-22.04.05:846][609]LogWindows:Error: ntdll.dll!0x000000003AEF70D1
+[2017.05.02-22.04.05:846][609]LogWindows:Error: ntdll.dll!0x000000003AEF70D1
+[2017.05.02-22.04.05:846][609]LogWindows:Error: 
+[2017.05.02-22.04.05:863][609]LogExit: Executing StaticShutdownAfterError
+[2017.05.02-22.04.05:865][609]LogWindows: FPlatformMisc::RequestExit(1)
+[2017.05.02-22.04.05:865][609]Log file closed, 05/02/17 23:04:05

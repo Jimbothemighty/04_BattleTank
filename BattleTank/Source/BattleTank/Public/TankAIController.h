@@ -8,6 +8,7 @@
 // Forward Declarations
 class UTankMovementComponent;
 class UTankAimingComponent;
+class ATank;
 
 UCLASS()
 class BATTLETANK_API ATankAIController : public AAIController
@@ -15,15 +16,23 @@ class BATTLETANK_API ATankAIController : public AAIController
 	GENERATED_BODY()
 
 public:
-	virtual void BeginPlay() override; // beginplay inherited from AActor. overridable since originally declared virtual in AActor
-
-	virtual void Tick(float DeltaTime) override;
-
 	UTankMovementComponent* TankMovementComponent;
 	UTankAimingComponent* TankAimingComponent;
+
+//	ATank* Tank;
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	float AcceptanceRadius = 8000.0f; // TODO check radius in metres
+
+private:
+	virtual void BeginPlay() override; // beginplay inherited from AActor. overridable since originally declared virtual in AActor
+
+	virtual void Tick(float DeltaTime) override;
+
+	virtual void SetPawn(APawn* InPawn) override;
+
+	UFUNCTION()
+		void OnPossessedTankDeath();
 
 };

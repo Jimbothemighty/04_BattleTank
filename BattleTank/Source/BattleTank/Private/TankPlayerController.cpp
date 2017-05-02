@@ -38,7 +38,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	
 	bool bGotHitLocation = GetSightRayHitLocation(HitLocation);
 
-	UE_LOG(LogTemp, Error, TEXT("got hit?: %i"), bGotHitLocation);
+//	UE_LOG(LogTemp, Error, TEXT("got hit?: %i"), bGotHitLocation);
 
 	if (bGotHitLocation) // Has "side-effect", is going to line trace
 	{

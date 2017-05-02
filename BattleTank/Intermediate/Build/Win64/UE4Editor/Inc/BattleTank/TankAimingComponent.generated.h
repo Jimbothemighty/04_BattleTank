@@ -120,6 +120,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTankAimingComponent); \
 #define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__FiringStatus() { return STRUCT_OFFSET(UTankAimingComponent, FiringStatus); } \
 	FORCEINLINE static uint32 __PPO__AmmoLevel() { return STRUCT_OFFSET(UTankAimingComponent, AmmoLevel); } \
+	FORCEINLINE static uint32 __PPO__RegenDelay() { return STRUCT_OFFSET(UTankAimingComponent, RegenDelay); } \
 	FORCEINLINE static uint32 __PPO__ReloadTimeInSeconds() { return STRUCT_OFFSET(UTankAimingComponent, ReloadTimeInSeconds); } \
 	FORCEINLINE static uint32 __PPO__LaunchSpeed() { return STRUCT_OFFSET(UTankAimingComponent, LaunchSpeed); } \
 	FORCEINLINE static uint32 __PPO__ProjectileBlueprint() { return STRUCT_OFFSET(UTankAimingComponent, ProjectileBlueprint); }

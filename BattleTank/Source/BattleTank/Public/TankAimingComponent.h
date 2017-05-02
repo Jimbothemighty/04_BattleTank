@@ -63,6 +63,11 @@ private:
 	UTankTurret* Turret = nullptr;	//Turrret
 
 	double LastFireTime = 0;
+
+	double LastAmmoRegenerationTime = 0;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+		double RegenDelay = 5;
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		float ReloadTimeInSeconds = 3.0f;  // TODO find sensible default
