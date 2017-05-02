@@ -1,15 +1,14 @@
 ﻿  Compiling game modules for hot reload
-  Parsing headers for BattleTankEditor
-    Running UnrealHeaderTool "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BattleTankEditor in 18.1181152 seconds
-  Performing 5 actions (4 in parallel)
-  BattleTank.generated.cpp
-  TankMovementComponent.cpp
-  TankTrack.cpp
-  [4/5] Link UE4Editor-BattleTank-8334.dll
-  [5/5] Link UE4Editor-BattleTank-3025.lib
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.exp
-     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-8334.suppressed.exp
-ERROR : UBT error : Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-3025.lib
-  Total build time: 25.15 seconds (Local executor: 0.00 seconds)
+  Performing 3 actions (4 in parallel)
+  TankAimingComponent.cpp
+C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAimingComponent.cpp(95): warning C4458: declaration of 'AimDirection' hides class member
+  C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\TankAimingComponent.h(25): note: see declaration of 'UTankAimingComponent::AimDirection'
+C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAimingComponent.cpp(106): warning C4458: declaration of 'AimDirection' hides class member
+  C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Public\TankAimingComponent.h(25): note: see declaration of 'UTankAimingComponent::AimDirection'
+  [2/3] Link UE4Editor-BattleTank-7744.dll
+  [3/3] Link UE4Editor-BattleTank-1901.lib
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7744.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7744.exp
+     Creating library C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7744.suppressed.lib and object C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-7744.suppressed.exp
+ERROR : UBT error : Failed to produce item: C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1901.lib
+  Total build time: 8.27 seconds (Local executor: 0.00 seconds)
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.15\Engine\Build\BatchFiles\Build.bat" BattleTankEditor Win64 Development "C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\BattleTank.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

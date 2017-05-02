@@ -15,6 +15,14 @@ class UTankTurret;
 
 #define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_22_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAmmoCounter) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->AmmoCounter(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execFire) \
 	{ \
 		P_FINISH; \
@@ -35,6 +43,14 @@ class UTankTurret;
 
 
 #define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execAmmoCounter) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(int32*)Z_Param__Result=this->AmmoCounter(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execFire) \
 	{ \
@@ -103,6 +119,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTankAimingComponent); \
 
 #define BattleTank_Source_BattleTank_Public_TankAimingComponent_h_22_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__FiringStatus() { return STRUCT_OFFSET(UTankAimingComponent, FiringStatus); } \
+	FORCEINLINE static uint32 __PPO__AmmoLevel() { return STRUCT_OFFSET(UTankAimingComponent, AmmoLevel); } \
 	FORCEINLINE static uint32 __PPO__ReloadTimeInSeconds() { return STRUCT_OFFSET(UTankAimingComponent, ReloadTimeInSeconds); } \
 	FORCEINLINE static uint32 __PPO__LaunchSpeed() { return STRUCT_OFFSET(UTankAimingComponent, LaunchSpeed); } \
 	FORCEINLINE static uint32 __PPO__ProjectileBlueprint() { return STRUCT_OFFSET(UTankAimingComponent, ProjectileBlueprint); }
@@ -138,5 +155,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define FOREACH_ENUM_EFIRINGSTATUS(op) \
 	op(EFiringStatus::Locked) \
 	op(EFiringStatus::Aiming) \
-	op(EFiringStatus::Reloading) 
+	op(EFiringStatus::Reloading) \
+	op(EFiringStatus::OutOfAmmo) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

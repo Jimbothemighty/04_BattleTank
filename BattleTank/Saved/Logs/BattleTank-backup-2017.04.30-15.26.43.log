@@ -1,0 +1,1289 @@
+﻿Log file open, 04/30/17 15:01:29
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-234034738) SRandInit(-234034738).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.140679
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.30-14.01.31:339][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.30-14.01.31:339][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.30-14.01.31:373][  0]LogInit: Computer: DESKTOP-0PEK566
+[2017.04.30-14.01.31:373][  0]LogInit: User: Sarah
+[2017.04.30-14.01.31:373][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.30-14.01.31:373][  0]LogInit: High frequency timer resolution =2.143576 MHz
+[2017.04.30-14.01.31:374][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.04.30-14.01.31:374][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.30-14.01.31:374][  0]LogMemory: Process Physical Memory: 264.52 MB used, 264.52 MB peak
+[2017.04.30-14.01.31:374][  0]LogMemory: Process Virtual Memory: 262.62 MB used, 262.62 MB peak
+[2017.04.30-14.01.31:374][  0]LogMemory: Physical Memory: 3539.94 MB used,  4544.33 MB free, 8084.27 MB total
+[2017.04.30-14.01.31:374][  0]LogMemory: Virtual Memory: 644.18 MB used,  4544.33 MB free, 134217728.00 MB total
+[2017.04.30-14.01.31:616][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.30-14.01.33:383][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.30-14.01.33:473][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7600M Series' (Feature Level 11_0)
+[2017.04.30-14.01.33:473][  0]LogD3D11RHI:       1004/0/3840 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.30-14.01.33:481][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2017.04.30-14.01.33:481][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.04.30-14.01.33:485][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.30-14.01.33:485][  0]LogD3D11RHI:       0/0/4042 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.30-14.01.33:485][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.30-14.01.33:520][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.30-14.01.33:520][  0]LogD3D11RHI:     GPU DeviceId: 0x6840 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.30-14.01.33:520][  0]LogWindows: EnumDisplayDevices:
+[2017.04.30-14.01.33:520][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2017.04.30-14.01.33:521][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.30-14.01.33:521][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.30-14.01.33:522][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.04.30-14.01.33:522][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7600M Series
+[2017.04.30-14.01.33:522][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.04.30-14.01.33:522][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.04.30-14.01.33:522][  0]LogRHI: Texture pool is 702 MB (70% of 1004 MB)
+[2017.04.30-14.01.33:598][  0]LogD3D11RHI: AMD Pre GCN architecture detected, some driver workarounds will be in place
+[2017.04.30-14.01.33:696][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.30-14.01.33:719][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.04.30-14.01.33:721][  0]LogShaderCompilers: Guid format shader working directory is -36 characters bigger than the processId version (../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/154848/).
+[2017.04.30-14.01.33:722][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sarah/AppData/Local/Temp/UnrealShaderWorkingDir/2CB7ABEB48446CC3D05DFB945EBCF999/'.
+[2017.04.30-14.01.33:722][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.30-14.01.36:968][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.30-14.01.37:153][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.30-14.01.37:339][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.30-14.01.37:524][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.30-14.01.37:709][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.30-14.01.37:893][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.30-14.01.38:078][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.30-14.01.38:263][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.30-14.01.38:414][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.30-14.01.38:595][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.30-14.01.38:775][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.30-14.01.38:956][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.30-14.01.39:136][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.30-14.01.39:318][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.30-14.01.39:498][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.30-14.01.39:851][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.30-14.01.39:851][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.30-14.01.39:969][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.30-14.01.40:224][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.30-14.01.40:338][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.30-14.01.40:522][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.30-14.01.40:705][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.30-14.01.40:889][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.30-14.01.41:075][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.30-14.01.41:076][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.30-14.01.42:610][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.30-14.01.42:727][  0]LogDerivedDataCache: Loaded boot cache 0.12s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.30-14.01.42:727][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.30-14.01.42:727][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.30-14.01.42:727][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.30-14.01.42:728][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.30-14.01.42:728][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.30-14.01.42:781][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.30-14.01.42:794][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sarah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.30-14.01.42:818][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.30-14.01.42:820][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.30-14.01.42:820][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.30-14.01.45:699][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.30-14.01.45:707][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.30-14.01.46:357][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.30-14.01.46:503][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.30-14.01.46:664][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.30-14.01.46:664][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.30-14.01.46:664][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.30-14.01.48:337][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.30-14.01.48:440][  0]LogAssetRegistry: FAssetRegistry took 0.0230 seconds to start up
+[2017.04.30-14.01.48:590][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.076304 seconds
+[2017.04.30-14.01.48:605][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.04.30-14.01.48:605][  0]LogUObjectAllocator: 7073368 out of 0 bytes used by permanent object pool.
+[2017.04.30-14.01.48:605][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.30-14.01.48:824][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.30-14.01.53:934][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.30-14.01.54:047][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.30-14.01.55:637][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.30-14.01.56:897][  0]SourceControl: Info Source control is disabled
+[2017.04.30-14.01.56:981][  0]SourceControl: Info Source control is disabled
+[2017.04.30-14.01.57:193][  0]SourceControl: Info Source control is disabled
+[2017.04.30-14.01.57:361][  0]SourceControl: Info Source control is disabled
+[2017.04.30-14.02.01:614][  0]LogEngine: Initializing Engine...
+[2017.04.30-14.02.01:616][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.30-14.02.02:345][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.30-14.02.02:360][  0]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-14.02.02:413][  0]LogInit: FAudioDevice initialized.
+[2017.04.30-14.02.02:466][  0]LogDerivedDataCache: Saved boot cache 0.05s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.30-14.02.02:485][  0]LogInit: Texture streaming: Enabled
+[2017.04.30-14.02.02:806][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.30-14.02.03:127][  0]LogInit: Transaction tracking system initialized
+[2017.04.30-14.02.04:285][  0]BlueprintLog: New page: Editor Load
+[2017.04.30-14.02.07:330][  0]LocalizationService: Info Localization service is disabled
+[2017.04.30-14.02.10:740][  0]LogConsoleResponse:Display: 
+[2017.04.30-14.02.11:292][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.30-14.02.11:293][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.30-14.02.12:226][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.03s
+[2017.04.30-14.02.15:441][  0]SourceControl: Info Source control is disabled
+[2017.04.30-14.02.15:441][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.30-14.02.15:442][  0]LightingResults: New page: Lighting Build
+[2017.04.30-14.02.15:584][  0]MapCheck: New page: Map Check
+[2017.04.30-14.02.15:584][  0]LightingResults: New page: Lighting Build
+[2017.04.30-14.02.17:321][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-14.02.17:406][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.30-14.02.17:412][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.30-14.02.17:560][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 147.886ms to complete.
+[2017.04.30-14.02.17:560][  0]LogFileHelpers: Loading map 'BattleGround' took 2.120
+[2017.04.30-14.02.18:017][  0]LogCollectionManager: Loaded 1 collections in 0.012298 seconds
+[2017.04.30-14.02.18:206][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.30-14.02.18:206][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' took 0.01s
+[2017.04.30-14.02.18:206][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.30-14.02.18:206][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000009 seconds
+[2017.04.30-14.02.18:206][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2017.04.30-14.02.18:241][  0]LogContentBrowser: Native class hierarchy populated in 0.0337 seconds. Added 2255 classes and 453 folders.
+[2017.04.30-14.02.18:250][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.30-14.02.18:250][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.30-14.02.18:472][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0088 seconds. Added 0 classes and 0 folders.
+[2017.04.30-14.02.18:602][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0088 seconds. Added 0 classes and 0 folders.
+[2017.04.30-14.02.18:758][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0090 seconds. Added 1 classes and 2 folders.
+[2017.04.30-14.02.18:912][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.30-14.02.18:928][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.30-14.02.19:115][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0088 seconds. Added 1 classes and 2 folders.
+[2017.04.30-14.02.19:115][  0]LogLoad: (Engine Initialization) Total time: 54.04 seconds
+[2017.04.30-14.02.19:115][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.48 seconds
+[2017.04.30-14.02.19:115][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.30-14.02.19:456][  0]LogOcInput: OculusInput pre-init called
+[2017.04.30-14.02.19:487][  0]LogContentStreaming: Texture pool size now 600 MB
+[2017.04.30-14.02.19:490][  0]LogSlate: Took 0.000470 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.30-14.02.19:500][  0]LogSlate: Took 0.000556 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.30-14.02.19:517][  0]LogSlate: Took 0.000538 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.30-14.02.19:824][  0]LogSlate: Took 0.000484 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-14.02.20:010][  0]LogRenderer: Reallocating scene render targets to support 736x368 NumSamples 1 (Frame:2).
+[2017.04.30-14.02.21:626][  4]LogAssetRegistry: Asset discovery search completed in 33.2088 seconds
+[2017.04.30-14.02.21:626][  4]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000017 seconds (found 0 objects)
+[2017.04.30-14.02.21:626][  4]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000074 seconds (updated 0 objects)
+[2017.04.30-14.02.32:419][ 90]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.02.32:478][ 90]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.02.32:505][ 90]LogTexture:Display: Building textures: Texture2D_2 (G8)
+[2017.04.30-14.02.55:522][ 28]LogSlate: Took 0.000501 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-14.03.53:484][973]LogRenderer: Reallocating scene render targets to support 736x372 NumSamples 1 (Frame:4579).
+[2017.04.30-14.03.53:544][974]LogRenderer: Reallocating scene render targets to support 736x388 NumSamples 1 (Frame:4581).
+[2017.04.30-14.03.53:613][975]LogRenderer: Reallocating scene render targets to support 736x396 NumSamples 1 (Frame:4583).
+[2017.04.30-14.03.53:679][976]LogRenderer: Reallocating scene render targets to support 736x400 NumSamples 1 (Frame:4585).
+[2017.04.30-14.03.53:737][977]LogRenderer: Reallocating scene render targets to support 736x412 NumSamples 1 (Frame:4587).
+[2017.04.30-14.03.53:792][978]LogRenderer: Reallocating scene render targets to support 736x416 NumSamples 1 (Frame:4589).
+[2017.04.30-14.04.01:100][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:104][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:107][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:111][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:113][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:116][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:119][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:122][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:125][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:128][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:131][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:134][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:137][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:140][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:143][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:145][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:148][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:151][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:180][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:183][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:185][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:189][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:191][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:193][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:195][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:197][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:199][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:202][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:205][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:208][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:211][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:214][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:218][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:219][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:223][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:225][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:227][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:229][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:232][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:235][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:237][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:239][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:243][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.01:245][357]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:871][814]Cmd: TRANSACTION UNDO
+[2017.04.30-14.04.12:872][814]LogEditorTransaction: Undo Clearing Landscape Layer
+[2017.04.30-14.04.12:935][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:939][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:941][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:953][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:966][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:980][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:981][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.12:992][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:010][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:023][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:038][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:041][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:043][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:058][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:075][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:094][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:096][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:099][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:117][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:151][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:169][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:171][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:174][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:176][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:198][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:201][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:222][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:224][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:227][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:268][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:270][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:273][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:274][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:276][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:278][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:280][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:282][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:284][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:287][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:311][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:340][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:368][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:371][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:397][814]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.04.13:527][814]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.04.13:576][814]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.04.53:693][397]LogSlate: Took 0.000399 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-14.05.17:723][489]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.17:729][489]LogTemp:Display: Added material ShaderMap 0x00000285A8E45600 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.17:797][489]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285A8E45600
+[2017.04.30-14.05.18:265][489]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.18:268][489]LogTemp:Display: Added material ShaderMap 0x00000285B98FC800 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.18:318][489]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285B98FC800
+[2017.04.30-14.05.18:319][489]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.18:352][489]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.30-14.05.18:355][489]LogTemp:Display: Added material ShaderMap 0x00000285B9822E80 with Material 0x00000285B98CCA00 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.18:365][489]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x00000285B9822E80
+[2017.04.30-14.05.18:371][489]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.04.30-14.05.18:374][489]LogTemp:Display: Added material ShaderMap 0x00000285B9821980 with Material 0x00000285A901D000 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.18:386][489]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_1, GameThreadShaderMap 0x00000285B9821980
+[2017.04.30-14.05.18:432][489]LogSlate: Took 0.015639 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.30-14.05.19:925][509]LogTemp:Display: Finished compile of shader map 0x00000285A8E45600
+[2017.04.30-14.05.19:925][509]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285A8E45600, marking material Landscape_material_BP as finished
+[2017.04.30-14.05.19:926][509]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.05.21:106][535]LogSlate: Took 0.015692 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.30-14.05.22:492][570]LogTemp:Display: Finished compile of shader map 0x00000285B98FC800
+[2017.04.30-14.05.22:492][570]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285B98FC800, marking material Landscape_material_BP as finished
+[2017.04.30-14.05.22:493][570]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.05.22:529][571]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.05.22:530][571]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.05.22:530][571]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.05.22:530][571]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.05.22:588][573]LogTemp:Display: Finished compile of shader map 0x00000285B9822E80
+[2017.04.30-14.05.22:588][573]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x00000285B9822E80, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.30-14.05.22:588][573]LogTemp:Display: Marking material as finished 0x00000285B98CCA00
+[2017.04.30-14.05.22:834][582]LogTemp:Display: Finished compile of shader map 0x00000285B9821980
+[2017.04.30-14.05.22:834][582]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_1 complete, GameThreadShaderMap 0x00000285B9821980, marking material FMatExpressionPreview MaterialExpressionVectorParameter_1 as finished
+[2017.04.30-14.05.22:834][582]LogTemp:Display: Marking material as finished 0x00000285A901D000
+[2017.04.30-14.05.42:843][302]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.42:846][302]LogTemp:Display: Added material ShaderMap 0x00000285BC164F00 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.42:876][302]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BC164F00
+[2017.04.30-14.05.42:877][302]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.42:896][302]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.42:898][302]LogTemp:Display: Added material ShaderMap 0x000002859618AB00 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.42:930][302]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x000002859618AB00
+[2017.04.30-14.05.42:930][302]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.42:963][302]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.30-14.05.42:965][302]LogTemp:Display: Added material ShaderMap 0x00000285BA04F580 with Material 0x000002859E755C00 to ShaderMapsBeingCompiled
+[2017.04.30-14.05.42:975][302]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x00000285BA04F580
+[2017.04.30-14.05.42:982][302]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.42:983][302]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Landscape_material_BP for platform PCD3D_SM5, Default Material will be used in game.
+[2017.04.30-14.05.42:983][302]LogMaterial:Warning: 	(Node LandscapeLayerBlend) Cannot mix MaterialAttributes and non MaterialAttributes nodes
+[2017.04.30-14.05.42:984][302]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.42:989][302]MaterialEditorStats:Error: Error [SM5] (Node LandscapeLayerBlend) Cannot mix MaterialAttributes and non MaterialAttributes nodes
+[2017.04.30-14.05.44:164][326]LogTemp:Display: Finished compile of shader map 0x00000285BC164F00
+[2017.04.30-14.05.44:165][326]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BC164F00, marking material Landscape_material_BP as finished
+[2017.04.30-14.05.44:165][326]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.05.44:610][339]LogTemp:Display: Finished compile of shader map 0x00000285BA04F580
+[2017.04.30-14.05.44:610][339]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x00000285BA04F580, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.30-14.05.44:610][339]LogTemp:Display: Marking material as finished 0x000002859E755C00
+[2017.04.30-14.05.53:298][657]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.53:299][657]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Landscape_material_BP for platform PCD3D_SM5, Default Material will be used in game.
+[2017.04.30-14.05.53:299][657]LogMaterial:Warning: 	(Node LandscapeLayerBlend) Cannot mix MaterialAttributes and non MaterialAttributes nodes
+[2017.04.30-14.05.53:299][657]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.53:306][657]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.53:307][657]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Landscape_material_BP for platform PCD3D_SM5, Default Material will be used in game.
+[2017.04.30-14.05.53:307][657]LogMaterial:Warning: 	(Node LandscapeLayerBlend) Cannot mix MaterialAttributes and non MaterialAttributes nodes
+[2017.04.30-14.05.53:308][657]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.05.56:998][780]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.05.57:000][780]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Landscape_material_BP for platform PCD3D_SM5, Default Material will be used in game.
+[2017.04.30-14.05.57:000][780]LogMaterial:Warning: 	(Node LandscapeLayerBlend) Cannot mix MaterialAttributes and non MaterialAttributes nodes
+[2017.04.30-14.05.57:000][780]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.06.06:686][119]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.06.06:688][119]LogTemp:Display: Added material ShaderMap 0x00000285AD44BC80 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.06.06:718][119]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285AD44BC80
+[2017.04.30-14.06.06:718][119]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.06.09:145][172]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.06.09:147][172]LogTemp:Display: Added material ShaderMap 0x00000285BCB89280 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.06.09:195][172]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BCB89280
+[2017.04.30-14.06.09:195][172]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.06.09:229][172]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2017.04.30-14.06.09:232][172]LogTemp:Display: Added material ShaderMap 0x00000285BD932E80 with Material 0x00000285BCB6D000 to ShaderMapsBeingCompiled
+[2017.04.30-14.06.09:242][172]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_0, GameThreadShaderMap 0x00000285BD932E80
+[2017.04.30-14.06.09:853][187]LogTemp:Display: Finished compile of shader map 0x00000285AD44BC80
+[2017.04.30-14.06.09:853][187]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285AD44BC80, marking material Landscape_material_BP as finished
+[2017.04.30-14.06.09:853][187]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.06.11:510][235]LogTemp:Display: Finished compile of shader map 0x00000285BCB89280
+[2017.04.30-14.06.11:510][235]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BCB89280, marking material Landscape_material_BP as finished
+[2017.04.30-14.06.11:510][235]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.06.11:547][236]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.06.11:547][236]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.06.11:547][236]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.06.11:547][236]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.06.11:655][240]LogTemp:Display: Finished compile of shader map 0x00000285BD932E80
+[2017.04.30-14.06.11:655][240]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_0 complete, GameThreadShaderMap 0x00000285BD932E80, marking material FMatExpressionPreview MaterialExpressionVectorParameter_0 as finished
+[2017.04.30-14.06.11:655][240]LogTemp:Display: Marking material as finished 0x00000285BCB6D000
+[2017.04.30-14.06.25:241][741]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_1, compiling. 
+[2017.04.30-14.06.25:243][741]LogTemp:Display: Added material ShaderMap 0x00000285B97C5980 with Material 0x00000285BD94F100 to ShaderMapsBeingCompiled
+[2017.04.30-14.06.25:249][741]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionVectorParameter_1, GameThreadShaderMap 0x00000285B97C5980
+[2017.04.30-14.06.25:780][754]LogTemp:Display: Finished compile of shader map 0x00000285B97C5980
+[2017.04.30-14.06.25:780][754]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionVectorParameter_1 complete, GameThreadShaderMap 0x00000285B97C5980, marking material FMatExpressionPreview MaterialExpressionVectorParameter_1 as finished
+[2017.04.30-14.06.25:780][754]LogTemp:Display: Marking material as finished 0x00000285BD94F100
+[2017.04.30-14.08.04:158][699]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.08.04:160][699]LogTemp:Display: Added material ShaderMap 0x00000285BCB8B900 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.08.04:192][699]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BCB8B900
+[2017.04.30-14.08.04:192][699]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.08.04:195][699]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.04.30-14.08.04:199][699]LogTemp:Display: Added material ShaderMap 0x00000285BCD46080 with Material 0x00000285B98CF100 to ShaderMapsBeingCompiled
+[2017.04.30-14.08.04:208][699]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, GameThreadShaderMap 0x00000285BCD46080
+[2017.04.30-14.08.07:882][772]LogTemp:Display: Finished compile of shader map 0x00000285BCB8B900
+[2017.04.30-14.08.07:882][772]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BCB8B900, marking material Landscape_material_BP as finished
+[2017.04.30-14.08.07:882][772]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.08.07:913][773]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.08.07:913][773]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.08.07:913][773]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.08.07:913][773]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.08.08:074][778]LogTemp:Display: Finished compile of shader map 0x00000285BCD46080
+[2017.04.30-14.08.08:074][778]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 complete, GameThreadShaderMap 0x00000285BCD46080, marking material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 as finished
+[2017.04.30-14.08.08:074][778]LogTemp:Display: Marking material as finished 0x00000285B98CF100
+[2017.04.30-14.10.40:093][895]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.10.40:095][895]LogTemp:Display: Added material ShaderMap 0x00000285BF35E080 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.10.40:125][895]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BF35E080
+[2017.04.30-14.10.40:126][895]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.10.40:129][895]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.30-14.10.40:138][895]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.10.40:140][895]LogTemp:Display: Added material ShaderMap 0x00000285B9F8F900 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.10.40:171][895]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285B9F8F900
+[2017.04.30-14.10.40:172][895]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.10.40:234][895]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.04.30-14.10.40:237][895]LogTemp:Display: Added material ShaderMap 0x00000285B97C4F00 with Material 0x00000285A8E29600 to ShaderMapsBeingCompiled
+[2017.04.30-14.10.40:245][895]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, GameThreadShaderMap 0x00000285B97C4F00
+[2017.04.30-14.10.40:249][895]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.30-14.10.41:488][917]LogTemp:Display: Finished compile of shader map 0x00000285BF35E080
+[2017.04.30-14.10.41:488][917]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BF35E080, marking material Landscape_material_BP as finished
+[2017.04.30-14.10.41:488][917]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.10.43:838][976]LogTemp:Display: Finished compile of shader map 0x00000285B9F8F900
+[2017.04.30-14.10.43:838][976]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285B9F8F900, marking material Landscape_material_BP as finished
+[2017.04.30-14.10.43:838][976]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.10.43:870][977]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.10.43:870][977]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.10.43:870][977]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.10.43:870][977]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.10.43:985][981]LogTemp:Display: Finished compile of shader map 0x00000285B97C4F00
+[2017.04.30-14.10.43:985][981]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 complete, GameThreadShaderMap 0x00000285B97C4F00, marking material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 as finished
+[2017.04.30-14.10.43:985][981]LogTemp:Display: Marking material as finished 0x00000285A8E29600
+[2017.04.30-14.10.50:687][208]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.10.50:689][208]LogTemp:Display: Added material ShaderMap 0x00000285BF91CB80 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.10.50:720][208]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BF91CB80
+[2017.04.30-14.10.50:721][208]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.10.50:752][208]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.30-14.10.50:755][208]LogTemp:Display: Added material ShaderMap 0x00000285BF835600 with Material 0x00000285BFA19C00 to ShaderMapsBeingCompiled
+[2017.04.30-14.10.50:762][208]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x00000285BF835600
+[2017.04.30-14.10.53:304][270]LogTemp:Display: Finished compile of shader map 0x00000285BF91CB80
+[2017.04.30-14.10.53:304][270]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BF91CB80, marking material Landscape_material_BP as finished
+[2017.04.30-14.10.53:304][270]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.10.53:369][271]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.10.53:369][271]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.10.53:369][271]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.10.53:369][271]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.10.53:474][274]LogTemp:Display: Finished compile of shader map 0x00000285BF835600
+[2017.04.30-14.10.53:474][274]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_0 complete, GameThreadShaderMap 0x00000285BF835600, marking material FMatExpressionPreview MaterialExpressionTextureSample_0 as finished
+[2017.04.30-14.10.53:474][274]LogTemp:Display: Marking material as finished 0x00000285BFA19C00
+[2017.04.30-14.11.33:807][996]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.11.33:809][996]LogTemp:Display: Added material ShaderMap 0x00000285BF35CF00 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.11.33:839][996]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BF35CF00
+[2017.04.30-14.11.33:840][996]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.11.33:882][996]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.11.33:884][996]LogTemp:Display: Added material ShaderMap 0x00000285B9F8F900 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.11.33:918][996]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285B9F8F900
+[2017.04.30-14.11.33:918][996]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.11.33:952][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.30-14.11.33:955][996]LogTemp:Display: Added material ShaderMap 0x00000285BD930100 with Material 0x00000285BC5A7100 to ShaderMapsBeingCompiled
+[2017.04.30-14.11.33:965][996]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x00000285BD930100
+[2017.04.30-14.11.35:160][ 20]LogTemp:Display: Finished compile of shader map 0x00000285BF35CF00
+[2017.04.30-14.11.35:161][ 20]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BF35CF00, marking material Landscape_material_BP as finished
+[2017.04.30-14.11.35:161][ 20]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.11.36:263][ 45]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.11.36:267][ 45]LogTemp:Display: Added material ShaderMap 0x00000285BF35E780 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.11.36:310][ 45]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BF35E780
+[2017.04.30-14.11.36:311][ 45]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.11.36:960][ 55]LogTemp:Display: Finished compile of shader map 0x00000285B9F8F900
+[2017.04.30-14.11.36:960][ 55]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285B9F8F900, marking material Landscape_material_BP as finished
+[2017.04.30-14.11.36:960][ 55]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.11.37:323][ 64]LogTemp:Display: Finished compile of shader map 0x00000285BD930100
+[2017.04.30-14.11.37:323][ 64]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_0 complete, GameThreadShaderMap 0x00000285BD930100, marking material FMatExpressionPreview MaterialExpressionTextureSample_0 as finished
+[2017.04.30-14.11.37:323][ 64]LogTemp:Display: Marking material as finished 0x00000285BC5A7100
+[2017.04.30-14.11.39:179][111]LogTemp:Display: Finished compile of shader map 0x00000285BF35E780
+[2017.04.30-14.11.39:179][111]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BF35E780, marking material Landscape_material_BP as finished
+[2017.04.30-14.11.39:179][111]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.11.44:947][318]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.11.44:947][318]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.11.44:947][318]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.11.44:947][318]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.12.11:144][684]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.12.11:146][684]LogTemp:Display: Added material ShaderMap 0x00000285B245E780 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.12.11:176][684]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285B245E780
+[2017.04.30-14.12.11:177][684]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.12.14:411][756]LogTemp:Display: Finished compile of shader map 0x00000285B245E780
+[2017.04.30-14.12.14:411][756]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285B245E780, marking material Landscape_material_BP as finished
+[2017.04.30-14.12.14:411][756]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.12.14:897][773]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.12.14:897][773]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.12.14:897][773]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.12.14:897][773]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.12.21:688][ 12]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.12.21:691][ 12]LogTemp:Display: Added material ShaderMap 0x00000285BF35DD00 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.12.21:728][ 12]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BF35DD00
+[2017.04.30-14.12.21:729][ 12]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.12.21:762][ 12]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.04.30-14.12.21:764][ 12]LogTemp:Display: Added material ShaderMap 0x00000285BFF6E400 with Material 0x00000285A8E74D00 to ShaderMapsBeingCompiled
+[2017.04.30-14.12.21:771][ 12]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_0, GameThreadShaderMap 0x00000285BFF6E400
+[2017.04.30-14.12.24:328][ 75]LogTemp:Display: Finished compile of shader map 0x00000285BF35DD00
+[2017.04.30-14.12.24:328][ 75]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BF35DD00, marking material Landscape_material_BP as finished
+[2017.04.30-14.12.24:328][ 75]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.12.24:529][ 81]LogTemp:Display: Finished compile of shader map 0x00000285BFF6E400
+[2017.04.30-14.12.24:529][ 81]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_0 complete, GameThreadShaderMap 0x00000285BFF6E400, marking material FMatExpressionPreview MaterialExpressionTextureSample_0 as finished
+[2017.04.30-14.12.24:529][ 81]LogTemp:Display: Marking material as finished 0x00000285A8E74D00
+[2017.04.30-14.12.31:141][334]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.12.31:142][334]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.12.31:142][334]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.12.31:142][334]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.12.57:956][448]LogSavePackage: Save=853.27ms
+[2017.04.30-14.12.57:956][448]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_Auto1A553CC334A1482C91290EDA907D523DD.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap'
+[2017.04.30-14.12.57:961][448]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Autosaves/Game/Levels/BattleGround_Auto1.umap
+[2017.04.30-14.12.57:966][448]LogSlate: Took 0.000417 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.30-14.12.57:969][448]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/BattleGround' took 1.112
+[2017.04.30-14.12.57:969][448]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.112
+[2017.04.30-14.13.02:081][586]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.02:084][586]LogTemp:Display: Added material ShaderMap 0x00000285B989E400 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.02:113][586]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285B989E400
+[2017.04.30-14.13.02:114][586]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.05:341][666]LogTemp:Display: Finished compile of shader map 0x00000285B989E400
+[2017.04.30-14.13.05:341][666]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285B989E400, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.05:341][666]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.05:372][667]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.13.05:373][667]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.13.05:373][667]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.13.05:373][667]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.13.11:306][869]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.11:308][869]LogTemp:Display: Added material ShaderMap 0x00000285BCBA9980 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.11:339][869]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BCBA9980
+[2017.04.30-14.13.11:339][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.11:342][869]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.30-14.13.11:350][869]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.11:352][869]LogTemp:Display: Added material ShaderMap 0x00000285BEF71280 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.11:386][869]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BEF71280
+[2017.04.30-14.13.11:387][869]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.11:450][869]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.04.30-14.13.11:453][869]LogTemp:Display: Added material ShaderMap 0x00000285BCD47900 with Material 0x00000285BD94F400 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.11:462][869]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, GameThreadShaderMap 0x00000285BCD47900
+[2017.04.30-14.13.11:466][869]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.30-14.13.11:927][874]LogTemp:Display: Finished compile of shader map 0x00000285BCBA9980
+[2017.04.30-14.13.11:927][874]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BCBA9980, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.11:928][874]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.14:439][930]LogTemp:Display: Finished compile of shader map 0x00000285BEF71280
+[2017.04.30-14.13.14:439][930]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BEF71280, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.14:439][930]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.14:605][934]LogTemp:Display: Finished compile of shader map 0x00000285BCD47900
+[2017.04.30-14.13.14:605][934]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 complete, GameThreadShaderMap 0x00000285BCD47900, marking material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0 as finished
+[2017.04.30-14.13.14:605][934]LogTemp:Display: Marking material as finished 0x00000285BD94F400
+[2017.04.30-14.13.17:827][ 44]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.17:830][ 44]LogTemp:Display: Added material ShaderMap 0x00000285BFF6CF00 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.17:860][ 44]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BFF6CF00
+[2017.04.30-14.13.17:861][ 44]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.17:892][ 44]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.30-14.13.17:894][ 44]LogTemp:Display: Added material ShaderMap 0x00000285C0D4DD00 with Material 0x00000285C0D17A00 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.17:902][ 44]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_1, GameThreadShaderMap 0x00000285C0D4DD00
+[2017.04.30-14.13.20:440][105]LogTemp:Display: Finished compile of shader map 0x00000285BFF6CF00
+[2017.04.30-14.13.20:440][105]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BFF6CF00, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.20:440][105]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.20:640][111]LogTemp:Display: Finished compile of shader map 0x00000285C0D4DD00
+[2017.04.30-14.13.20:640][111]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_1 complete, GameThreadShaderMap 0x00000285C0D4DD00, marking material FMatExpressionPreview MaterialExpressionTextureSample_1 as finished
+[2017.04.30-14.13.20:640][111]LogTemp:Display: Marking material as finished 0x00000285C0D17A00
+[2017.04.30-14.13.20:747][115]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.13.20:748][115]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.13.20:748][115]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.13.20:748][115]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.13.22:643][180]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.22:646][180]LogTemp:Display: Added material ShaderMap 0x00000285BCD44800 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.22:676][180]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BCD44800
+[2017.04.30-14.13.22:676][180]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.22:711][180]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.04.30-14.13.22:713][180]LogTemp:Display: Added material ShaderMap 0x00000285906D4F00 with Material 0x00000285BFF04D00 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.22:720][180]LogTemp:Display: Kicking off shader compilation for FMatExpressionPreview MaterialExpressionTextureSample_1, GameThreadShaderMap 0x00000285906D4F00
+[2017.04.30-14.13.25:233][244]LogTemp:Display: Finished compile of shader map 0x00000285BCD44800
+[2017.04.30-14.13.25:233][244]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BCD44800, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.25:233][244]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.25:276][245]MaterialEditorStats: Info Base pass shader with static lighting: 110 instructions
+[2017.04.30-14.13.25:277][245]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 84 instructions
+[2017.04.30-14.13.25:277][245]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.04.30-14.13.25:277][245]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.04.30-14.13.25:419][249]LogTemp:Display: Finished compile of shader map 0x00000285906D4F00
+[2017.04.30-14.13.25:420][249]LogTemp:Display: Shader map FMatExpressionPreview MaterialExpressionTextureSample_1 complete, GameThreadShaderMap 0x00000285906D4F00, marking material FMatExpressionPreview MaterialExpressionTextureSample_1 as finished
+[2017.04.30-14.13.25:420][249]LogTemp:Display: Marking material as finished 0x00000285BFF04D00
+[2017.04.30-14.13.33:576][547]LogMaterialEditor: Saving and Compiling material Landscape_material_BP
+[2017.04.30-14.13.35:348][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:350][547]LogTemp:Display: Added material ShaderMap 0x00000285BFC24B80 with Material 0x00000285A8E2D800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:411][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285BFC24B80
+[2017.04.30-14.13.35:412][547]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2017.04.30-14.13.35:459][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:462][547]LogTemp:Display: Added material ShaderMap 0x00000285C0D4E400 with Material 0x000002859063E080 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:576][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C0D4E400
+[2017.04.30-14.13.35:592][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:595][547]LogTemp:Display: Added material ShaderMap 0x00000285C0144100 with Material 0x000002859063E080 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:676][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C0144100
+[2017.04.30-14.13.35:691][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:695][547]LogTemp:Display: Added material ShaderMap 0x00000285C0C1D980 with Material 0x000002859E6D1F00 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:718][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C0C1D980
+[2017.04.30-14.13.35:724][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:728][547]LogTemp:Display: Added material ShaderMap 0x00000285908A0480 with Material 0x000002859E6D3880 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:751][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285908A0480
+[2017.04.30-14.13.35:778][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:782][547]LogTemp:Display: Added material ShaderMap 0x00000285C096F580 with Material 0x0000028595202E00 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.35:966][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C096F580
+[2017.04.30-14.13.35:975][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.35:979][547]LogTemp:Display: Added material ShaderMap 0x00000285C1189980 with Material 0x0000028590B4C580 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.36:134][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C1189980
+[2017.04.30-14.13.36:147][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.36:150][547]LogTemp:Display: Added material ShaderMap 0x00000285C19B4B80 with Material 0x0000028590C41F00 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.36:307][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C19B4B80
+[2017.04.30-14.13.36:314][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.36:318][547]LogTemp:Display: Added material ShaderMap 0x00000285C215FC80 with Material 0x0000028590C43280 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.36:457][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C215FC80
+[2017.04.30-14.13.36:464][547]LogMaterial: 0.78 seconds spent updating 1 materials, 1 interfaces, 0 instances, 6 with static permutations.
+[2017.04.30-14.13.36:543][547]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy Landscape_material_BP, compiling. 
+[2017.04.30-14.13.36:546][547]LogTemp:Display: Added material ShaderMap 0x00000285C29BAE80 with Material 0x00000285C29C6800 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.37:783][547]LogTemp:Display: Finished compile of shader map 0x00000285C29BAE80
+[2017.04.30-14.13.37:783][547]LogTemp:Display: Shader map FDebugViewModeMaterialProxy Landscape_material_BP complete, GameThreadShaderMap 0x00000285C29BAE80, marking material FDebugViewModeMaterialProxy Landscape_material_BP as finished
+[2017.04.30-14.13.37:783][547]LogTemp:Display: Marking material as finished 0x00000285C29C6800
+[2017.04.30-14.13.37:821][547]TextureStreamingBuild:Display: Compiling optional shaders took 1.304 seconds.
+[2017.04.30-14.13.43:911][547]LogTemp:Display: Finished compile of shader map 0x00000285C0144100
+[2017.04.30-14.13.43:911][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C0144100, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.43:911][547]LogTemp:Display: Marking material as finished 0x000002859063E080
+[2017.04.30-14.13.43:923][547]LogMaterial: Missing cached shader map for material Landscape_material_BP, compiling. 
+[2017.04.30-14.13.43:926][547]LogTemp:Display: Added material ShaderMap 0x00000285C28D6400 with Material 0x000002858B8D9780 to ShaderMapsBeingCompiled
+[2017.04.30-14.13.43:942][547]LogTemp:Display: Kicking off shader compilation for Landscape_material_BP, GameThreadShaderMap 0x00000285C28D6400
+[2017.04.30-14.13.43:948][547]LogTemp:Display: Added shader map 0x00000285908A0480 from material 0x000002858B8D9780
+[2017.04.30-14.13.43:949][547]LogTemp:Display: Found existing compiling shader for material Landscape_material_BP, linking to other GameThreadShaderMap 0x00000285908A0480
+[2017.04.30-14.13.43:953][547]LogTemp:Display: Added shader map 0x00000285908A0480 from material 0x000002858B8D9780
+[2017.04.30-14.13.43:953][547]LogTemp:Display: Found existing compiling shader for material Landscape_material_BP, linking to other GameThreadShaderMap 0x00000285908A0480
+[2017.04.30-14.13.43:959][547]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.13.43:983][547]LogTemp:Display: Added shader map 0x00000285C28D6400 from material 0x000002858B8DBA00
+[2017.04.30-14.13.43:983][547]LogTemp:Display: Found existing compiling shader for material Landscape_material_BP, linking to other GameThreadShaderMap 0x00000285C28D6400
+[2017.04.30-14.13.43:988][547]LogTemp:Display: Added shader map 0x00000285C0C1D980 from material 0x000002858B8DBA00
+[2017.04.30-14.13.43:988][547]LogTemp:Display: Found existing compiling shader for material Landscape_material_BP, linking to other GameThreadShaderMap 0x00000285C0C1D980
+[2017.04.30-14.13.43:991][547]LogTemp:Display: Added shader map 0x00000285C0C1D980 from material 0x000002858B8DBA00
+[2017.04.30-14.13.43:991][547]LogTemp:Display: Found existing compiling shader for material Landscape_material_BP, linking to other GameThreadShaderMap 0x00000285C0C1D980
+[2017.04.30-14.13.43:996][547]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2017.04.30-14.13.44:062][547]LogTemp:Display: Finished compile of shader map 0x00000285908A0480
+[2017.04.30-14.13.44:062][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285908A0480, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.44:062][547]LogTemp:Display: Marking material as finished 0x000002859E6D3880
+[2017.04.30-14.13.44:066][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285908A0480, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.44:066][547]LogTemp:Display: Marking material as finished 0x000002858B8D9780
+[2017.04.30-14.13.44:073][547]LogTemp:Display: Finished compile of shader map 0x00000285BFC24B80
+[2017.04.30-14.13.44:073][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285BFC24B80, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.44:073][547]LogTemp:Display: Marking material as finished 0x00000285A8E2D800
+[2017.04.30-14.13.44:084][547]LogTemp:Display: Finished compile of shader map 0x00000285C0C1D980
+[2017.04.30-14.13.44:084][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C0C1D980, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.44:084][547]LogTemp:Display: Marking material as finished 0x000002859E6D1F00
+[2017.04.30-14.13.44:087][547]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C0C1D980, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.44:087][547]LogTemp:Display: Marking material as finished 0x000002858B8DBA00
+[2017.04.30-14.13.44:168][547]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Landscape_material_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset" SILENT=true
+[2017.04.30-14.13.44:337][547]LogSavePackage: Save=53.01ms
+[2017.04.30-14.13.44:337][547]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Landscape_material_BP2CD4A1034B7EA05D5B0DF89178735378.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset'
+[2017.04.30-14.13.44:346][547]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Landscape_material_BP.uasset
+[2017.04.30-14.13.50:326][794]LogTemp:Display: Finished compile of shader map 0x00000285C096F580
+[2017.04.30-14.13.50:326][794]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C096F580, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.50:326][794]LogTemp:Display: Marking material as finished 0x0000028595202E00
+[2017.04.30-14.13.53:838][813]LogTemp:Display: Finished compile of shader map 0x00000285C1189980
+[2017.04.30-14.13.53:838][813]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C1189980, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.53:838][813]LogTemp:Display: Marking material as finished 0x0000028590B4C580
+[2017.04.30-14.13.57:605][  0]LogTemp:Display: Finished compile of shader map 0x00000285C19B4B80
+[2017.04.30-14.13.57:605][  0]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C19B4B80, marking material Landscape_material_BP as finished
+[2017.04.30-14.13.57:605][  0]LogTemp:Display: Marking material as finished 0x0000028590C41F00
+[2017.04.30-14.14.02:876][242]LogTemp:Display: Finished compile of shader map 0x00000285C215FC80
+[2017.04.30-14.14.02:876][242]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C215FC80, marking material Landscape_material_BP as finished
+[2017.04.30-14.14.02:876][242]LogTemp:Display: Marking material as finished 0x0000028590C43280
+[2017.04.30-14.14.02:885][242]LogTemp:Display: Finished compile of shader map 0x00000285C28D6400
+[2017.04.30-14.14.02:885][242]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C28D6400, marking material Landscape_material_BP as finished
+[2017.04.30-14.14.02:885][242]LogTemp:Display: Marking material as finished 0x000002858B8D9780
+[2017.04.30-14.14.02:888][242]LogTemp:Display: Shader map Landscape_material_BP complete, GameThreadShaderMap 0x00000285C28D6400, marking material Landscape_material_BP as finished
+[2017.04.30-14.14.02:888][242]LogTemp:Display: Marking material as finished 0x000002858B8DBA00
+[2017.04.30-14.20.45:326][649]LogSavePackage: Save=825.84ms
+[2017.04.30-14.20.45:329][649]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround18B0ED554BD24BE8CD338994BD5710D2.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.04.30-14.20.45:338][649]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.04.30-14.20.45:443][649]LogFileHelpers: Saving map 'BattleGround' took 1.251
+[2017.04.30-14.20.46:724][712]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.30-14.20.46:774][712]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-14.20.46:774][712]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.30-14.20.46:775][712]PIE: New page: PIE session: BattleGround (Apr 30, 2017, 4:20:46 PM)
+[2017.04.30-14.20.46:775][712]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.30-14.20.46:875][712]LogPlayLevel: PIE: StaticDuplicateObject took: (0.100203s)
+[2017.04.30-14.20.46:877][712]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-14.20.46:877][712]LogPlayLevel: PIE: World Init took: (0.001749s)
+[2017.04.30-14.20.46:878][712]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.102540s)
+[2017.04.30-14.20.46:902][712]LogTemp:Display: Removed shader map 0x000002859618AB00 from material 0x00000285A8E2D800
+[2017.04.30-14.20.46:911][712]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-14.20.46:931][712]LogAudio:Error: CreateMasteringVoice error: Unhandled error code -2147417848
+[2017.04.30-14.20.46:931][712]LogInit:Warning: Failed to create the mastering voice for XAudio2
+[2017.04.30-14.20.46:995][712]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.30-14.20.47:012][712]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.04.30-15.20.47
+[2017.04.30-14.20.47:016][712]LogWorld: Bringing up level for play took: 0.016556
+[2017.04.30-14.20.47:163][712]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0088 seconds. Added 11 classes and 0 folders.
+[2017.04.30-14.20.47:170][712]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.698
+[2017.04.30-14.20.47:171][712]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-14.20.47:172][712]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:273][713]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:330][714]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:349][715]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:368][716]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:386][717]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:404][718]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:421][719]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:438][720]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:454][721]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:471][722]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:488][723]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:504][724]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:521][725]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:542][726]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:561][727]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:581][728]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:599][729]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:619][730]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:638][731]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:659][732]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:682][733]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:709][734]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:736][735]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:764][736]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:792][737]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:819][738]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:841][739]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:859][740]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:876][741]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:893][742]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:911][743]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:932][744]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:958][745]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:976][746]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.47:994][747]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:013][748]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:031][749]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:050][750]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:069][751]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:087][752]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:109][753]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:126][754]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:143][755]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:161][756]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:179][757]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:197][758]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:215][759]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:232][760]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:250][761]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:267][762]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:285][763]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:302][764]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:320][765]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:337][766]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:355][767]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:372][768]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:389][769]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:406][770]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:424][771]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:441][772]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:459][773]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:476][774]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:494][775]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:511][776]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:529][777]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:546][778]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:565][779]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:583][780]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:601][781]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:619][782]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:637][783]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:654][784]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:672][785]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:690][786]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:710][787]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:728][788]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:746][789]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:766][790]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:784][791]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:803][792]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:821][793]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:841][794]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:859][795]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:878][796]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:896][797]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:914][798]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:932][799]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:949][800]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:967][801]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.48:984][802]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:002][803]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:019][804]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:036][805]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:054][806]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:072][807]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:090][808]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:107][809]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:124][810]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:144][811]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:163][812]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:184][813]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:203][814]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:224][815]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:244][816]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:264][817]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:288][818]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:315][819]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:346][820]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:373][821]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:401][822]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:423][823]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:443][824]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:461][825]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:479][826]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:500][827]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:518][828]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:539][829]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:561][830]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:584][831]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:603][832]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:623][833]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:643][834]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:664][835]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:684][836]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:704][837]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:722][838]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:740][839]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:758][840]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:776][841]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:794][842]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:812][843]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:829][844]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:847][845]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:865][846]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:883][847]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:901][848]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:918][849]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:936][850]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:954][851]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:972][852]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.49:990][853]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:008][854]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:026][855]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:044][856]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:061][857]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:079][858]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:095][859]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:113][860]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:130][861]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:147][862]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:164][863]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:181][864]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:199][865]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:217][866]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:234][867]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:252][868]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:272][869]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:290][870]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:309][871]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:326][872]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:343][873]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:360][874]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:379][875]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:396][876]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:413][877]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:430][878]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:448][879]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:466][880]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:483][881]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:501][882]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:519][883]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:537][884]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:555][885]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:572][886]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:590][887]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:608][888]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:626][889]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:643][890]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:661][891]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:678][892]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:696][893]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:715][894]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:737][895]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:757][896]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:778][897]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:800][898]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:821][899]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:844][900]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:865][901]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:893][902]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:919][903]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:950][904]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.50:978][905]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:002][906]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:026][907]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:044][908]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:063][909]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:081][910]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:099][911]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:117][912]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:135][913]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:154][914]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:172][915]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:190][916]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:208][917]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:227][918]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:251][919]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:272][920]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:290][921]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:307][922]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:324][923]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:342][924]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:359][925]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:377][926]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:394][927]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:411][928]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:428][929]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:445][930]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:463][931]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:480][932]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:498][933]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:515][934]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:533][935]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:551][936]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:569][937]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:586][938]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:604][939]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:621][940]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:639][941]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:657][942]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:674][943]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:691][944]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:708][945]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:725][946]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:743][947]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:760][948]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:778][949]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:795][950]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:814][951]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:831][952]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:848][953]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:866][954]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:884][955]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:901][956]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:923][957]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:940][958]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:958][959]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:976][960]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.51:993][961]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:011][962]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:029][963]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:047][964]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:065][965]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:082][966]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:099][967]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:117][968]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:134][969]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:152][970]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:169][971]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:187][972]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:205][973]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:223][974]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:240][975]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:258][976]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:277][977]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:295][978]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:315][979]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:335][980]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:354][981]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:376][982]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:397][983]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:417][984]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:435][985]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:462][986]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:488][987]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:515][988]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:544][989]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:569][990]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:594][991]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:612][992]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:631][993]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:649][994]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:666][995]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:685][996]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:704][997]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:724][998]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:745][999]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:766][  0]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:787][  1]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:808][  2]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:829][  3]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:853][  4]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:872][  5]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:891][  6]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:910][  7]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:929][  8]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:948][  9]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:966][ 10]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.52:986][ 11]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:004][ 12]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:022][ 13]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:041][ 14]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:060][ 15]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:078][ 16]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:095][ 17]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:113][ 18]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:131][ 19]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:150][ 20]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:168][ 21]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:187][ 22]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:206][ 23]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:225][ 24]LogTemp:Error: got hit?: 1
+[2017.04.30-14.20.53:229][ 24]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-14.20.53:286][ 24]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-14.23.34:367][576]Cmd: QUIT_EDITOR
+[2017.04.30-14.23.35:226][576]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.30-14.23.35:313][576]LogExit: Preparing to exit.
+[2017.04.30-14.23.36:766][576]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.30-14.23.37:112][576]LogExit: Editor shut down
+[2017.04.30-14.23.37:116][576]LogExit: Transaction tracking system shut down
+[2017.04.30-14.23.37:121][576]LogTemp:Display: Removed shader map 0x00000285C0D4E400 from material 0x000002859063E080
+[2017.04.30-14.23.37:379][576]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.30-14.23.37:380][576]LogExit: Object subsystem successfully closed.
+[2017.04.30-14.23.37:430][576]LogD3D11RHI: Shutdown
+[2017.04.30-14.23.37:430][576]LogD3D11RHI: CleanupD3DDevice
+[2017.04.30-14.23.37:630][576]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (502)
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module MaterialEditor (500)
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.04.30-14.23.37:692][576]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.30-14.23.37:693][576]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.30-14.23.37:702][576]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.30-14.23.37:702][576]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.30-14.23.37:702][576]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.30-14.23.37:702][576]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' was aborted.
+[2017.04.30-14.23.37:702][576]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' was aborted.
+[2017.04.30-14.23.37:702][576]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' was aborted.
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.04.30-14.23.37:703][576]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.04.30-14.23.37:704][576]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.04.30-14.23.37:705][576]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.04.30-14.23.37:706][576]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.04.30-14.23.38:158][576]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.04.30-14.23.38:158][576]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.04.30-14.23.38:158][576]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.04.30-14.23.38:159][576]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.04.30-14.23.38:160][576]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.04.30-14.23.38:160][576]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.04.30-14.23.38:160][576]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.04.30-14.23.38:160][576]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.04.30-14.23.38:161][576]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.04.30-14.23.38:161][576]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.04.30-14.23.38:161][576]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.04.30-14.23.38:161][576]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.04.30-14.23.38:204][576]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.04.30-14.23.38:204][576]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.04.30-14.23.38:204][576]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.04.30-14.23.38:204][576]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.04.30-14.23.38:205][576]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.04.30-14.23.38:205][576]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.04.30-14.23.38:205][576]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.04.30-14.23.38:205][576]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.04.30-14.23.38:205][576]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.04.30-14.23.38:206][576]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.04.30-14.23.38:206][576]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.04.30-14.23.38:206][576]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.04.30-14.23.38:207][576]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.04.30-14.23.38:403][576]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.04.30-14.23.38:404][576]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.04.30-14.23.38:408][576]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.04.30-14.23.38:408][576]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.04.30-14.23.38:408][576]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.04.30-14.23.38:408][576]LogDirectoryWatcher: A directory notification for 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Binaries/Win64' was aborted.
+[2017.04.30-14.23.38:410][576]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.04.30-14.23.38:412][576]LogModuleManager: Shutting down and abandoning module BattleTank (222)
+[2017.04.30-14.23.38:412][576]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.04.30-14.23.38:412][576]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.04.30-14.23.38:412][576]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.04.30-14.23.38:412][576]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.04.30-14.23.38:512][576]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.04.30-14.23.38:613][576]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.04.30-14.23.38:614][576]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.04.30-14.23.38:621][576]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.04.30-14.23.38:622][576]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.04.30-14.23.38:623][576]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.04.30-14.23.38:624][576]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.04.30-14.23.38:624][576]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.04.30-14.23.38:651][576]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.04.30-14.23.38:652][576]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.04.30-14.23.38:652][576]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.04.30-14.23.38:652][576]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.04.30-14.23.38:652][576]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.04.30-14.23.38:652][576]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.04.30-14.23.38:859][576]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.30-14.23.38:859][576]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' was aborted.
+[2017.04.30-14.23.38:860][576]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.30-14.23.38:860][576]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.04.30-14.23.38:876][576]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.04.30-14.23.38:949][576]LogDerivedDataCache: Shutdown
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.04.30-14.23.38:950][576]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.04.30-14.23.38:951][576]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.04.30-14.23.38:952][576]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.04.30-14.23.38:953][576]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.30-14.23.38:954][576]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.30-14.23.38:954][576]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.30-14.23.38:955][576]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.30-14.23.38:955][576]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.30-14.23.38:955][576]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.30-14.23.38:955][576]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BCEE76BDD-4F96-3DDD-7C78-C8A2F27DC95F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=7c76bde54574978307451eb1166a1f79%7C58448bdb2ce4468ba1b793c4adc2bec4%7C1fb00c8d-b537-477f-9d94-6fe8d09492ec&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.30-14.23.38:972][576]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.30-14.23.38:977][576]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.30-14.23.38:977][576]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.30-14.23.38:978][576]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.30-14.23.38:978][576]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.30-14.23.38:978][576]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.30-14.23.38:989][576]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.30-14.23.38:990][576]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.30-14.23.38:995][576]LogExit: Exiting.
+[2017.04.30-14.23.39:016][576]Log file closed, 04/30/17 15:23:39

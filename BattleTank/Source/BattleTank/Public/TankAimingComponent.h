@@ -13,7 +13,7 @@ class AProjectile;
 
 // Enum for aiming state
 UENUM()
-enum class EFiringStatus : uint8 { Locked, Aiming, Reloading };
+enum class EFiringStatus : uint8 { Locked, Aiming, Reloading, OutOfAmmo};
 
 // Holds parameters for barrel's properties and elevate method
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
@@ -22,6 +22,7 @@ class BATTLETANK_API UTankAimingComponent : public UActorComponent
 	GENERATED_BODY()
 
 public:
+
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Initialise(UTankBarrel *BarrelToSet, UTankTurret* TurretToSet);
 
@@ -31,15 +32,21 @@ public:
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Firing")
-		void Fire();
+	void Fire();
 
-	FVector AimDirection;
+	UFUNCTION(BlueprintCallable, Category = "Firing")
+	int32 AmmoCounter() const;
 
 	EFiringStatus GetFiringStatus() const;
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
 		EFiringStatus FiringStatus = EFiringStatus::Reloading;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+		int32 AmmoLevel = 10;
+
+		FVector AimDirection;
 
 private:
 	// Sets default values for this component's properties
@@ -65,5 +72,4 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 		TSubclassOf<AProjectile> ProjectileBlueprint;
-
 };

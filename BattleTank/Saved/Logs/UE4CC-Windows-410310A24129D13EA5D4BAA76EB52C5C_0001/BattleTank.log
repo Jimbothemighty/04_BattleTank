@@ -1,0 +1,1861 @@
+﻿Log file open, 04/30/17 12:09:32
+LogInit:Display: Running engine for game: BattleTank
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-873195354) SRandInit(-873195354).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.146103
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.30-11.09.35:003][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.30-11.09.35:003][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.30-11.09.35:037][  0]LogInit: Computer: DESKTOP-0PEK566
+[2017.04.30-11.09.35:037][  0]LogInit: User: Sarah
+[2017.04.30-11.09.35:037][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.30-11.09.35:037][  0]LogInit: High frequency timer resolution =2.143576 MHz
+[2017.04.30-11.09.35:038][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2017.04.30-11.09.35:038][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.30-11.09.35:038][  0]LogMemory: Process Physical Memory: 263.44 MB used, 263.44 MB peak
+[2017.04.30-11.09.35:038][  0]LogMemory: Process Virtual Memory: 262.50 MB used, 262.50 MB peak
+[2017.04.30-11.09.35:038][  0]LogMemory: Physical Memory: 4295.45 MB used,  3788.82 MB free, 8084.27 MB total
+[2017.04.30-11.09.35:038][  0]LogMemory: Virtual Memory: 644.18 MB used,  3788.82 MB free, 134217728.00 MB total
+[2017.04.30-11.09.35:277][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.30-11.09.37:116][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.30-11.09.37:210][  0]LogD3D11RHI:    0. 'AMD Radeon HD 7600M Series' (Feature Level 11_0)
+[2017.04.30-11.09.37:211][  0]LogD3D11RHI:       1004/0/3840 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.04.30-11.09.37:219][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4000' (Feature Level 11_0)
+[2017.04.30-11.09.37:219][  0]LogD3D11RHI:       32/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2017.04.30-11.09.37:223][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.30-11.09.37:223][  0]LogD3D11RHI:       0/0/4042 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.30-11.09.37:223][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.30-11.09.37:259][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.30-11.09.37:259][  0]LogD3D11RHI:     GPU DeviceId: 0x6840 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.30-11.09.37:259][  0]LogWindows: EnumDisplayDevices:
+[2017.04.30-11.09.37:259][  0]LogWindows:    0. 'Intel(R) HD Graphics 4000' (P:1 D:1)
+[2017.04.30-11.09.37:260][  0]LogWindows:    1. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.30-11.09.37:260][  0]LogWindows:    2. 'Intel(R) HD Graphics 4000' (P:0 D:0)
+[2017.04.30-11.09.37:261][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.04.30-11.09.37:261][  0]LogD3D11RHI:     Adapter Name: AMD Radeon HD 7600M Series
+[2017.04.30-11.09.37:261][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.04.30-11.09.37:261][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.04.30-11.09.37:261][  0]LogRHI: Texture pool is 702 MB (70% of 1004 MB)
+[2017.04.30-11.09.37:335][  0]LogD3D11RHI: AMD Pre GCN architecture detected, some driver workarounds will be in place
+[2017.04.30-11.09.37:436][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.30-11.09.37:465][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.04.30-11.09.37:468][  0]LogShaderCompilers: Guid format shader working directory is -36 characters bigger than the processId version (../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Intermediate/Shaders/WorkingDirectory/145752/).
+[2017.04.30-11.09.37:469][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Sarah/AppData/Local/Temp/UnrealShaderWorkingDir/29C8840541CAF38A12BFB1BEE5F337F1/'.
+[2017.04.30-11.09.37:469][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.30-11.09.40:926][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.30-11.09.41:117][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.30-11.09.41:334][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.30-11.09.41:536][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.30-11.09.41:735][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.30-11.09.41:940][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.30-11.09.42:153][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.30-11.09.42:377][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.30-11.09.42:543][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.30-11.09.42:741][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.30-11.09.42:933][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.30-11.09.43:149][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.30-11.09.43:358][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.30-11.09.43:586][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.30-11.09.43:814][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.30-11.09.44:263][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.30-11.09.44:263][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.30-11.09.44:411][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.30-11.09.44:707][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.30-11.09.44:849][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.30-11.09.45:055][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.30-11.09.45:257][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.30-11.09.45:501][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.30-11.09.45:748][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.30-11.09.45:748][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.30-11.09.47:468][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache: Loaded boot cache 0.13s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.30-11.09.47:595][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.30-11.09.47:650][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.30-11.09.47:664][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Sarah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.30-11.09.47:692][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.30-11.09.47:694][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.30-11.09.47:694][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.30-11.09.50:773][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.30-11.09.50:780][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.30-11.09.51:468][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.30-11.09.51:626][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.30-11.09.51:798][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.30-11.09.51:798][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.30-11.09.51:798][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.30-11.09.53:554][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: battletank, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2512795372
+[2017.04.30-11.09.53:662][  0]LogAssetRegistry: FAssetRegistry took 0.0227 seconds to start up
+[2017.04.30-11.09.53:824][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.075350 seconds
+[2017.04.30-11.09.53:842][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.04.30-11.09.53:842][  0]LogUObjectAllocator: 7073360 out of 0 bytes used by permanent object pool.
+[2017.04.30-11.09.53:842][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.30-11.09.54:077][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.30-11.09.59:443][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.30-11.09.59:559][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.30-11.10.01:308][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.30-11.10.02:646][  0]SourceControl: Info Source control is disabled
+[2017.04.30-11.10.02:755][  0]SourceControl: Info Source control is disabled
+[2017.04.30-11.10.02:968][  0]SourceControl: Info Source control is disabled
+[2017.04.30-11.10.03:138][  0]SourceControl: Info Source control is disabled
+[2017.04.30-11.10.07:673][  0]LogEngine: Initializing Engine...
+[2017.04.30-11.10.07:675][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.30-11.10.08:448][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.30-11.10.08:463][  0]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-11.10.08:512][  0]LogInit: FAudioDevice initialized.
+[2017.04.30-11.10.08:564][  0]LogDerivedDataCache: Saved boot cache 0.05s 50MB C:/Users/Sarah/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.30-11.10.08:581][  0]LogInit: Texture streaming: Enabled
+[2017.04.30-11.10.08:927][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.30-11.10.09:311][  0]LogInit: Transaction tracking system initialized
+[2017.04.30-11.10.10:695][  0]BlueprintLog: New page: Editor Load
+[2017.04.30-11.10.13:812][  0]LocalizationService: Info Localization service is disabled
+[2017.04.30-11.10.16:715][  0]LogConsoleResponse:Display: 
+[2017.04.30-11.10.17:134][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.30-11.10.17:134][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.30-11.10.18:228][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/' took 0.02s
+[2017.04.30-11.10.20:804][  0]SourceControl: Info Source control is disabled
+[2017.04.30-11.10.20:804][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.30-11.10.20:821][  0]LightingResults: New page: Lighting Build
+[2017.04.30-11.10.20:954][  0]MapCheck: New page: Map Check
+[2017.04.30-11.10.20:954][  0]LightingResults: New page: Lighting Build
+[2017.04.30-11.10.22:606][  0]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-11.10.23:255][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.30-11.10.23:261][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.30-11.10.23:388][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 126.622ms to complete.
+[2017.04.30-11.10.23:388][  0]LogFileHelpers: Loading map 'BattleGround' took 2.584
+[2017.04.30-11.10.23:468][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.30-11.10.23:926][  0]LogCollectionManager: Loaded 1 collections in 0.012425 seconds
+[2017.04.30-11.10.24:134][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Collections/' took 0.01s
+[2017.04.30-11.10.24:134][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Developers/Sarah/Collections/' took 0.01s
+[2017.04.30-11.10.24:134][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Collections/' took 0.01s
+[2017.04.30-11.10.24:134][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000011 seconds
+[2017.04.30-11.10.24:134][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000001 seconds
+[2017.04.30-11.10.24:171][  0]LogContentBrowser: Native class hierarchy populated in 0.0338 seconds. Added 2255 classes and 453 folders.
+[2017.04.30-11.10.24:186][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.30-11.10.24:186][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.30-11.10.24:409][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0082 seconds. Added 0 classes and 0 folders.
+[2017.04.30-11.10.25:286][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0084 seconds. Added 0 classes and 0 folders.
+[2017.04.30-11.10.25:451][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0082 seconds. Added 1 classes and 2 folders.
+[2017.04.30-11.10.25:653][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.30-11.10.25:676][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.30-11.10.25:848][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0086 seconds. Added 1 classes and 2 folders.
+[2017.04.30-11.10.25:849][  0]LogLoad: (Engine Initialization) Total time: 57.18 seconds
+[2017.04.30-11.10.25:849][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.44 seconds
+[2017.04.30-11.10.25:849][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.04.30-11.10.25:859][  0]LogOcInput: OculusInput pre-init called
+[2017.04.30-11.10.25:899][  0]LogContentStreaming: Texture pool size now 600 MB
+[2017.04.30-11.10.25:902][  0]LogSlate: Took 0.000491 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.30-11.10.25:912][  0]LogSlate: Took 0.000539 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.30-11.10.25:944][  0]LogSlate: Took 0.012369 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.30-11.10.26:358][  0]LogSlate: Took 0.010812 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-11.10.26:539][  2]LogRenderer: Reallocating scene render targets to support 720x404 NumSamples 1 (Frame:2).
+[2017.04.30-11.10.27:321][  3]LogAssetRegistry: Asset discovery search completed in 33.6819 seconds
+[2017.04.30-11.10.27:321][  3]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000017 seconds (found 0 objects)
+[2017.04.30-11.10.27:321][  3]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000088 seconds (updated 0 objects)
+[2017.04.30-11.10.41:627][884]LogRenderer: Reallocating scene render targets to support 724x420 NumSamples 1 (Frame:885).
+[2017.04.30-11.10.57:605][495]LogSlate: Took 0.000374 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-11.11.46:881][975]LogSlate: Took 0.000501 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.30-11.11.47:846][975]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0096 seconds. Added 112 classes and 0 folders.
+[2017.04.30-11.11.50:595][975]LogRenderer: Reallocating scene render targets to support 724x448 NumSamples 1 (Frame:3258).
+[2017.04.30-11.11.51:323][995]LogSlate: Took 0.014172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.30-11.12.40:662][923]LogRenderer: Reallocating scene render targets to support 724x464 NumSamples 1 (Frame:4828).
+[2017.04.30-11.12.47:511][146]LogSlate: Took 0.000433 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.30-11.12.54:003][367]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.12.55:388][381]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.12.55:460][381]LogSavePackage: Save=67.13ms
+[2017.04.30-11.12.55:461][381]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP9FFF0EB349F00403DDAC4AA122EE9A6A.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.12.55:477][381]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.13.11:504][891]LogSlate: Took 0.013590 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.04.30-11.14.30:066][112]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.14.30:257][112]LogSavePackage: Save=81.27ms
+[2017.04.30-11.14.30:257][112]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP110E9DFE485C2A9181259891425A64EF.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.14.30:269][112]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.14.30:702][126]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.14.39:627][403]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.14.39:781][403]LogSavePackage: Save=69.73ms
+[2017.04.30-11.14.39:781][403]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP259471C34AF2B38479550594FDE7DF20.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.14.39:795][403]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.14.40:239][418]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.14.56:309][974]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.14.57:204][987]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.14.57:369][987]LogSavePackage: Save=71.60ms
+[2017.04.30-11.14.57:371][987]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP766B09CE448BC4998D8653BDC0ED66E4.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.14.57:382][987]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.15.10:375][482]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.15.10:531][482]LogSavePackage: Save=69.08ms
+[2017.04.30-11.15.10:532][482]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP3184427A4E9EC9D8A24FE1AEDA62C9EB.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.15.10:543][482]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.15.11:037][498]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.15.25:382][ 13]LogSavePackage: Save=780.30ms
+[2017.04.30-11.15.25:383][ 13]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround62AE34F54020E8384AB78FBB18B52CC6.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.04.30-11.15.25:392][ 13]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.04.30-11.15.25:723][ 13]LogSavePackage: Save=129.05ms
+[2017.04.30-11.15.25:723][ 13]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltDataCFFDEECC491A181E5B9BBBB9DA460C32.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset'
+[2017.04.30-11.15.25:727][ 13]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset
+[2017.04.30-11.15.27:326][ 93]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.30-11.15.27:400][ 93]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.27:400][ 93]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.30-11.15.27:406][ 93]PIE: New page: PIE session: BattleGround (Apr 30, 2017, 1:15:27 PM)
+[2017.04.30-11.15.27:406][ 93]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.30-11.15.27:509][ 93]LogPlayLevel: PIE: StaticDuplicateObject took: (0.102709s)
+[2017.04.30-11.15.27:511][ 93]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-11.15.27:511][ 93]LogPlayLevel: PIE: World Init took: (0.001646s)
+[2017.04.30-11.15.27:511][ 93]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.105428s)
+[2017.04.30-11.15.27:562][ 93]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-11.15.27:582][ 93]LogInit: FAudioDevice initialized.
+[2017.04.30-11.15.27:676][ 93]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.30-11.15.27:703][ 93]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.30-12.15.27
+[2017.04.30-11.15.27:709][ 93]LogWorld: Bringing up level for play took: 0.025703
+[2017.04.30-11.15.27:885][ 93]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0090 seconds. Added 11 classes and 0 folders.
+[2017.04.30-11.15.27:897][ 93]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 1.425
+[2017.04.30-11.15.27:899][ 93]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.27:900][ 93]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:005][ 94]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:063][ 95]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:079][ 96]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:095][ 97]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:110][ 98]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:125][ 99]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:139][100]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:155][101]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:170][102]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:185][103]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:200][104]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:217][105]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:233][106]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:249][107]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:265][108]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:281][109]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:296][110]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:313][111]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:328][112]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:344][113]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:360][114]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:376][115]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:392][116]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:412][117]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:428][118]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:445][119]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:460][120]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:479][121]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:495][122]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:511][123]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:529][124]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:546][125]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:562][126]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:580][127]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:597][128]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:614][129]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:630][130]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:646][131]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:661][132]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:679][133]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:695][134]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:711][135]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:728][136]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:747][137]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:764][138]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:780][139]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:796][140]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:812][141]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:828][142]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:844][143]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:860][144]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:876][145]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:893][146]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:909][147]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:926][148]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:942][149]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:958][150]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:974][151]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.28:989][152]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:005][153]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:026][154]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:042][155]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:060][156]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:078][157]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:098][158]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:115][159]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:132][160]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:152][161]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:168][162]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:185][163]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:203][164]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:226][165]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:249][166]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:273][167]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:297][168]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:321][169]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:341][170]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:362][171]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:378][172]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:394][173]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:411][174]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:427][175]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:444][176]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:465][177]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:481][178]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:500][179]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:516][180]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:534][181]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:552][182]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:574][183]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:595][184]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:610][185]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:626][186]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:642][187]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:657][188]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:673][189]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:689][190]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:704][191]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:719][192]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:735][193]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:750][194]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:766][195]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:782][196]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:798][197]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:814][198]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:829][199]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:845][200]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:860][201]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:876][202]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:891][203]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:907][204]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:922][205]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:938][206]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:954][207]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:970][208]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.29:986][209]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:002][210]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:018][211]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:033][212]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:049][213]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:065][214]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:085][215]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:101][216]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:116][217]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:132][218]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:148][219]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:163][220]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:179][221]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:194][222]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:210][223]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:225][224]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:241][225]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:256][226]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:272][227]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:287][228]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:303][229]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:319][230]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:335][231]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:351][232]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:367][233]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:384][234]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:399][235]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:415][236]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:431][237]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:447][238]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:463][239]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:479][240]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:495][241]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:512][242]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:528][243]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:545][244]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:560][245]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:576][246]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:591][247]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:607][248]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:626][249]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:644][250]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:662][251]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:680][252]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:701][253]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:722][254]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:741][255]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:757][256]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:781][257]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:805][258]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:828][259]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:852][260]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:876][261]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.30:897][262]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.31:592][262]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.693 s
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: === Handled ensure: ===
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: 
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: Ensure condition failed: Barrel [File:C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAimingComponent.cpp] [Line: 152]
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: 
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: Stack: 
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F3595D6
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F109B72
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F11B656
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-BattleTank-6517.dll!UTankAimingComponent::BarrelIsMoving() [c:\users\sarah\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankaimingcomponent.cpp:152]
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-BattleTank-6517.dll!UTankAimingComponent::TickComponent() [c:\users\sarah\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankaimingcomponent.cpp:42]
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000943CBF6F
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000943F1925
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094F7F62D
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094F852FD
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009EFDD83D
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009EFDDA05
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094FA8DF7
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094FB98D2
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000948E7B44
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000948F018D
+[2017.04.30-11.15.31:592][262]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x0000000092A16D8E
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x0000000093221AD6
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor.exe!0x00000000051BDEE3
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor.exe!0x00000000051AEB40
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor.exe!0x00000000051AEBBA
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor.exe!0x00000000051C0A29
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: UE4Editor.exe!0x00000000051C22B6
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: KERNEL32.DLL!0x00000000E12A8364
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: ntdll.dll!0x00000000E18470D1
+[2017.04.30-11.15.31:593][262]LogOutputDevice:Error: 
+[2017.04.30-11.15.31:595][262]LogStats:                SubmitErrorReport -  0.000 s
+[2017.04.30-11.15.32:501][262]LogStats:                    SendNewReport -  0.906 s
+[2017.04.30-11.15.32:501][262]LogStats:             FDebug::EnsureFailed -  1.603 s
+[2017.04.30-11.15.32:536][263]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:591][264]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:615][265]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:636][266]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:653][267]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:671][268]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:690][269]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:706][270]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:724][271]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:740][272]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:757][273]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:774][274]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:795][275]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:811][276]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:827][277]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:844][278]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:860][279]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:877][280]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:894][281]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:912][282]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:928][283]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:945][284]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:961][285]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:977][286]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.32:993][287]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:014][288]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:032][289]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:051][290]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:069][291]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:087][292]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:104][293]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:124][294]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:141][295]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:158][296]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:176][297]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:193][298]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:211][299]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:229][300]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:249][301]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:272][302]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:294][303]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:313][304]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:334][305]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:354][306]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:373][307]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:391][308]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:409][309]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:429][310]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:446][311]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:464][312]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:483][313]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:502][314]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:522][315]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:540][316]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:559][317]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:578][318]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:602][319]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:620][320]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:636][321]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:655][322]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:673][323]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:692][324]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:710][325]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:733][326]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:752][327]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:774][328]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:793][329]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:814][330]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:836][331]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:863][332]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:890][333]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:920][334]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:961][335]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.33:986][336]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:009][337]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:028][338]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:048][339]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:069][340]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:093][341]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:112][342]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:132][343]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:156][344]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:176][345]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:195][346]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:217][347]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:236][348]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:255][349]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:279][350]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:298][351]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:314][352]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:335][353]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:354][354]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:377][355]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:393][356]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:409][357]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:426][358]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:442][359]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:460][360]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:476][361]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:492][362]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:510][363]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:527][364]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:548][365]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:565][366]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:593][367]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:612][368]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:630][369]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:648][370]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:664][371]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:682][372]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:700][373]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:719][374]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:739][375]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:756][376]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:774][377]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:791][378]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:807][379]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:823][380]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:839][381]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:856][382]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:872][383]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:888][384]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:905][385]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:923][386]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:941][387]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:958][388]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:976][389]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.34:995][390]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:013][391]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:034][392]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:052][393]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:069][394]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:085][395]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:102][396]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:118][397]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:140][398]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:159][399]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:176][400]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:192][401]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:208][402]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:224][403]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:241][404]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:257][405]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:273][406]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:292][407]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:313][408]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:333][409]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:353][410]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:372][411]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:393][412]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:413][413]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:431][414]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:457][415]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:482][416]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:513][417]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:539][418]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:567][419]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:594][420]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:615][421]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:632][422]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:648][423]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:665][424]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:682][425]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:700][426]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:720][427]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:736][428]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:753][429]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:771][430]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:792][431]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:808][432]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:825][433]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:842][434]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:861][435]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:878][436]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:893][437]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:909][438]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:924][439]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:940][440]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:955][441]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:971][442]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.35:988][443]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:004][444]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:020][445]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:035][446]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:050][447]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:066][448]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:082][449]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:098][450]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:113][451]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:130][452]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:146][453]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:163][454]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:179][455]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:196][456]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:214][457]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:229][458]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:245][459]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:262][460]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:278][461]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:294][462]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:309][463]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:325][464]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:341][465]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:356][466]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:372][467]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:388][468]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:404][469]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:420][470]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:436][471]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:452][472]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:467][473]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:485][474]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:501][475]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:517][476]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:534][477]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:550][478]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:566][479]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:582][480]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:597][481]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:614][482]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:629][483]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:645][484]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:661][485]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:676][486]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:695][487]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:716][488]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:733][489]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:750][490]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:767][491]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:784][492]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:800][493]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:816][494]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:833][495]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:851][496]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:868][497]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:885][498]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:904][499]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:921][500]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:942][501]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:962][502]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.36:981][503]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:002][504]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:025][505]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:050][506]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:077][507]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:102][508]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:128][509]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:152][510]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:179][511]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:199][512]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:218][513]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:235][514]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:255][515]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:276][516]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:293][517]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:314][518]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.37:318][518]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.37:444][518]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.46:915][898]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.04.30-11.15.51:585][988]LogSavePackage: Save=754.37ms
+[2017.04.30-11.15.51:586][988]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGroundF80F7A3F47D48AE8B83E2491477AE5F9.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+[2017.04.30-11.15.51:595][988]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+[2017.04.30-11.15.51:884][988]LogSavePackage: Save=100.41ms
+[2017.04.30-11.15.51:884][988]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/BattleGround_BuiltData34FC729A45B03085E1F822857502883A.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset'
+[2017.04.30-11.15.51:889][988]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Levels/BattleGround_BuiltData.uasset
+[2017.04.30-11.15.53:181][ 19]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.30-11.15.53:229][ 19]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.53:229][ 19]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.30-11.15.53:230][ 19]PIE: New page: PIE session: BattleGround (Apr 30, 2017, 1:15:53 PM)
+[2017.04.30-11.15.53:230][ 19]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.30-11.15.53:329][ 19]LogPlayLevel: PIE: StaticDuplicateObject took: (0.099241s)
+[2017.04.30-11.15.53:331][ 19]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-11.15.53:331][ 19]LogPlayLevel: PIE: World Init took: (0.001504s)
+[2017.04.30-11.15.53:331][ 19]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.101281s)
+[2017.04.30-11.15.53:476][ 19]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-11.15.53:493][ 19]LogInit: FAudioDevice initialized.
+[2017.04.30-11.15.53:532][ 19]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.30-11.15.53:547][ 19]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.30-12.15.53
+[2017.04.30-11.15.53:549][ 19]LogWorld: Bringing up level for play took: 0.013715
+[2017.04.30-11.15.53:555][ 19]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 1.083
+[2017.04.30-11.15.53:556][ 19]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.15.53:556][ 19]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:624][ 20]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:650][ 21]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:668][ 22]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:685][ 23]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:700][ 24]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:716][ 25]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:733][ 26]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:749][ 27]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:764][ 28]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:781][ 29]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:797][ 30]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:814][ 31]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:831][ 32]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:852][ 33]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:868][ 34]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:888][ 35]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:906][ 36]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:926][ 37]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:943][ 38]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.53:974][ 39]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:000][ 40]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:026][ 41]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:055][ 42]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:084][ 43]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:107][ 44]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:130][ 45]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:147][ 46]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:165][ 47]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:182][ 48]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:200][ 49]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:217][ 50]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:236][ 51]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:258][ 52]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:278][ 53]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:296][ 54]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:312][ 55]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:329][ 56]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:346][ 57]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:364][ 58]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:384][ 59]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:399][ 60]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:419][ 61]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:438][ 62]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:455][ 63]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:471][ 64]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:488][ 65]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:504][ 66]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:521][ 67]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:537][ 68]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:553][ 69]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:569][ 70]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:585][ 71]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:608][ 72]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:624][ 73]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:641][ 74]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:656][ 75]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:672][ 76]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:688][ 77]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:705][ 78]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:725][ 79]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:744][ 80]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:760][ 81]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:776][ 82]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:793][ 83]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:809][ 84]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:824][ 85]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:840][ 86]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:856][ 87]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:874][ 88]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:890][ 89]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:907][ 90]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:924][ 91]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:941][ 92]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:959][ 93]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:976][ 94]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.54:992][ 95]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:009][ 96]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:026][ 97]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:043][ 98]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:061][ 99]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:079][100]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:100][101]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:117][102]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:137][103]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:154][104]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:170][105]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:187][106]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:203][107]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:220][108]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:237][109]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:253][110]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:270][111]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:287][112]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:306][113]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:323][114]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:340][115]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:358][116]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:375][117]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:391][118]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:408][119]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:429][120]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:450][121]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:468][122]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:487][123]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:507][124]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:525][125]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:542][126]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:566][127]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:591][128]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:616][129]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:640][130]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:668][131]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:692][132]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:716][133]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:733][134]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:749][135]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:766][136]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:783][137]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:803][138]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:824][139]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:842][140]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:860][141]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:876][142]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:893][143]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:915][144]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:941][145]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:959][146]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:975][147]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.55:992][148]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:008][149]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:024][150]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:039][151]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:056][152]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:072][153]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:088][154]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:104][155]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:120][156]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:136][157]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:152][158]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:169][159]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:186][160]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:202][161]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:219][162]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:236][163]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:253][164]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:270][165]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:287][166]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:304][167]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:321][168]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:338][169]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:355][170]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:372][171]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:394][172]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:411][173]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:428][174]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:445][175]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:462][176]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:481][177]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:499][178]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:517][179]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:535][180]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:552][181]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:569][182]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:586][183]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:603][184]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:620][185]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:637][186]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:654][187]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:670][188]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:686][189]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:703][190]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:720][191]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:736][192]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:752][193]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:768][194]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:784][195]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:800][196]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:817][197]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:833][198]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:849][199]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:864][200]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:880][201]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:896][202]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:912][203]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:928][204]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:943][205]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:961][206]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:977][207]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.56:994][208]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:014][209]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:034][210]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:053][211]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:071][212]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:091][213]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:112][214]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:132][215]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:151][216]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:178][217]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:208][218]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:236][219]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:263][220]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:292][221]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:316][222]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:340][223]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:359][224]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:380][225]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:403][226]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:421][227]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:438][228]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:456][229]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:473][230]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:491][231]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:509][232]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:529][233]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:546][234]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:564][235]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:582][236]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:598][237]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:614][238]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:630][239]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:647][240]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:664][241]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:680][242]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:696][243]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:713][244]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:730][245]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:746][246]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:762][247]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:778][248]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:794][249]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:810][250]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:826][251]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:842][252]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:858][253]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:874][254]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:891][255]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:907][256]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:924][257]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:940][258]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:956][259]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:972][260]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.57:988][261]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:005][262]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:020][263]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:036][264]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:052][265]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:069][266]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:085][267]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:101][268]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:117][269]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:134][270]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:150][271]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:166][272]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:182][273]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:198][274]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:214][275]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:230][276]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:246][277]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:262][278]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:278][279]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:294][280]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:310][281]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:327][282]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:343][283]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:359][284]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:375][285]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:391][286]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:407][287]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:423][288]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:440][289]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:455][290]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:472][291]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:488][292]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:505][293]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:523][294]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:539][295]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:555][296]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:571][297]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:587][298]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:603][299]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:624][300]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:643][301]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:659][302]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:680][303]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:700][304]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:719][305]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:736][306]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:758][307]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:784][308]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:810][309]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:834][310]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:859][311]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:881][312]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:899][313]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:919][314]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:935][315]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:951][316]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:968][317]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.58:985][318]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:002][319]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:018][320]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:034][321]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:051][322]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:076][323]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:093][324]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:110][325]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:131][326]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:148][327]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:165][328]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:181][329]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:197][330]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:212][331]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:228][332]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:244][333]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:260][334]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:276][335]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:292][336]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:308][337]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:324][338]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:340][339]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:355][340]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:371][341]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:387][342]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:403][343]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:419][344]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:435][345]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:450][346]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:466][347]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:482][348]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:497][349]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:513][350]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:529][351]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:545][352]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:560][353]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:577][354]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:593][355]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:609][356]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:625][357]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:640][358]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:656][359]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:672][360]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:688][361]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:703][362]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:719][363]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:736][364]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:752][365]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:768][366]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:784][367]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:800][368]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:815][369]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:831][370]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:847][371]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:862][372]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:879][373]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:895][374]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:910][375]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:927][376]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:943][377]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:959][378]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:974][379]LogTemp:Error: got hit?: 1
+[2017.04.30-11.15.59:991][380]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:007][381]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:025][382]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:043][383]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:060][384]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:075][385]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:091][386]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:107][387]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:123][388]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:139][389]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:155][390]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:172][391]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:192][392]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:211][393]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:231][394]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:250][395]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:270][396]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:287][397]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:305][398]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:321][399]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:346][400]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:372][401]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:399][402]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:425][403]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:449][404]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:471][405]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:488][406]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:505][407]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:522][408]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:538][409]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:555][410]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:571][411]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:587][412]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:608][413]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:624][414]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:643][415]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:662][416]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:679][417]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:701][418]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:718][419]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:738][420]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:754][421]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:770][422]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:785][423]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:801][424]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:817][425]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:833][426]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:849][427]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:865][428]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:881][429]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:897][430]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:917][431]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:933][432]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:948][433]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:964][434]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:981][435]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.00:997][436]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:013][437]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:029][438]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:045][439]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:061][440]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:077][441]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:093][442]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:109][443]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:127][444]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:143][445]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:160][446]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:175][447]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:192][448]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:208][449]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:224][450]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:239][451]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:256][452]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:272][453]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:287][454]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:304][455]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:319][456]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:335][457]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:351][458]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:367][459]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:383][460]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:399][461]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:415][462]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:431][463]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:447][464]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:463][465]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:480][466]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:496][467]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:512][468]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:528][469]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:544][470]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:560][471]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:576][472]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:592][473]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:607][474]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:623][475]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:639][476]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:655][477]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:671][478]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:687][479]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:703][480]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:719][481]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:735][482]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:751][483]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:771][484]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:789][485]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:807][486]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:824][487]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:844][488]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:863][489]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:881][490]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:899][491]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:920][492]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:946][493]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:974][494]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.01:999][495]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:023][496]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:043][497]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:062][498]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:079][499]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:096][500]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:114][501]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:131][502]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:147][503]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:167][504]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:184][505]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:201][506]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:225][507]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:243][508]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:262][509]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:279][510]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:296][511]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:312][512]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:330][513]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:346][514]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:362][515]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:377][516]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:393][517]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:409][518]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:425][519]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:441][520]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:457][521]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:473][522]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:490][523]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:506][524]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:522][525]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:538][526]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:554][527]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:577][528]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:593][529]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:609][530]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:625][531]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:641][532]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:658][533]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:674][534]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:690][535]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:706][536]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:723][537]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:739][538]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:755][539]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:771][540]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:787][541]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:803][542]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:818][543]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:834][544]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:851][545]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:867][546]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:882][547]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:898][548]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:914][549]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:930][550]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:946][551]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:962][552]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:978][553]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.02:994][554]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:010][555]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:026][556]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:041][557]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:058][558]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:075][559]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:091][560]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:107][561]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:123][562]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:139][563]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:156][564]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:172][565]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:188][566]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:204][567]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:220][568]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:236][569]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:253][570]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:268][571]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:284][572]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:300][573]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:316][574]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:333][575]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:351][576]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:369][577]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:387][578]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:408][579]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:429][580]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:449][581]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:475][582]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:501][583]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:528][584]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:557][585]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:584][586]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:611][587]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:635][588]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:658][589]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:676][590]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:692][591]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:709][592]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:732][593]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:748][594]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:764][595]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:781][596]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:798][597]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:815][598]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:832][599]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:849][600]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:866][601]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:885][602]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:901][603]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:917][604]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:933][605]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:948][606]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:964][607]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:981][608]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.03:997][609]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:013][610]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:029][611]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:045][612]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:061][613]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:077][614]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:093][615]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:109][616]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:124][617]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:140][618]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:156][619]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:173][620]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:189][621]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:205][622]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:221][623]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:237][624]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:253][625]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:269][626]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:285][627]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:301][628]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:317][629]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:333][630]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:349][631]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:366][632]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:382][633]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:398][634]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:414][635]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:432][636]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:448][637]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:465][638]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:481][639]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:497][640]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:513][641]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:529][642]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:545][643]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:562][644]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:578][645]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:594][646]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:620][647]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:636][648]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:652][649]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:668][650]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:684][651]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:700][652]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:715][653]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:731][654]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:748][655]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:764][656]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:780][657]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:796][658]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:813][659]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:830][660]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:849][661]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:866][662]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:883][663]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:899][664]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:917][665]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:937][666]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:959][667]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:977][668]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.04:995][669]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:015][670]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:033][671]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:053][672]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:081][673]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:109][674]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:137][675]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:163][676]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:188][677]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:211][678]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:230][679]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:248][680]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:267][681]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:287][682]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:311][683]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:328][684]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:351][685]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:369][686]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:386][687]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:403][688]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:420][689]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:439][690]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:455][691]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:472][692]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:488][693]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:505][694]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:522][695]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:538][696]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:554][697]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:571][698]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:589][699]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:607][700]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:624][701]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:643][702]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:661][703]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:679][704]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:697][705]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:713][706]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:730][707]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:747][708]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:764][709]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:781][710]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:799][711]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:816][712]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:834][713]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:850][714]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:866][715]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:883][716]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:899][717]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:915][718]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:931][719]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:947][720]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:963][721]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:979][722]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.05:995][723]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:011][724]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:027][725]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:043][726]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:059][727]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:075][728]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:091][729]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:107][730]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:124][731]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:140][732]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:158][733]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:174][734]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:190][735]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:207][736]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:223][737]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:240][738]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:256][739]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:272][740]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:288][741]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:304][742]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:321][743]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:337][744]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:353][745]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:369][746]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:385][747]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:401][748]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:417][749]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:434][750]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:451][751]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:468][752]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:487][753]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:506][754]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:524][755]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:544][756]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:563][757]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:581][758]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:600][759]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:621][760]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:645][761]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:671][762]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:697][763]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:721][764]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:745][765]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:764][766]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:780][767]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:797][768]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:813][769]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:831][770]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:849][771]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:866][772]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:883][773]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:904][774]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:920][775]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:937][776]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:954][777]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:971][778]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.06:990][779]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:007][780]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:026][781]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:042][782]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:059][783]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:075][784]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:091][785]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:108][786]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:124][787]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:140][788]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:156][789]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:173][790]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:189][791]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:205][792]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:221][793]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:238][794]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:254][795]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:270][796]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:286][797]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:302][798]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:318][799]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:334][800]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:350][801]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:366][802]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:382][803]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:398][804]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:415][805]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:431][806]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:447][807]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:463][808]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:479][809]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:496][810]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:512][811]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:529][812]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:545][813]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:563][814]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:579][815]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:597][816]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:613][817]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:629][818]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:646][819]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:663][820]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:680][821]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:697][822]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:713][823]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:730][824]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:746][825]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:763][826]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:780][827]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:797][828]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:813][829]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:830][830]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:846][831]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:862][832]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:879][833]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:894][834]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:910][835]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:926][836]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:943][837]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:959][838]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:975][839]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.07:991][840]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:007][841]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:023][842]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:042][843]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:064][844]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:084][845]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:101][846]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:122][847]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:143][848]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:161][849]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:178][850]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:202][851]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:226][852]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:253][853]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:278][854]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:302][855]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:322][856]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:341][857]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:360][858]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:377][859]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:393][860]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:410][861]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:426][862]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:443][863]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:460][864]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:477][865]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:497][866]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:514][867]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:531][868]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:547][869]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:564][870]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:583][871]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:599][872]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:614][873]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:630][874]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:646][875]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:664][876]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:680][877]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:696][878]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:711][879]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:727][880]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:743][881]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:759][882]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:775][883]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:791][884]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:807][885]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:823][886]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:839][887]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:855][888]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:871][889]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:887][890]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:903][891]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:919][892]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:935][893]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:952][894]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:968][895]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:983][896]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.08:999][897]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:015][898]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:032][899]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:048][900]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:064][901]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:080][902]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:096][903]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:112][904]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:129][905]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:145][906]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:161][907]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:177][908]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:194][909]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:211][910]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:227][911]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:244][912]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:260][913]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:276][914]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:293][915]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:309][916]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:328][917]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:345][918]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:362][919]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:379][920]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:399][921]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:415][922]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:432][923]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:448][924]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:465][925]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:481][926]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:498][927]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:514][928]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:530][929]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:547][930]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:564][931]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:580][932]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:596][933]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:616][934]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:633][935]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:651][936]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:668][937]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:692][938]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:713][939]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:731][940]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:754][941]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:778][942]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:804][943]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:828][944]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:852][945]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:874][946]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:893][947]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:910][948]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:927][949]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:943][950]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:960][951]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.09:983][952]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:001][953]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:018][954]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:034][955]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:052][956]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:072][957]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:089][958]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:105][959]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:122][960]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:141][961]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:157][962]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:173][963]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:189][964]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:206][965]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:222][966]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:239][967]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:255][968]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:270][969]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:287][970]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:304][971]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:321][972]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:338][973]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:357][974]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:374][975]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:392][976]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:410][977]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:427][978]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:444][979]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:464][980]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:480][981]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:496][982]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:513][983]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:528][984]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:544][985]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:560][986]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:576][987]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:592][988]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:608][989]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:624][990]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:639][991]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:657][992]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:673][993]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:689][994]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:705][995]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:722][996]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:740][997]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:756][998]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:772][999]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:790][  0]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:806][  1]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:823][  2]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:839][  3]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:856][  4]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:872][  5]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:890][  6]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:907][  7]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:923][  8]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:940][  9]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:956][ 10]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:973][ 11]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.10:989][ 12]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:006][ 13]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:022][ 14]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:039][ 15]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:055][ 16]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:072][ 17]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:088][ 18]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:105][ 19]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:120][ 20]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:137][ 21]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:156][ 22]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:174][ 23]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:192][ 24]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:218][ 25]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:237][ 26]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:255][ 27]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:276][ 28]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:293][ 29]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:318][ 30]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:345][ 31]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:371][ 32]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:398][ 33]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:423][ 34]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:447][ 35]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:464][ 36]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:481][ 37]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:497][ 38]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:513][ 39]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:530][ 40]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:547][ 41]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:563][ 42]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:580][ 43]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:597][ 44]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:614][ 45]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:631][ 46]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:654][ 47]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:671][ 48]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:692][ 49]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:709][ 50]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:738][ 51]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:755][ 52]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:771][ 53]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:788][ 54]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:807][ 55]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:823][ 56]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:840][ 57]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:857][ 58]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:874][ 59]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:891][ 60]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:907][ 61]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:923][ 62]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:940][ 63]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:958][ 64]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:975][ 65]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.11:991][ 66]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:008][ 67]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:025][ 68]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:042][ 69]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:058][ 70]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:075][ 71]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:092][ 72]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:108][ 73]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:125][ 74]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:142][ 75]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:158][ 76]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:174][ 77]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:191][ 78]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:208][ 79]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.12:210][ 79]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.16.12:296][ 79]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.16.18:438][188]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.04.30-11.16.22:056][271]BlueprintLog: New page: Compile Mortar_BP
+[2017.04.30-11.16.23:375][279]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Tank/Mortar_BP" FILE="../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset" SILENT=true
+[2017.04.30-11.16.23:526][279]LogSavePackage: Save=66.53ms
+[2017.04.30-11.16.23:526][279]LogSavePackage: Moving '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Saved/Mortar_BP051C5D90439B37D8CCE2E7B452B2BB09.tmp' to '../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset'
+[2017.04.30-11.16.23:539][279]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Sarah/Documents/Unreal Projects/04_BattleTank/BattleTank/Content/Tank/Mortar_BP.uasset
+[2017.04.30-11.16.28:975][475]LogTemp: Repeting last play command: Selected Viewport
+[2017.04.30-11.16.29:036][475]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.16.29:036][475]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.04.30-11.16.29:036][475]PIE: New page: PIE session: BattleGround (Apr 30, 2017, 1:16:29 PM)
+[2017.04.30-11.16.29:037][475]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+[2017.04.30-11.16.29:139][475]LogPlayLevel: PIE: StaticDuplicateObject took: (0.101830s)
+[2017.04.30-11.16.29:140][475]LogAIModule: Creating AISystem for world BattleGround
+[2017.04.30-11.16.29:140][475]LogPlayLevel: PIE: World Init took: (0.001448s)
+[2017.04.30-11.16.29:140][475]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.103831s)
+[2017.04.30-11.16.29:196][475]LogInit: XAudio2 using 'Speakers (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.04.30-11.16.29:219][475]LogInit: FAudioDevice initialized.
+[2017.04.30-11.16.29:260][475]LogLoad: Game class is 'BattleTankGameMode_BP_C'
+[2017.04.30-11.16.29:281][475]LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 0) at 2017.04.30-12.16.29
+[2017.04.30-11.16.29:282][475]LogWorld: Bringing up level for play took: 0.018701
+[2017.04.30-11.16.29:291][475]PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 0.819
+[2017.04.30-11.16.29:292][475]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround'
+[2017.04.30-11.16.29:292][475]LogTemp:Error: got hit?: 1
+[2017.04.30-11.16.29:301][475]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.008 s
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: === Handled ensure: ===
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: 
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: Ensure condition failed: Barrel [File:C:\Users\Sarah\Documents\Unreal Projects\04_BattleTank\BattleTank\Source\BattleTank\Private\TankAimingComponent.cpp] [Line: 67]
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: 
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: Stack: 
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F3595D6
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F109B72
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009F11B656
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-BattleTank-6517.dll!UTankAimingComponent::AimAt() [c:\users\sarah\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankaimingcomponent.cpp:67]
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-BattleTank-6517.dll!ATankAIController::Tick() [c:\users\sarah\documents\unreal projects\04_battletank\battletank\source\battletank\private\tankaicontroller.cpp:53]
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000948F302A
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000093FFAA2E
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094F7F62D
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094F852FD
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009EFDD83D
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009EFDDC5D
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000009EFFCCDB
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094FA9051
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000094FB98D2
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000948E7B44
+[2017.04.30-11.16.29:301][475]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000948EFC6B
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x0000000092A16D8E
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x0000000093221AD6
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor.exe!0x00000000051BDEE3
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor.exe!0x00000000051AEB40
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor.exe!0x00000000051AEBBA
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor.exe!0x00000000051C0A29
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: UE4Editor.exe!0x00000000051C22B6
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: KERNEL32.DLL!0x00000000E12A8364
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: ntdll.dll!0x00000000E18470D1
+[2017.04.30-11.16.29:302][475]LogOutputDevice:Error: 
+[2017.04.30-11.16.29:309][475]LogStats:                SubmitErrorReport -  0.000 s
