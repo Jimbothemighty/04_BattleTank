@@ -44,4 +44,11 @@ private:
 	UPROPERTY(EditDefaultsOnly)
 		float LineTraceRange = 1000000.0f;
 
+	virtual void SetPawn(APawn* InPawn) override;
+
+	UFUNCTION()
+		void OnTankDeath();
+
+	void StartSpectatingOnly();
+
 };

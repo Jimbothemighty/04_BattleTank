@@ -3,6 +3,7 @@
 #include "BattleTank.h"
 #include "TankAimingComponent.h"
 #include "TankPlayerController.h"
+#include "Tank.h"  // so we can implement on death
 
 void ATankPlayerController::BeginPlay()
 {
@@ -105,3 +106,32 @@ bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDirection, FVec
 	}
 	else { HitLocation = FVector(0);  return false; };
 }
+
+void ATankPlayerController::SetPawn(APawn * InPawn)
+{
+	Super::SetPawn(InPawn);
+	if (InPawn)
+	{
+		auto PossessedTank = Cast<ATank>(InPawn);
+		if (!ensure(PossessedTank))
+		{
+			UE_LOG(LogTemp, Warning, TEXT("SOMEHOW THERE IS NO POSSESSED TANK!!"));
+			return;
+		}
+
+		PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankPlayerController::OnTankDeath);
+
+		// Subscribe our local method to the tank's death event
+	}
+}
+
+void ATankPlayerController::OnTankDeath()
+{
+	UE_LOG(LogTemp, Warning, TEXT("AN PLAYER TANK DIED WHOOP WHOOP!"));
+	StartSpectatingOnly();
+}
+
+void ATankPlayerController::StartSpectatingOnly()
+{
+
+};

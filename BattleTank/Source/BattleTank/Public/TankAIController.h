@@ -8,7 +8,6 @@
 // Forward Declarations
 class UTankMovementComponent;
 class UTankAimingComponent;
-class ATank;
 
 UCLASS()
 class BATTLETANK_API ATankAIController : public AAIController
@@ -18,8 +17,6 @@ class BATTLETANK_API ATankAIController : public AAIController
 public:
 	UTankMovementComponent* TankMovementComponent;
 	UTankAimingComponent* TankAimingComponent;
-
-//	ATank* Tank;
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
@@ -34,5 +31,7 @@ private:
 
 	UFUNCTION()
 		void OnPossessedTankDeath();
+
+	virtual void DetachFromControllerPendingDestroy();
 
 };

@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\BattleTank.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{11954C2F-362D-4A25-BD7C-E182C9D6D6AC}</UniqueIdentifier>
+			<UniqueIdentifier>{5AE1CC69-2FB0-454A-8D10-310D4295D80B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{9DF07984-735D-4B54-BF71-71DEEE0A32BA}</UniqueIdentifier>
+			<UniqueIdentifier>{4A406730-1643-4A41-B29B-2759599C3081}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\BattleTank">
-			<UniqueIdentifier>{E9E190F9-7C3D-4ACE-9FD9-D44336ABA650}</UniqueIdentifier>
+			<UniqueIdentifier>{2F7B5BBC-A3AF-41A9-BBCB-5596A25EB2FB}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\BattleTank\BattleTank.Build.cs">
 			<Filter>Source\BattleTank</Filter>
@@ -46,8 +46,11 @@
 			<Filter>Source\BattleTank</Filter>
 		</ClInclude >
 		<Filter Include="Source\BattleTank\Private">
-			<UniqueIdentifier>{8504ABEE-BFA8-451F-A8AC-5A7FE6697D9F}</UniqueIdentifier>
+			<UniqueIdentifier>{36A8E025-0A49-4CA5-B928-7D20D74C94D0}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\BattleTank\Private\Mortar.cpp">
+			<Filter>Source\BattleTank\Private</Filter>
+		</ClCompile >
 		<ClCompile Include="..\..\Source\BattleTank\Private\MyAIController.cpp">
 			<Filter>Source\BattleTank\Private</Filter>
 		</ClCompile >
@@ -79,8 +82,11 @@
 			<Filter>Source\BattleTank\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\BattleTank\Public">
-			<UniqueIdentifier>{BECB72BD-1E43-46B8-ADB1-B3DBE06BBDAB}</UniqueIdentifier>
+			<UniqueIdentifier>{847C5355-CD61-4C7F-A348-3AAC3FDFD6EB}</UniqueIdentifier>
 		</Filter>
+		<ClInclude Include="..\..\Source\BattleTank\Public\Mortar.h">
+			<Filter>Source\BattleTank\Public</Filter>
+		</ClInclude >
 		<ClInclude Include="..\..\Source\BattleTank\Public\MyAIController.h">
 			<Filter>Source\BattleTank\Public</Filter>
 		</ClInclude >

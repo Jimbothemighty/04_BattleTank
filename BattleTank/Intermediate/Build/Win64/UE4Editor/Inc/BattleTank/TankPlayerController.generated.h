@@ -12,8 +12,28 @@ class UTankAimingComponent;
 #endif
 #define BATTLETANK_TankPlayerController_generated_h
 
-#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS
-#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnTankDeath) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnTankDeath(); \
+		P_NATIVE_END; \
+	}
+
+
+#define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnTankDeath) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->OnTankDeath(); \
+		P_NATIVE_END; \
+	}
+
+
 #define BattleTank_Source_BattleTank_Public_TankPlayerController_h_13_EVENT_PARMS \
 	struct TankPlayerController_eventFoundAimingComponent_Parms \
 	{ \

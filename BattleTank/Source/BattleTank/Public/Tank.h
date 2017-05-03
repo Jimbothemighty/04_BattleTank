@@ -47,7 +47,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 		int32 StartingHealth = 100;
 
-	UPROPERTY(VisibleAnywhere, Category = "Health")
+	UPROPERTY(VisibleAnywhere, Category = "Setup")
 		int32 CurrentHealth = StartingHealth;
 
 	// Called every frame

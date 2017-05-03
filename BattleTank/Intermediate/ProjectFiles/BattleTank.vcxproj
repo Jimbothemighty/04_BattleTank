@@ -419,6 +419,7 @@
 		<ClInclude Include="..\..\Source\BattleTank\BattleTank.h" />
 		<ClCompile Include="..\..\Source\BattleTank\BattleTankGameModeBase.cpp" />
 		<ClInclude Include="..\..\Source\BattleTank\BattleTankGameModeBase.h" />
+		<ClCompile Include="..\..\Source\BattleTank\Private\Mortar.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\MyAIController.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\Projectile.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\Tank.cpp" />
@@ -429,6 +430,7 @@
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankPlayerController.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankTrack.cpp" />
 		<ClCompile Include="..\..\Source\BattleTank\Private\TankTurret.cpp" />
+		<ClInclude Include="..\..\Source\BattleTank\Public\Mortar.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\MyAIController.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\Projectile.h" />
 		<ClInclude Include="..\..\Source\BattleTank\Public\Tank.h" />
