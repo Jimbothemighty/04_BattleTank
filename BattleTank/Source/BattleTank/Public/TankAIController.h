@@ -3,6 +3,7 @@
 #pragma once
 
 #include "AIController.h"
+// #include "Pawn.h"
 #include "TankAIController.generated.h"     // must be the last include
 
 // Forward Declarations
@@ -17,6 +18,7 @@ class BATTLETANK_API ATankAIController : public AAIController
 public:
 	UTankMovementComponent* TankMovementComponent;
 	UTankAimingComponent* TankAimingComponent;
+	ATankAIController* TankAIController;
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
@@ -30,8 +32,6 @@ private:
 	virtual void SetPawn(APawn* InPawn) override;
 
 	UFUNCTION()
-		void OnPossessedTankDeath();
-
-	virtual void DetachFromControllerPendingDestroy();
+	void OnPossessedTankDeath();
 
 };

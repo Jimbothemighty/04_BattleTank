@@ -49,6 +49,6 @@ private:
 	UFUNCTION()
 		void OnTankDeath();
 
-	void StartSpectatingOnly();
+//	virtual void StartSpectatingOnly() override;
 
 };

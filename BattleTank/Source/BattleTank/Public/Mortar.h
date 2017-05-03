@@ -48,7 +48,7 @@ private:
 		int32 StartingHealth = 100;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
-		int32 CurrentHealth = StartingHealth;
+		int32 CurrentHealth;
 
 	// Called every frame
 	//	virtual void Tick(float DeltaTime) override;

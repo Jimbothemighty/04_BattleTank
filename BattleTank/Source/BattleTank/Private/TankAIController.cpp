@@ -4,7 +4,9 @@
 #include "TankAimingComponent.h"
 #include "TankMovementComponent.h"
 #include "TankAIController.h"
+// #include "Pawn.h"
 #include "Tank.h"  // so we can implement on death
+#include "Mortar.h"  // so we can implement on death
 // Depends on movement component via pathfinding system
 
 
@@ -77,16 +79,14 @@ void ATankAIController::SetPawn(APawn * InPawn)
 
 void ATankAIController::OnPossessedTankDeath()
 {
-	UE_LOG(LogTemp, Warning, TEXT("AN AI TANK DIED WHOOP WHOOP!"));
-	DetachFromControllerPendingDestroy();
-	
+	if (!ensure(GetPawn())) { return; }
+	GetPawn()->DetachFromControllerPendingDestroy();
+	UE_LOG(LogTemp, Error, TEXT("AI tank died."));
+//	auto TankName = GetPawn()->GetName();
+//	UE_LOG(LogTemp, Warning, TEXT("Name: %s. The AI Tank died."), *TankName);
 }
 
 
-void ATankAIController::DetachFromControllerPendingDestroy()
-{
-
-};
 
 
 

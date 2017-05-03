@@ -115,10 +115,10 @@ void ATankPlayerController::SetPawn(APawn * InPawn)
 		auto PossessedTank = Cast<ATank>(InPawn);
 		if (!ensure(PossessedTank))
 		{
-			UE_LOG(LogTemp, Warning, TEXT("SOMEHOW THERE IS NO POSSESSED TANK!!"));
+//			UE_LOG(LogTemp, Warning, TEXT("SOMEHOW THERE IS NO POSSESSED TANK!!"));
 			return;
 		}
-
+		
 		PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankPlayerController::OnTankDeath);
 
 		// Subscribe our local method to the tank's death event
@@ -127,11 +127,19 @@ void ATankPlayerController::SetPawn(APawn * InPawn)
 
 void ATankPlayerController::OnTankDeath()
 {
-	UE_LOG(LogTemp, Warning, TEXT("AN PLAYER TANK DIED WHOOP WHOOP!"));
 	StartSpectatingOnly();
+	UE_LOG(LogTemp, Error, TEXT("Name. THE PLAYER TANK DIED WHOOP WHOOP!"));
 }
-
+/*
 void ATankPlayerController::StartSpectatingOnly()
 {
+//	FString TankName = GetPawn()->GetName();
+	UE_LOG(LogTemp, Error, TEXT("Name. THE PLAYER TANK DIED WHOOP WHOOP!"));
+//	UE_LOG(LogTemp, Error, TEXT("Name: %s. THE PLAYER TANK DIED WHOOP WHOOP!"), *TankName);
 
+	ChangeState(NAME_Spectating);
+	PlayerState->bIsSpectator = true;
+	PlayerState->bOnlySpectator = true;
+	bPlayerIsWaiting = false; // Can't spawn, we are only allowed to be a spectator.
 };
+*/
