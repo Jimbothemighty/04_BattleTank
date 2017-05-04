@@ -16,6 +16,10 @@ FName BATTLETANK_FoundAimingComponent = FName(TEXT("FoundAimingComponent"));
 	{
 	}
 	IMPLEMENT_CLASS(ABattleTankGameModeBase, 1780074155);
+	void ALowHealth::StaticRegisterNativesALowHealth()
+	{
+	}
+	IMPLEMENT_CLASS(ALowHealth, 1528742418);
 	void AMortar::StaticRegisterNativesAMortar()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AMortar::StaticClass(), "GetHealthPercent",(Native)&AMortar::execGetHealthPercent);
@@ -33,8 +37,9 @@ FName BATTLETANK_FoundAimingComponent = FName(TEXT("FoundAimingComponent"));
 	void ATank::StaticRegisterNativesATank()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "GetHealthPercent",(Native)&ATank::execGetHealthPercent);
+		FNativeFunctionRegistrar::RegisterFunction(ATank::StaticClass(), "Initialise",(Native)&ATank::execInitialise);
 	}
-	IMPLEMENT_CLASS(ATank, 4204827390);
+	IMPLEMENT_CLASS(ATank, 4017348126);
 	void ATankAIController::StaticRegisterNativesATankAIController()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(ATankAIController::StaticClass(), "OnPossessedTankDeath",(Native)&ATankAIController::execOnPossessedTankDeath);
@@ -94,16 +99,16 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_URadialForceComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_UNavMovementComponent();
@@ -111,6 +116,8 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ABattleTankGameModeBase();
+	BATTLETANK_API class UClass* Z_Construct_UClass_ALowHealth_NoRegister();
+	BATTLETANK_API class UClass* Z_Construct_UClass_ALowHealth();
 	BATTLETANK_API class UFunction* Z_Construct_UDelegateFunction_BattleTank_MortarDelegate__DelegateSignature();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_AMortar_GetHealthPercent();
 	BATTLETANK_API class UClass* Z_Construct_UClass_AMortar_NoRegister();
@@ -122,6 +129,7 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	BATTLETANK_API class UClass* Z_Construct_UClass_AProjectile();
 	BATTLETANK_API class UFunction* Z_Construct_UDelegateFunction_BattleTank_TankDelegate__DelegateSignature();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_GetHealthPercent();
+	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATank_Initialise();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank_NoRegister();
 	BATTLETANK_API class UClass* Z_Construct_UClass_ATank();
 	BATTLETANK_API class UFunction* Z_Construct_UFunction_ATankAIController_OnPossessedTankDeath();
@@ -184,6 +192,47 @@ static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EFiringStatus(EFiringSta
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABattleTankGameModeBase(Z_Construct_UClass_ABattleTankGameModeBase, &ABattleTankGameModeBase::StaticClass, TEXT("ABattleTankGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABattleTankGameModeBase);
+	UClass* Z_Construct_UClass_ALowHealth_NoRegister()
+	{
+		return ALowHealth::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ALowHealth()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage__Script_BattleTank();
+			OuterClass = ALowHealth::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_SeriouslyDamagedEffect = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SeriouslyDamagedEffect"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SeriouslyDamagedEffect, ALowHealth), 0x00400000000a0009, Z_Construct_UClass_UParticleSystemComponent_NoRegister());
+				UProperty* NewProp_CollisionMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollisionMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CollisionMesh, ALowHealth), 0x00400000000a0009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("LowHealth.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/LowHealth.h"));
+				MetaData->SetValue(NewProp_SeriouslyDamagedEffect, TEXT("Category"), TEXT("Particles"));
+				MetaData->SetValue(NewProp_SeriouslyDamagedEffect, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_SeriouslyDamagedEffect, TEXT("ModuleRelativePath"), TEXT("Public/LowHealth.h"));
+				MetaData->SetValue(NewProp_CollisionMesh, TEXT("Category"), TEXT("Components"));
+				MetaData->SetValue(NewProp_CollisionMesh, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_CollisionMesh, TEXT("ModuleRelativePath"), TEXT("Public/LowHealth.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ALowHealth(Z_Construct_UClass_ALowHealth, &ALowHealth::StaticClass, TEXT("ALowHealth"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ALowHealth);
 	UFunction* Z_Construct_UDelegateFunction_BattleTank_MortarDelegate__DelegateSignature()
 	{
 		UObject* Outer=Z_Construct_UPackage__Script_BattleTank();
@@ -425,6 +474,30 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_ATank_Initialise()
+	{
+		struct Tank_eventInitialise_Parms
+		{
+			UTankTurret* TurretToSet;
+		};
+		UObject* Outer=Z_Construct_UClass_ATank();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Initialise"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(Tank_eventInitialise_Parms));
+			UProperty* NewProp_TurretToSet = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TurretToSet"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TurretToSet, Tank_eventInitialise_Parms), 0x0010000000080080, Z_Construct_UClass_UTankTurret_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Setup"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("UPROPERTY(VisibleAnywhere, Category = \"Particles\")\n       UParticleSystemComponent* SeriouslyDamagedEffect = nullptr;"));
+			MetaData->SetValue(NewProp_TurretToSet, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ATank_NoRegister()
 	{
 		return ATank::StaticClass();
@@ -443,18 +516,26 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x20900080;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ATank_GetHealthPercent());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATank_Initialise());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_LowHealthBlueprint = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LowHealthBlueprint"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(LowHealthBlueprint, ATank), 0x0044000000010001, Z_Construct_UClass_ALowHealth_NoRegister(), UClass::StaticClass());
+				UProperty* NewProp_RegenDelay = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RegenDelay"), RF_Public|RF_Transient|RF_MarkAsNative) UDoubleProperty(CPP_PROPERTY_BASE(RegenDelay, ATank), 0x0040000000010001);
 				UProperty* NewProp_CurrentHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(CurrentHealth, ATank), 0x0040000000020001);
 				UProperty* NewProp_StartingHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("StartingHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(StartingHealth, ATank), 0x0040000000010001);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_GetHealthPercent(), "GetHealthPercent"); // 1450626173
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATank_Initialise(), "Initialise"); // 2632294142
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Tank.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+				MetaData->SetValue(NewProp_LowHealthBlueprint, TEXT("Category"), TEXT("Setup"));
+				MetaData->SetValue(NewProp_LowHealthBlueprint, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
+				MetaData->SetValue(NewProp_RegenDelay, TEXT("Category"), TEXT("Firing"));
+				MetaData->SetValue(NewProp_RegenDelay, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
 				MetaData->SetValue(NewProp_CurrentHealth, TEXT("Category"), TEXT("Setup"));
 				MetaData->SetValue(NewProp_CurrentHealth, TEXT("ModuleRelativePath"), TEXT("Public/Tank.h"));
 				MetaData->SetValue(NewProp_StartingHealth, TEXT("Category"), TEXT("Setup"));
@@ -1063,8 +1144,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xC023AEE7;
-			Guid.B = 0x95757B50;
+			Guid.A = 0x69E734C2;
+			Guid.B = 0x5AD2C1A1;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

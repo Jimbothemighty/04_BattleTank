@@ -64,7 +64,7 @@ private:
 
 	double LastFireTime = 0;
 
-	double LastAmmoRegenerationTime = 0;
+	double LastAmmoRegenerationTime = 5;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 		double RegenDelay = 5;

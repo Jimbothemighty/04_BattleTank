@@ -9,6 +9,9 @@
 #ifndef BATTLETANK_BattleTankGameModeBase_generated_h
 	#include "BattleTankGameModeBase.h"
 #endif
+#ifndef BATTLETANK_LowHealth_generated_h
+	#include "Public/LowHealth.h"
+#endif
 #ifndef BATTLETANK_Mortar_generated_h
 	#include "Public/Mortar.h"
 #endif
